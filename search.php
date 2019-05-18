@@ -32,11 +32,11 @@
 
 		} else { ?> <!-- if dont have posts -->
 			<div <?php post_class(); ?>> <!-- this doesnt work as post class closes out -->
-				<div class="box article-header">
+				<div class="article-header">
 					<h2 class="page-title">404</h2>
 				</div>
 
-				<div class="box article-content">
+				<div class="article-content">
 					<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
 					<?php get_search_form(); ?>
 				</div>

@@ -7,7 +7,7 @@
 
 				<article <?php post_class(); ?>> <!-- this doesnt work as post class closes out -->
 
-					<div class="box article-header">
+					<div class="article-header">
 						<h2 class="page-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					</div>
 

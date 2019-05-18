@@ -16,13 +16,13 @@ Template Name: Contact
 
 					<div class="spine-border"></div>
 
-					<div class="box article-header">
+					<div class="article-header">
 						<h2 class="page-title">
 							<?php the_title(); ?>
 						</h2>
 					</div>
 
-					<div class="box article-content">
+					<div class="article-content">
 						<?php the_content(); ?>
 
 						<!-- enctype='multipart/form-data' is key to submitting documents -->

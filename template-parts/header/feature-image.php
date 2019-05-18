@@ -7,11 +7,11 @@ $pathname = get_template_directory_uri() . '/img/' . $current_category . '.jpg' 
 
 if (file_exists($filename)) { ?>
 	<div class="header-color-blocking"></div>
-	<figure class="box custom-header-media overlaying-image"><img src="<?php echo $pathname; ?>" alt="category image" class="opacity-holder"></figure>
+	<figure class="custom-header-media overlaying-image"><img src="<?php echo $pathname; ?>" alt="category image" class="opacity-holder"></figure>
 <?php }
 
 elseif ( is_attachment()) { ?>
-	<figure class="box custom-header-photo">
+	<figure class="custom-header-photo">
 		<?php
 			$image_size = apply_filters( 'wporg_attachment_size', 'large' );
 			echo wp_get_attachment_image( get_the_ID(), $image_size );
