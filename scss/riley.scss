@@ -1,0 +1,1210 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize
+2.0 Accessibility
+3.0 Alignments
+4.0 Clearings
+5.0 Typography
+6.0 Forms
+7.0 Formatting
+8.0 Lists
+9.0 Tables
+10.0 Links
+11.0 Featured Image Hover
+12.0 Navigation
+13.0 Layout
+   13.1 Header
+   13.2 Front Page
+   13.3 Regular Content
+   13.4 Posts
+   13.5 Pages
+   13.5.1 Photography Template
+   13.6 Footer
+14.0 Comments
+15.0 Widgets
+16.0 Media
+   16.1 Galleries
+17.0 Customizer
+18.0 SVGs Fallbacks
+19.0 Media Queries
+20.0 Print
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Normalize
+Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
+--------------------------------------------------------------*/
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+2.0 Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers. These are the wordpress twentyseventeen option for the default places its needed */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/*--------------------------------------------------------------
+3.0 Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+	text-align: left;
+	margin-right: $global-margin;
+}
+
+.alignright {
+	text-align: right;
+	margin-left: $global-margin;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.alignleft {
+	float: left;
+}
+
+img.alignleft, .alignleft img {
+	margin-right: $global-margin !important;
+	margin-left: 0 !important;
+}
+
+.alignright {
+	float: right;
+}
+
+img.alignright, .alignright img {
+	margin-left: $global-margin;
+	margin-right: 0 !important;
+}
+
+/*--------------------------------------------------------------
+4.0 Clearings
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+5.0 Typography
+--------------------------------------------------------------*/
+
+p {
+	@include breakpoint (large) {
+		text-align: justify;
+	}
+}
+
+::selection {
+  background: $primary-color; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $primary-color; /* Gecko Browsers */
+}
+
+.no-bullet {
+	list-style-type: none;
+}
+
+.no-bullet li {
+	margin-bottom: $global-margin*1.5;
+}
+
+blockquote {
+	margin: 0;
+	color: $dark-gray;
+}
+
+blockquote:before {
+	content: "\201C ";
+	font-family: $header-font-family;
+	font-weight: bold;
+	font-size: 32px; // hack this should be an em
+	margin-right: $global-margin*0.5;
+}
+
+blockquote p {
+	display: inline;
+	font-size: 1.125em;
+}
+
+cite {
+	color: $dark-gray;
+	margin-left: $global-margin*0.5; // why so small?
+}
+
+.nowrap { // what is this?
+	white-space: nowrap;
+}
+
+.spine {
+	color: $dark-gray;
+}
+
+.box-title, .box-title a {
+	border: .25em solid $black;
+	padding: $global-padding;
+}
+
+.box-title a:hover {
+	text-decoration: line-through;
+}
+
+.pagination .prev, .pagination .next {
+	font-weight: bold;
+}
+
+.post-navigation h2 {
+	text-transform: capitalize;
+}
+
+.speechbubble {
+	color: $primary-color;
+	padding-top: $global-padding;
+	padding-bottom: $global-padding;
+	padding-right: $global-padding;
+	border-bottom: 1px solid $primary-color;
+	border-right: 1px solid $primary-color;
+	border-bottom-right-radius: 3px;
+}
+
+.nav-previous, .nav-next {
+	font-weight: bold;
+}
+
+.page-title {
+	margin: 0;
+	font-size: 2em;
+	border: .2em solid $primary-color;
+	justify-self: start;
+	padding: 0.5em;
+	color: $primary-color;
+	word-wrap: break-word;
+	text-align: center;
+
+	@include breakpoint (medium) {
+		font-size: 3em;
+	}
+}
+
+.single-only {
+	display: none;
+}
+
+.single .single-only {
+	display: inline;
+}
+
+/*--------------------------------------------------------------
+6.0 Forms
+--------------------------------------------------------------*/
+
+.article-form label {
+	@include breakpoint (medium) { /* screen reader text */
+		clip: rect(1px, 1px, 1px, 1px);
+		height: 1px;
+		overflow: hidden;
+		position: absolute !important;
+		width: 1px;
+		word-wrap: normal !important;
+	}
+}
+
+.article-form input, .article-form textarea {
+	width: 100%;
+	padding: $global-padding;
+}
+
+[type='submit'] {
+	width: auto !important;
+}
+
+.article-form textarea {
+	height: 10em; // can I do this better?
+}
+
+.article-form button {
+	padding: $global-padding;
+	margin: $global-margin 0;
+}
+
+.article-form textarea {
+	border-color: $medium-gray;
+}
+
+.g-recaptcha {
+	margin-bottom: $global-margin;
+}
+
+.post-password-form label {
+	display: inline;
+}
+
+.post-password-form [type='password'] {
+	width: 50%;
+	display: inline;
+
+}
+
+.post-password-form [type='submit'] {
+	display: inline;
+}
+
+.searchform [type="text"], .post-password-form [type="password"] {
+	border: 1px solid $medium-gray;
+	line-height: 1.15;
+	padding: 1em;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.post-password-form [type="password"] {
+	padding: 1.5em;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.searchform [type="text"]:active, .post-password-form [type="password"]:active {
+	border-color: $primary-color;
+	outline-color: $primary-color;
+}
+
+[type="submit"] {
+	background: $medium-gray;
+	border: .1em solid $medium-gray;
+	margin-left: -.25em; /* hack to sit the search beside the field */
+	padding: 1em;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.post-password-form [type="submit"] {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.searchform [type="submit"]:hover, .post-password-form [type="submit"]:hover {
+	background-color: $primary-color;
+	border-color: $primary-color;
+	color: $white;
+}
+
+.hollow:hover, [type='submit']:hover {
+	background: $primary-color !important;
+	border-color: $primary-color !important;
+	color: $primary-color !important;
+}
+
+/*--------------------------------------------------------------
+7.0 Formatting
+--------------------------------------------------------------*/
+
+body {
+	border: 0.25em solid $white;
+
+	@include breakpoint (medium) {
+		border: 0.5em solid $white;
+	}
+
+	@include breakpoint (large) {
+		border: 1em solid $white;
+	}
+}
+
+.background-clean {
+	background: $white;
+}
+
+.background-primary {
+	background: $primary-color;
+}
+
+.background-dirty {
+	background: $light-gray;
+}
+
+.site, .site-footer { // why isnt this just body?
+	background: white;
+	color: black;
+}
+
+
+
+.spine-border {
+	border-left: 4px solid $primary-color;
+}
+
+table {
+	width: 100%;
+}
+
+.overlay { // hack where is this?
+	background: $primary-color;
+	z-index: 1;
+	grid-column: 11 / span 3;
+	grid-row: 1 / span 4;
+
+	@include breakpoint (medium) {
+		grid-column: 11 / span 3;
+		grid-row: 1 / span 4;
+	}
+}
+
+.page-title-2 { // naming needs work
+	display: none;
+
+	@include breakpoint (medium) {
+		display: block;
+		color: $white;
+		writing-mode: vertical-rl;
+		grid-column: 11 / span 2;
+		grid-row: 1 / span 4;
+		z-index: 99 !important;
+	}
+}
+
+/*--------------------------------------------------------------
+8.0 Lists
+--------------------------------------------------------------*/
+
+.menu li {
+	margin-right: $global-padding;
+}
+
+.menu li:last-child {
+	margin-right: 0;
+}
+
+/*--------------------------------------------------------------
+9.0 Tables
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+10.0 Links
+--------------------------------------------------------------*/
+
+a {
+	color: $primary-color;
+}
+
+a:hover {
+	text-decoration: line-through;
+}
+
+.form-submit {
+	text-align: left !important;
+}
+
+.button, [type="submit"] {
+	margin: 0; /* bring the element back inline */
+	background: none !important;
+	border-top: none !important;
+	border-left: none !important;
+	color: $primary-color;
+	border-color: $primary-color !important;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.button:hover, [type="submit"]:hover {
+	background: $primary-color !important;
+	color: $white !important;
+}
+
+.navigation-top a {
+	color: $black;
+	text-decoration: underline;
+}
+
+.navigation-top a:hover {
+	text-decoration: line-through;
+}
+
+.site-title {
+	text-decoration: underline;
+	color: $white;
+}
+
+.site-title:hover {
+	text-decoration: line-through;
+	color: $white;
+}
+
+.page-title a {
+	color: $primary-color;
+}
+
+.sticky .page-title a {
+	text-decoration: none;
+	border-bottom: 3px solid $primary-color;
+	box-shadow: inset 0 -4px 0 $primary-color;
+}
+
+.sticky .page-title a:hover {
+	border-bottom: none;
+	box-shadow: none;
+	background-color: rgba($warning-color, 0.3);
+}
+
+// this must be able to be done better
+.article-content h1 a,
+.article-content h2 a,
+.article-content h3 a,
+.article-content h4 a,
+.article-content h5 a,
+.article-content h6 a,
+.quote-content h1 a,
+.quote-content h2 a,
+.quote-content h3 a,
+.quote-content h4 a,
+.quote-content h5 a,
+.quote-content h6 a {
+	color: $black;
+}
+
+.article-footer a,
+.quote-content p a,
+.quote-footer a {
+	text-decoration: none;
+	color: $primary-color;
+}
+
+.article-footer a:hover,
+.quote-content p a:hover,
+.quote-footer a:hover {
+	text-decoration: line-through;
+}
+
+.article-content .button,
+.quote-content .button {
+	text-decoration: none;
+	box-shadow: none;
+	color: $primary-color;
+	background: $white;
+	border-right: .1em solid $primary-color;
+	border-bottom: .1em solid $primary-color;
+	border-bottom-right-radius: 3px;
+}
+
+.article-content .button:hover,
+.quote-content .button:hover {
+	border-bottom: 1px solid $primary-color;
+}
+
+.breacdcrumbs {
+	color: $dark-gray;
+}
+
+.breadcrumbs a {
+	color: $dark-gray;
+	text-decoration: line-through;
+}
+
+.breadcrumbs a:hover {
+	text-decoration: underline;
+}
+
+.pagination a {
+	color: $primary-color;
+	text-decoration: underline;
+}
+
+.pagination a:hover,
+.pagination .current {
+	text-decoration: line-through;
+	color: $primary-color;
+	background: none;
+}
+
+.pagination .nav-links .next,
+.pagination .nav-links .prev {
+	border-bottom: none;
+	box-shadow: none;
+	color: $black;
+}
+
+.pagination .nav-links .next,
+.pagination .nav-links .prev {
+	text-decoration: underline;
+}
+
+.pagination .nav-links .next:hover,
+.pagination .nav-links .prev:hover {
+	text-decoration: line-through;
+}
+
+.footer_copyright a,
+.footer_nav a,
+.footer_contact a, {
+	text-decoration: none;
+	color: $black;
+	box-shadow: inset 0 -4px 0 $primary-color;
+	transition: 300ms;
+}
+
+.footer_copyright a:hover,
+.footer_nav a:hover,
+.footer_contact a:hover {
+	border-bottom: none;
+	box-shadow: inset 0 -8px 0 $primary-color;
+}
+
+.article-category a,
+.featured-category a{
+	color: $dark-gray;
+}
+
+.post-navigation a {
+	color: $black;
+}
+
+.article-tags a {
+	color: $dark-gray;
+}
+
+.single .article-comments a {
+	color: $black;
+	text-decoration: none;
+	border-bottom: 3px solid $primary-color;
+	box-shadow: inset 0 -4px 0 $primary-color;
+}
+
+.single .article-comments a:hover {
+	border-bottom: none;
+	box-shadow: none;
+	background-color: $primary-color;
+}
+
+/*--------------------------------------------------------------
+11.0 Featured Image Hover
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+12.0 Navigation
+--------------------------------------------------------------*/
+
+.navigation-top ul {
+	flex-direction: column;
+}
+
+.navigation-top ul li {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: $global-margin;
+	@include breakpoint(medium) {
+		font-size: 2.25em;
+	}
+}
+
+.navigation-top ul li a {
+	padding: 0;
+}
+
+.category-sub li {
+	text-align: center;
+}
+
+.footer_menu li,
+.category-sub li {
+	border: .25em solid $primary-color;
+	padding: $global-padding;
+	font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+13.0 Layout
+--------------------------------------------------------------*/
+
+body {
+	min-height: 100vh;
+}
+
+img, video, figure {
+	height: auto;
+	max-width: 100%;
+}
+
+.box { // I really want to get rid of this
+	overflow: hidden;
+	z-index: 10;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+13.1 Header
+--------------------------------------------------------------*/
+
+.header-logo {
+	fill: $primary-color;
+}
+
+.header-logo:hover {
+	fill: $secondary-color;
+}
+
+.subheader {
+	font-size: 2em;
+	color: $dark-gray;
+	margin: 0.1em 0; // why so slender?
+}
+
+
+
+.site-branding-text {
+	color: $white;
+	font-size: 2em;
+}
+
+.site-branding-text {
+	align-self: end;
+}
+
+
+
+
+
+
+
+
+.overlaying-image {
+	filter: grayscale(100%);
+	mix-blend-mode: multiply;
+	z-index: 14;
+}
+
+.custom-header-media img {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+13.2 Front Page
+--------------------------------------------------------------*/
+
+.front-page-titles {
+
+	background: $white;
+	text-align: center;
+	font-weight: bold;
+}
+
+.fp-box {
+	background: $primary-color;
+	color: $white;
+	padding: 0.5em;
+
+	@include breakpoint (medium) {
+		padding: 1em;
+	}
+}
+/*--------------------------------------------------------------
+13.3 Regular Content
+--------------------------------------------------------------*/
+
+
+.single .site-title {
+	color: $black;
+}
+
+
+#comments {
+	padding: 0 !important;
+}
+
+.cat-title { // wrong place
+	margin-top: $global-margin*2;
+	font-size: 2em;
+
+	@include breakpoint (medium) {
+		font-size: 3em;
+	}
+}
+
+/*--------------------------------------------------------------
+13.4 Posts
+--------------------------------------------------------------*/
+
+
+
+.featured-subheader a {
+	color: $dark-gray;
+}
+
+.featured-category-title {
+	margin: 0.5em auto;
+	font-size: 2em;
+	border: 0.2em solid $primary-color;
+	padding: 0.5em;
+	word-wrap: break-word;
+	text-align: center;
+
+	 @include breakpoint (medium) {
+		 font-size: 6em;
+	}
+}
+
+.featured-category-title a:hover {
+	text-decoration: line-through;
+}
+
+
+.category-titles a {
+	color: $primary-color;
+}
+
+.category-titles a:hover {
+	text-decoration: line-through;
+}
+
+
+
+.comment-body {
+	display: block !important; /* this was getting stuck on a grid display */
+	grid-auto-columns: auto !important;
+	grid-template-columns: auto;
+	grid-auto-rows: auto !important;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+14.0 Comments
+--------------------------------------------------------------*/
+
+/* currently taken from twentyseventeen as comments take time and are boring if i dont use them alot but should look at this */
+
+#comments {
+	clear: both;
+	padding: 2em 0 0.5em;
+}
+
+.comments-title {
+	font-size: 20px;
+	font-size: 1.25rem;
+	margin-bottom: 1.5em;
+}
+
+.comment-list,
+.comment-list .children {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.comment-list li:before {
+	display: none;
+}
+
+.comment-body {
+	margin-left: 65px;
+}
+
+.comment-author {
+	font-size: 16px;
+	font-size: 1rem;
+	margin-bottom: 0.4em;
+	position: relative;
+	z-index: 2;
+}
+
+.comment-author .avatar {
+	height: 50px;
+	left: -65px;
+	position: absolute;
+	width: 50px;
+}
+
+.comment-author .says {
+	display: none;
+}
+
+.comment-meta {
+	margin-bottom: 1.5em;
+}
+
+.comment-metadata {
+	color: #767676;
+	font-size: 10px;
+	font-size: 0.625rem;
+	font-weight: 800;
+	letter-spacing: 0.1818em;
+	text-transform: uppercase;
+}
+
+.comment-metadata a {
+	color: #767676;
+}
+
+.comment-metadata a.comment-edit-link {
+	color: #222;
+	margin-left: 1em;
+}
+
+.comment-body {
+	color: #333;
+	font-size: 14px;
+	font-size: 0.875rem;
+	margin-bottom: 4em;
+}
+
+.comment-reply-link {
+	font-weight: 800;
+	position: relative;
+}
+
+.comment-reply-link .icon {
+	color: #222;
+	left: -2em;
+	height: 1em;
+	position: absolute;
+	top: 0;
+	width: 1em;
+}
+
+.children .comment-author .avatar {
+	height: 30px;
+	left: -45px;
+	width: 30px;
+}
+
+.bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
+	border: 1px solid #333;
+	padding: 2px;
+}
+
+.no-comments,
+.comment-awaiting-moderation {
+	color: #767676;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-style: italic;
+}
+
+.comments-pagination {
+	margin: 2em 0 3em;
+}
+
+.form-submit {
+	text-align: right;
+}
+
+
+/*--------------------------------------------------------------
+15.0 Widgets
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+16.0 Media
+--------------------------------------------------------------*/
+
+figure {
+	margin: 0;
+}
+
+/* SVG Icons base styles */
+
+svg {
+	fill: currentColor;
+	width: 1em;
+}
+
+.search-icon {
+
+}
+
+.icon {
+	display: inline-block;
+	fill: currentColor;
+	height: 1em;
+	position: relative; /* Align more nicely with capital letters */
+	top: -0.0625em;
+	vertical-align: middle;
+	width: 1em;
+}
+
+.wp-caption,
+.gallery-caption {
+	color: $dark-gray;
+	font-style: italic;
+	margin-bottom: 1.5em;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: $global-margin 0;
+}
+
+.cfimg {
+	display: grid;
+}
+.cfimg picture {
+	grid-column: 1;
+	grid-row: 1;
+	animation-name: FadeInOut;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	z-index: 1;
+}
+
+// http://css3.bradshawenterprises.com/cfimg/
+/* Just do the link I dont understand the math
+For "n" images You must define:
+a=presentation time for one image
+b=duration for cross fading
+Total animation-duration is of course t=(a+b)*n
+
+animation-delay = t/n or = a+b
+
+Percentage for keyframes:
+
+	0%
+	a/t*100%
+	(a+b)/t*100% = 1/n*100%
+	100%-(b/t*100%)
+	100%
+
+css slidesshow in Rileys google drive can do all the math
+
+*/
+@keyframes FadeInOut {
+  0% {
+	opacity:1;
+  }
+  15% {
+	opacity:1;
+  }
+  20% {
+	opacity:0;
+  }
+  95% {
+	opacity:0;
+  }
+  100% {
+	opacity:1;
+  }
+}
+
+.cfimg picture:nth-of-type(1) {
+  animation-delay: 16s;
+}
+.cfimg picture:nth-of-type(2) {
+  animation-delay: 12s;
+}
+.cfimg picture:nth-of-type(3) {
+  animation-delay: 8s;
+}
+.cfimg picture:nth-of-type(4) {
+  animation-delay: 4s;
+}
+.cfimg picture:nth-of-type(5) {
+  animation-delay: 0;
+}
+
+/*--------------------------------------------------------------
+16.1 Galleries
+--------------------------------------------------------------*/
+
+.gallery-item {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	margin: 0 0 1.5em;
+	padding: 0 1em 0 0;
+	width: 50%;
+
+	@include breakpoint (medium) {
+			max-width: 25%;
+	}
+}
+
+.gallery-columns-1 .gallery-item {
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-item a,
+.gallery-item a:hover,
+.gallery-item a:focus,
+.widget-area .gallery-item a,
+.widget-area .gallery-item a:hover,
+.widget-area .gallery-item a:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: none;
+	display: inline-block;
+	max-width: 100%;
+}
+
+.gallery-item a img {
+	display: block;
+	-webkit-transition: -webkit-filter 0.2s ease-in;
+	transition: -webkit-filter 0.2s ease-in;
+	transition: filter 0.2s ease-in;
+	transition: filter 0.2s ease-in, -webkit-filter 0.2s ease-in;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.gallery-item a:hover img,
+.gallery-item a:focus img {
+	-webkit-filter: opacity(60%);
+	filter: opacity(60%);
+}
+
+.gallery-caption {
+	display: block;
+	text-align: left;
+	padding: 0 10px 0 0;
+	margin-bottom: 0;
+}
+
+.gallery-columns-1 .gallery-item {
+		@include breakpoint (medium) {
+			max-width: 100%;
+		}
+	}
+
+	.gallery-columns-2 .gallery-item {
+		@include breakpoint (medium) {
+			max-width: 50%;
+		}
+	}
+
+	.gallery-columns-3 .gallery-item {
+		@include breakpoint (medium) {
+			max-width: 33.33%;
+		}
+	}
+
+	.gallery-columns-4 .gallery-item {
+		@include breakpoint (medium) {
+			max-width: 25%;
+		}
+	}
+
+.gallery-caption {
+	color: $dark-gray;
+}
+
+/*--------------------------------------------------------------
+17.0 Customizer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+18.0 SVGs Fallbacks
+--------------------------------------------------------------*/
+
+.svg-fallback {
+	display: none;
+}
+
+.no-svg .svg-fallback {
+	display: inline-block;
+}
+
+.no-svg .dropdown-toggle {
+	padding: 0.5em 0 0;
+	right: 0;
+	text-align: center;
+	width: 2em;
+}
+
+.no-svg .dropdown-toggle .svg-fallback.icon-angle-down {
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+	-ms-transform: rotate(180deg); /* IE 9 */
+	transform: rotate(180deg);
+}
+
+.no-svg .dropdown-toggle.toggled-on .svg-fallback.icon-angle-down {
+	-webkit-transform: rotate(0); /* Chrome, Safari, Opera */
+	-ms-transform: rotate(0); /* IE 9 */
+	transform: rotate(0);
+}
+
+.no-svg .dropdown-toggle .svg-fallback.icon-angle-down:before {
+	content: "\005E";
+}
+
+/* Social Menu fallbacks */
+
+.no-svg .social-navigation a {
+	background: transparent;
+	color: #222;
+	height: auto;
+	width: auto;
+}
+
+/* Show screen reader text in some cases */
+
+.no-svg .next.page-numbers .screen-reader-text,
+.no-svg .prev.page-numbers .screen-reader-text,
+.no-svg .social-navigation li a .screen-reader-text,
+.no-svg .search-submit .screen-reader-text {
+	clip: auto;
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 400;
+	height: auto;
+	position: relative !important; /* overrides previous !important styles */
+	width: auto;
+}
+
+/*--------------------------------------------------------------
+19.0 Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+20.0 Print
+--------------------------------------------------------------*/
+
+@media print {
+
+	/* Hide elements */
+
+}

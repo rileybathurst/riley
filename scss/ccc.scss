@@ -1,0 +1,329 @@
+// the front page currently uses this very verbose grid so I'm hiding it away here for the moment untill it gets a fix
+
+.a {
+	grid-column: 1;
+	grid-row: 1;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.b {
+	grid-column: 2;
+	grid-row: 1;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.c {
+	grid-column: 3;
+	grid-row: 1;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.clicks-a {
+	grid-row: 1;
+	grid-column: 1 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 4;
+	}
+}
+
+.clicks-b {
+	grid-row: 1;
+	grid-column: 3 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 5;
+	}
+}
+
+.clicks-c {
+	grid-row: 1;
+	grid-column: 5 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 6;
+	}
+}
+
+.clicks-d {
+	grid-row: 1;
+	grid-column: 7 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 7;
+	}
+}
+
+.clicks-e {
+	grid-row: 1;
+	grid-column: 9 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 8;
+	}
+}
+
+.clicks-f {
+	grid-row: 1;
+	grid-column: 11 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 9;
+	}
+}
+
+.d {
+	grid-column: 10;
+	grid-row: 1;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.e {
+	grid-column: 11;
+	grid-row: 1;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.f {
+	grid-column: 12;
+	grid-row: 1;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+/* ------------------------------------- */
+
+.g {
+	grid-column: 1;
+	grid-row: 2;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.h {
+	grid-column: 2;
+	grid-row: 2;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.i {
+	grid-column: 3;
+	grid-row: 2;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.code-a {
+	grid-row: 2;
+	grid-column: 1 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 4;
+	}
+}
+
+.code-b {
+	grid-row: 2;
+	grid-column: 3 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 5;
+	}
+}
+
+.code-c {
+	grid-row: 2;
+	grid-column: 5 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 6;
+	}
+}
+
+.code-d {
+	grid-row: 2;
+	grid-column: 7 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 7;
+	}
+}
+
+.code-e {
+	grid-row: 2;
+	grid-column: 9 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 8;
+	}
+}
+
+.code-f {
+	grid-row: 2;
+	grid-column: 11 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 9;
+	}
+}
+
+.j {
+	grid-column: 10;
+	grid-row: 2;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.k {
+	grid-column: 11;
+	grid-row: 2;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.l {
+	grid-column: 12;
+	grid-row: 2;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+/* ------------------------------------- */
+
+.m {
+	grid-column: 1;
+	grid-row: 3;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.n {
+	grid-column: 2;
+	grid-row: 3;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.o {
+	grid-column: 3;
+	grid-row: 3;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.camera-a {
+	grid-row: 3;
+	grid-column: 1 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 4;
+	}
+}
+
+.camera-b {
+	grid-row: 3;
+	grid-column: 3 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 5;
+	}
+}
+
+.camera-c {
+	grid-row: 3;
+	grid-column: 5 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 6;
+	}
+}
+
+.camera-d {
+	grid-row: 3;
+	grid-column: 7 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 7;
+	}
+}
+
+.camera-e {
+	grid-row: 3;
+	grid-column: 9 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 8;
+	}
+}
+
+.camera-f {
+	grid-row: 3;
+	grid-column: 11 / span 2;
+
+	@include breakpoint (medium) {
+		grid-column: 9;
+	}
+}
+
+.p {
+	grid-column: 10;
+	grid-row: 3;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.q {
+	grid-column: 11;
+	grid-row: 3;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
+
+.r {
+	grid-column: 12;
+	grid-row: 3;
+	visibility: hidden;
+	@include breakpoint (medium) {
+		visibility: visible;
+	}
+}
