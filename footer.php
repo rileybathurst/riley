@@ -24,7 +24,7 @@
 			<!-- add a contact number to the theme -->
 			<?php if (get_option('contact_phone')) {
 				$unspaced_phone = str_replace(' ', '', get_option('contact_phone')); ?>
-				<span class="nowrap"><a href="tel:<?php echo $unspaced_phone; ?>"><?php echo get_option('contact_phone'); ?></a></span>
+				<a href="tel:<?php echo $unspaced_phone; ?>"><?php echo get_option('contact_phone'); ?></a>
 			<?php } ?>
 		</div>
 	</div>

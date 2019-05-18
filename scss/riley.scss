@@ -134,14 +134,6 @@ p {
   background: $primary-color; /* Gecko Browsers */
 }
 
-.no-bullet {
-	list-style-type: none;
-}
-
-.no-bullet li {
-	margin-bottom: $global-margin*1.5;
-}
-
 blockquote {
 	margin: 0;
 	color: $dark-gray;
@@ -165,10 +157,6 @@ cite {
 	margin-left: $global-margin*0.5; // why so small?
 }
 
-.nowrap { // what is this?
-	white-space: nowrap;
-}
-
 .spine {
 	color: $dark-gray;
 }
@@ -186,6 +174,10 @@ cite {
 	font-weight: bold;
 }
 
+.nav-previous, .nav-next {
+	font-weight: bold;
+}
+
 .post-navigation h2 {
 	text-transform: capitalize;
 }
@@ -198,10 +190,6 @@ cite {
 	border-bottom: 1px solid $primary-color;
 	border-right: 1px solid $primary-color;
 	border-bottom-right-radius: 3px;
-}
-
-.nav-previous, .nav-next {
-	font-weight: bold;
 }
 
 .page-title {
@@ -217,14 +205,6 @@ cite {
 	@include breakpoint (medium) {
 		font-size: 3em;
 	}
-}
-
-.single-only {
-	display: none;
-}
-
-.single .single-only {
-	display: inline;
 }
 
 /*--------------------------------------------------------------

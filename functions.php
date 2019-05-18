@@ -48,17 +48,10 @@ require get_parent_theme_file_path( '/inc/custom-header.php' );
 /**
  * SVG icons functions and filters.
  */
-require get_parent_theme_file_path( '/inc/icon-functions.php' );
-
-/**
- * SVG icons functions and filters.
- */
+require get_parent_theme_file_path( '/inc/icon-functions.php' ); // these are moving to inline and should be removed
 require get_parent_theme_file_path( '/inc/contact-email.php' );
-
-/**
- * SVG icons functions and filters.
- */
 require get_parent_theme_file_path( '/inc/backend-options.php' );
+require get_parent_theme_file_path( '/inc/breadcrumbs.php' );
 
 
 // Change the email that root level mail is sent from
@@ -69,26 +62,6 @@ add_filter( 'wp_mail_from', function( $email ) {
 add_filter( 'wp_mail_from_name', function( $name ) {
 	return 'Riley Bathurst';
 });
-
-// Breadcrumbs // this could be done far better than a bunch of &nbsp;
-function get_breadcrumb() {
-	echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
-	if (is_category()) {
-		echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
-		echo single_cat_title('');
-	} elseif (is_single()) {
-		echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
-		echo the_title();
-	} elseif (is_page()) {
-		echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
-		echo the_title();
-	} elseif (is_search()) {
-		echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
-		echo '"<em>';
-		echo the_search_query();
-		echo '</em>"';
-	}
-}
 
 /* Fire our meta box setup function on the post editor screen. */
 add_action( 'load-post.php', 'featured_video_meta_boxes_setup' );

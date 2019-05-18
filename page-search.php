@@ -10,7 +10,7 @@ Template Name: Search
 	<div class="site-main" role="main">
 		<article <?php post_class(); ?>> <!-- this doesnt work as post class closes out -->
 
-			<?php if (have_posts()) :
+			<?php if (have_posts()) {
 
 				while (have_posts()) : the_post(); ?>
 					<div class="article-thumbnail"></div> <!-- putting this in even if empty fills grid row 1 which lets eveything else sit in the right order -->
@@ -30,7 +30,7 @@ Template Name: Search
 					</div>
 
 				<?php endwhile;
-			endif; ?>
+			} ?>
 
 		</article>
 
