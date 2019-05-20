@@ -158,7 +158,7 @@ cite {
 }
 
 .spine {
-	color: $dark-gray;
+	color: #575757; // darker than dark gray to pass contrast checks
 }
 
 .box-title, .box-title a {
@@ -508,7 +508,7 @@ a:hover {
 }
 
 .breadcrumbs a {
-	color: $dark-gray;
+	color: #575757; // dark-gray doesn't pass contrast checks but I didn't want to go all the way to black
 	text-decoration: line-through;
 }
 

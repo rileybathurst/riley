@@ -60,6 +60,11 @@ $global-grid-gap: 1em;
 	grid-row: 1;
 	justify-self: start;
 	align-self: start;
+
+	@include breakpoint(medium) {
+		justify-self: center;
+		align-self: end;
+	}
 }
 
 .header-color-blocking {
@@ -87,19 +92,22 @@ $global-grid-gap: 1em;
 	padding-bottom: 1em;
 	justify-self: center;
 	z-index: 20;
-	margin-top: 3em;
-	margin-bottom: 3em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 
 	@include breakpoint (medium) {
 		writing-mode: vertical-rl;
 		grid-column: 3;
 		grid-row: 2;
+		margin-top: 3em;
+		margin-bottom: 3em;
 	}
 }
 
 .single .site-branding-text {
 	grid-row: 1;
-	// justify-self: start;
+	justify-self: start; // fix problems caused by the home page
+	padding-bottom: 0;
 	// align-self: start;
 
 	@include breakpoint (medium) {
@@ -184,6 +192,7 @@ $global-grid-gap: 1em;
 .home .navigation-top {
 	grid-row: 3;
 	align-self: start;
+	margin-bottom: 1em;
 
 	@include breakpoint (medium) {
 		grid-row: 1;
