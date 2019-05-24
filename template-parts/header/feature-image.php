@@ -19,7 +19,12 @@ elseif ( is_attachment()) { ?>
 	</figure>
 <?php } // end of attachment
 
+elseif ( is_single('Priest')) {
+	get_template_part( 'template-parts/header/priest-image' );
+}
+
 elseif ( is_single()) {
+
 	if (have_posts()) {
 	while (have_posts()) : the_post();
 
@@ -27,6 +32,7 @@ elseif ( is_single()) {
 		<figure class="custom-header-featured-video responsive-embed widescreen"><?php echo get_post_meta( $post->ID, 'featured_video', true ); ?></figure> <!-- this is having issues on firefox -->
 	<?php } elseif ( has_post_thumbnail() ) {
 	$id = get_the_ID(); ?>
+
 		<figure class="custom-header-media"><?php the_post_thumbnail( $id ); ?></figure>
 	<?php } else { ?>
 		<figure class="custom-header-media"><?php the_custom_header_markup(); ?></figure>

@@ -67,6 +67,11 @@ $global-grid-gap: 1em;
 	}
 }
 
+.home .header-logo {
+	justify-self: center;
+	align-self: start;
+}
+
 .header-color-blocking {
 	z-index: 15;
 	mix-blend-mode: multiply;
@@ -404,6 +409,11 @@ $global-grid-gap: 1em;
 
 .article-date {
 	grid-row: 2;
+	grid-column: 2 / 6;
+
+	@include breakpoint (large) {
+		grid-column: 3 / 5;
+	}
 }
 
 .article-speechbubble {
