@@ -11,11 +11,11 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/kings_truffles_0498/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0498-small.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0498-large.jpg" alt="kings truffle dogs" media="(min-width: 64em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0498-medium.jpg" alt="kings truffle dogs" media="(min-width: 40em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0498-small.jpg" alt="kings truffle dogs">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0498-small.jpg" alt="kings truffle dogs"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0498-small.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0498-large.jpg" alt="kings truffle dogs" media="(min-width: 64em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0498-medium.jpg" alt="kings truffle dogs" media="(min-width: 40em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0498-small.jpg" alt="kings truffle dogs">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0498-small.jpg" alt="kings truffle dogs"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -24,11 +24,11 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/kings_truffles_0707/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0707-small.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0707-large.jpg" alt="kings truffle dogs" media="(min-width: 64em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0707-medium.jpg" alt="kings truffle dogs" media="(min-width: 40em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0707-small.jpg" alt="kings truffle dogs">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0707-small.jpg" alt="kings truffle dogs"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0707-small.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0707-large.jpg" alt="kings truffle dogs" media="(min-width: 64em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0707-medium.jpg" alt="kings truffle dogs" media="(min-width: 40em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0707-small.jpg" alt="kings truffle dogs">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0707-small.jpg" alt="kings truffle dogs"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -37,11 +37,11 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/kings_truffles_0698/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0698-small.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0698-large.jpg" alt="kings truffle dogs" media="(min-width: 64em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0698-medium.jpg" alt="kings truffle dogs" media="(min-width: 40em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0698-small.jpg" alt="kings truffle dogs">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0698-small.jpg" alt="kings truffle dogs"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0698-small.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0698-large.jpg" alt="kings truffle dogs" media="(min-width: 64em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0698-medium.jpg" alt="kings truffle dogs" media="(min-width: 40em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0698-small.jpg" alt="kings truffle dogs">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0698-small.jpg" alt="kings truffle dogs"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -50,11 +50,11 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/kings_truffles_0610/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0610-small.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0610-large.jpg" alt="kings truffle dogs" media="(min-width: 64em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0610-medium.jpg" alt="kings truffle dogs" media="(min-width: 40em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0610-small.jpg" alt="kings truffle dogs">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/Kings_Truffles_0610-small.jpg" alt="kings truffle dogs"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0610-small.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0610-large.jpg" alt="kings truffle dogs" media="(min-width: 64em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0610-medium.jpg" alt="kings truffle dogs" media="(min-width: 40em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0610-small.jpg" alt="kings truffle dogs">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Kings_Truffles_0610-small.jpg" alt="kings truffle dogs"></noscript>
 						</picture>
 					</a>
 				</p>

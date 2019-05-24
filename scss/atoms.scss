@@ -1,0 +1,18 @@
+.mega-hr {
+	border-bottom-width: 0.5em;
+	border-color: $white;
+	border-style: solid;
+
+	@include breakpoint(medium) {
+		border-bottom-width: 1em;
+	}
+}
+
+.mw-18em {
+	max-width: 18em;
+	justify-self: center;
+}
+
+.caption {
+	color: $dark-gray;
+}

@@ -11,11 +11,11 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/earnest_chris_0224/">
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/Earnest_Chris_0224-small.jpg">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Earnest_Chris_0224-large.jpg" alt="working on a motorbike" media="(min-width: 64em)">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Earnest_Chris_0224-medium.jpg" alt="working on a motorbike" media="(min-width: 40em)">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Earnest_Chris_0224-small.jpg" alt="working on a motorbike">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/Earnest_Chris_0224-small.jpg" alt="working on a motorbike"></noscript>
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Earnest_Chris_0224-small.jpg">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Earnest_Chris_0224-large.jpg" alt="working on a motorbike" media="(min-width: 64em)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Earnest_Chris_0224-medium.jpg" alt="working on a motorbike" media="(min-width: 40em)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Earnest_Chris_0224-small.jpg" alt="working on a motorbike">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Earnest_Chris_0224-small.jpg" alt="working on a motorbike"></noscript>
 					</picture>
 					</a>
 				</p>
@@ -25,11 +25,11 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/earnest_simon_0091/">
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/Earnest_Simon_0091-small.jpg">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Earnest_Simon_0091-large.jpg" alt="working on a Porsche 911" media="(min-width: 64em)">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Earnest_Simon_0091-medium.jpg" alt="working on a Porsche 911" media="(min-width: 40em)">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Earnest_Simon_0091-small.jpg" alt="working on a Porsche 911">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/Earnest_Simon_0091-small.jpg" alt="working on a Porsche 911"></noscript>
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Earnest_Simon_0091-small.jpg">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Earnest_Simon_0091-large.jpg" alt="working on a Porsche 911" media="(min-width: 64em)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Earnest_Simon_0091-medium.jpg" alt="working on a Porsche 911" media="(min-width: 40em)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Earnest_Simon_0091-small.jpg" alt="working on a Porsche 911">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Earnest_Simon_0091-small.jpg" alt="working on a Porsche 911"></noscript>
 					</picture>
 					</a>
 				</p>

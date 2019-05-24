@@ -10,11 +10,11 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/ben-comber-miller/tc_spring_camp_0051-large/">
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2015/08/TC_Spring_Camp_0051-small.jpg">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2015/08/TC_Spring_Camp_0051-large.jpg" alt="Ben Comber - Miller Flip" media="(min-width: 64em)">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2015/08/TC_Spring_Camp_0051-medium.jpg" alt="Ben Comber - Miller Flip" media="(min-width: 40em)">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2015/08/TC_Spring_Camp_0051-small.jpg" alt="Ben Comber - Miller Flip">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2015/08/TC_Spring_Camp_0051-small.jpg" alt="Ben Comber - Miller Flip"></noscript>
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2015/08/TC_Spring_Camp_0051-small.jpg">
+						<source srcset="<?php echo content_url(); ?>/uploads/2015/08/TC_Spring_Camp_0051-large.jpg" alt="Ben Comber - Miller Flip" media="(min-width: 64em)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2015/08/TC_Spring_Camp_0051-medium.jpg" alt="Ben Comber - Miller Flip" media="(min-width: 40em)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2015/08/TC_Spring_Camp_0051-small.jpg" alt="Ben Comber - Miller Flip">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2015/08/TC_Spring_Camp_0051-small.jpg" alt="Ben Comber - Miller Flip"></noscript>
 					</picture>
 					</a>
 				</p>
@@ -25,11 +25,11 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/mt_clarke_0063-large/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2015/08/Mt_Clarke_0063-small.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2015/08/Mt_Clarke_0063-large.jpg" alt="Early Morning Back Country Hike" media="(min-width: 64em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2015/08/Mt_Clarke_0063-medium.jpg" alt="Early Morning Back Country Hike" media="(min-width: 40em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2015/08/Mt_Clarke_0063-small.jpg" alt="Early Morning Back Country Hike">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2015/08/Mt_Clarke_0063-small.jpg/" alt="Early Morning Back Country Hike"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2015/08/Mt_Clarke_0063-small.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Mt_Clarke_0063-large.jpg" alt="Early Morning Back Country Hike" media="(min-width: 64em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Mt_Clarke_0063-medium.jpg" alt="Early Morning Back Country Hike" media="(min-width: 40em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Mt_Clarke_0063-small.jpg" alt="Early Morning Back Country Hike">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2015/08/Mt_Clarke_0063-small.jpg/" alt="Early Morning Back Country Hike"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -39,24 +39,24 @@ if (have_posts()) {
 
 			<div class="small-12 medium-6 cell">
 				<p>
-					<a href="http://rileybathurst.com/wp-content/uploads/2015/08/Mt_Clarke_0063-large.jpg">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2014/03/Team_BD_Olympus_0068-small.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2014/03/Team_BD_Olympus_0068-large-1.jpg" alt="Alex Brooke - Mt. Olympus Ridgelines" media="(min-width: 64em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2014/03/Team_BD_Olympus_0068-medium.jpg" alt="Alex Brooke - Mt. Olympus Ridgelines" media="(min-width: 40em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2014/03/Team_BD_Olympus_0068-small.jpg" alt="Alex Brooke - Mt. Olympus Ridgelines">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2014/03/Team_BD_Olympus_0068-small.jpg" alt="Alex Brooke - Mt. Olympus Ridgelines"></noscript>
+					<a href="<?php echo content_url(); ?>/uploads/2015/08/Mt_Clarke_0063-large.jpg">
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2014/03/Team_BD_Olympus_0068-small.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2014/03/Team_BD_Olympus_0068-large-1.jpg" alt="Alex Brooke - Mt. Olympus Ridgelines" media="(min-width: 64em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2014/03/Team_BD_Olympus_0068-medium.jpg" alt="Alex Brooke - Mt. Olympus Ridgelines" media="(min-width: 40em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2014/03/Team_BD_Olympus_0068-small.jpg" alt="Alex Brooke - Mt. Olympus Ridgelines">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2014/03/Team_BD_Olympus_0068-small.jpg" alt="Alex Brooke - Mt. Olympus Ridgelines"></noscript>
 						</picture>
 					</a>
 				</p>
-				<h4><a href="http://rileybathurst.com/wp-content/uploads/2015/08/Mt_Clarke_0063-large.jpg">Alex Brooke - Mt. Olympus Ridgelines</a></h4>
+				<h4><a href="<?php echo content_url(); ?>/uploads/2015/08/Mt_Clarke_0063-large.jpg">Alex Brooke - Mt. Olympus Ridgelines</a></h4>
 			</div>
 
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/new-zealand-snowboarder-2015/clubbies_trip_14_0164/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2015/05/Clubbies_Trip_14_0164.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2015/05/Clubbies_Trip_14_0164.jpg" alt="Will Jackways - Method, Mt. Olympus">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2015/05/Clubbies_Trip_14_0164.jpg" alt="Will Jackways - Method, Mt. Olympus"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2015/05/Clubbies_Trip_14_0164.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2015/05/Clubbies_Trip_14_0164.jpg" alt="Will Jackways - Method, Mt. Olympus">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2015/05/Clubbies_Trip_14_0164.jpg" alt="Will Jackways - Method, Mt. Olympus"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -67,9 +67,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/new-zealand-snowboarder-2015/annabel_226/">
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2015/05/Annabel_226.jpg">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2015/05/Annabel_226.jpg" alt="Alek Oestreng - Backside Rodeo, Remarkables">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2015/05/Annabel_226.jpg" alt="Alek Oestreng - Backside Rodeo, Remarkables"></noscript>
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2015/05/Annabel_226.jpg">
+						<source srcset="<?php echo content_url(); ?>/uploads/2015/05/Annabel_226.jpg" alt="Alek Oestreng - Backside Rodeo, Remarkables">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2015/05/Annabel_226.jpg" alt="Alek Oestreng - Backside Rodeo, Remarkables"></noscript>
 					</picture>
 					</a>
 				</p>
@@ -80,9 +80,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/new-zealand-snowboarder-2015/clubbies_trip_14_0139/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2015/05/Clubbies_Trip_14_0139.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2015/05/Clubbies_Trip_14_0139.jpg" alt="Shin B temple basin">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2015/05/Clubbies_Trip_14_0139.jpg" alt="Shin B temple basin"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2015/05/Clubbies_Trip_14_0139.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2015/05/Clubbies_Trip_14_0139.jpg" alt="Shin B temple basin">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2015/05/Clubbies_Trip_14_0139.jpg" alt="Shin B temple basin"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -93,9 +93,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/fraser-ben/test_tour_0079/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2013/07/Test_Tour_0079.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2013/07/Test_Tour_0079.jpg" alt="ben comber snowboard">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2013/07/Test_Tour_0079.jpg" alt="ben comber snowboard"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2013/07/Test_Tour_0079.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2013/07/Test_Tour_0079.jpg" alt="ben comber snowboard">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2013/07/Test_Tour_0079.jpg" alt="ben comber snowboard"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -106,9 +106,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/fraser-ben/test_tour_0158/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2013/07/Test_Tour_0158.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2013/07/Test_Tour_0158.jpg" alt="fraser mcdougall ski">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2013/07/Test_Tour_0158.jpg" alt="fraser mcdougall ski"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2013/07/Test_Tour_0158.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2013/07/Test_Tour_0158.jpg" alt="fraser mcdougall ski">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2013/07/Test_Tour_0158.jpg" alt="fraser mcdougall ski"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -119,9 +119,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/ollie-hunt-cheesman/alex_and_ollie_0108/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2014/06/Alex_and_Ollie_0108.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2014/06/Alex_and_Ollie_0108.jpg" alt="new zealand powder turns">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2014/06/Alex_and_Ollie_0108.jpg" alt="new zealand powder turns"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2014/06/Alex_and_Ollie_0108.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2014/06/Alex_and_Ollie_0108.jpg" alt="new zealand powder turns">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2014/06/Alex_and_Ollie_0108.jpg" alt="new zealand powder turns"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -132,9 +132,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/pipes/pipes_0079/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2014/05/Pipes_0079.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2014/05/Pipes_0079.jpg" alt="snowboard streetish shot">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2014/05/Pipes_0079.jpg" alt="snowboard streetish shot"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2014/05/Pipes_0079.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2014/05/Pipes_0079.jpg" alt="snowboard streetish shot">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2014/05/Pipes_0079.jpg" alt="snowboard streetish shot"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -144,9 +144,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/dsc03580-large/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2014/12/DSC03580-large.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2014/12/DSC03580-large.jpg" alt="charlie lyons will jackways mountain outlook">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2014/12/DSC03580-large.jpg" alt="charlie lyons will jackways mountain outlook"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2014/12/DSC03580-large.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2014/12/DSC03580-large.jpg" alt="charlie lyons will jackways mountain outlook">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2014/12/DSC03580-large.jpg" alt="charlie lyons will jackways mountain outlook"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -156,11 +156,11 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/diaries_cardona_14_0231-large/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2014/12/Diaries_Cardona_14_0231-small.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2014/12/Diaries_Cardona_14_0231-large.jpg" alt="Nick Hyne - Frontside 360, Cardrona Front Country"  media="(min-width: 64em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2014/12/Diaries_Cardona_14_0231-medium.jpg" alt="Nick Hyne - Frontside 360, Cardrona Front Country"  media="(min-width: 40em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2014/12/Diaries_Cardona_14_0231-small.jpg" alt="Nick Hyne - Frontside 360, Cardrona Front Country">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2014/12/Diaries_Cardona_14_0231-small.jpg" alt="Nick Hyne - Frontside 360, Cardrona Front Country"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2014/12/Diaries_Cardona_14_0231-small.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2014/12/Diaries_Cardona_14_0231-large.jpg" alt="Nick Hyne - Frontside 360, Cardrona Front Country"  media="(min-width: 64em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2014/12/Diaries_Cardona_14_0231-medium.jpg" alt="Nick Hyne - Frontside 360, Cardrona Front Country"  media="(min-width: 40em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2014/12/Diaries_Cardona_14_0231-small.jpg" alt="Nick Hyne - Frontside 360, Cardrona Front Country">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2014/12/Diaries_Cardona_14_0231-small.jpg" alt="Nick Hyne - Frontside 360, Cardrona Front Country"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -170,11 +170,11 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/taos-large/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2015/08/Taos-small.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2015/08/Taos-large.jpg" alt="Taos Airtstream"  media="(min-width: 64em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2015/08/Taos-medium.jpg" alt="Taos Airtstream"  media="(min-width: 40em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2015/08/Taos-small.jpg" alt="Taos Airtstream">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2015/08/Taos-small.jpg" alt="Taos Airtstream"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2015/08/Taos-small.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Taos-large.jpg" alt="Taos Airtstream"  media="(min-width: 64em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Taos-medium.jpg" alt="Taos Airtstream"  media="(min-width: 40em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Taos-small.jpg" alt="Taos Airtstream">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2015/08/Taos-small.jpg" alt="Taos Airtstream"></noscript>
 						</picture>
 					</a>
 				</p>

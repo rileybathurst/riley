@@ -10,9 +10,9 @@ if (have_posts()) {
 
 			<div class="small-12 medium-6 cell">
 				<p>
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2014/11/tote-2.jpg">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2014/11/tote-2.jpg" alt="rolleston square event invite">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2014/11/tote-2.jpg" alt="rolleston square event invite"></noscript>
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2014/11/tote-2.jpg">
+						<source srcset="<?php echo content_url(); ?>/uploads/2014/11/tote-2.jpg" alt="rolleston square event invite">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2014/11/tote-2.jpg" alt="rolleston square event invite"></noscript>
 					</picture>
 				</p>
 			</div>

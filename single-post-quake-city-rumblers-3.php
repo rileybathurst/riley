@@ -16,11 +16,11 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/qcrxtankmoto_0080-large/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2014/12/QCRxTankMoto_0080-large.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2014/12/QCRxTankMoto_0080-large.jpg" alt="qcr quake city rumblers mopeds" media="(min-width: 64em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2014/12/QCRxTankMoto_0080-medium.jpg" alt="qcr quake city rumblers mopeds" media="(min-width: 40em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2014/12/QCRxTankMoto_0080-small.jpg" alt="qcr quake city rumblers mopeds">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2014/12/QCRxTankMoto_0080-large.jpg" alt="qcr quake city rumblers mopeds"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2014/12/QCRxTankMoto_0080-large.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2014/12/QCRxTankMoto_0080-large.jpg" alt="qcr quake city rumblers mopeds" media="(min-width: 64em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2014/12/QCRxTankMoto_0080-medium.jpg" alt="qcr quake city rumblers mopeds" media="(min-width: 40em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2014/12/QCRxTankMoto_0080-small.jpg" alt="qcr quake city rumblers mopeds">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2014/12/QCRxTankMoto_0080-large.jpg" alt="qcr quake city rumblers mopeds"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -29,9 +29,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/dirt-masters-2015/qcr_dirt_day_0069/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2015/09/QCR_Dirt_Day_0069.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2015/09/QCR_Dirt_Day_0069.jpg" alt="qcr mopeds at dirt day">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2015/09/QCR_Dirt_Day_0069.jpg" alt="qcr mopeds at dirt day"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2015/09/QCR_Dirt_Day_0069.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2015/09/QCR_Dirt_Day_0069.jpg" alt="qcr mopeds at dirt day">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2015/09/QCR_Dirt_Day_0069.jpg" alt="qcr mopeds at dirt day"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -40,9 +40,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/earnest-workshop-wednesdays/qcr_pigeon_bay-182/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2015/05/QCR_Pigeon_Bay-182.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2015/05/QCR_Pigeon_Bay-182.jpg" alt="quake city rumblers moped burn out">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2015/05/QCR_Pigeon_Bay-182.jpg" alt="quake city rumblers moped burn out"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2015/05/QCR_Pigeon_Bay-182.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2015/05/QCR_Pigeon_Bay-182.jpg" alt="quake city rumblers moped burn out">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2015/05/QCR_Pigeon_Bay-182.jpg" alt="quake city rumblers moped burn out"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -51,9 +51,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/run-photos/run_to_the_guns_0446-700/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2013/04/Run_to_the_Guns_0446-700.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2013/04/Run_to_the_Guns_0446-700.jpg" alt="quake city rumblers photo">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2013/04/Run_to_the_Guns_0446-700.jpg" alt="quake city rumblers photo"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2013/04/Run_to_the_Guns_0446-700.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2013/04/Run_to_the_Guns_0446-700.jpg" alt="quake city rumblers photo">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2013/04/Run_to_the_Guns_0446-700.jpg" alt="quake city rumblers photo"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -70,9 +70,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/dirt-day/dirtday2-blog/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2015/06/DirtDay2-blog.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2015/06/DirtDay2-blog.jpg" alt="moped gang poster">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2015/06/DirtDay2-blog.jpg" alt="moped gang poster"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2015/06/DirtDay2-blog.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2015/06/DirtDay2-blog.jpg" alt="moped gang poster">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2015/06/DirtDay2-blog.jpg" alt="moped gang poster"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -81,9 +81,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/run-to-the-guns-2/run-to-the-guns-700-2/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2013/04/run-to-the-guns-7001.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2013/04/run-to-the-guns-7001.jpg" alt="qcr quake city rumblers mopeds poster">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2013/04/run-to-the-guns-7001.jpg" alt="qcr quake city rumblers mopeds poster"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2013/04/run-to-the-guns-7001.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2013/04/run-to-the-guns-7001.jpg" alt="qcr quake city rumblers mopeds poster">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2013/04/run-to-the-guns-7001.jpg" alt="qcr quake city rumblers mopeds poster"></noscript>
 						</picture>
 					</a>
 				</p>

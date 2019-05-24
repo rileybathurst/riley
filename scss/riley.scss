@@ -136,7 +136,10 @@ p {
 
 blockquote {
 	margin: 0;
-	color: $dark-gray;
+	color: $black;
+	font-size: 2em;
+	font-weight: bold;
+	border-left: none;
 }
 
 blockquote:before {
@@ -154,7 +157,8 @@ blockquote p {
 
 cite {
 	color: $dark-gray;
-	margin-left: $global-margin*0.5; // why so small?
+	margin-left: $global-margin;
+	margin-bottom: $global-margin*1.5;
 }
 
 .spine {
@@ -1080,7 +1084,7 @@ css slidesshow in Rileys google drive can do all the math
 .gallery-caption {
 	display: block;
 	text-align: left;
-	padding: 0 10px 0 0;
+	padding: 0 $global-padding 0 0;
 	margin-bottom: 0;
 }
 

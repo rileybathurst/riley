@@ -10,10 +10,10 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/st-james-walkway/st_james_gopro_005-edit/">
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2013/02/St_James_GoPro_005-edit2.jpg">
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2013/02/St_James_GoPro_005-edit2.jpg">
 
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2013/02/St_James_GoPro_005-edit2.jpg" alt="mountain bike photography">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2013/02/St_James_GoPro_005-edit2.jpg" alt="mountain bike photography"></noscript>
+						<source srcset="<?php echo content_url(); ?>/uploads/2013/02/St_James_GoPro_005-edit2.jpg" alt="mountain bike photography">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2013/02/St_James_GoPro_005-edit2.jpg" alt="mountain bike photography"></noscript>
 					</picture>
 					</a>
 				</p>
@@ -24,9 +24,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/deflux-build/deflux_build_043-2/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2013/02/Deflux_Build_0431.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2013/02/Deflux_Build_0431.jpg" alt="Simon Courtney - Deflux Build">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2013/02/Deflux_Build_0431.jpg" alt="Simon Courtney - Deflux Build"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2013/02/Deflux_Build_0431.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2013/02/Deflux_Build_0431.jpg" alt="Simon Courtney - Deflux Build">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2013/02/Deflux_Build_0431.jpg" alt="Simon Courtney - Deflux Build"></noscript>
 						</picture>
 					</a>
 				</p>

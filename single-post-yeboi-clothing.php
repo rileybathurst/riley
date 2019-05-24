@@ -16,9 +16,9 @@ if (have_posts()) {
 		<div class="grid-x grid-padding-x">
 			<div class="small-12 medium-3 cell">
 				<p>
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/site-landing-700.jpg">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/site-landing-700.jpg" alt="yeboi designs coming soon">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/site-landing-700.jpg" alt="yeboi designs coming soon"></noscript>
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/site-landing-700.jpg">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/site-landing-700.jpg" alt="yeboi designs coming soon">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/site-landing-700.jpg" alt="yeboi designs coming soon"></noscript>
 					</picture>
 				</p>
 				<h4>Coming Soon</h4>
@@ -26,9 +26,9 @@ if (have_posts()) {
 
 			<div class="small-12 medium-6 cell">
 				<p>
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/colours-700.jpg">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/colours-700.jpg" alt="more colors of yeboi">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/colours-700.jpg" alt="more colors of yeboi"></noscript>
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/colours-700.jpg">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/colours-700.jpg" alt="more colors of yeboi">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/colours-700.jpg" alt="more colors of yeboi"></noscript>
 					</picture>
 				</p>
 				<h4>More Colors</h4>
@@ -36,9 +36,9 @@ if (have_posts()) {
 
 			<div class="small-12 medium-3 cell">
 				<p>
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/yeboi-99-sale-7002.jpg">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/yeboi-99-sale-7002.jpg" alt="yeboi sale designs">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/yeboi-99-sale-7002.jpg" alt="yeboi sale designs"></noscript>
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/yeboi-99-sale-7002.jpg">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/yeboi-99-sale-7002.jpg" alt="yeboi sale designs">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/yeboi-99-sale-7002.jpg" alt="yeboi sale designs"></noscript>
 					</picture>
 				</p>
 				<h4>Sale</h4>
@@ -48,9 +48,9 @@ if (have_posts()) {
 		<div class="grid-x grid-padding-x">
 			<div class="small-12 medium-4 cell">
 				<p>
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/more-text.jpg">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/more-text.jpg" alt="yeboi button ups">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/more-text.jpg" alt="yeboi button ups"></noscript>
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/more-text.jpg">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/more-text.jpg" alt="yeboi button ups">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/more-text.jpg" alt="yeboi button ups"></noscript>
 					</picture>
 				</p>
 				<h4>Button Ups</h4>
@@ -58,9 +58,9 @@ if (have_posts()) {
 
 			<div class="small-12 medium-4 cell">
 				<p>
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/Yeboi_Season2_327-700.jpg">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Yeboi_Season2_327-700.jpg" alt="yeboi close ups">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/Yeboi_Season2_327-700.jpg" alt="yeboi close ups"></noscript>
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Yeboi_Season2_327-700.jpg">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Yeboi_Season2_327-700.jpg" alt="yeboi close ups">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Yeboi_Season2_327-700.jpg" alt="yeboi close ups"></noscript>
 					</picture>
 				</p>
 				<h4>Close Ups</h4>
@@ -68,9 +68,9 @@ if (have_posts()) {
 
 			<div class="small-12 medium-4 cell">
 				<p>
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/Yeboi_Season2_378-700.jpg">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Yeboi_Season2_378-700.jpg" alt="yeboi color blocking">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/Yeboi_Season2_378-700.jpg" alt="yeboi color blocking"></noscript>
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Yeboi_Season2_378-700.jpg">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Yeboi_Season2_378-700.jpg" alt="yeboi color blocking">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Yeboi_Season2_378-700.jpg" alt="yeboi color blocking"></noscript>
 					</picture>
 				</p>
 				<h4>Color Blocking</h4>

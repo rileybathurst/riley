@@ -10,10 +10,10 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/josh-o-half-cab-diptych-medium/">
-					<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2014/03/Josh-O-half-cab-diptych-small.jpg">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2014/03/Josh-O-half-cab-diptych-medium.jpg" alt="josh oconell double wakeboard image" media="(min-width: 40em)">
-						<source srcset="http://rileybathurst.com/wp-content/uploads/2014/03/Josh-O-half-cab-diptych-small.jpg" alt="josh oconell double wakeboard image">
-						<noscript><img src="http://rileybathurst.com/wp-content/uploads/2014/03/Josh-O-half-cab-diptych-small.jpg" alt="josh oconell double wakeboard image"></noscript>
+					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2014/03/Josh-O-half-cab-diptych-small.jpg">
+						<source srcset="<?php echo content_url(); ?>/uploads/2014/03/Josh-O-half-cab-diptych-medium.jpg" alt="josh oconell double wakeboard image" media="(min-width: 40em)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2014/03/Josh-O-half-cab-diptych-small.jpg" alt="josh oconell double wakeboard image">
+						<noscript><img src="<?php echo content_url(); ?>/uploads/2014/03/Josh-O-half-cab-diptych-small.jpg" alt="josh oconell double wakeboard image"></noscript>
 					</picture>
 					</a>
 				</p>
@@ -24,11 +24,11 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/andrew-pastura-first-roll/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2018/05/Andrew-Pastura-First-Roll-small.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Andrew-Pastura-First-Roll-large.jpg" alt="wakeskater in tahoe" media="(min-width: 64em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Andrew-Pastura-First-Roll-medium.jpg" alt="wakeskater in tahoe" media="(min-width: 40em)">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2018/05/Andrew-Pastura-First-Roll-small.jpg" alt="wakeskater in tahoe">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2018/05/Andrew-Pastura-First-Roll-small.jpg" alt="wakeskater in tahoe"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Andrew-Pastura-First-Roll-small.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Andrew-Pastura-First-Roll-large.jpg" alt="wakeskater in tahoe" media="(min-width: 64em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Andrew-Pastura-First-Roll-medium.jpg" alt="wakeskater in tahoe" media="(min-width: 40em)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Andrew-Pastura-First-Roll-small.jpg" alt="wakeskater in tahoe">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Andrew-Pastura-First-Roll-small.jpg" alt="wakeskater in tahoe"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -38,9 +38,9 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/brad-smeele-nollie/brad-ski-jump-nollie1/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2013/02/Brad-Ski-Jump-Nollie1-1.jpg">
-							<source srcset="http://rileybathurst.com/wp-content/uploads/2013/02/Brad-Ski-Jump-Nollie1-1.jpg" alt="brad smeele ski jump wakeboard nolie">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2013/02/Brad-Ski-Jump-Nollie1-1.jpg" alt="brad smeele ski jump wakeboard nolie"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2013/02/Brad-Ski-Jump-Nollie1-1.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2013/02/Brad-Ski-Jump-Nollie1-1.jpg" alt="brad smeele ski jump wakeboard nolie">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2013/02/Brad-Ski-Jump-Nollie1-1.jpg" alt="brad smeele ski jump wakeboard nolie"></noscript>
 						</picture>
 					</a>
 				</p>
@@ -51,8 +51,8 @@ if (have_posts()) {
 			<div class="small-12 medium-6 cell">
 				<p>
 					<a href="http://rileybathurst.com/brad-smeele-nollie/brad-ski-jump-nollie1/">
-						<picture class="lozad-picture" data-iesrc="http://rileybathurst.com/wp-content/uploads/2013/02/Brad-Ski-Jump-Nollie1-1.jpg">
-							<noscript><img src="http://rileybathurst.com/wp-content/uploads/2013/02/Brad-Ski-Jump-Nollie1-1.jpg" alt="Brad smeele wakeboard nollie"></noscript>
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2013/02/Brad-Ski-Jump-Nollie1-1.jpg">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2013/02/Brad-Ski-Jump-Nollie1-1.jpg" alt="Brad smeele wakeboard nollie"></noscript>
 						</picture>
 					</a>
 				</p>
