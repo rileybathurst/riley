@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="background-dirty">
-	<div class="site-main" role="main">
+	<main class="site-main" role="main">
 		<?php if (have_posts()) :
 
 			while (have_posts()) : the_post(); ?>
@@ -52,7 +52,7 @@
 
 			<?php endwhile; ?>
 
-	</div>
+	</main>
 </div>
 
 	  <?php  if ( $wp_query->max_num_pages > 1 ) :

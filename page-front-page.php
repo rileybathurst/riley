@@ -79,10 +79,6 @@ Template Name: Front Page
 						}
 					</script>
 
-					<div class="article-category">
-						<h3 class="subheading"><?php the_category(); ?></h3>
-					</div>
-
 					<div class="article-content">
 						<?php the_content(); ?>
 

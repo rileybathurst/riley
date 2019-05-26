@@ -682,7 +682,8 @@ $global-grid-gap: 1em;
 	}
 }
 
-.single .article-header {
+.single .article-header,
+.page .article-header {
 	grid-row: 1; // re-organize with the featured image in the header
 }
 

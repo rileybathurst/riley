@@ -19,8 +19,13 @@ elseif ( is_attachment()) { ?>
 	</figure>
 <?php } // end of attachment
 
+// this needs to automate
 elseif ( is_single('Priest')) {
 	get_template_part( 'template-parts/header/priest-image' );
+}
+
+elseif ( is_single('Authentic Alignment Wellness')) {
+	get_template_part( 'template-parts/header/aaw-image' );
 }
 
 elseif ( is_single()) {

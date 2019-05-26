@@ -692,7 +692,8 @@ img, video, figure {
 	z-index: 14;
 }
 
-.custom-header-media img {
+.custom-header-media img,
+.custom-header-media picture {
 	width: 100%;
 }
 
