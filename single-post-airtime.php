@@ -18,29 +18,9 @@ if (have_posts()) {
 
 			<div class="small-12 medium-6 cell">
 				<article class="responsive-embed widescreen frame">
-					<p>
-						<iframe data-src="https://player.vimeo.com/video/33518191" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="lozad" data-index="1"></iframe>
-					</p>
+					<iframe src="https://player.vimeo.com/video/45354116" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>
 				</article>
-				<h4>Brad Smeele at Lake Matahina</h4>
-			</div>
-
-			<div class="small-12 medium-6 cell">
-			   <article class="responsive-embed widescreen frame">
-					<p>
-						<iframe data-src="https://player.vimeo.com/video/40065638?color=ffffff&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="lozad" data-index="1"></iframe>
-					</p>
-				</article>
-				<h4>Motocross Nationals</h4>
-			</div>
-
-			<div class="small-12 medium-6 cell">
-				<article class="responsive-embed widescreen frame">
-					<p>
-						<iframe data-src="https://player.vimeo.com/video/33517882?color=ffffff&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="lozad" data-index="1"></iframe>
-					</p>
-				</article>
-				<h4>Big Boys Toys</h4>
+				<h4>Opening Day at Mt. Olympus</h4>
 			</div>
 		</div>
 
@@ -48,33 +28,33 @@ if (have_posts()) {
 			<div class="cell">
 				<h3 class="box-title">Full list of shows</h3>
 				<ul>
-					<li><a href="https://vimeo.com/97991353" target="_blank"><strong>Washington Park Skate Session</strong></a><br>
+					<li><strong>Washington Park Skate Session</strong><br>
 						Airtime Season 3 - Episode 19</li>
 
-					<li><a href="https://vimeo.com/97390500" target="_blank"><strong>Queenstown Skate Session</strong></a><br />
+					<li><strong>Queenstown Skate Session</strong><br />
 						Airtime Season 3 - Episode 18</li>
 
-					<li><a href="https://vimeo.com/66195553" target="_blank"><strong>NZ Wakeboard Nationals 2013</strong></a><br />
+					<li><strong>NZ Wakeboard Nationals 2013</strong><br />
 						Airtime Season 2 - Episode 18</li>
 
-					<li><a href="https://vimeo.com/41168578" target="_blank"><strong>Lyttelton Downhill Biking</strong></a><br />
+					<li><strong>Lyttelton Downhill Biking</strong><br />
 						Airtime Episode 18</li>
 
-					<li><a href="https://vimeo.com/40065638" target="_blank"><strong>Round 1 Motocross Nationals</strong></a><br />
+					<li><strong>Round 1 Motocross Nationals</strong><br />
 						Airtime Episode 13</li>
 
-					<li><a href="https://vimeo.com/33518191" target="_blank"><strong>Lake Matahina with Pro wakeboarder Brad Smeele</strong></a><br />
+					<li><strong>Lake Matahina with Pro wakeboarder Brad Smeele</strong><br />
 						Airtime Episode 10</li>
 
-					<li><a href="https://vimeo.com/33517882" target="_blank"><strong>Big Boys Toys</strong></a><br />
+					<li><strong>Big Boys Toys</strong><br />
 						Airtime Ep 7</li>
 
-					<li><a href="https://vimeo.com/33517547" target="_blank"><strong>Private Wakeboard Park</strong></a><br />
+					<li><strong>Private Wakeboard Park</strong><br />
 						Airtime Ep 4</li>
 
-					<li>Tom Dillon</li>
+					<li><strong>Tom Dillon</strong></li>
 
-					<li>Backflips team</li>
+					<li><strong>Backflips team</strong></li>
 
 					<li><a href="https://vimeo.com/44096905" target="_blank"><strong>Mission to Mt. Hutt with Ben Comber</strong></a><br />
 						The Snow Show Ep 2 </li>
