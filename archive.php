@@ -23,29 +23,8 @@
 	</div>
 </div>
 
-	  <?php  if ( $wp_query->max_num_pages > 1 ) :
-
+	<?php  if ( $wp_query->max_num_pages > 1 ) {
 		the_posts_pagination();
-
-			endif; // end max page numbers
-				else : ?> <!-- if dont have posts -->
-					<article <?php post_class(); ?>> <!-- this doesnt work as post class closes out -->
-
-							<div class="article-header">
-								<h2 class="page-title">404</h2>
-							</div>
-
-							<div class="article-content">
-								<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
-								<?php get_search_form(); ?>
-							</div>
-
-					</article>
-
-				<!-- this is fine is closed off if dfoes or doesnt have posts -->
-				</div>
-			</div>
-
-		<?php endif;
+	};
 
 get_footer(); ?>
