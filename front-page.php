@@ -8,44 +8,36 @@ Template Name: Front Page
 
 <div class="background-primary">
 	<div class="front-page-titles">
-		<div class="fp-box a"></div>
-		<div class="fp-box b"></div>
-		<div class="fp-box c"></div>
-		<div class="fp-box clicks-a">C</div>
-		<div class="fp-box clicks-b">L</div>
-		<div class="fp-box clicks-c">I</div>
-		<div class="fp-box clicks-d">C</div>
-		<div class="fp-box clicks-e">K</div>
-		<div class="fp-box clicks-f">S</div>
-		<div class="fp-box d"></div>
-		<div class="fp-box e"></div>
-		<div class="fp-box f"></div>
+		<div class="fp-box ccc-west"></div>
 
-		<div class="fp-box g"></div>
-		<div class="fp-box h"></div>
-		<div class="fp-box i"></div>
-		<div class="fp-box code-a">C</div>
-		<div class="fp-box code-b">O</div>
-		<div class="fp-box code-c">D</div>
-		<div class="fp-box code-d">E</div>
-		<div class="fp-box code-e">&nbsp;</div>
-		<div class="fp-box code-f glitch" data-text="&amp;">&amp;</div>
-		<div class="fp-box j"></div>
-		<div class="fp-box k"></div>
-		<div class="fp-box l"></div>
+		<div class="clicks">
+			<div class="fp-box clicks-a">C</div>
+			<div class="fp-box clicks-b">L</div>
+			<div class="fp-box clicks-c">I</div>
+			<div class="fp-box clicks-d">C</div>
+			<div class="fp-box clicks-e">K</div>
+			<div class="fp-box clicks-f">S</div>
+		</div>
 
-		<div class="fp-box m"></div>
-		<div class="fp-box n"></div>
-		<div class="fp-box o"></div>
-		<div class="fp-box camera-a">C</div>
-		<div class="fp-box camera-b">A</div>
-		<div class="fp-box camera-c">M</div>
-		<div class="fp-box camera-d">E</div>
-		<div class="fp-box camera-e">R</div>
-		<div class="fp-box camera-f">A</div>
-		<div class="fp-box p"></div>
-		<div class="fp-box q"></div>
-		<div class="fp-box r"></div>
+		<div class="code">
+			<div class="fp-box code-a">C</div>
+			<div class="fp-box code-b">O</div>
+			<div class="fp-box code-c">D</div>
+			<div class="fp-box code-d">E</div>
+			<div class="fp-box code-e">&nbsp;</div>
+			<div class="fp-box code-f" data-text="&amp;">&amp;</div>
+		</div>
+
+		<div class="camera">
+			<div class="fp-box camera-a">C</div>
+			<div class="fp-box camera-b">A</div>
+			<div class="fp-box camera-c">M</div>
+			<div class="fp-box camera-d">E</div>
+			<div class="fp-box camera-e">R</div>
+			<div class="fp-box camera-f">A</div>
+		</div>
+
+		<div class="fp-box ccc-east"></div>
 	</div>
 </div>
 

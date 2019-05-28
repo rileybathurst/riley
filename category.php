@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="background-dirty">
-	<div class="site-main" role="main"> <!-- can I loose this -->
+	<div class="site-main" role="main">
 		<div class="category-header">
 			<div class="spine-border"></div>
 			<div class="cat-head">
@@ -42,16 +42,25 @@
 			} // end max page numbers
 
 		} else { ?> <!-- if dont have posts -->
-			<div <?php post_class(); ?>> <!-- this doesnt work as post class closes out -->
-				<div class="article-header">
-					<h2 class="page-title">404</h2>
+			<div class="cat-404"> <!-- this doesnt work as post class closes out -->
+
+					<div class="background-dirty">
+						<div class="site-main">
+							<article>
+								<div class="spine-border"></div>
+								<div class="article-header">
+									<h2 class="page-title">404</h2>
+								</div>
+
+								<div class="article-content">
+									<p>Oh no we don&#39;t have any posts for you. Perhaps searching can help.</p>
+									<?php get_search_form(); ?>
+								</div>
+							</article>
+						</div>
+					</div>
 				</div>
 
-				<div class="article-content">
-					<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
-					<?php get_search_form(); ?>
-				</div>
-			</div>
 		<?php }
 
 get_footer(); ?>

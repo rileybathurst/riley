@@ -217,15 +217,12 @@ $global-grid-gap: 1em;
 
 .front-page-titles {
 	width: 100%;
-	max-width: 72rem;
+	max-width: 77rem;
 	margin: 0 auto;
 	display: grid;
 	grid-gap: 2px;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* hack 12 columns this could be done a lot cleaner with repeating columns*/
-
-	@include breakpoint (medium) {
-		grid-gap: $global-grid-gap;
-	}
+	grid-template-columns: 2em 1fr 1fr 1fr 2em;
+	grid-gap: $global-grid-gap;
 }
 
 /*--------------------------------------------------------------
@@ -683,7 +680,8 @@ $global-grid-gap: 1em;
 }
 
 .single .article-header,
-.page .article-header {
+.page .article-header,
+.cat-404 .article-header {
 	grid-row: 1; // re-organize with the featured image in the header
 }
 
