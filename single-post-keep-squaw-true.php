@@ -39,28 +39,30 @@ if (have_posts()) {
 			<h3 class="subtitle">Photography</h3>
 
 			<div class="continental">
-				<p>Keep Squaw True</p>
+				<p>I worked with Keep Squaw True to shoot many of the purple products they have on <a href="https://sierra-watch.myshopify.com/collections/all" target="_blank">their store</a>.</p>
 			</div>
 
-			<div class="continental west-medium mw-18em">
-					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-small.jpg">
-						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-large.jpg" alt="keep squaw true clothing shoot" media="(min-width: 64em)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-medium.jpg" alt="keep squaw true clothing shoot" media="(min-width: 40em)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-small.jpg" alt="keep squaw true clothing shoot">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-small.jpg" alt="keep squaw true clothing shoot"></noscript>
-					</picture>
-			</div>
+			<figure class="continental west-medium mw-18em">
+				<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-small.jpg">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-large.jpg" alt="keep squaw true clothing shoot" media="(min-width: 64em)">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-medium.jpg" alt="keep squaw true clothing shoot" media="(min-width: 40em)">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-small.jpg" alt="keep squaw true clothing shoot">
+					<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-small.jpg" alt="keep squaw true clothing shoot"></noscript>
+				</picture>
+				<figcaption>Tram Face T</figcaption>
+			</figure>
 
 			<div class="east-medium"></div> <!-- white space -->
 
-			<div class="continental east-medium mw-18em">
+			<figure class="continental east-medium mw-18em">
 				<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-small.jpg">
 					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-1.jpg" alt="keep squaw true clothing shoot" media="(min-width: 64em)">
 					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-medium.jpg" alt="keep squaw true clothing shoot" media="(min-width: 40em)">
 					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-small.jpg" alt="keep squaw true clothing shoot">
 					<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-small.jpg" alt="keep squaw true clothing shoot"></noscript>
 				</picture>
-			</div>
+				<figcaption>Keep Squaw True T Shirt</figcaption>
+			</figure>
 
 		</div>
 	</div> <!-- .article-content-specific -->
