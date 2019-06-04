@@ -212,11 +212,11 @@ cite {
 }
 
 /*--------------------------------------------------------------
-6.0 Forms
---------------------------------------------------------------*/
+6.0 Forms - this is for foundation not material? removing everything to see what breaks first
+--------------------------------------------------------------
 
 .article-form label {
-	@include breakpoint (medium) { /* screen reader text */
+	@include breakpoint (medium) { /* screen reader text
 		clip: rect(1px, 1px, 1px, 1px);
 		height: 1px;
 		overflow: hidden;
@@ -231,6 +231,7 @@ cite {
 	padding: $global-padding;
 }
 
+/* removed with material
 [type='submit'] {
 	width: auto !important;
 }
@@ -262,6 +263,7 @@ cite {
 
 }
 
+/* removed with material
 .post-password-form [type='submit'] {
 	display: inline;
 }
@@ -288,7 +290,7 @@ cite {
 [type="submit"] {
 	background: $medium-gray;
 	border: .1em solid $medium-gray;
-	margin-left: -.25em; /* hack to sit the search beside the field */
+	margin-left: -.25em; /* hack to sit the search beside the field
 	padding: 1em;
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
@@ -305,11 +307,18 @@ cite {
 	color: $white;
 }
 
-.hollow:hover, [type='submit']:hover {
+.hollow:hover,  {
 	background: $primary-color !important;
 	border-color: $primary-color !important;
 	color: $primary-color !important;
 }
+
+/* removed with material
+[type='submit']:hover {
+	background: $primary-color !important;
+	border-color: $primary-color !important;
+	color: $primary-color !important;
+} */
 
 /*--------------------------------------------------------------
 7.0 Formatting
@@ -411,7 +420,7 @@ a:hover {
 	text-align: left !important;
 }
 
-.button, [type="submit"] {
+.button { // [type="submit"] removed for material
 	margin: 0; /* bring the element back inline */
 	background: none !important;
 	border-top: none !important;
@@ -426,7 +435,7 @@ a:hover {
 	}
 }
 
-.button:hover, [type="submit"]:hover {
+.button:hover { // [type="submit"] removed for material
 	background: $primary-color !important;
 	color: $white !important;
 }

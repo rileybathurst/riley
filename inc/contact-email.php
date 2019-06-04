@@ -12,7 +12,7 @@ function prefix_admin_contact() {
 	}
 
 	// When the captcha is checked make sure its not spam
-	$secretKey = "6LdTMzIUAAAAAJYJ6c9vvBLeqXewvS59quM-r6F2";
+	$secretKey = "6LdE9aYUAAAAAKQ36714olp0xEQ3QUZTOn52lIwY";
 	$ip = $_SERVER['REMOTE_ADDR'];
 
 	$response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);

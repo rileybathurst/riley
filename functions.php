@@ -48,7 +48,7 @@ require get_parent_theme_file_path( '/inc/custom-header.php' );
 /**
  * SVG icons functions and filters.
  */
-require get_parent_theme_file_path( '/inc/icon-functions.php' ); // these are moving to inline and should be removed
+require get_parent_theme_file_path( '/inc/icon-functions.php' ); // these are moving to inline and should be removed when ready
 require get_parent_theme_file_path( '/inc/contact-email.php' );
 require get_parent_theme_file_path( '/inc/backend-options.php' );
 require get_parent_theme_file_path( '/inc/breadcrumbs.php' );
