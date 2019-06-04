@@ -4,29 +4,12 @@ Template Name: Contact
 */
 ?>
 
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
-	<!-- recaptcha -->
-	<script src='https://www.google.com/recaptcha/api.js'></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12917302-1"></script>
@@ -106,7 +89,7 @@ Template Name: Contact
 
 								<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
 									<i class="material-icons mdc-text-field__icon">person</i>
-									<input class="mdc-text-field__input">
+									<input class="mdc-text-field__input" type="text" name="name" id="name" required>
 									<div class="mdc-notched-outline">
 										<div class="mdc-notched-outline__leading"></div>
 										<div class="mdc-notched-outline__notch">
@@ -120,7 +103,7 @@ Template Name: Contact
 
 								<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
 									<i class="material-icons mdc-text-field__icon">email</i>
-									<input class="mdc-text-field__input">
+									<input class="mdc-text-field__input" type="email" name="email" id="email" required>
 									<div class="mdc-notched-outline">
 										<div class="mdc-notched-outline__leading"></div>
 										<div class="mdc-notched-outline__notch">
@@ -133,7 +116,7 @@ Template Name: Contact
 								<br>
 
 								<div class="mdc-text-field mdc-text-field--textarea">
-									<textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
+									<textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40" placeholder="Enquiry" name="details" id="details"></textarea>
 									<div class="mdc-notched-outline">
 										<div class="mdc-notched-outline__leading"></div>
 										<div class="mdc-notched-outline__notch">
@@ -143,9 +126,7 @@ Template Name: Contact
 									</div>
 								</div>
 
-								<!-- recaptcha -->
-								<div class="g-recaptcha" data-sitekey="6LdE9aYUAAAAAEI0gH7nm-bZImKXUSnbzgHCchNU"></div>
-
+								<br>
 								<!-- send -->
 								<input type="submit" class="mdc-button mdc-button--raised">
 							</form>

@@ -1,29 +1,6 @@
 <?php // deals with contact form sent through form _POST
 function prefix_admin_contact() {
 
-	// Check if captcha has been checked
-	$captcha = $_POST['g-recaptcha-response'];
-
-	// If no captcha
-	if(!$captcha){
-		// Redirect
-		wp_redirect( home_url() . '/sorry' );
-		exit;
-	}
-
-	// When the captcha is checked make sure its not spam
-	$secretKey = "6LdE9aYUAAAAAKQ36714olp0xEQ3QUZTOn52lIwY";
-	$ip = $_SERVER['REMOTE_ADDR'];
-
-	$response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
-	$responseKeys = json_decode($response,true);
-	if(intval($responseKeys["success"]) !== 1) {
-
-		// Spam
-		wp_redirect( home_url() . '/sorry' );
-
-	} else {
-
 		//get form elements and email
 		$name = $_POST['name'];
 		$email = $_POST['email'];
@@ -107,8 +84,6 @@ function prefix_admin_contact() {
 		wp_mail($email, $subject, $message);
 
 		wp_redirect( home_url() . '/thanks' );
-
-	} // closes out sucessful captcha
 
 	exit();
 } // closes out the prefix_admin_contact
