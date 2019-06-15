@@ -40,27 +40,23 @@ function montogomery_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'montogomery_scripts' );
 
-/**
- * Implement the Custom Header feature.
- */
+// Bring in all the addiotnal files
 require get_parent_theme_file_path( '/inc/custom-header.php' );
-
-/**
- * SVG icons functions and filters.
- */
 require get_parent_theme_file_path( '/inc/icon-functions.php' ); // these are moving to inline and should be removed when ready
 require get_parent_theme_file_path( '/inc/contact-email.php' );
+// require get_parent_theme_file_path( '/inc/captcha-email.php' ); // working file to deal with captcha v3 can be removed once fixed
+require get_parent_theme_file_path( '/inc/form-email.php' ); // working file to deal with captcha v3 can be removed once fixed
 require get_parent_theme_file_path( '/inc/backend-options.php' );
 require get_parent_theme_file_path( '/inc/breadcrumbs.php' );
 
 
 // Change the email that root level mail is sent from
 add_filter( 'wp_mail_from', function( $email ) {
-	return 'riley@rileybathurst.com';
+	return 'riley@rileybathurst.com'; // these should be variables - site email
 });
 
 add_filter( 'wp_mail_from_name', function( $name ) {
-	return 'Riley Bathurst';
+	return 'Riley Bathurst'; // these should be variables - site name
 });
 
 /* Fire our meta box setup function on the post editor screen. */
@@ -90,6 +86,7 @@ function video_add_post_meta_boxes() {
   );
 }
 
+// take below here into sperate files
 /* Display the post meta box. */
 function featured_video_meta_box( $post ) { ?>
 
