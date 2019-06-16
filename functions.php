@@ -44,8 +44,9 @@ add_action( 'wp_enqueue_scripts', 'montogomery_scripts' );
 require get_parent_theme_file_path( '/inc/custom-header.php' );
 require get_parent_theme_file_path( '/inc/icon-functions.php' ); // these are moving to inline and should be removed when ready
 require get_parent_theme_file_path( '/inc/contact-email.php' );
-// require get_parent_theme_file_path( '/inc/captcha-email.php' ); // working file to deal with captcha v3 can be removed once fixed
-require get_parent_theme_file_path( '/inc/form-email.php' ); // working file to deal with captcha v3 can be removed once fixed
+require get_parent_theme_file_path( '/inc/captcha-email.php' ); // working file to deal with captcha v3 can be removed once fixed
+require get_parent_theme_file_path( '/inc/captcha-checkbox.php' ); // working file to deal with captcha v3 can be removed once fixed
+// require get_parent_theme_file_path( '/inc/form-email.php' ); // working file to deal with captcha v3 can be removed once fixed
 require get_parent_theme_file_path( '/inc/backend-options.php' );
 require get_parent_theme_file_path( '/inc/breadcrumbs.php' );
 
@@ -78,7 +79,7 @@ function video_add_post_meta_boxes() {
 
   add_meta_box(
 	'video-post',                     // Unique ID
-	esc_html__( 'Featuured Video', 'example' ),  // Title
+	esc_html__( 'Featured Video', 'example' ),  // Title
 	'featured_video_meta_box',        // Callback function
 	'post',                                 // Admin page (or post type)
 	'side',                                 // Context
