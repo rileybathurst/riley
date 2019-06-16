@@ -97,7 +97,7 @@ function prefix_admin_form() {
 			wp_mail($to, $subject, $message);
 			wp_mail($email, $subject, $message);
 
-			wp_redirect( home_url() . '/contact/thanks' );
+			wp_redirect( home_url() . '/contact/thanks/?n=' . $name );
 			exit();
 
 		} else {
