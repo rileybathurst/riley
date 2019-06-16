@@ -8,7 +8,7 @@ function prefix_admin_checkbox() {
 	// If no captcha
 	if(!$captcha){
 		// Redirect
-		wp_redirect( home_url() . '/sorry' );
+		wp_redirect( home_url() . '/contact/sorry' );
 		exit;
 	}
 
@@ -21,7 +21,7 @@ function prefix_admin_checkbox() {
 	if(intval($responseKeys["success"]) !== 1) {
 
 		// Spam
-		wp_redirect( home_url() . '/sorry' );
+		wp_redirect( home_url() . '/contact/sorry' );
 
 	} else {
 
@@ -107,7 +107,7 @@ function prefix_admin_checkbox() {
 		wp_mail($to, $subject, $message);
 		wp_mail($email, $subject, $message);
 
-		wp_redirect( home_url() . '/thanks' );
+		wp_redirect( home_url() . '/contact/thanks' );
 
 	} // closes out sucessful captcha
 
