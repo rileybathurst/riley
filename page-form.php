@@ -94,40 +94,52 @@ Template Name: Form
 								<input type="hidden" name="action" value="form">
 								<input type="hidden" name="data" value="formid"><!-- slightly different value to differentiate, not used -->
 
-						<h1 class="title">
-							reCAPTCHA v3 example
-						</h1>
+								<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
+									<i class="material-icons mdc-text-field__icon">person</i>
+									<input class="mdc-text-field__input" type="text" name="name" id="name" required>
+									<div class="mdc-notched-outline">
+										<div class="mdc-notched-outline__leading"></div>
+										<div class="mdc-notched-outline__notch">
+											<label class="mdc-floating-label">Name</label>
+										</div>
+										<div class="mdc-notched-outline__trailing"></div>
+									</div>
+								</div>
 
-						<div class="field">
-							<label class="label">Name</label>
-							<div class="control">
-								<input type="text" name="name" class="input" placeholder="Name" required>
-							</div>
-						</div>
+								<br>
 
-						<div class="field">
-							<label class="label">Email</label>
-							<div class="control">
-								<input type="email" name="email" class="input" placeholder="Email Address" required>
-							</div>
-						</div>
+								<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
+									<i class="material-icons mdc-text-field__icon">email</i>
+									<input class="mdc-text-field__input" type="email" name="email" id="email" required>
+									<div class="mdc-notched-outline">
+										<div class="mdc-notched-outline__leading"></div>
+										<div class="mdc-notched-outline__notch">
+											<label class="mdc-floating-label">email</label>
+										</div>
+										<div class="mdc-notched-outline__trailing"></div>
+									</div>
+								</div>
 
-						<div class="field">
-							<label class="label">Message</label>
-							<div class="control">
-								<textarea name="message" class="textarea" placeholder="Message" required></textarea>
-							</div>
-						</div>
+								<br>
 
-						<div class="field is-grouped">
-							<div class="control">
-								<button type="submit" class="button is-link">Send Message</button>
-							</div>
-						</div>
+								<div class="mdc-text-field mdc-text-field--textarea">
+									<textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40" placeholder="Enquiry" name="details" id="details"></textarea>
+									<div class="mdc-notched-outline">
+										<div class="mdc-notched-outline__leading"></div>
+										<div class="mdc-notched-outline__notch">
+											<label for="textarea" class="mdc-floating-label">Enquiry</label>
+										</div>
+										<div class="mdc-notched-outline__trailing"></div>
+									</div>
+								</div>
 
-						<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+								<br>
+								<!-- send -->
+								<input type="submit" class="mdc-button mdc-button--raised">
 
-					</form>
+								<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+
+							</form>
 						</div>
 					</article>
 

@@ -1,5 +1,6 @@
 <?php
 // https://www.codexworld.com/wordpress-how-to-display-breadcrumb-without-plugin/
+// adapted by Riley
 function get_breadcrumb() {
 	echo '<a href="'.home_url().'" rel="nofollow">Home</a>&emsp;&#187;&emsp;';
 	if (is_category()) {
@@ -14,5 +15,7 @@ function get_breadcrumb() {
 		echo '"<em>';
 		echo the_search_query();
 		echo '</em>"';
+	} elseif (is_404()) {
+		echo "missing?";
 	}
 }

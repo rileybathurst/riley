@@ -46,7 +46,6 @@ require get_parent_theme_file_path( '/inc/icon-functions.php' ); // these are mo
 require get_parent_theme_file_path( '/inc/contact-email.php' );
 require get_parent_theme_file_path( '/inc/captcha-email.php' ); // working file to deal with captcha v3 can be removed once fixed
 require get_parent_theme_file_path( '/inc/captcha-checkbox.php' ); // working file to deal with captcha v3 can be removed once fixed
-// require get_parent_theme_file_path( '/inc/form-email.php' ); // working file to deal with captcha v3 can be removed once fixed
 require get_parent_theme_file_path( '/inc/backend-options.php' );
 require get_parent_theme_file_path( '/inc/breadcrumbs.php' );
 

@@ -83,7 +83,7 @@ function prefix_admin_contact() {
 		wp_mail($to, $subject, $message);
 		wp_mail($email, $subject, $message);
 
-		wp_redirect( home_url() . '/thanks' );
+		wp_redirect( home_url() . '/contact/thanks' );
 
 	exit();
 } // closes out the prefix_admin_contact

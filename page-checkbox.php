@@ -3,7 +3,40 @@
 Template Name: Checkbox
 *
 * if a contact form fails the google v3 captcha they get a chance with the v2 checbox
+*
+* define variables from the url bar .php?x=
 */
+
+//
+$actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+/* this one doesnt even give a result on localhost
+$cs_check = strpos($actual_link, '?cs=');
+if ($cs_check === false) {
+	$cs = 'undefined';
+} else {
+	$cs = $_GET['cs'];
+} */
+
+$n_check = strpos($actual_link, '?n=');
+if ($n_check === false) {
+	$n = 'undefined';
+} else {
+	$n = $_GET['n'];
+}
+
+$e_check = strpos($actual_link, 'e=');
+if ($e_check === false) {
+	$e = 'undefined';
+} else {
+	$e = $_GET['e'];
+}
+
+$d_check = strpos($actual_link, 'd=');
+if ($n_check === false) {
+	$d = 'undefined';
+} else {
+	$d = $_GET['d'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -88,41 +121,57 @@ Template Name: Checkbox
 								<input type="hidden" name="action" value="checkbox">
 								<input type="hidden" name="data" value="checkboxid"><!-- slightly different value to differentiate, not used -->
 
-						<h1 class="title">
-							reCAPTCHA v3 example
-						</h1>
+								<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
+									<i class="material-icons mdc-text-field__icon">person</i>
+									<input class="mdc-text-field__input" type="text" name="name" id="name" value="<?php echo $n; ?>" required>
+									<div class="mdc-notched-outline">
+										<div class="mdc-notched-outline__leading"></div>
+										<div class="mdc-notched-outline__notch">
+											<label class="mdc-floating-label">Name</label>
+										</div>
+										<div class="mdc-notched-outline__trailing"></div>
+									</div>
+								</div>
 
-						<div class="field">
-							<label class="label">Name</label>
-							<div class="control">
-								<input type="text" name="name" class="input" placeholder="Name" required>
-							</div>
-						</div>
+								<br>
 
-						<div class="field">
-							<label class="label">Email</label>
-							<div class="control">
-								<input type="email" name="email" class="input" placeholder="Email Address" required>
-							</div>
-						</div>
+								<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
+									<i class="material-icons mdc-text-field__icon">email</i>
+									<input class="mdc-text-field__input" type="email" name="email" id="email" value="<?php echo $e; ?>" required>
+									<div class="mdc-notched-outline">
+										<div class="mdc-notched-outline__leading"></div>
+										<div class="mdc-notched-outline__notch">
+											<label class="mdc-floating-label">email</label>
+										</div>
+										<div class="mdc-notched-outline__trailing"></div>
+									</div>
+								</div>
 
-						<div class="field">
-							<label class="label">Message</label>
-							<div class="control">
-								<textarea name="message" class="textarea" placeholder="Message" required></textarea>
-							</div>
-						</div>
+								<br>
 
-						<div class="field is-grouped">
-							<div class="control">
-								<button type="submit" class="button is-link">Send Message</button>
-							</div>
-						</div>
+								<div class="mdc-text-field mdc-text-field--textarea">
+									<textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40" placeholder="Enquiry" name="details" id="details"><?php echo $d; ?></textarea>
+									<div class="mdc-notched-outline">
+										<div class="mdc-notched-outline__leading"></div>
+										<div class="mdc-notched-outline__notch">
+											<label for="textarea" class="mdc-floating-label">Enquiry</label>
+										</div>
+										<div class="mdc-notched-outline__trailing"></div>
+									</div>
+								</div>
 
-						<!-- recaptcha -->
-						<div class="g-recaptcha" data-sitekey="6LdTMzIUAAAAABLRKiSUN1kv_4DHx9E6V98M_S-2"></div>
+								<!-- recaptcha -->
+								<div class="g-recaptcha" data-sitekey="6LdTMzIUAAAAABLRKiSUN1kv_4DHx9E6V98M_S-2"></div>
 
-					</form>
+								<br>
+
+								<div class="field is-grouped">
+									<div class="control">
+										<button type="submit" class="button is-link">Send Message</button>
+									</div>
+								</div>
+
+							</form>
 						</div>
 					</article>
 
