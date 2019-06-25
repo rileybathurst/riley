@@ -29,8 +29,60 @@
 		</div>
 	</div>
 
-
 </footer>
+
+<script>
+	var numSteps = 20.0;
+
+	var spineElement;
+	var prevRatio = 0.0;
+	var mT = "ratioem";
+
+	// Set things up.
+
+	window.addEventListener("load", function(event) {
+		spineElement = document.querySelectorAll(".spine-border");
+
+		createObserver();
+	}, false);
+
+	function createObserver() {
+		var observer;
+
+		var options = {
+			root: null,
+			rootMargin: "0px",
+			threshold: buildThresholdList()
+		};
+
+		observer = new IntersectionObserver(handleIntersect, options);
+
+		spineElement.forEach(spineElements => {
+			observer.observe(spineElements);
+		});
+	}
+
+	function buildThresholdList() {
+		var thresholds = [];
+		var numSteps = 100;
+
+		for (var i=1.0; i<=numSteps; i++) {
+			var ratio = i/numSteps;
+			thresholds.push(ratio);
+		}
+
+		thresholds.push(0);
+		return thresholds;
+	}
+
+	function handleIntersect(entries, observer) {
+		entries.forEach(function(entry) {
+			entry.target.style.marginTop = mT.replace("ratio", (entry.intersectionRatio*5));
+			prevRatio = entry.intersectionRatio;
+		});
+	}
+
+</script>
 
 <script src="<?php echo get_template_directory_uri(); ?>/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/node_modules/what-input/dist/what-input.min.js"></script>

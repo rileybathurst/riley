@@ -30,4 +30,5 @@
 	<?php if ( ! is_single()) { ?>
 		<div class="article-explore"><a href="<?php the_permalink(); ?>" class="button">Explore <?php the_title(); ?></a></div>
 	<?php } ?>
+
 </article>
