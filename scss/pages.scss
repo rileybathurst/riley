@@ -1,0 +1,24 @@
+// Search
+
+.searchform [type="text"] { // .post-password-form [type="password"]
+	border: 0.1em solid $medium-gray;
+	border-right: none;
+	font-size: 2em;
+	font-weight: bold;
+	padding: $global-padding;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.searchform [type="submit"] {
+	background: none;
+	border: 0.1em solid $primary-color;
+	border-top: none;
+	border-left: none;
+	color: $primary-color;
+	font-size: 2em;
+	font-weight: bold;
+	padding: $global-padding;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
