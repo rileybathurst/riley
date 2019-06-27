@@ -3,8 +3,31 @@
 
 		<h3 class="base-explore">Exlpore More</h3>
 
-		<div class="post-navigation">
-			<?php the_post_navigation(); ?>
+		<div class="post-navigation img-100">
+			<?php
+
+				$next_post = get_adjacent_post( true,'',false );
+
+				if ($next_post !== "" ) {
+
+
+				if( isset($next_post->ID) ):
+					$next_id = $next_post->ID;
+				else:
+					$next_post = new WP_Query( 'posts_per_page=1&post_type=photo&order=ASC' );
+					$next_id = $next_post->post->ID;
+				endif;
+				?>
+				<a href="<?php echo get_permalink( $next_id ); ?>">
+					<?php echo get_the_post_thumbnail( $next_id, 'medium' ); ?>
+				</a>
+				<a href="<?php echo get_permalink( $next_id ); ?>">
+					<h4><?php echo get_the_title( $next_id ); ?></h4>
+				</a>
+				<?php } else {
+					the_post_navigation();
+				}
+			?>
 		</div>
 
 		<div class="article-comments">

@@ -141,7 +141,7 @@ if (have_posts()) {
 		<div class="specific-grid">
 			<h3 class="subtitle">Design</h3>
 			<section class="continental west-medium mw-18em">
-					<a href="http://rileybathurst.com/img_0126/">
+					<a href="http://rileybathurst.com/snowledge_sweepstakes_poster-1080x1485.jpg/">
 						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-360x495.jpg">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-1080x1485.webp" alt="snowledge sweepstakes poster design" media="(min-width: 960px)" type="image/webp">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-1080x1485.jpg" alt="snowledge sweepstakes poster design" media="(min-width: 960px)">
@@ -157,10 +157,11 @@ if (have_posts()) {
 						</picture>
 					</a>
 				<h4 class="caption">Sweepstakes Poster</h4>
+				<p>Working with Snowledge has been an oppourtunity to work on the design as well as the media for those late nights, down days and long summer months. I have worked on a couple of giveaway designs to be shown off across social media in a number of itterations, including this one sponsored by Revelstoke, 4Frnt and Trew.</p>
 			</section>
 
 			<section class="continental east-medium">
-					<a href="http://rileybathurst.com/img_0126/">
+					<a href="http://rileybathurst.com/snowledge_download_card_Mockup-1457x971.jpg/">
 						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-360x240.jpg">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-1457x971.webp" alt="snowledge download card front and back" media="(min-width: 1080px)" type="image/webp">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-1457x971.jpg" alt="snowledge download card front and back" media="(min-width: 1080px)">
@@ -178,7 +179,38 @@ if (have_posts()) {
 						</picture>
 					</a>
 				<h4 class="caption">Download Card</h4>
+				<p>Even app companies need physical presence so we have been working on pieces like these App Download cards, we have updated them a couple of times over the years including specific to mountains.</p>
 			</section>
+		</div>
+
+		<hr class="mega-hr">
+
+		<div class="specific-grid">
+			<h3 class="subtitle">Development</h3>
+			<section class="continental west-medium">
+					<a href="http://rileybathurst.com/snowledge_dev_screenshot-1080x607/">
+						<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-1080x607.jpg">
+							<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-1080x607.webp" alt="snowledge development screenshots" media="(min-width: 960px)" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-1080x607.jpg" alt="snowledge development screenshots" media="(min-width: 960px)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-960x540.webp" alt="snowledge development screenshots" media="(min-width: 720px)" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-960x540.jpg" alt="snowledge development screenshots" media="(min-width: 720px)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-720x405.webp" alt="snowledge development screenshots" media="(min-width: 640px)" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-720x405.jpg" alt="snowledge development screenshots" media="(min-width: 640px)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-640x360.webp" alt="snowledge development screenshots" media="(min-width: 360px)" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-640x360.jpg" alt="snowledge development screenshots" media="(min-width: 360px)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-360x202.webp" alt="snowledge development screenshots" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-360x202.jpg" alt="snowledge development screenshots">
+							<noscript><img src="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-360x202.jpg" alt="snowledge development screenshots"></noscript>
+						</picture>
+					</a>
+				<h4 class="caption">Dev Screenshot</h4>
+			</section>
+
+			<section class="continental east-medium gr-1-m">
+				<h3>Dev Screenshot</h3>
+				<p>While working with Snowledge I have been taking the oppourtunity to work on some web development with a start up app, working on the Resort Mountain Profiles, built on <a href="https://pugjs.org/api/getting-started.html">Pug</a> (jade), serverside rendered through sourcetree to bitbucket.</p>
+			</section>
+
 		</div>
 
 	</div> <!-- .article-content-specific -->
