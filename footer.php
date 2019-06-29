@@ -89,6 +89,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/node_modules/what-input/dist/what-input.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/node_modules/foundation-sites/dist/js/foundation.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/bundle.js"></script> <!-- webpack manually updated -->
 
 <?php wp_footer(); ?>
 
