@@ -17,12 +17,14 @@ if (have_posts()) {
 
 			<div class="continental west-medium gr-1-m mw-18em">
 				<picture class="lozad-picture base" data-iesrc="<?php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-360x736.png">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-1080x2210.png" alt="priest sheetmetal website on an iphone x" type="image/webp" media="(min-width: 960px)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-1080x2210.webp" alt="priest sheetmetal website on an iphone x" media="(min-width: 960px)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-960x1964.png" alt="priest sheetmetal website on an iphone x" media="(min-width: 720px)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-960x1964.webp" alt="priest sheetmetal website on an iphone x" type="image/webp" media="(min-width: 720px)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-720x1473.png" alt="priest sheetmetal website on an iphone x" media="(min-width: 640px)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-720x1473.webp" alt="priest sheetmetal website on an iphone x" type="image/webp" media="(min-width: 640px)">
+<!--
+					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-1080x2210.webp" alt="priest sheetmetal website on an iphone x" type="image/webp" media="(min-width: 960px)">
+					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-1080x2210.png" alt="priest sheetmetal website on an iphone x" media="(min-width: 960px)">
+					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-960x1964.png" alt="priest sheetmetal website on an iphone x" media="(min-width: 720px)">
+					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-960x1964.webp" alt="priest sheetmetal website on an iphone x" type="image/webp" media="(min-width: 720px)">
+					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-720x1473.png" alt="priest sheetmetal website on an iphone x" media="(min-width: 640px)">
+					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-720x1473.webp" alt="priest sheetmetal website on an iphone x" type="image/webp" media="(min-width: 640px)">
+-->
 					<source srcset="<?php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-640x1309.png" alt="priest sheetmetal website on an iphone x" media="(min-width: 360px)">
 					<source srcset="<?php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-640x1309.webp" alt="priest sheetmetal website on an iphone x" type="image/webp" media="(min-width: 360px)">
 					<source srcset="<?php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-360x736.png" alt="priest sheetmetal website on an iphone x" media="(max-width: 360px)">
