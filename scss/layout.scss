@@ -769,7 +769,17 @@ $global-grid-gap: 1em;
 	}
 }
 
-.footer_menu,
+.footer_menu {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: $global-grid-gap;
+	padding-top: $global-padding;
+
+	@include breakpoint (medium) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
 .footer_info {
 	display: grid;
 	grid-template-columns: 1fr;
