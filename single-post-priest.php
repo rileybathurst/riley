@@ -13,6 +13,19 @@ if (have_posts()) {
 
 			<div class="continental east-medium">
 				<p>I have been working with Priest to develop the website for the past few years, slowly up the site and continuing to do so.</p>
+
+				<p>Written in PHP with a wordpress CMS and a foundation framework allowing for a responive design adapting from phones to desktop screens.</p>
+				<pre><code class="language-js">
+font-size: 2em;
+
+@include breakpoint(medium) {
+	font-size: 1.8em;
+}
+
+@include breakpoint(large) {
+	font-size: 1.5em;
+}
+				</code></pre>
 			</div>
 
 			<div class="continental west-medium gr-1-m mw-18em">
