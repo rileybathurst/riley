@@ -3,7 +3,7 @@
 	if (have_posts()) {
 		while (have_posts()) : the_post(); ?>
 			<div class="background-dirty">
-				<main class="site-main" role="main">
+				<main class="site-main">
 					<?php get_template_part( 'template-parts/post/content' ); ?>
 				</main> <!-- .site-main -->
 			</div> <!-- .background-dirty -->
