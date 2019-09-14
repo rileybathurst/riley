@@ -42,16 +42,6 @@ Template Name: Front Page
 	</div>
 </div>
 
-<script>
-	function code() {
-		$( ".ghostly" ).removeClass( "presence" );
-	}
-
-	window.onload = function() {
-		setTimeout(code, 3000);
-	}
-</script>
-
 <div class="background-dirty">
 	<main class="site-main" role="main">
 		<?php if (have_posts()) {
@@ -65,22 +55,6 @@ Template Name: Front Page
 					<div class="fp-header">
 						<h2 class="page-title">I&rsquo;m A <span id="changeText">Designer</span></h2>
 					</div>
-
-					<script>
-						var text = ["Person", "Photographer", "Videographer"];
-						var counter = 0;
-						var elem = document.getElementById("changeText");
-						var inst = setInterval(change, 1000);
-
-						function change() {
-						  elem.innerHTML = text[counter];
-						  counter++;
-						  if (counter >= text.length) {
-							counter = 0;
-							// clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
-						  }
-						}
-					</script>
 
 					<div class="article-content">
 						<?php the_content(); ?>
