@@ -39,7 +39,7 @@
 .social-icons svg {
 	width: 2em;
 
-	@include breakpoint(medium) {
+	@media (min-width: map-get($breakpoints, medium)) {
 		width: 3em;
 	}
 }

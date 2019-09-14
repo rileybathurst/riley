@@ -122,7 +122,7 @@ img.alignright, .alignright img {
 --------------------------------------------------------------*/
 
 p {
-	@include breakpoint (large) {
+	@media (min-width: map-get($breakpoints, large)) {
 		text-align: justify;
 	}
 }
@@ -206,7 +206,7 @@ cite {
 	word-wrap: break-word;
 	text-align: center;
 
-	@include breakpoint (medium) {
+	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 3em;
 	}
 }
@@ -216,7 +216,7 @@ cite {
 --------------------------------------------------------------
 
 .article-form label {
-	@include breakpoint (medium) { /* screen reader text
+	@media (min-width: map-get($breakpoints, medium)) { /* screen reader text
 		clip: rect(1px, 1px, 1px, 1px);
 		height: 1px;
 		overflow: hidden;
@@ -327,11 +327,11 @@ cite {
 body {
 	border: 0.25em solid $white;
 
-	@include breakpoint (medium) {
+	@media (min-width: map-get($breakpoints, medium)) {
 		border: 0.5em solid $white;
 	}
 
-	@include breakpoint (large) {
+	@media (min-width: map-get($breakpoints, large)) {
 		border: 1em solid $white;
 	}
 }
@@ -364,7 +364,7 @@ table {
 	grid-column: 11 / span 3;
 	grid-row: 1 / span 4;
 
-	@include breakpoint (medium) {
+	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 11 / span 3;
 		grid-row: 1 / span 4;
 	}
@@ -373,7 +373,7 @@ table {
 .page-title-2 { // naming needs work
 	display: none;
 
-	@include breakpoint (medium) {
+	@media (min-width: map-get($breakpoints, medium)) {
 		display: block;
 		color: $white;
 		writing-mode: vertical-rl;
@@ -425,7 +425,7 @@ a:hover {
 	font-weight: bold;
 	font-size: 1.5em;
 
-	@include breakpoint(medium) {
+	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 2em;
 	}
 }
@@ -615,7 +615,7 @@ a:hover {
 	font-size: 1.5em;
 	font-weight: bold;
 	margin-top: $global-margin;
-	@include breakpoint(medium) {
+	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 2.25em;
 	}
 }
@@ -721,7 +721,7 @@ img, video, figure {
 	color: $white;
 	padding: 0.5em;
 
-	@include breakpoint (medium) {
+	@media (min-width: map-get($breakpoints, medium)) {
 		padding: 1em;
 	}
 }
@@ -743,7 +743,7 @@ img, video, figure {
 	margin-top: $global-margin*2;
 	font-size: 2em;
 
-	@include breakpoint (medium) {
+	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 3em;
 	}
 }
@@ -766,7 +766,7 @@ img, video, figure {
 	word-wrap: break-word;
 	text-align: center;
 
-	 @include breakpoint (medium) {
+	 @media (min-width: map-get($breakpoints, medium)) {
 		 font-size: 6em;
 	}
 }
@@ -1048,7 +1048,7 @@ css slidesshow in Rileys google drive can do all the math
 	padding: 0 1em 0 0;
 	width: 50%;
 
-	@include breakpoint (medium) {
+	@media (min-width: map-get($breakpoints, medium)) {
 			max-width: 25%;
 	}
 }
@@ -1098,25 +1098,25 @@ css slidesshow in Rileys google drive can do all the math
 }
 
 .gallery-columns-1 .gallery-item {
-		@include breakpoint (medium) {
+		@media (min-width: map-get($breakpoints, medium)) {
 			max-width: 100%;
 		}
 	}
 
 	.gallery-columns-2 .gallery-item {
-		@include breakpoint (medium) {
+		@media (min-width: map-get($breakpoints, medium)) {
 			max-width: 50%;
 		}
 	}
 
 	.gallery-columns-3 .gallery-item {
-		@include breakpoint (medium) {
+		@media (min-width: map-get($breakpoints, medium)) {
 			max-width: 33.33%;
 		}
 	}
 
 	.gallery-columns-4 .gallery-item {
-		@include breakpoint (medium) {
+		@media (min-width: map-get($breakpoints, medium)) {
 			max-width: 25%;
 		}
 	}
