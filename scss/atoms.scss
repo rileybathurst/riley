@@ -59,9 +59,59 @@ $header-font-family: $body-font-family;
 body {
 	font-family: $body-font-family;
 }
+// type scale
+html {font-size: 16px;}
+
+p {margin-bottom: 1.25em;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1rem;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+}
+
+h2 {font-size: 2.441em;}
+
+h3 {font-size: 1.953em;}
+
+h4 {font-size: 1.563em;}
+
+h5 {font-size: 1.25em;}
+
+small, .text_small {font-size: 0.8em;}
+
+li {
+	margin-bottom: $global-margin;
+}
+
+.text-center { // foundation style pulled over // I think wp has one of these already tho
+	text-align: center;
+}
 
 .menu {
 	list-style-type: none;
+}
+
+.mega a {
+	text-decoration: none;
+	padding: $global-padding;
+	border-right: 0.1em solid $primary-color;
+	border-bottom: 0.1em solid $primary-color;
+}
+.mega a:hover {
+	text-decoration: none;
+	background: $primary-color;
+	color: $white;
+}
+
+hr {
+	margin: 1.25rem auto;
+	border-top: 0;
+	border-bottom: 1px solid $medium-gray;
 }
 
 .mega-hr { // this might be able to become a gutenberg style in for most places
@@ -84,4 +134,12 @@ figcaption,
 	color: $dark-gray;
 	font-size: 1.5625rem;
 	font-weight: bold;
+}
+
+.footer_menu a {
+	text-decoration: none;
+}
+
+.post-categories li {
+	margin-bottom: 0;
 }

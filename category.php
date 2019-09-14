@@ -34,7 +34,7 @@
 				<?php get_template_part( 'template-parts/post/content' ); ?>
 			</div>
 		</div>
-		<div class="article-base"></div>
+		<div class="article-base"><!-- stay gold --></div>
 	<?php endwhile;
 
 			if ( $wp_query->max_num_pages > 1 ) {

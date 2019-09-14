@@ -445,12 +445,7 @@ a:hover {
 }
 
 .site-title {
-	text-decoration: underline;
-	color: $white;
-}
-
-.site-title:hover {
-	text-decoration: line-through;
+	font-size: 0.8em;
 	color: $white;
 }
 

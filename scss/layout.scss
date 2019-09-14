@@ -776,6 +776,8 @@ $global-grid-gap: 1em;
 	grid-template-columns: 1fr;
 	grid-gap: $global-grid-gap;
 	padding-top: $global-padding;
+	margin-left: 0;
+	padding-left: 0;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-template-columns: repeat(4, 1fr);
@@ -791,10 +793,6 @@ $global-grid-gap: 1em;
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-template-columns: repeat(3, 1fr);
 	}
-}
-
-.footer_menu {
-	margin-left: 0;
 }
 
 .footer_menu li {
@@ -816,6 +814,14 @@ $global-grid-gap: 1em;
 		grid-column: 2;
 		text-align: center;
 	}
+}
+
+.footer_nav ul {
+	margin: 0;
+}
+
+.footer_nav li {
+	display: inline;
 }
 
 .footer_contact {

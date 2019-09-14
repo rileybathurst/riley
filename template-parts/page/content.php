@@ -8,7 +8,7 @@
 		<?php }
 	} ?>
 
-	<div class="article-header"><h2 class="page-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2></div>
+	<div class="article-header"><h2 class="page-title"><?php the_title(); ?></h2></div>
 
 	<div class="article-content"><?php the_content(); ?></div>
 
