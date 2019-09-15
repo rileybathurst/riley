@@ -19,4 +19,4 @@ I'll try it out quick on firefox.
 - Featured Video not showing full width
 - HTML formatting to make sure the H tag is the first one
 - nice additional movement with JS
-- sort out the code block
+- sort out the code block  
