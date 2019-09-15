@@ -554,7 +554,7 @@ a:hover {
 
 .footer_copyright a,
 .footer_nav a,
-.footer_contact a, {
+.footer_contact a {
 	text-decoration: none;
 	color: $black;
 	box-shadow: inset 0 -4px 0 $primary-color;
@@ -610,6 +610,7 @@ a:hover {
 	font-size: 1.5em;
 	font-weight: bold;
 	margin-top: $global-margin;
+	margin-bottom: 0;
 	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 2.25em;
 	}
@@ -931,10 +932,6 @@ figure {
 svg {
 	fill: currentColor;
 	width: 1em;
-}
-
-.search-icon {
-
 }
 
 .icon {
