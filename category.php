@@ -31,7 +31,7 @@
 	while (have_posts()) : the_post(); ?>
 		<div class="background-dirty">
 			<div class="site-main" role="main">
-				<?php get_template_part( 'template-parts/post/content' ); ?>
+				<?php get_template_part( 'template-parts/post/category' ); ?> <!-- major difference is the link in the title -->
 			</div>
 		</div>
 		<div class="article-base"><!-- stay gold --></div>

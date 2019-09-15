@@ -114,6 +114,7 @@ hr {
 	border-bottom: 1px solid $medium-gray;
 }
 
+.is-style-mega-hr,
 .mega-hr { // this might be able to become a gutenberg style in for most places
 	border-bottom-width: 0.5em;
 	border-color: $white;
@@ -142,4 +143,40 @@ figcaption,
 
 .post-categories li {
 	margin-bottom: 0;
+}
+
+.comment-form input,
+.comment-form textarea {
+	border: 0.1em solid $medium-gray;
+	font-weight: bold;
+	padding: $global-padding;
+	border-radius: 2px;
+	width: calc(100% - 3em); // feels like this should be 2.2em 
+}
+
+.comment-form [type="checkbox"] {
+	width: auto;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+	outline: 0.1em solid $primary-color;
+	border-radius: 2px;
+}
+
+.category-thumbnail { // this would be cool but it doesnt work with png
+	// background: $black;
+	// background: linear-gradient(53deg, rgba(2,0,36,1) 0%, rgba(194,33,39,1) 37%, rgba(0,212,255,1) #8a0000);
+}
+
+.category-thumbnail img { 
+	// height: 100%;
+}
+
+.category-thumbnail img:hover {
+	opacity: 0.8;
+}
+
+.wp-block-code {
+	background: $white;
 }

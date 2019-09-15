@@ -165,6 +165,7 @@ cite {
 	color: #575757; // darker than dark gray to pass contrast checks
 }
 
+.is-style-box-title,
 .box-title, .box-title a {
 	border: .25em solid $black;
 	padding: $global-padding;

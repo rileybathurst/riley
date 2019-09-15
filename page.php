@@ -16,7 +16,7 @@
 			the_posts_pagination();
 		}; // end max page numbers
 
-		} else { ?> <!-- if dont have posts -->
+	} else { ?> <!-- if dont have posts -->
 			<div class="background-dirty">
 				<div <?php post_class(); ?>> <!-- this doesnt work as post class closes out -->
 					<div class="article-header">
@@ -30,6 +30,6 @@
 				</div>
 			</div>
 
-		<?php }
+	<?php }
 
 get_footer(); ?>

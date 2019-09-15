@@ -1,10 +1,10 @@
-<article <?php post_class(); ?>> <!-- post_class means I cant add my own classes -->
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <!-- post_class means I cant add my own classes -->
 
 	<div class="spine-border"></div>
 
 	<?php if ( ! is_single()) {
 		if ( has_post_thumbnail() ) { ?>
-			<figure class="article-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></figure>
+			<figure class="article-thumbnail"><a href="<?php esc_url( the_permalink() ); ?>"><?php the_post_thumbnail(); ?></a></figure>
 		<?php }
 	} ?>
 

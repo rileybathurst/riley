@@ -38,8 +38,25 @@ function riley_scripts() {
 	wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/app.css');
 	wp_enqueue_script('uncompressed', get_template_directory_uri() . '/js/uncompressed.js', array(), false, true); // needs the optional tags to get it in the footer this would be good to add to webpack
 	// wp_enqueue_script('bundle', get_template_directory_uri() . '/js/bundle.js'); // webpack manually updated
+	wp_register_style( 'myguten-style', get_template_directory_uri() . '/css/gutenberg.css' );
 }
 add_action( 'wp_enqueue_scripts', 'riley_scripts' );
+
+/**
+ * Gutenberg scripts and styles
+ * @link https://www.billerickson.net/block-styles-in-gutenberg/
+ */
+function be_gutenberg_scripts() {
+
+	wp_enqueue_script(
+		'be-editor', 
+		get_stylesheet_directory_uri() . '/js/gutenberg.js', 
+		array( 'wp-blocks', 'wp-dom' ), 
+		filemtime( get_stylesheet_directory() . '/js/gutenberg.js' ),
+		true
+	);
+}
+add_action( 'enqueue_block_editor_assets', 'be_gutenberg_scripts' );
 
 // Bring in all the addiotnal files
 require get_parent_theme_file_path( '/inc/custom-header.php' );
