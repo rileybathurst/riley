@@ -14,7 +14,7 @@
 		</div>
 	</div>
 </div>
-<div class="article-base"></div>
+<div class="article-base"><!-- spacer --></div>
 
 <?php if (have_posts()) {
 	while (have_posts()) : the_post(); ?>
@@ -26,25 +26,25 @@
 		<div class="article-base"></div>
 	<?php endwhile;
 
-			if ( $wp_query->max_num_pages > 1 ) {
-				the_posts_pagination();
-			} // end max page numbers
+	if ( $wp_query->max_num_pages > 1 ) {
+		the_posts_pagination();
+	} // end max page numbers
 
-		} else { ?> <!-- if dont have posts -->
-			<div class="site-main" role="main">
+} else { ?> <!-- if dont have posts -->
+	<div class="site-main" role="main">
 
-				<article <?php post_class(); ?>> <!-- this doesnt work as post class closes out -->
-					<div class="article-thumbnail"></div> <!-- putting this in even if empty fills grid row 1 which lets eveything else sit in the right order -->
-					<div class="article-header">
-						<h2 class="page-title">Sorry</h2>
-					</div>
-
-					<div class="article-content">
-						<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching a new term can help.</p>
-						<?php get_search_form(); ?>
-					</div>
-				</article>
+		<article <?php post_class(); ?>> <!-- this doesnt work as post class closes out -->
+			<div class="article-thumbnail"></div> <!-- putting this in even if empty fills grid row 1 which lets eveything else sit in the right order -->
+			<div class="article-header">
+				<h2 class="page-title">Sorry</h2>
 			</div>
-		<?php }
+
+			<div class="article-content">
+				<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching a new term can help.</p>
+				<?php get_search_form(); ?>
+			</div>
+		</article>
+	</div>
+<?php }
 
 get_footer(); ?>

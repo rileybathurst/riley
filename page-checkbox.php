@@ -9,6 +9,8 @@ Template Name: Checkbox
 
 //
 $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+// I think this might be cleaner, easier and less requests with javascript but can you take variables between languges?
+
 /* this one doesnt even give a result on localhost
 $cs_check = strpos($actual_link, '?cs=');
 if ($cs_check === false) {

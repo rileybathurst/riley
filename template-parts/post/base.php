@@ -1,5 +1,5 @@
-<div class="article-base">
-	<?php if ( is_single()) { ?>
+<div class="article-base"><!-- can this be footer? -->
+	<?php if ( is_single()) { ?> <!-- what happens if its not? -->
 
 		<h3 class="base-explore">Exlpore More</h3>
 
@@ -9,7 +9,6 @@
 				$next_post = get_adjacent_post( true,'',false );
 
 				if ($next_post !== "" ) {
-
 
 				if( isset($next_post->ID) ):
 					$next_id = $next_post->ID;

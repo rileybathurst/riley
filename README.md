@@ -20,3 +20,19 @@ I'll try it out quick on firefox.
 - HTML formatting to make sure the H tag is the first one
 - nice additional movement with JS
 - sort out the code block
+- comments page
+- minify css
+- neither of the form.php or form-2.php seem to be useful
+- twenty nineteen are using what I think is gulp so should this to do more than sass
+- deal with some nice header tags so it's not relying on yoast
+- wordpress max variable width
+- can I start adding an chrome lazy load tags to images?
+- I have some overly sized grids .article-search { grid-column: 2 / 12; // really?
+- I also have a lot of grids I think I could simplify down
+- I have a lot of the grid-template-columns: 2em 1fr 4fr 1fr 2em; is that because its right or because its easy?
+- there are a lot of zeros in the styles are they overwritting stuff I have written, brower defaults, foundation stuff I can now remove?
+- global border weight
+- comments css
+- specific bottom is running lozad which has been deleted and is also a mess
+- http://localhost:8888/riley/category/design-2/ is a mess
+- all the svg load every page that doesnt seem very smart or useful

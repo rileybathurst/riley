@@ -37,30 +37,29 @@
 		<div class="article-base"><!-- stay gold --></div>
 	<?php endwhile;
 
-			if ( $wp_query->max_num_pages > 1 ) {
-				the_posts_pagination();
-			} // end max page numbers
+	if ( $wp_query->max_num_pages > 1 ) {
+		the_posts_pagination();
+	}
 
-		} else { ?> <!-- if dont have posts -->
-			<div class="cat-404"> <!-- this doesnt work as post class closes out -->
-
-					<div class="background-dirty">
-						<div class="site-main">
-							<article>
-								<div class="spine-border"></div>
-								<div class="article-header">
-									<h2 class="page-title">404</h2>
-								</div>
-
-								<div class="article-content">
-									<p>Oh no we don&#39;t have any posts for you. Perhaps searching can help.</p>
-									<?php get_search_form(); ?>
-								</div>
-							</article>
-						</div>
+} else { ?> <!-- if dont have posts -->
+	<div class="cat-404">
+		<div class="background-dirty">
+			<main class="site-main">
+				<article>
+					<div class="spine-border"></div>
+					<div class="article-header">
+						<h2 class="page-title">404</h2>
 					</div>
-				</div>
 
-		<?php }
+					<div class="article-content">
+						<p>Oh no we don&#39;t have any posts for you. Perhaps searching can help.</p>
+						<?php get_search_form(); ?>
+					</div>
+				</article>
+			</main>
+		</div>
+	</div>
+
+<?php }
 
 get_footer(); ?>

@@ -3,7 +3,7 @@
 <div class="background-dirty">
 	<main class="site-main" role="main">
 		<article <?php post_class(); ?>> <!-- this doesnt work as post class closes out -->
-			<div class="article-thumbnail"></div> <!-- putting this in even if empty fills grid row 1 which lets eveything else sit in the right order -->
+			<div class="article-thumbnail"><!-- stay gold --></div> <!-- putting this in even if empty fills grid row 1 which lets eveything else sit in the right order -->
 			<div class="article-header">
 				<h2 class="page-title">404</h2>
 			</div>

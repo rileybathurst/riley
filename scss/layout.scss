@@ -11,8 +11,6 @@
 0.1 Variables
 --------------------------------------------------------------*/
 
-$global-grid-gap: 1em;
-
 .global-padding-bottom {
 	padding-bottom: $global-padding;
 }
@@ -22,17 +20,17 @@ $global-grid-gap: 1em;
 --------------------------------------------------------------*/
 
 .page-width {
-	max-width: 77em;
+	max-width: 77em; // I think this should be from the wordpress setting // twenty nineteen is doing %20 + 60px above a certain size
 	margin: 0 auto;
 }
 
 .spine-border {
 	grid-column: 1;
-	grid-row: 1 / 7;
+	grid-row: 1 / 7; // thats a lot of numbers maybe there should be a map or use grid area?
 	border-left: 4px solid $primary-color;
-	margin-top: 3em;
-	padding-top: 3em;
-	z-index: 15;
+	margin-top: $gloabl-margin*3; // this gets overwritten with an IO
+	padding-top: $global-padding*3;
+	z-index: 15; // why?
 }
 
 /*--------------------------------------------------------------
@@ -41,7 +39,7 @@ $global-grid-gap: 1em;
 
 .site-header {
 	width: 100%;
-	max-width: 77rem; /* the first and last are single em */
+	max-width: 77rem; // why am I repeating this from .page-width
 	margin: 0 auto;
 	display: grid;
 	grid-gap: $global-grid-gap;
@@ -58,8 +56,7 @@ $global-grid-gap: 1em;
 .header-logo {
 	grid-column: 5;
 	grid-row: 1;
-	justify-self: start;
-	align-self: start;
+	place-self: start;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		justify-self: center;
@@ -73,7 +70,7 @@ $global-grid-gap: 1em;
 }
 
 .header-color-blocking {
-	z-index: 15;
+	z-index: 15; //same as .spine border? should it be above or below
 	mix-blend-mode: multiply;
 	background: $primary-color;
 	grid-column: 2 / 5;
@@ -81,7 +78,7 @@ $global-grid-gap: 1em;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 3;
-		grid-row: 1 / span 3;
+		grid-row: 1 / 3;
 	}
 }
 
@@ -94,18 +91,18 @@ $global-grid-gap: 1em;
 	grid-column: 2 / 5;
 	grid-row: 2;
 	padding-top: 0;
-	padding-bottom: 1em;
+	padding-bottom: $global-padding;
 	justify-self: center;
 	z-index: 20;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-top: $global-margin;
+	margin-bottom: $global-margin; // can these two be written better as a single line?
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		writing-mode: vertical-rl;
 		grid-column: 3;
 		grid-row: 2;
-		margin-top: 3em;
-		margin-bottom: 3em;
+		margin-top: $global-margin*3;
+		margin-bottom: $global-margin*3;
 	}
 }
 
@@ -127,23 +124,21 @@ $global-grid-gap: 1em;
 .home .site-branding-text {
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-row: 1 / 3;
-		margin-top: 3em;
-		margin-bottom: 1em;
+		margin-top: $global-margin*3;
+		margin-bottom: $global-margin; // can this be written as a single line?
 	}
 }
 
 .site-branding-text h1 {
 	margin: 0;
-	font-size: 1.25em;
-	// align-self: start;
+	font-size: 1.25em; // can this be written as a variable?
 }
 
 .spine {
 	grid-column: 5;
-	grid-row: 2 / span 2;
+	grid-row: 2 / 2;
 	writing-mode: vertical-rl;
-	justify-self: end;
-	align-self: end;
+	place-self: end;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-row: 1 / 3;
@@ -187,26 +182,25 @@ $global-grid-gap: 1em;
 }
 
 .single .navigation-top {
-	align-items: start;
+	align-items: start; // seems like this is a repeat from .navigation-top
 	grid-row: 2;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-row: 1;
 		grid-column: 3/5;
-		align-self: end;
-		justify-self: end;
+		place-self: end;
 	}
 }
 
 .home .navigation-top {
 	grid-row: 3;
 	align-self: start;
-	margin-bottom: 1em;
+	margin-bottom: $global-margin;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-row: 1;
 		grid-column: 4;
-		margin-bottom: 3em;
+		margin-bottom: $global-margin*3;
 		align-self: center;
 	}
 }
@@ -221,10 +215,9 @@ $global-grid-gap: 1em;
 
 .front-page-titles {
 	width: 100%;
-	max-width: 77rem;
+	max-width: 77rem; // again?
 	margin: 0 auto;
 	display: grid;
-	grid-gap: 2px;
 	grid-template-columns: 2em 1fr 1fr 1fr 2em;
 	grid-gap: $global-grid-gap;
 }
@@ -234,7 +227,7 @@ $global-grid-gap: 1em;
 --------------------------------------------------------------*/
 
 .category-header {
-	max-width: 77em;
+	max-width: 77em; // again?
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 2em 1fr 8fr 1fr 2em;
@@ -250,7 +243,7 @@ $global-grid-gap: 1em;
 
 .category-thumbnail {
 	grid-column: 2 / 5;
-	grid-row: 1 / span 2;
+	grid-row: 1 / 2;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-row: 1;
@@ -258,7 +251,7 @@ $global-grid-gap: 1em;
 }
 
 .article-search {
-	grid-column: 2 / span 12;
+	grid-column: 2 / 12; // really?
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 4 / span 1;
@@ -266,24 +259,24 @@ $global-grid-gap: 1em;
 }
 
 .content_area {
-	grid-column: 2 / span 10;
+	grid-column: 2 / span 10; // really?
 	grid-row: 4 / span 2;
 	align-self: center;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 4 / span 6;
+		grid-column: 4 / span 6; // really?
 		grid-row: 3;
 		align-self: start;
 	}
-   @media (min-width: map-get($breakpoints, large)) {
-		grid-column: 4 / span 9;
+	@media (min-width: map-get($breakpoints, large)) {
+		grid-column: 4 / span 9; // really?
 		grid-row: 3; /* this cant span multiple rows but it needs to be the largest so the next row sits tight against it, seems kinda a bad design decision incase something else gets bigger than it */
 	}
 }
 
 .more { // which more is this?
-	grid-column: 2 / span 10;
-	grid-row: 9;
+	grid-column: 2 / span 10; // really?
+	grid-row: 9; // really?
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 4 / span 3;
@@ -301,7 +294,7 @@ $global-grid-gap: 1em;
 	grid-column: 2 / 5;
 	grid-row: 2;
 	position: relative; // why?
-	z-index: 99;
+	z-index: 99; // why?
 	mix-blend-mode: multiply;
 
 	@media (min-width: map-get($breakpoints, medium)) {
@@ -312,14 +305,14 @@ $global-grid-gap: 1em;
 }
 
 .category-sub {
-	max-width: 77em;
+	max-width: 77em; // again?
 	margin: 0 auto;
 	margin-bottom: $global-margin;
 }
 
 .category-sub ul {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr; // should this be a grid if its so simple?
 	grid-gap: $global-grid-gap;
 	margin-left: 0;
 
@@ -338,14 +331,14 @@ $global-grid-gap: 1em;
 
 .featured-subheader {
 	grid-column: 2;
-	grid-row: 2 / span 3;
+	grid-row: 2 / 3;
 	justify-self: center;
 	writing-mode: vertical-rl;
 }
 
 
 .featured-category-title {
-	grid-column: 1 / span 12;
+	grid-column: 1 / span 12; // really?
 	grid-row: 2;
 	justify-self: center;
 }
@@ -365,7 +358,7 @@ $global-grid-gap: 1em;
 --------------------------------------------------------------*/
 .site-main article { /* running wordpress post class prevents using a straight clasee */
 	width: 100%;
-	max-width: 77rem;
+	max-width: 77rem; // again?
 	margin: 0 auto;
 
 	display: grid;
@@ -377,7 +370,8 @@ $global-grid-gap: 1em;
 .article-thumbnail {
 	grid-column: 2 / 6;
 	grid-row: 1;
-	max-height: 100vh;
+	// max-height: 100vh; // this causes issues on wide short screens but I get the idea of something tall can be very large
+	// maybe it can be fixed with an overflow and then go even less than 100 to make it obvious and be able to scroll around it
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 3 / 5;
@@ -386,25 +380,30 @@ $global-grid-gap: 1em;
 
 .article-thumbnail a, .category-thumbnail a {
 	width: 100%;
-	display: grid;
+	// display: grid; // is this just for a place-items
+	display: block; // seems more suitable
 }
 
 .article-thumbnail img, .category-thumbnail img {
-	justify-self: center;
+	// justify-self: center; // this should be handled by the block
+}
+
+.article-thumbnail > a > img, .category-thumbnail > a > img {
+	width: 100%;
 }
 
 .article-header {
 	width: 100%;
-	max-width: 77rem;
-	margin: 0 auto;
+	// max-width: 77rem; // its inside of a grid it cant go anywhere?
+	// margin: 0 auto; // it cant go anywhere its 100% wide
 
 	grid-column: 2 / 6;
-	align-self: end;
+	// align-self: end; // I think its it own row it cant go anywhere
 	grid-row: 2;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 3 / 5;
-		grid-row: 2;
+		// grid-row: 2; // this is a repeat of above
 	}
 }
 
@@ -429,8 +428,8 @@ $global-grid-gap: 1em;
 
 .article-content {
 	grid-column: 2 / 6;
-	// grid-row: 4;
-	margin-bottom: 1em;
+	// grid-row: 4; // i guess by not defining it falls into place with whats above
+	margin-bottom: $global-margin;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 3 / 5;
@@ -456,7 +455,7 @@ $global-grid-gap: 1em;
 		writing-mode: vertical-rl;
 		align-self: end;
 		overflow-x: scroll;
-		max-height: 45em;
+		max-height: 45em; // incase of a long category name it will truncate
 	}
 }
 
@@ -468,8 +467,8 @@ $global-grid-gap: 1em;
 
 .article-base {
 	//min-height: 3em; // this is a breaker in categories
-	max-width: 77em;
-	margin-top: 3em;
+	max-width: 77em; // again?
+	margin-top: $gloabl-margin*3; // rewrite this as a single
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0;
@@ -514,7 +513,7 @@ $global-grid-gap: 1em;
 .article-explore {
 	grid-column: 2 / 6;
 	// grid-row: 5;
-	padding-bottom: 1em;
+	padding-bottom: $global-padding;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 3 / 5
@@ -522,11 +521,11 @@ $global-grid-gap: 1em;
 }
 
 .article-navigation-title {
-		grid-column: 2 / span 12;
+		grid-column: 2 / span 12; // really?
 		grid-row: 9;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 13 / span 2;
+		grid-column: 13 / span 2; // this isnt written very well
 		grid-row: 4;
 		margin: 0;
 		writing-mode: vertical-rl;
@@ -538,13 +537,13 @@ $global-grid-gap: 1em;
 }
 
 .post-thumbnail {
-	grid-column: 5 / span 8;
+	grid-column: 5 / span 8; // some of these are plain ugly
 	grid-row: 1 / span 2;
 	z-index: 5;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 5 / span 8;
-		grid-row: 1 / span 2; /* start with full height */
+		grid-row: 1 / span 2; // start with full height
 	}
 }
 
@@ -552,6 +551,7 @@ $global-grid-gap: 1em;
 	width: 100%;
 }
 
+// can the next few items be written nicer?
 .post-navigation {
 	grid-column: 2 / 5;
 	@media (min-width: map-get($breakpoints, medium)) {
@@ -582,7 +582,7 @@ $global-grid-gap: 1em;
 
 .fp-header {
 	width: 100%;
-	max-width: 77rem;
+	max-width: 77rem; // again?
 	margin: 0 auto;
 
 	grid-column: 2 / 6;
@@ -615,9 +615,6 @@ $global-grid-gap: 1em;
 	grid-column: 3 / 5;
 }
 
-
-
-
 /*--------------------------------------------------------------
 3.6 Pagination
 --------------------------------------------------------------*/
@@ -643,7 +640,7 @@ $global-grid-gap: 1em;
 
 	display: flex;
 	flex-direction: row;
-	justify-items: flex-start;
+	justify-items: flex-start; // is there a place-items for flex?
 	align-items: flex-start;
 
 	@media (min-width: map-get($breakpoints, large)) {
@@ -651,7 +648,7 @@ $global-grid-gap: 1em;
 	}
 }
 
-.pagination .nav-links .next, .pagination .nav-links .prev {
+.pagination .nav-links .next, .pagination .nav-links .prev { // what is this overwritting?
 	width: auto;
 	writing-mode: vertical-rl;
 	border-bottom: none;
@@ -692,7 +689,7 @@ $global-grid-gap: 1em;
 	margin: 0;
 }
 
-.single .article-category h3, .single .article-category .post-categories {
+.single .article-category h3, .single .article-category .post-categories { // does this need the repeat from above?
 	margin: 0;
 }
 
@@ -749,7 +746,7 @@ $global-grid-gap: 1em;
 	}
 }
 
-.gr-1-m {
+.gr-1-m { // this is really different from other classes?
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-row: 1;
 	}
@@ -762,10 +759,10 @@ $global-grid-gap: 1em;
 
 .site-footer {
 	width: calc(100% - 4em);
-	max-width: 75rem;
+	max-width: 75rem; // keeps inside of the margins
 	margin: 0 auto;
 	padding: $global-padding 0;
-	align-items: end;
+	// align-items: end; Why am I pushing down?
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		padding-top: $global-padding*5;
@@ -774,7 +771,7 @@ $global-grid-gap: 1em;
 
 .footer_menu {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr; // start simple stack then go to direction. maybe this should be a flex
 	grid-gap: $global-grid-gap;
 	padding-top: $global-padding;
 	margin-left: 0;
@@ -787,7 +784,7 @@ $global-grid-gap: 1em;
 
 .footer_info {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr; // start simple stack then go to direction. maybe this should be a flex
 	grid-gap: $global-grid-gap;
 	padding-top: $global-padding;
 

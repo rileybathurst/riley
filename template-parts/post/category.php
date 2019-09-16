@@ -1,6 +1,6 @@
 <article <?php post_class(); ?>> <!-- post_class means I cant add my own classes -->
 
-	<div class="spine-border"></div>
+	<div class="spine-border"><!-- stay gold --></div>
 
 	<?php if ( has_post_thumbnail() ) { ?>
 		<figure class="article-thumbnail category-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></figure>

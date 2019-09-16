@@ -3,24 +3,12 @@
 	grid-row: 1/4;
 }
 
-.clicks {
-	grid-column: 2 / 5;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-gap: 1em;
-}
-
-.code {
-	grid-column: 2 / 5;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-gap: 1em;
-}
-
+.clicks,
+.code,
 .camera {
 	grid-column: 2 / 5;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; // this is a repeat
 	grid-gap: 1em;
 }
 
@@ -32,14 +20,14 @@
 .social-icons {
 	grid-column: 2 / 5;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr; // repeat this as well
 	grid-gap: 1em;
 }
 
 .social-icons svg {
 	width: 2em;
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: map-get($breakpoints, medium)) { // red text on brackets isnt a good sign does it need a prefix
 		width: 3em;
 	}
 }
