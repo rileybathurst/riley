@@ -1,0 +1,8 @@
+.wp-block-quote.is-style-blue-quote { 
+	color: blue;
+}
+
+.is-style-box-title { 
+	border: .25em solid black;
+	padding: 1em;
+}

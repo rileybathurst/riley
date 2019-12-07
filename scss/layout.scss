@@ -28,7 +28,7 @@
 	grid-column: 1;
 	grid-row: 1 / 7; // thats a lot of numbers maybe there should be a map or use grid area?
 	border-left: 4px solid $primary-color;
-	margin-top: $gloabl-margin*3; // this gets overwritten with an IO
+	margin-top: $global-margin*3; // this gets overwritten with an IO
 	padding-top: $global-padding*3;
 	z-index: 15; // why?
 }
@@ -468,7 +468,7 @@
 .article-base {
 	//min-height: 3em; // this is a breaker in categories
 	max-width: 77em; // again?
-	margin-top: $gloabl-margin*3; // rewrite this as a single
+	margin-top: $global-margin*3; // rewrite this as a single
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0;

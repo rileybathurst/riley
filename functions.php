@@ -57,7 +57,7 @@ function be_gutenberg_scripts() {
 }
 add_action( 'enqueue_block_editor_assets', 'be_gutenberg_scripts' );
 
-// Bring in all the addiotnal files
+// Bring in all the additional files
 require get_parent_theme_file_path( '/inc/custom-header.php' );
 require get_parent_theme_file_path( '/inc/icon-functions.php' ); // these are moving to inline and should be removed when ready // they all load all the time its pretty heavy on a resource
 require get_parent_theme_file_path( '/inc/contact-email.php' );
