@@ -12,11 +12,10 @@ if (have_posts()) {
 			<h3 class="subtitle">Web</h3>
 
 			<a href="http://rileybathurst.com/order-form/" class="continental west-medium">
-				<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/order-form-small.jpg">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-form.jpg" alt="order page on the canterbury homekill website" media="(min-width: 64em)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-form-medium.jpg" alt="order page on the canterbury homekill website" media="(min-width: 40em)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-form-small.jpg" alt="order page on the canterbury homekill website">
-					<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/order-form-small.jpg" alt="order page on the canterbury homekill website"></noscript>
+				<picture class="lozad-picture">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-form.jpg" media="(min-width: 64em)">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-form-medium.jpg" media="(min-width: 40em)">
+					<img src="<?php echo content_url(); ?>/uploads/2018/05/order-form-small.jpg" alt="order page on the canterbury homekill website">
 				</picture>
 			</a>
 			<section class="continental east-medium">
@@ -29,11 +28,10 @@ if (have_posts()) {
 
 		<div class="specific-grid">
 			<a href="http://rileybathurst.com/confirmation-form-large/" class="continental east-medium">
-				<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/confirmation-form-large.jpg">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/confirmation-form-large.jpg" alt="confirmation page on the canterbury homekill website" media="(min-width: 64em)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/confirmation-form-medium.jpg" alt="confirmation page on the canterbury homekill website" media="(min-width: 40em)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/confirmation-form-small.jpg" alt="confirmation page on the canterbury homekill website">
-					<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/confirmation-form-large.jpg" alt="confirmation page on the canterbury homekill website"></noscript>
+				<picture class="lozad-picture">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/confirmation-form-large.jpg" media="(min-width: 64em)">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/confirmation-form-medium.jpg" media="(min-width: 40em)">
+					<img src="<?php echo content_url(); ?>/uploads/2018/05/confirmation-form-large.jpg" alt="confirmation page on the canterbury homekill website">
 				</picture>
 			</a>
 			<section class="continental west-medium gr-1-m">
@@ -46,11 +44,10 @@ if (have_posts()) {
 
 		<div class="specific-grid">
 			<a href="http://rileybathurst.com/order-check-large/" class="continental west-medium">
-				<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/order-check-large.jpg">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-check-large.jpg" alt="view order page on the canterbury homekill website">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-check-medium.jpg" alt="view order page on the canterbury homekill website" media="(min-width: 64em)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-check-small.jpg" alt="view order page on the canterbury homekill website" media="(min-width: 40em)">
-					<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/order-check-large.jpg" alt="view order page on the canterbury homekill website"></noscript>
+				<picture class="lozad-picture">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-check-large.jpg" media="(min-width: 64em)">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-check-medium.jpg" media="(min-width: 40em)"><!-- return this to pizels -->
+					<img src="<?php echo content_url(); ?>/uploads/2018/05/order-check-large.jpg" alt="view order page on the canterbury homekill website">
 				</picture>
 			</a>
 			<section class="continental east-medium">
@@ -63,11 +60,10 @@ if (have_posts()) {
 
 		<div class="specific-grid">
 			<a href="http://rileybathurst.com/order-email-large/" class="continental east-medium">
-				<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/order-email-large.jpg">
+				<picture class="lozad-picture">
 					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-email-large.jpg" alt="order email from canterbury homekill" media="(min-width: 64em)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-email-large.jpg" alt="order email from canterbury homekill" media="(min-width: 40em)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-email-large.jpg" alt="order email from canterbury homekill">
-					<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/order-email-large.jpg" alt="order email from canterbury homekill"></noscript>
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-email-medium.jpg" alt="order email from canterbury homekill" media="(min-width: 40em)">
+					<img src="<?php echo content_url(); ?>/uploads/2018/05/order-email-small.jpg" alt="order email from canterbury homekill">
 				</picture>
 			</a>
 			<section class="continental west-medium gr-1-m">

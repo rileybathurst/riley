@@ -36,3 +36,8 @@ I'll try it out quick on firefox.
 - specific bottom is running lozad which has been deleted and is also a mess
 - http://localhost:8888/riley/category/design-2/ is a mess
 - all the svg load every page that doesnt seem very smart or useful
+- single-post-calendar-blackout-dates
+- chk image sizes are a mess
+- single-post-keep-squaw-true.php inline styles are ridiculous
+- make captions real captions
+- winter 18.php web p images

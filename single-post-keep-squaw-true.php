@@ -16,7 +16,7 @@ if (have_posts()) {
 			</div>
 
 			<div class="continental west-medium gr-1-m">
-				<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/300523913" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+				<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/300523913" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script><!-- what on earth is going on with these inline styles??? -->
 			</div>
 		</div>
 
@@ -43,11 +43,10 @@ if (have_posts()) {
 			</div>
 
 			<figure class="continental west-medium mw-18em">
-				<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-small.jpg">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-large.jpg" alt="keep squaw true clothing shoot" media="(min-width: 64em)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-medium.jpg" alt="keep squaw true clothing shoot" media="(min-width: 40em)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-small.jpg" alt="keep squaw true clothing shoot">
-					<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-small.jpg" alt="keep squaw true clothing shoot"></noscript>
+				<picture class="lozad-picture">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-large.jpg" media="(min-width: 64em)">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-medium.jpg" media="(min-width: 40em)">
+					<img src="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-small.jpg" alt="keep squaw true clothing shoot">
 				</picture>
 				<figcaption>Tram Face T</figcaption>
 			</figure>
@@ -55,11 +54,10 @@ if (have_posts()) {
 			<div class="east-medium"></div> <!-- white space -->
 
 			<figure class="continental east-medium mw-18em">
-				<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-small.jpg">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-1.jpg" alt="keep squaw true clothing shoot" media="(min-width: 64em)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-medium.jpg" alt="keep squaw true clothing shoot" media="(min-width: 40em)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-small.jpg" alt="keep squaw true clothing shoot">
-					<noscript><img src="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-small.jpg" alt="keep squaw true clothing shoot"></noscript>
+				<picture class="lozad-picture">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-1.jpg" media="(min-width: 64em)">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-medium.jpg" media="(min-width: 40em)">
+					<img src="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-small.jpg" alt="keep squaw true clothing shoot">
 				</picture>
 				<figcaption>Keep Squaw True T Shirt</figcaption>
 			</figure>

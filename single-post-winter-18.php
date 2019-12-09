@@ -6,10 +6,8 @@ if (have_posts()) {
 	get_template_part( 'template-parts/post/specific-top' ); ?>
 
 	<div class="article-content-specific">
-		<div class="grid-x grid-padding-x global-padding-bottom">
-			<div class="small-12 medium-6 cell">
 				<a href="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brandon-craddock-powder-tahoe-960x640.jpg">
-					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brandon-craddock-powder-tahoe-960x640.jpg">
+					<picture class="lozad-picture">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brandon-craddock-powder-tahoe-3840x2560.jpg" alt="skier deep in powder" media="(min-width: 1080px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brandon-craddock-powder-tahoe-3840x2560.jpg" alt="skier deep in powder" media="(min-width: 1080px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brandon-craddock-powder-tahoe-1080x720.jpg" alt="skier deep in powder" media="(min-width: 960px)" type="image/webp">
@@ -21,15 +19,14 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brandon-craddock-powder-tahoe-640x426.jpg" alt="skier deep in powder" media="(min-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brandon-craddock-powder-tahoe-640x426.jpg" alt="skier deep in powder" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brandon-craddock-powder-tahoe-360x240.jpg" alt="skier deep in powder" media="(max-width: 360px)" type="image/webp">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brandon-craddock-powder-tahoe-360x240.jpg" alt="skier deep in powder" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brandon-craddock-powder-tahoe-960x640.jpg" alt="skier deep in powder"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brandon-craddock-powder-tahoe-360x240.jpg" alt="skier deep in powder">
 					</picture>
 				</a>
 			</div>
 
 			<div class="small-12 medium-6 cell">
 				<a href="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-powder-eric-lee-obrien-tahoe-squaw-960x640.jpg">
-					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-powder-eric-lee-obrien-tahoe-squaw-960x640.jpg">
+					<picture class="lozad-picture">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-powder-eric-lee-obrien-tahoe-squaw-3840x2560.jpg" alt="skier in tahoe doing a powder turn" media="(min-width: 1080px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-powder-eric-lee-obrien-tahoe-squaw-3840x2560.jpg" alt="skier in tahoe doing a powder turn" media="(min-width: 1080px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-powder-eric-lee-obrien-tahoe-squaw-1080x720.jpg" alt="skier in tahoe doing a powder turn" media="(min-width: 960px)" type="image/webp">
@@ -41,8 +38,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-powder-eric-lee-obrien-tahoe-squaw-640x426.jpg" alt="skier in tahoe doing a powder turn" media="(min-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-powder-eric-lee-obrien-tahoe-squaw-640x426.jpg" alt="skier in tahoe doing a powder turn" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-powder-eric-lee-obrien-tahoe-squaw-360x240.jpg" alt="skier in tahoe doing a powder turn" media="(max-width: 360px)" type="image/webp">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-powder-eric-lee-obrien-tahoe-squaw-360x240.jpg" alt="skier in tahoe doing a powder turn" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-powder-eric-lee-obrien-tahoe-squaw-960x640.jpg" alt="skier in tahoe doing a powder turn"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-powder-eric-lee-obrien-tahoe-squaw-360x240.jpg" alt="skier in tahoe doing a powder turn">
 					</picture>
 				</a>
 			</div>
@@ -64,7 +60,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-tahoe-lifestyle-sunset-640x426.jpg" alt="skier standing with a sunset behind" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-tahoe-lifestyle-sunset-360x240.jpg" alt="skier standing with a sunset behind" media="(max-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-tahoe-lifestyle-sunset-360x240.jpg" alt="skier standing with a sunset behind" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-tahoe-lifestyle-sunset-960x640.jpg" alt="skier standing with a sunset behind"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-tahoe-lifestyle-sunset-960x640.jpg" alt="skier standing with a sunset behind">
 					</picture>
 				</a>
 			</div>
@@ -84,7 +80,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-kenzie-morris-hike-summer-ski-sawtooth-640x427.jpg" alt="skier hiking into the mountains during summer" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-kenzie-morris-hike-summer-ski-sawtooth-360x240.jpg" alt="skier hiking into the mountains during summer" media="(max-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-kenzie-morris-hike-summer-ski-sawtooth-360x240.jpg" alt="skier hiking into the mountains during summer" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-kenzie-morris-hike-summer-ski-sawtooth-960x640.jpg" alt="skier hiking into the mountains during summer"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-kenzie-morris-hike-summer-ski-sawtooth-960x640.jpg" alt="skier hiking into the mountains during summer">
 					</picture>
 				</a>
 			</div>
@@ -106,7 +102,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-squaw-park-tahoe-640x960.jpg" alt="skier sending a park kicker" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-squaw-park-tahoe-360x540.jpg" alt="skier sending a park kicker" media="(max-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-squaw-park-tahoe-360x540.jpg" alt="skier sending a park kicker" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-squaw-park-tahoe-960x1440.jpg" alt="skier sending a park kicker"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-squaw-park-tahoe-960x1440.jpg" alt="skier sending a park kicker">
 					</picture>
 				</a>
 			</div>
@@ -125,7 +121,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-revelstoke-tree-chute-640x960.jpg" alt="skier sending an air through some trees" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-revelstoke-tree-chute-360x540.jpg" alt="skier sending an air through some trees" media="(max-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-revelstoke-tree-chute-360x540.jpg" alt="skier sending an air through some trees" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-revelstoke-tree-chute-960x1440.jpg" alt="skier sending an air through some trees"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-revelstoke-tree-chute-960x1440.jpg" alt="skier sending an air through some trees">
 					</picture>
 				</a>
 			</div>
@@ -147,7 +143,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-retallack-canada-powder-640x426.jpg" alt="skiing deep powder snow at retallack lodge" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-retallack-canada-powder-360x240.jpg" alt="skiing deep powder snow at retallack lodge" media="(max-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-retallack-canada-powder-360x240.jpg" alt="skiing deep powder snow at retallack lodge" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-retallack-canada-powder-960x640.jpg" alt="skiing deep powder snow at retallack lodge"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-eric-lee-obrien-retallack-canada-powder-960x640.jpg" alt="skiing deep powder snow at retallack lodge">
 					</picture>
 				</a>
 			</div>
@@ -167,7 +163,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-drone-tahoe-eric-lee-obrien-640x426.jpg" alt="drone photo of a skier" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-drone-tahoe-eric-lee-obrien-360x240.jpg" alt="drone photo of a skier" media="(max-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-drone-tahoe-eric-lee-obrien-360x240.jpg" alt="drone photo of a skier" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-drone-tahoe-eric-lee-obrien-960x640.jpg" alt="drone photo of a skier"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-drone-tahoe-eric-lee-obrien-960x640.jpg" alt="drone photo of a skier">
 					</picture>
 				</a>
 			</div>
@@ -189,7 +185,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-powder-backcountry-oregon-splitboard-640x426.jpg" alt="snowboarder carving a turn in the backcountry" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-powder-backcountry-oregon-splitboard-360x240.jpg" alt="snowboarder carving a turn in the backcountry" media="(max-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-powder-backcountry-oregon-splitboard-360x240.jpg" alt="snowboarder carving a turn in the backcountry" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-powder-backcountry-oregon-splitboard-960x640.jpg" alt="snowboarder carving a turn in the backcountry"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-powder-backcountry-oregon-splitboard-960x640.jpg" alt="snowboarder carving a turn in the backcountry">
 					</picture>
 				</a>
 			</div>
@@ -209,7 +205,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-peraly-gates-wallowas-splitboard-640x427.jpg" alt="splitboarder in the backcountry" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-peraly-gates-wallowas-splitboard-360x240.jpg" alt="splitboarder in the backcountry" media="(max-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-peraly-gates-wallowas-splitboard-360x240.jpg" alt="splitboarder in the backcountry" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-peraly-gates-wallowas-splitboard-960x640.jpg" alt="splitboarder in the backcountry"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-peraly-gates-wallowas-splitboard-960x640.jpg" alt="splitboarder in the backcountry">
 					</picture>
 				</a>
 			</div>
@@ -231,7 +227,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-hike-backcountry-640x426.jpg" alt="snowboarder hiking in the backcountry" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-hike-backcountry-360x240.jpg" alt="snowboarder hiking in the backcountry" media="(max-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-hike-backcountry-360x240.jpg" alt="snowboarder hiking in the backcountry" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-hike-backcountry-960x640.jpg" alt="snowboarder hiking in the backcountry"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-chris-cloyd-hike-backcountry-960x640.jpg" alt="snowboarder hiking in the backcountry">
 					</picture>
 				</a>
 			</div>
@@ -251,7 +247,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brian-stenerson-revelstoke-chute-640x426.jpg" alt="snowboarder dropping into a chute at revelstoke" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brian-stenerson-revelstoke-chute-360x240.jpg" alt="snowboarder dropping into a chute at revelstoke" media="(max-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brian-stenerson-revelstoke-chute-360x240.jpg" alt="snowboarder dropping into a chute at revelstoke" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brian-stenerson-revelstoke-chute-960x640.jpg" alt="snowboarder dropping into a chute at revelstoke"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brian-stenerson-revelstoke-chute-960x640.jpg" alt="snowboarder dropping into a chute at revelstoke">
 					</picture>
 				</a>
 			</div>
@@ -273,7 +269,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brian-stenerson-mt-hood-backside-pacific-north-quest-640x426.jpg" alt="snowboarder sending an air over oregon forrests" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brian-stenerson-mt-hood-backside-pacific-north-quest-360x240.jpg" alt="snowboarder sending an air over oregon forrests" media="(max-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brian-stenerson-mt-hood-backside-pacific-north-quest-360x240.jpg" alt="snowboarder sending an air over oregon forrests" media="(max-width: 360px)">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brian-stenerson-mt-hood-backside-pacific-north-quest-960x640.jpg" alt="snowboarder sending an air over oregon forrests"></noscript>
+						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-winter-2018-brian-stenerson-mt-hood-backside-pacific-north-quest-960x640.jpg" alt="snowboarder sending an air over oregon forrests">
 					</picture>
 				</a>
 			</div>

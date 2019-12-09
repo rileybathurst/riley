@@ -10,18 +10,17 @@ if (have_posts()) {
 
 			<section class="continental west-medium">
 				<a href="http://rileybathurst.com/Moonshine_Ink_Tahoe_Winter_Times_1812-20-1080x721/">
-					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-1080x1358.jpg">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-1080x1358.webp" alt="skiing  photo" media="(min-width: 960px)" type="image/webp">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-1080x1358.jpg" alt="skiing  photo" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-960x1207.webp" alt="skiing  photo" media="(min-width: 720px)" type="image/webp">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-960x1207.jpg" alt="skiing  photo" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-720x905.webp" alt="skiing  photo" media="(min-width: 640px)" type="image/webp">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-720x905.jpg" alt="skiing  photo" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-640x804.webp" alt="skiing  photo" media="(min-width: 360px)" type="image/webp">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-640x804.jpg" alt="skiing  photo" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-360x452.webp" alt="skiing  photo" type="image/webp">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-360x452.jpg" alt="skiing  photo">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-360x452.jpg" alt="skiing  photo"></noscript>
+					<picture class="lozad-picture">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-1080x1358.webp" media="(min-width: 960px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-1080x1358.jpg" media="(min-width: 960px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-960x1207.webp" media="(min-width: 720px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-960x1207.jpg" media="(min-width: 720px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-720x905.webp" media="(min-width: 640px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-720x905.jpg" media="(min-width: 640px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-640x804.webp" media="(min-width: 360px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-640x804.jpg" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-360x452.webp" type="image/webp">
+						<img src="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-360x452.jpg" alt="skiing  photo">
 					</picture>
 				</a>
 				<h4 class="caption">Lifestyle skiing </h4>
@@ -31,18 +30,17 @@ if (have_posts()) {
 
 			<section class="continental east-medium">
 				<a href="http://rileybathurst.com/Moonshine_Ink_Tahoe_Winter_Times_1812-39-1080x721/">
-					<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-1080x1358.jpg-1080x1358.jpg">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-1080x1358.webp" alt="skiing  photo" media="(min-width: 960px)" type="image/webp">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-1080x1358.jpg" alt="skiing  photo" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-960x1207.webp" alt="skiing  photo" media="(min-width: 720px)" type="image/webp">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-960x1207.jpg" alt="skiing  photo" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-720x905.webp" alt="skiing  photo" media="(min-width: 640px)" type="image/webp">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-720x905.jpg" alt="skiing  photo" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-640x804.webp" alt="skiing  photo" media="(min-width: 360px)" type="image/webp">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-640x804.jpg" alt="skiing  photo" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-360x452.webp" alt="skiing  photo" type="image/webp">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-360x452.jpg" alt="skiing  photo">
-						<noscript><img src="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-360x452.jpg" alt="skiing  photo"></noscript>
+					<picture class="lozad-picture">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-1080x1358.webp" media="(min-width: 960px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-1080x1358.jpg" media="(min-width: 960px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-960x1207.webp" media="(min-width: 720px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-960x1207.jpg" media="(min-width: 720px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-720x905.webp" amedia="(min-width: 640px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-720x905.jpg" media="(min-width: 640px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-640x804.webp" media="(min-width: 360px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-640x804.jpg" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-360x452.webp" type="image/webp">
+						<img src="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-360x452.jpg" alt="skiing  photo">
 					</picture>
 				</a>
 				<h4 class="caption">skiing Action</h4>
@@ -60,8 +58,8 @@ if (have_posts()) {
 			</section>
 
 			<section class="continental west-medium">
-					<h3>KBong</h3>
-					<p>Tiny Porch Concert.</p>
+				<h3>KBong</h3>
+				<p>Tiny Porch Concert.</p>
 			</section>
 
 			<hr class="mega-hr">
@@ -70,8 +68,8 @@ if (have_posts()) {
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/yUBJ-9XrOKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</section>
 			<section class="continental east-medium">
-					<h3>Marty O'Reilly</h3>
-					<p>Tiny Porch Concert.</p>
+				<h3>Marty O'Reilly</h3>
+				<p>Tiny Porch Concert.</p>
 			</section>
 
 		</div>
