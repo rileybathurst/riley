@@ -38,7 +38,7 @@ $breakpoints: (
   xxlarge: 1440px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large); // should this not include all the way to xx if I have it above?
 
 $primary-color: #c22127;
 $secondary-color: #8a0000;

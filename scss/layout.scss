@@ -156,6 +156,10 @@
 	}
 }
 
+.custom-header-featured-video iframe {
+	width: 100%;
+}
+
 .single #top-menu {
 	margin: 0;
 	@media (min-width: map-get($breakpoints, medium)) {

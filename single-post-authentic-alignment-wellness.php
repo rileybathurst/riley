@@ -15,7 +15,7 @@ if (have_posts()) {
 				<p>I worked with Amanda on these images in conjunction with her new site.</p>
 			</div>
 
-			<picture class="lozad-picture continental west-large" data-iesrc="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0043-360x240.jpg">
+			<picture class="lozad-picture continental west-large">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-3840x2560.webp" alt="amanda reaching out to the universe" media="(min-width: 1080px)" type="image/webp">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-3840x2560.jpg" alt="amanda reaching out to the universe"  media="(min-width: 1080px)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-1080x720.webp" alt="amanda reaching out to the universe" media="(min-width: 960px)" type="image/webp">
@@ -28,7 +28,7 @@ if (have_posts()) {
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-640x426.jpg" alt="amanda reaching out to the universe"  media="(min-width: 360px)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-360x240.webp" alt="amanda reaching out to the universe" media="(max-width: 360px)" type="image/webp">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-360x240.jpg" alt="amanda reaching out to the universe"  media="(max-width: 360px)">
-				<noscript><img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-360x240.jpg" alt="amanda reaching out to the universe"></noscript>
+				<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-360x240.jpg" alt="amanda reaching out to the universe">
 			</picture>
 
 			<div class="east-large"></div> <!-- white spacing -->
