@@ -12,12 +12,12 @@ if (have_posts()) {
 			<h3 class="subtitle">48 Hours in</h3>
 
 			<div class="continental west-medium gr-1-m responsive-embed widescreen frame">
-					<iframe width="560" height="315" data-src="https://www.youtube.com/embed/6pi2jarIerY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
+				<iframe width="560" height="315" data-src="https://www.youtube.com/embed/6pi2jarIerY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
 			</div>
-			<p class="continental east-medium">48 hours In is a series that follows Susan Kostrzewa around some of the great wine cities of the world and takes a flyby view of some of the hotest wine or not quite wine spots, I filmed the majority of the Miami and Seattle episodes and did post production supervision on the Miami, Seattle, and San Fransico episodes.</p>
+				<p class="continental east-medium">48 hours In is a series that follows Susan Kostrzewa around some of the great wine cities of the world and takes a flyby view of some of the hotest wine or not quite wine spots, I filmed the majority of the Miami and Seattle episodes and did post production supervision on the Miami, Seattle, and San Fransico episodes.</p>
 			</div>
 
-				<hr class="mega-hr">
+			<hr class="mega-hr">
 
 			<div class="specific-grid">
 				<h3 class="subtitle">Lighting the Vines</h3>
@@ -27,7 +27,7 @@ if (have_posts()) {
 				<p class="continental east-medium">Lighting of the vines is a unique christmas party to Hamel Family Wines, linking a piano to strings of lights along rows of vines to create a beautiful atmosphere as the sun goes down, I filmed the event for two years and edited the videos as well as social media length cuts.</p>
 			</div>
 
-				<hr class="mega-hr">
+			<hr class="mega-hr">
 
 			<div class="specific-grid">
 				<h3 class="subtitle">Collopack Solutions</h3>
@@ -37,7 +37,7 @@ if (have_posts()) {
 				<p class="continental east-medium">Collopack solutions is a wine industry manufacturer and the less glamorous side of wine, thousand of bottles spinning around a product facility, using time-lapse and slow motion to create an interesting set of visuals while still creating an informative video.</p>
 			</div>
 
-				<hr class="mega-hr">
+			<hr class="mega-hr">
 
 			<div class="specific-grid">
 				<h3 class="subtitle">Davies - Brand Video</h3>

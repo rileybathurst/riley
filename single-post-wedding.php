@@ -42,18 +42,17 @@ if (have_posts()) {
 
 		<section class="continental west-medium">
 			<a href="http://rileybathurst.com/Joanna_John_Engagement_Chimney20190605_0019-1080x721/">
-				<picture class="lozad-picture" data-iesrc="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-1080x721.jpg">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-1080x721.webp" alt="engagement photo" media="(min-width: 960px)" type="image/webp">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-1080x721.jpg" alt="engagement photo" media="(min-width: 960px)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-960x640.webp" alt="engagement photo" media="(min-width: 720px)" type="image/webp">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-960x640.jpg" alt="engagement photo" media="(min-width: 720px)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-720x480.webp" alt="engagement photo" media="(min-width: 640px)" type="image/webp">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-720x480.jpg" alt="engagement photo" media="(min-width: 640px)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-640x427.webp" alt="engagement photo" media="(min-width: 360px)" type="image/webp">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-640x427.jpg" alt="engagement photo" media="(min-width: 360px)">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-360x240.webp" alt="engagement photo" type="image/webp">
-					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-360x240.jpg" alt="engagement photo">
-					<noscript><img src="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-360x240.jpg" alt="engagement photo"></noscript>
+				<picture class="lozad-picture">
+					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-1080x721.webp" media="(min-width: 960px)" type="image/webp">
+					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-1080x721.jpg" media="(min-width: 960px)">
+					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-960x640.webp" media="(min-width: 720px)" type="image/webp">
+					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-960x640.jpg" media="(min-width: 720px)">
+					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-720x480.webp" media="(min-width: 640px)" type="image/webp">
+					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-720x480.jpg" media="(min-width: 640px)">
+					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-640x427.webp" media="(min-width: 360px)" type="image/webp">
+					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-640x427.jpg" media="(min-width: 360px)">
+					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-360x240.webp" type="image/webp">
+					<img src="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-360x240.jpg" alt="engagement photo">
 				</picture>
 			</a>
 			<h4 class="caption">Engagement</h4>
