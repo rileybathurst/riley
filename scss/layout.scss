@@ -150,6 +150,10 @@
 	z-index: 10;
 	grid-column: 2 / 5;
 	grid-row: 1 / 3;
+	// https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+	position: relative;
+	padding-bottom: 56.25%; // 16:9
+	height: 0;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 2 / 4;
@@ -157,7 +161,11 @@
 }
 
 .custom-header-featured-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
+	height: 100%;
 }
 
 .single #top-menu {
@@ -388,9 +396,11 @@
 	display: block; // seems more suitable
 }
 
+/*
 .article-thumbnail img, .category-thumbnail img {
 	// justify-self: center; // this should be handled by the block
 }
+*/
 
 .article-thumbnail > a > img, .category-thumbnail > a > img {
 	width: 100%;
