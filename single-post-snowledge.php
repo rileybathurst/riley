@@ -55,7 +55,7 @@ if (have_posts()) {
 				</a>
 				<h4 class="caption">Eric Lee O'Brien - Park Shot</h4>
 			</section>
-		
+		</div><!-- specific-grid -->
 
 		<hr class="mega-hr">
 
