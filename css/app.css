@@ -154,12 +154,25 @@ figcaption,
   border-radius: 2px;
 }
 
+/*
+.category-thumbnail { // this would be cool but it doesnt work with png
+	// background: $black;
+	// background: linear-gradient(53deg, rgba(2,0,36,1) 0%, rgba(194,33,39,1) 37%, rgba(0,212,255,1) #8a0000);
+}
+*/
+/*
+.category-thumbnail img { 
+	// height: 100%;
+}
+*/
 .category-thumbnail img:hover {
   opacity: 0.8;
 }
 
 .wp-block-code {
   background: #fefefe;
+  padding: 1rem;
+  line-height: 1.5em;
 }
 
 .flatten {
@@ -315,7 +328,18 @@ figcaption,
   }
 }
 
-.custom-header-media,
+.custom-header-media {
+  z-index: 10;
+  grid-column: 2/5;
+  grid-row: 1/3;
+  margin-bottom: 2rem;
+}
+@media (min-width: 640px) {
+  .custom-header-media {
+    grid-column: 2/4;
+  }
+}
+
 .custom-header-featured-video {
   z-index: 10;
   grid-column: 2/5;
@@ -325,8 +349,7 @@ figcaption,
   height: 0;
 }
 @media (min-width: 640px) {
-  .custom-header-media,
-.custom-header-featured-video {
+  .custom-header-featured-video {
     grid-column: 2/4;
   }
 }
@@ -402,8 +425,13 @@ figcaption,
   max-width: 77rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2em 1fr 1fr 1fr 2em;
   grid-gap: 1rem;
+  grid-template-columns: 0 1fr 0;
+}
+@media (min-width: 640px) {
+  .front-page-titles {
+    grid-template-columns: 2em 1fr 2em;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -556,8 +584,13 @@ figcaption,
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 2em 1fr 4fr 4fr 1fr 2em;
   padding-top: 2rem;
+  grid-template-columns: 4px 1fr 4fr 4fr 1fr 4px;
+}
+@media (min-width: 640px) {
+  .site-main article {
+    grid-template-columns: 2em 1fr 4fr 4fr 1fr 2em;
+  }
 }
 
 .article-thumbnail {
@@ -619,6 +652,7 @@ figcaption,
 .article-content {
   grid-column: 2/6;
   margin-bottom: 1rem;
+  max-width: 100%;
 }
 @media (min-width: 640px) {
   .article-content {
@@ -1011,6 +1045,7 @@ figcaption,
 
 .footer_nav ul {
   margin: 0;
+  padding: 0;
 }
 
 .footer_nav li {
@@ -1071,8 +1106,14 @@ figcaption,
   }
 }
 .ccc-west {
-  grid-column: 1;
-  grid-row: 1/4;
+  display: none;
+}
+@media (min-width: 640px) {
+  .ccc-west {
+    display: inline;
+    grid-column: 1;
+    grid-row: 1/4;
+  }
 }
 
 .clicks,
@@ -1081,12 +1122,25 @@ figcaption,
   grid-column: 2/5;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 1em;
+  grid-gap: 0.5em;
+}
+@media (min-width: 640px) {
+  .clicks,
+.code,
+.camera {
+    grid-gap: 1em;
+  }
 }
 
 .ccc-east {
-  grid-column: 5;
-  grid-row: 1/4;
+  display: none;
+}
+@media (min-width: 640px) {
+  .ccc-east {
+    display: initial;
+    grid-column: 5;
+    grid-row: 1/4;
+  }
 }
 
 .social-icons {
@@ -1231,6 +1285,11 @@ img.alignright, .alignright img {
 /*--------------------------------------------------------------
 5.0 Typography
 --------------------------------------------------------------*/
+p {
+  display: block;
+  float: left;
+  clear: both;
+}
 @media (min-width: 1024px) {
   p {
     text-align: justify;
@@ -1538,8 +1597,11 @@ a:hover {
   border-color: #c22127 !important;
   font-weight: bold;
   font-size: 1.5em;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+  /* padding-right: $global-padding; this was causing issues with hover looking strange but maybe I had done it or a reason?
+  padding-bottom: $global-padding;
+  */
+  padding: 1rem;
+  transition: 0.5s;
 }
 @media (min-width: 640px) {
   .button {

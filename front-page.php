@@ -6,9 +6,9 @@ Template Name: Front Page
 
 <?php get_header(); ?>
 
-<div class="background-primary">
+<div class="background-primary negative-margin">
 	<div class="front-page-titles">
-		<div class="fp-box ccc-west"></div>
+		<div class="fp-box ccc-west"><!-- stay gold --></div>
 
 		<div class="clicks">
 			<div class="fp-box clicks-a"><div class="ghostly presence">C</div></div>
@@ -37,8 +37,7 @@ Template Name: Front Page
 			<div class="fp-box camera-f"><div class="ghostly presence">A</div></div>
 		</div>
 
-
-		<div class="fp-box ccc-east"></div>
+		<div class="fp-box ccc-east"><!-- stay gold --></div>
 	</div>
 </div>
 

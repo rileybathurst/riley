@@ -19,7 +19,7 @@ I'll try it out quick on firefox.
 - Featured Video not showing full width
 - HTML formatting to make sure the H tag is the first one
 - nice additional movement with JS
-- sort out the code block
+- sort out the code block max-width
 - comments page
 - minify css
 - neither of the form.php or form-2.php seem to be useful
@@ -41,3 +41,4 @@ I'll try it out quick on firefox.
 - single-post-keep-squaw-true.php inline styles are ridiculous
 - make captions real captions
 - winter 18.php web p images
+- img/photography.jpeg needs to be compressed to webp for the top of template-parts/featured-image

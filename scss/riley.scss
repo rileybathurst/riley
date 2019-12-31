@@ -121,6 +121,9 @@ img.alignright, .alignright img {
 --------------------------------------------------------------*/
 
 p {
+	display: block;
+	float: left;
+	clear: both;
 	@media (min-width: map-get($breakpoints, large)) {
 		text-align: justify;
 	}
@@ -423,8 +426,11 @@ a:hover {
 	border-color: $primary-color !important;
 	font-weight: bold;
 	font-size: 1.5em; // type scale?
-	padding-right: $global-padding;
+	/* padding-right: $global-padding; this was causing issues with hover looking strange but maybe I had done it or a reason?
 	padding-bottom: $global-padding;
+	*/ 
+	padding: $global-padding;
+	transition: 0.5s;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 2em; // type scale?

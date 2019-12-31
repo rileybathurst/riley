@@ -1,6 +1,11 @@
 .ccc-west {
-	grid-column: 1;
-	grid-row: 1/4;
+	display: none;
+	@media (min-width: map-get($breakpoints, medium)) {
+		display: inline;
+		grid-column: 1;
+		grid-row: 1/4;
+	// 	margin-bottom: $global-margin;
+	}
 }
 
 .clicks,
@@ -9,12 +14,23 @@
 	grid-column: 2 / 5;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; // this is a repeat
-	grid-gap: 1em;
+
+	grid-gap: 0.5em;
+	// margin-bottom: $global-margin;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-gap: 1em;
+	}
 }
 
 .ccc-east {
-	grid-column: 5;
-	grid-row: 1/4;
+	display: none;
+	@media (min-width: map-get($breakpoints, medium)) {
+		display: initial;
+		grid-column: 5;
+		grid-row: 1/4;
+	// 	margin-bottom: $global-margin;
+	}
 }
 
 .social-icons {

@@ -20,7 +20,7 @@
 --------------------------------------------------------------*/
 
 .page-width {
-	max-width: 77em; // I think this should be from the wordpress setting // twenty nineteen is doing %20 + 60px above a certain size
+	max-width: $page-width; // I think this should be from the wordpress setting // twenty nineteen is doing %20 + 60px above a certain size
 	margin: 0 auto;
 }
 
@@ -60,7 +60,7 @@
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		justify-self: center;
-		align-self: end;
+		align-self: end; // this is for when the menu is horizontal on single pages
 	}
 }
 
@@ -145,7 +145,17 @@
 	}
 }
 
-.custom-header-media,
+.custom-header-media {
+	z-index: 10;
+	grid-column: 2 / 5;
+	grid-row: 1 / 3;
+	margin-bottom: $global-margin*2; // make sure the red overstripe has some room to play
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-column: 2 / 4;
+	}
+}
+
 .custom-header-featured-video {
 	z-index: 10;
 	grid-column: 2 / 5;
@@ -225,13 +235,17 @@
 13.2 Front Page
 --------------------------------------------------------------*/
 
-.front-page-titles {
+.front-page-titles { 
 	width: 100%;
 	max-width: 77rem; // again?
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 2em 1fr 1fr 1fr 2em;
+	display: grid; // I am using this for the grid gap it could probably be done better
 	grid-gap: $global-grid-gap;
+	grid-template-columns: 0 1fr 0;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-template-columns: 2em 1fr 2em; // this is messy and needs work
+	}
 }
 
 /*--------------------------------------------------------------
@@ -239,7 +253,7 @@
 --------------------------------------------------------------*/
 
 .category-header {
-	max-width: 77em; // again?
+	max-width: $page-width;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 2em 1fr 8fr 1fr 2em;
@@ -317,7 +331,7 @@
 }
 
 .category-sub {
-	max-width: 77em; // again?
+	max-width: $page-width;
 	margin: 0 auto;
 	margin-bottom: $global-margin;
 }
@@ -375,8 +389,13 @@
 
 	display: grid;
 	grid-gap: $global-grid-gap;
-	grid-template-columns: 2em 1fr 4fr 4fr 1fr 2em;
 	padding-top: $global-padding*2;
+
+	grid-template-columns: 4px 1fr 4fr 4fr 1fr 4px;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-template-columns: 2em 1fr 4fr 4fr 1fr 2em;
+	}
 }
 
 .article-thumbnail {
@@ -444,6 +463,7 @@
 	grid-column: 2 / 6;
 	// grid-row: 4; // i guess by not defining it falls into place with whats above
 	margin-bottom: $global-margin;
+	max-width: 100%;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 3 / 5;
@@ -481,7 +501,7 @@
 
 .article-base {
 	//min-height: 3em; // this is a breaker in categories
-	max-width: 77em; // again?
+	max-width: $page-width;
 	margin-top: $global-margin*3; // rewrite this as a single
 	margin-left: auto;
 	margin-right: auto;
@@ -635,7 +655,7 @@
 
 .pagination {
 	margin: 3rem auto;
-	max-width: 77em;
+	max-width: $page-width;
 	display: grid;
 	grid-gap: $global-grid-gap;
 	grid-template-columns: 2em 1fr 4fr 1fr 2em; // fix
@@ -830,6 +850,7 @@
 
 .footer_nav ul {
 	margin: 0;
+	padding: 0; // browser reset
 }
 
 .footer_nav li {
