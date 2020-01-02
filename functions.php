@@ -79,3 +79,23 @@ add_filter( 'wp_mail_from_name', function( $name ) {
 	return 'Riley Bathurst'; // these should be variables - site name
 	// bloginfo( 'name' ); need to do some checks with this first
 });
+
+
+// test
+function myguten_register_post_meta() {
+    register_post_meta( 'post', 'myguten_meta_block_field', array(
+        'show_in_rest' => true,
+        'single' => true,
+        'type' => 'string',
+    ) );
+}
+add_action( 'init', 'myguten_register_post_meta' );
+
+function myguten_enqueue() {
+    wp_enqueue_script(
+        'myguten-script',
+        get_template_directory_uri() . '/myguten.js',
+        array( 'wp-blocks', 'wp-element', 'wp-components' )
+    );
+}
+add_action( 'enqueue_block_editor_assets', 'myguten_enqueue' );

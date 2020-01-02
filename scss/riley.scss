@@ -119,15 +119,19 @@ img.alignright, .alignright img {
 /*--------------------------------------------------------------
 5.0 Typography
 --------------------------------------------------------------*/
-
 p {
-	display: block;
-	float: left;
-	clear: both;
 	@media (min-width: map-get($breakpoints, large)) {
 		text-align: justify;
 	}
 }
+
+/*
+.post > .article-content p {
+	display: block;
+	float: left; // Ive got problems with this so it needs documentation
+	clear: both; // Ive got problems with this
+}
+*/
 
 ::selection {
   background: $primary-color; /* WebKit/Blink Browsers */
@@ -161,6 +165,10 @@ cite {
 	color: $dark-gray;
 	margin-left: $global-margin;
 	margin-bottom: $global-margin*1.5;
+}
+
+.article-content .wp-block-code {
+	white-space: break-spaces; // stay at 100%
 }
 
 .spine {
