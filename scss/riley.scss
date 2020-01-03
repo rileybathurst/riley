@@ -198,12 +198,12 @@ cite {
 }
 
 .speechbubble {
+	display: block; // needed for the padding to be effective on a grid
 	color: $primary-color;
-	padding-top: $global-padding; // whats the left can I make this a single?
-	padding-bottom: $global-padding;
-	padding-right: $global-padding;
-	border-bottom: 1px solid $primary-color; // why not an em like other places? quite probably use a $global-border-weight
-	border-right: 1px solid $primary-color;
+	padding: $global-padding;
+	margin-top: -$global-grid-gap;
+	border-bottom: 2px solid $primary-color; // why not an em like other places? quite probably use a $global-border-weight
+	border-right: 2px solid $primary-color;
 	border-bottom-right-radius: 3px;
 }
 
@@ -437,7 +437,6 @@ a:hover {
 	/* padding-right: $global-padding; this was causing issues with hover looking strange but maybe I had done it or a reason?
 	padding-bottom: $global-padding;
 	*/ 
-	padding: $global-padding;
 	transition: 0.5s;
 
 	@media (min-width: map-get($breakpoints, medium)) {
@@ -448,6 +447,7 @@ a:hover {
 .button:hover { // [type="submit"] removed for material
 	background: $primary-color !important; // why important?
 	color: $white !important; // why important?
+	padding: $global-padding; // this is on a transition so its interesting when just on the hover
 }
 
 .navigation-top a {
@@ -618,7 +618,12 @@ a:hover {
 --------------------------------------------------------------*/
 
 .navigation-top ul { // does this need to be told to be a flex?
-	flex-direction: column;
+	// flex-direction: column;
+	padding-left: 0;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		padding-left: $global-padding;
+	}
 }
 
 .navigation-top ul li {

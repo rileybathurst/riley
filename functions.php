@@ -67,6 +67,7 @@ require get_parent_theme_file_path( '/inc/backend-options.php' );
 require get_parent_theme_file_path( '/inc/breadcrumbs.php' );
 require get_parent_theme_file_path( '/inc/featured-video.php' );
 require get_parent_theme_file_path( '/inc/cats-one-deep.php' );
+require get_parent_theme_file_path( '/inc/post-order.php' ); // this might get way too complicated with projects across categories
 
 
 // Change the email that root level mail is sent from
@@ -99,3 +100,38 @@ function myguten_enqueue() {
     );
 }
 add_action( 'enqueue_block_editor_assets', 'myguten_enqueue' );
+
+// custom post types
+function wp_custom_post_type()
+{
+	register_post_type('riley_portfolio',
+		array(
+			'labels'		=> array(
+				'name'			=> __('Portfolio'),
+				'singular_name'	=> __('Portfolio'),
+			),
+			'public'		=> true,
+			'has_archive'	=> true,
+			'rewrite'		=> array( 'slug' => 'portfolio' ),
+			'show_in_rest'	=> true,
+			'supports'		=> array(
+								'title',
+								'editor',
+								'revisions',
+								'excerpt',
+								'page-attributes', //used for order
+								'thumbnail',
+								// 'category', // this doesnt work and I would like it
+								// 'tag' // nope
+							)
+		)
+	);
+}
+add_action('init', 'wp_custom_post_type');
+
+// try and add some additional functionality thats outside the regular supports
+function portfolio_category() {
+	// add_post_type_support ('riley_portfolio', 'title'); // this works if its removed from above so I presume I can make up new ones
+	add_post_type_support ('riley_portfolio', 'category', 'something' ); // might need to figure out the args with this?
+}
+add_action('init', 'portfolio_category');

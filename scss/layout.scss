@@ -56,7 +56,8 @@
 .header-logo {
 	grid-column: 5;
 	grid-row: 1;
-	place-self: start;
+	align-self: start;
+	justify-self: end; // macth the spine
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		justify-self: center;
@@ -444,14 +445,13 @@
 	grid-row: 2;
 	grid-column: 2 / 6;
 
-	@media (min-width: map-get($breakpoints, large)) {
+	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 3 / 5;
 	}
 }
 
 .article-speechbubble {
 	grid-column: 4 / 6; //dealing with the last skinny column
-	margin-bottom: $global-margin;
 	justify-self: end;
 
 	@media (min-width: map-get($breakpoints, medium)) {
@@ -459,10 +459,14 @@
 	}
 }
 
+.article-speechbubble > .speeechbubble {
+	margin-bottom: $global-margin;
+}
+
 .article-content {
 	grid-column: 2 / 6;
 	// grid-row: 4; // i guess by not defining it falls into place with whats above
-	margin-bottom: $global-margin;
+	// margin-bottom: $global-margin; not needed as all elements inside should have the bottom margin
 	max-width: 100%;
 
 	@media (min-width: map-get($breakpoints, medium)) {

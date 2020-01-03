@@ -66,8 +66,8 @@ endwhile;
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-960x640.jpg" media="(min-width: 720px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-720x480.webp" type="image/webp" media="(min-width: 640px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-720x480.jpg" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-640x427.webp" type="image/webp" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-640x427.jpg" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-640x426.webp" type="image/webp" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-640x426.jpg" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-360x240.webp" type="image/webp" media="(max-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-360x240.jpg" media="(max-width: 360px)">
 
@@ -75,14 +75,14 @@ endwhile;
 					</picture>
 
 					<picture>
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-1080x722.webp" type="image/webp" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-1080x722.jpg" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-960x641.webp" type="image/webp" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-960x641.jpg" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-720x481.webp" type="image/webp" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-720x481.jpg" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-640x427.webp" type="image/webp" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-640x427.jpg" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-1080x720.webp" type="image/webp" media="(min-width: 960px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-1080x720.jpg" media="(min-width: 960px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-960x640.webp" type="image/webp" media="(min-width: 720px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-960x640.jpg" media="(min-width: 720px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-720x480.webp" type="image/webp" media="(min-width: 640px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-720x480.jpg" media="(min-width: 640px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-640x426.webp" type="image/webp" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-640x426.jpg" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-360x240.webp" type="image/webp" media="(max-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-360x240.jpg" media="(max-width: 360px)">
 
@@ -105,14 +105,14 @@ endwhile;
 					</picture>
 
 					<picture>
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-1080x721.webp" type="image/webp" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-1080x721.jpg" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-960x641.webp" type="image/webp" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-960x641.jpg" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-720x481.webp" type="image/webp" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-720x481.jpg" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-640x427.webp" type="image/webp" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-640x427.jpg" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-1080x720.webp" type="image/webp" media="(min-width: 960px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-1080x720.jpg" media="(min-width: 960px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-960x640.webp" type="image/webp" media="(min-width: 720px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-960x640.jpg" media="(min-width: 720px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-720x480.webp" type="image/webp" media="(min-width: 640px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-720x480.jpg" media="(min-width: 640px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-640x426.webp" type="image/webp" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-640x426.jpg" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-360x240.webp" type="image/webp" media="(max-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-360x240.jpg" media="(max-width: 360px)">
 
@@ -126,8 +126,8 @@ endwhile;
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-960x640.jpg" media="(min-width: 720px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-720x480.webp" type="image/webp" media="(min-width: 640px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-720x480.jpg" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-640x427.webp" type="image/webp" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-640x427.jpg" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-640x426.webp" type="image/webp" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-640x426.jpg" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-360x240.webp" type="image/webp" media="(max-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-360x240.jpg" media="(max-width: 360px)">
 
