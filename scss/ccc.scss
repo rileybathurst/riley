@@ -11,7 +11,7 @@
 .clicks,
 .code,
 .camera {
-	grid-column: 2 / 5;
+	grid-column: 2;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; // this is a repeat
 
@@ -27,14 +27,15 @@
 	display: none;
 	@media (min-width: map-get($breakpoints, medium)) {
 		display: initial;
-		grid-column: 5;
+		grid-column: 3;
 		grid-row: 1/4;
 	// 	margin-bottom: $global-margin;
 	}
 }
 
 .social-icons {
-	grid-column: 2 / 5;
+	grid-column: 2;
+	grid-row: 1/4; // match ccc so we can borrow classes
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr; // repeat this as well
 	grid-gap: 1em;

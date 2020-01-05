@@ -22,7 +22,6 @@ I'll try it out quick on firefox.
 - sort out the code block max-width
 - comments page
 - minify css
-- neither of the form.php or form-2.php seem to be useful
 - twenty nineteen are using what I think is gulp so should this to do more than sass
 - deal with some nice header tags so it's not relying on yoast
 - wordpress max variable width
@@ -42,3 +41,4 @@ I'll try it out quick on firefox.
 - make captions real captions
 - winter 18.php web p images
 - img/photography.jpeg needs to be compressed to webp for the top of template-parts/featured-image
+- nav buttons should have the fill slide between

@@ -13,9 +13,10 @@
 
 			<div class="article-header"><h2 class="page-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2></div>
 
-			<?php if ( is_single()) { ?>
-				<h6 class="article-date subheader"><?php the_date(); ?></h6>
-			<?php } ?>
+			<!-- as these are all specific that means they are portfolio key pieces so they dont need to be dated
+			if ( is_single()) { ?> 
+				<h6 class="article-date subheader">< the_date(); ?></h6>
+			< } -->
 
 			<div class="article-speechbubble">
 				<?php $comments_number = get_comments_number();

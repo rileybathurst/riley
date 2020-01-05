@@ -10,7 +10,7 @@
 
 	<div class="article-header"><h2 class="page-title"><?php the_title(); ?></h2></div>
 
-	<?php if ( is_single()) { ?>
+	<?php if ( is_single()) { ?><!-- lets make this only on the blog? -->
 		<h6 class="article-date subheader"><?php the_date(); ?></h6>
 	<?php } ?>
 

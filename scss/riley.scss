@@ -438,6 +438,7 @@ a:hover {
 	padding-bottom: $global-padding;
 	*/ 
 	transition: 0.5s;
+	padding: $global-padding/2; // front page on 0 doesnt work
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 2em; // type scale?

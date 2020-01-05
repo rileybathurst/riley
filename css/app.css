@@ -117,7 +117,7 @@ hr {
 }
 
 .mw-18em {
-  max-width: 18em;
+  max-width: 18rem;
   justify-self: center;
 }
 
@@ -128,14 +128,16 @@ figcaption,
   font-weight: bold;
 }
 
+/* doesnt come up in search
 .footer_menu a {
-  text-decoration: none;
+	text-decoration: none;
 }
-
+*/
+/* doesnt come up in search
 .post-categories li {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
-
+*/
 .comment-form input,
 .comment-form textarea {
   border: 0.1em solid #cacaca;
@@ -195,18 +197,20 @@ figcaption,
 /*--------------------------------------------------------------
 0.1 Variables
 --------------------------------------------------------------*/
+/*
 .global-padding-bottom {
-  padding-bottom: 1rem;
+	padding-bottom: $global-padding;
 }
-
+*/
 /*--------------------------------------------------------------
 1.0 Base
 --------------------------------------------------------------*/
-.page-width {
-  max-width: 77em;
-  margin: 0 auto;
+/*
+.page-width { doesnt turn up in search
+	max-width: $page-width; // I think this should be from the wordpress setting // twenty nineteen is doing %20 + 60px above a certain size
+	margin: 0 auto;
 }
-
+*/
 .spine-border {
   grid-column: 1;
   grid-row: 1/7;
@@ -323,6 +327,7 @@ figcaption,
   grid-row: 2/2;
   writing-mode: vertical-rl;
   place-self: end;
+  margin-bottom: 2rem;
 }
 @media (min-width: 640px) {
   .spine {
@@ -440,7 +445,7 @@ figcaption,
 3.1 Category
 --------------------------------------------------------------*/
 .category-header {
-  max-width: 77em;
+  max-width: 77rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2em 1fr 8fr 1fr 2em;
@@ -466,116 +471,112 @@ figcaption,
   }
 }
 
+/* this doesnt appear to be anywhere
 .article-search {
-  grid-column: 2/12;
-}
-@media (min-width: 640px) {
-  .article-search {
-    grid-column: 4/span 1;
-  }
-}
+	grid-column: 2 / 12; // really?
 
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-column: 4 / span 1;
+	}
+}
+*/
+/* doesnt show in search 
 .content_area {
-  grid-column: 2/span 10;
-  grid-row: 4/span 2;
-  align-self: center;
-}
-@media (min-width: 640px) {
-  .content_area {
-    grid-column: 4/span 6;
-    grid-row: 3;
-    align-self: start;
-  }
-}
-@media (min-width: 1024px) {
-  .content_area {
-    grid-column: 4/span 9;
-    grid-row: 3;
-    /* this cant span multiple rows but it needs to be the largest so the next row sits tight against it, seems kinda a bad design decision incase something else gets bigger than it */
-  }
-}
+	grid-column: 2 / span 10; // really?
+	grid-row: 4 / span 2;
+	align-self: center;
 
-.more {
-  grid-column: 2/span 10;
-  grid-row: 9;
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-column: 4 / span 6; // really?
+		grid-row: 3;
+		align-self: start;
+	}
+	@media (min-width: map-get($breakpoints, large)) {
+		grid-column: 4 / span 9; // really?
+		grid-row: 3;
+		// this cant span multiple rows but it needs to be the largest so the next row sits tight against it,
+		seems kinda a bad design decision incase something else gets bigger than it
+	}
 }
-@media (min-width: 640px) {
-  .more {
-    grid-column: 4/span 3;
-    grid-row: 6;
-  }
-}
-@media (min-width: 1024px) {
-  .more {
-    grid-column: 4/span 3;
-    grid-row: 4;
-  }
-}
+*/
+/* doesnt show in search
+.more { // which more is this?
+	grid-column: 2 / span 10; // really?
+	grid-row: 9; // really?
 
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-column: 4 / span 3;
+		grid-row: 6;
+	}
+	@media (min-width: map-get($breakpoints, large)) {
+		grid-column: 4 / span 3;
+		grid-row: 4;
+	}
+}
+*/
+/* doesnt show in search
 .category-titles {
-  grid-column: 2/5;
-  grid-row: 2;
-  position: relative;
-  z-index: 99;
-  mix-blend-mode: multiply;
-}
-@media (min-width: 640px) {
-  .category-titles {
-    grid-column: 3;
-    grid-row: 3;
-    justify-self: center;
-  }
-}
+	grid-column: 2 / 5;
+	grid-row: 2;
+	position: relative; // why?
+	z-index: 99; // why?
+	mix-blend-mode: multiply;
 
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-column: 3;
+		grid-row: 3;
+		justify-self: center;
+	}
+}
+*/
 .category-sub {
-  max-width: 77em;
+  max-width: 77rem;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
 
 .category-sub ul {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
-  margin-left: 0;
+  padding-left: 0;
 }
 @media (min-width: 640px) {
   .category-sub ul {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
   }
 }
-
-.category-sub li {
+.category-sub ul li {
   list-style: none;
 }
 
 /*--------------------------------------------------------------
 3.2 Featured
 --------------------------------------------------------------*/
+/* doesnt show in search
 .featured-subheader {
-  grid-column: 2;
-  grid-row: 2/3;
-  justify-self: center;
-  writing-mode: vertical-rl;
+	grid-column: 2;
+	grid-row: 2 / 3;
+	justify-self: center;
+	writing-mode: vertical-rl;
 }
-
+*/
+/* doesnt show in search
 .featured-category-title {
-  grid-column: 1/span 12;
-  grid-row: 2;
-  justify-self: center;
+	grid-column: 1 / span 12; // really?
+	grid-row: 2;
+	justify-self: center;
 }
-
+*/
+/* doesnt show in search
 .featured-excerpt {
-  grid-column: 2/5;
-  grid-row: 3;
+	grid-column: 2 / 5;
+	grid-row: 3;
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-column: 3;
+		grid-row: 2;
+	}
 }
-@media (min-width: 640px) {
-  .featured-excerpt {
-    grid-column: 3;
-    grid-row: 2;
-  }
-}
-
+*/
 /*--------------------------------------------------------------
 3.4 Article
 --------------------------------------------------------------*/
@@ -656,7 +657,6 @@ figcaption,
 
 .article-content {
   grid-column: 2/6;
-  max-width: 100%;
 }
 @media (min-width: 640px) {
   .article-content {
@@ -690,12 +690,13 @@ figcaption,
 
 @media (min-width: 640px) {
   .single .article-category {
-    grid-row: 1/4;
+    grid-row: 1/5;
+    align-self: start;
   }
 }
 
 .article-base {
-  max-width: 77em;
+  max-width: 77rem;
   margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
@@ -751,39 +752,39 @@ figcaption,
   }
 }
 
+/* doesnt show in search
 .article-navigation-title {
-  grid-column: 2/span 12;
-  grid-row: 9;
-}
-@media (min-width: 640px) {
-  .article-navigation-title {
-    grid-column: 13/span 2;
-    grid-row: 4;
-    margin: 0;
-    writing-mode: vertical-rl;
-  }
+		grid-column: 2 / span 12; // really?
+		grid-row: 9;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-column: 13 / span 2; // this isnt written very well
+		grid-row: 4;
+		margin: 0;
+		writing-mode: vertical-rl;
+	}
 }
 
 .article-navigation-title a {
-  color: #8a8a8a;
+	color: $dark-gray;
 }
-
+*/
+/* doesnt show in search
 .post-thumbnail {
-  grid-column: 5/span 8;
-  grid-row: 1/span 2;
-  z-index: 5;
-}
-@media (min-width: 640px) {
-  .post-thumbnail {
-    grid-column: 5/span 8;
-    grid-row: 1/span 2;
-  }
+	grid-column: 5 / span 8; // some of these are plain ugly
+	grid-row: 1 / span 2;
+	z-index: 5;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-column: 5 / span 8;
+		grid-row: 1 / span 2; // start with full height
+	}
 }
 
 .post-thumbnail img {
-  width: 100%;
+	width: 100%;
 }
-
+*/
 .post-navigation {
   grid-column: 2/5;
 }
@@ -810,7 +811,6 @@ figcaption,
     grid-column: 4;
   }
 }
-
 @media (min-width: 640px) {
   .article-tags h3 {
     writing-mode: vertical-rl;
@@ -818,9 +818,6 @@ figcaption,
 }
 
 .fp-header {
-  width: 100%;
-  max-width: 77rem;
-  margin: 0 auto;
   grid-column: 2/6;
   align-self: end;
 }
@@ -855,7 +852,7 @@ figcaption,
 --------------------------------------------------------------*/
 .pagination {
   margin: 3rem auto;
-  max-width: 77em;
+  max-width: 77rem;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 2em 1fr 4fr 1fr 2em;
@@ -919,12 +916,20 @@ figcaption,
   grid-row: 1;
 }
 
+/* these dont appear to exisit
 .article-tags h3 {
+	margin: 0; // why nothing below?
+}
+*/
+.single .article-category h3,
+.single .article-category .post-categories {
   margin: 0;
 }
 
-.single .article-category h3, .single .article-category .post-categories {
-  margin: 0;
+@media (min-width: 640px) {
+  .post-categories > li {
+    margin-bottom: 0;
+  }
 }
 
 .comment-reply-title {
@@ -989,13 +994,14 @@ figcaption,
 4.0 Footer
 --------------------------------------------------------------*/
 .site-footer {
-  width: calc(100% - 4em);
+  width: calc(100% - 2em);
   max-width: 75rem;
   margin: 0 auto;
   padding: 1rem 0;
 }
 @media (min-width: 640px) {
   .site-footer {
+    width: calc(100% - 4em);
     padding-top: 5rem;
   }
 }
@@ -1123,7 +1129,7 @@ figcaption,
 .clicks,
 .code,
 .camera {
-  grid-column: 2/5;
+  grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.5em;
@@ -1142,13 +1148,14 @@ figcaption,
 @media (min-width: 640px) {
   .ccc-east {
     display: initial;
-    grid-column: 5;
+    grid-column: 3;
     grid-row: 1/4;
   }
 }
 
 .social-icons {
-  grid-column: 2/5;
+  grid-column: 2;
+  grid-row: 1/4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
@@ -1611,6 +1618,7 @@ a:hover {
   padding-bottom: $global-padding;
   */
   transition: 0.5s;
+  padding: 0.5rem;
 }
 @media (min-width: 640px) {
   .button {

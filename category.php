@@ -13,11 +13,11 @@
 </div>
 
 <!-- sub categories -->
-<div class="background-clean global-padding-bottom">
+<div class="background-clean">
 	<div class="category-sub">
 		<ul>
 			<?php $args = array(
-					'child_of'				=> $cat, // where have I defined this?
+					'child_of'				=> $cat, // defined in inc/cats-one-deep.php
 					'title_li'				=> __( '' ),
 					'show_option_none'		=> '',
 					'depth'					=> '1',
@@ -31,7 +31,8 @@
 	while (have_posts()) : the_post(); ?>
 		<div class="background-dirty">
 			<div class="site-main" role="main">
-				<?php get_template_part( 'template-parts/post/category' ); ?> <!-- major difference is the link in the title -->
+				<?php get_template_part( 'template-parts/post/category' ); ?>
+				<!-- major difference is the link in the title -->
 			</div>
 		</div>
 		<div class="article-base"><!-- stay gold --></div>

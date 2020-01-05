@@ -6,7 +6,14 @@
 		<figure class="article-thumbnail category-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></figure>
 	<?php } ?>
 
-	<div class="article-header"><h2 class="page-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2></div>
+	<div class="article-header">
+		<h2 class="page-title">
+			<a href="<?php the_permalink(); ?>?c=<?php single_cat_title(''); ?>">
+			<!-- the trailing slash is included in the permalink this helps to shorten breadcrumbs on single pages --> 
+				<?php the_title(); ?>
+			</a>
+		</h2>
+	</div>
 
 	<div class="article-speechbubble">
 		<?php $comments_number = get_comments_number();

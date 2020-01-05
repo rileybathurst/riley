@@ -6,7 +6,13 @@ function get_breadcrumb() {
 	if (is_category()) {
 		echo single_cat_title('');
 	} elseif (is_single()) {
-		echo the_category( '&emsp;&#187;&emsp;' )."&emsp;&#187;&emsp;";
+		if (isset($_GET['c'])) { // if I have come from a category page keep it short
+			$incoming = $_GET['c'];
+			echo $incoming;
+			echo '&emsp;&#187;&emsp;';
+		} else {
+			echo the_category( '&emsp;&#187;&emsp;' )."&emsp;&#187;&emsp;";
+		}
 		echo the_title();
 	} elseif (is_page()) {
 		echo the_title();
