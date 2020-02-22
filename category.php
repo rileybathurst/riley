@@ -35,7 +35,7 @@
 				<!-- major difference is the link in the title -->
 			</div>
 		</div>
-		<div class="article-base"><!-- stay gold --></div>
+		<!-- <div class="article-base">stay gold</div> -->
 	<?php endwhile;
 
 	if ( $wp_query->max_num_pages > 1 ) {
