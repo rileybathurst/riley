@@ -43,3 +43,4 @@ I'll try it out quick on firefox.
 - img/photography.jpeg needs to be compressed to webp for the top of template-parts/featured-image
 - nav buttons should have the fill slide between
 - the top right svg should also open a menu
+- make a tiny tiny media query thats super boring but works
