@@ -42,3 +42,4 @@ I'll try it out quick on firefox.
 - winter 18.php web p images
 - img/photography.jpeg needs to be compressed to webp for the top of template-parts/featured-image
 - nav buttons should have the fill slide between
+- the top right svg should also open a menu

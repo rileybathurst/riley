@@ -335,7 +335,7 @@ cite {
 7.0 Formatting
 --------------------------------------------------------------*/
 
-body {
+body { // I think I can do this better just having everything sit inside a little
 	border: 0.25em solid $white;
 
 	@media (min-width: map-get($breakpoints, medium)) {

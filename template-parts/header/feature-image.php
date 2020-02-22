@@ -55,86 +55,86 @@ endwhile;
 	}
 } else { ?>
 <div class="header-color-blocking"></div>
-		<div class="custom-header-media overlaying-image">
-			<div class="hero gp-top">
-				<!-- no script Cross fading images aka slider aka carousel http://css3.bradshawenterprises.com/cfimg/ -->
-				<div class="cfimg shadow">
-					<picture>
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-1080x720.webp" type="image/webp" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-1080x720.jpg" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-960x640.webp" type="image/webp" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-960x640.jpg" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-720x480.webp" type="image/webp" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-720x480.jpg" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-640x426.webp" type="image/webp" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-640x426.jpg" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-360x240.webp" type="image/webp" media="(max-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-360x240.jpg" media="(max-width: 360px)">
+<div class="custom-header-media overlaying-image">
+	<div class="hero gp-top">
+		<!-- no script Cross fading images aka slider aka carousel http://css3.bradshawenterprises.com/cfimg/ -->
+		<div class="cfimg">
+			<picture>
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-1080x720.webp" type="image/webp" media="(min-width: 960px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-1080x720.jpg" media="(min-width: 960px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-960x640.webp" type="image/webp" media="(min-width: 720px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-960x640.jpg" media="(min-width: 720px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-720x480.webp" type="image/webp" media="(min-width: 640px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-720x480.jpg" media="(min-width: 640px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-640x426.webp" type="image/webp" media="(min-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-640x426.jpg" media="(min-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-360x240.webp" type="image/webp" media="(max-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-360x240.jpg" media="(max-width: 360px)">
 
-						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-360x240.jpg" alt="riley bathurst photographer and outdoors enthusiast">
-					</picture>
+				<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-adventure-360x240.jpg" alt="riley bathurst photographer and outdoors enthusiast">
+			</picture>
 
-					<picture>
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-1080x720.webp" type="image/webp" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-1080x720.jpg" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-960x640.webp" type="image/webp" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-960x640.jpg" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-720x480.webp" type="image/webp" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-720x480.jpg" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-640x426.webp" type="image/webp" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-640x426.jpg" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-360x240.webp" type="image/webp" media="(max-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-360x240.jpg" media="(max-width: 360px)">
+			<picture>
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-1080x720.webp" type="image/webp" media="(min-width: 960px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-1080x720.jpg" media="(min-width: 960px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-960x640.webp" type="image/webp" media="(min-width: 720px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-960x640.jpg" media="(min-width: 720px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-720x480.webp" type="image/webp" media="(min-width: 640px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-720x480.jpg" media="(min-width: 640px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-640x426.webp" type="image/webp" media="(min-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-640x426.jpg" media="(min-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-360x240.webp" type="image/webp" media="(max-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-360x240.jpg" media="(max-width: 360px)">
 
-						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-360x240.jpg" alt="riley bathurst designer with energy">
-					</picture>
+				<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-energy-360x240.jpg" alt="riley bathurst designer with energy">
+			</picture>
 
-					<picture>
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-1080x720.webp" type="image/webp" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-1080x720.jpg" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-960x640.webp" type="image/webp" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-960x640.jpg" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-720x480.webp" type="image/webp" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-720x480.jpg" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-640x426.webp" type="image/webp" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-640x426.jpg" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-360x240.webp" type="image/webp" media="(max-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-360x240.jpg" media="(max-width: 360px)">
+			<picture>
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-1080x720.webp" type="image/webp" media="(min-width: 960px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-1080x720.jpg" media="(min-width: 960px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-960x640.webp" type="image/webp" media="(min-width: 720px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-960x640.jpg" media="(min-width: 720px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-720x480.webp" type="image/webp" media="(min-width: 640px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-720x480.jpg" media="(min-width: 640px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-640x426.webp" type="image/webp" media="(min-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-640x426.jpg" media="(min-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-360x240.webp" type="image/webp" media="(max-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-360x240.jpg" media="(max-width: 360px)">
 
-						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-360x240.jpg" alt="riley bathurst photographer with style">
-					</picture>
+				<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-motorbike-photography-360x240.jpg" alt="riley bathurst photographer with style">
+			</picture>
 
-					<picture>
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-1080x720.webp" type="image/webp" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-1080x720.jpg" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-960x640.webp" type="image/webp" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-960x640.jpg" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-720x480.webp" type="image/webp" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-720x480.jpg" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-640x426.webp" type="image/webp" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-640x426.jpg" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-360x240.webp" type="image/webp" media="(max-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-360x240.jpg" media="(max-width: 360px)">
+			<picture>
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-1080x720.webp" type="image/webp" media="(min-width: 960px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-1080x720.jpg" media="(min-width: 960px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-960x640.webp" type="image/webp" media="(min-width: 720px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-960x640.jpg" media="(min-width: 720px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-720x480.webp" type="image/webp" media="(min-width: 640px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-720x480.jpg" media="(min-width: 640px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-640x426.webp" type="image/webp" media="(min-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-640x426.jpg" media="(min-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-360x240.webp" type="image/webp" media="(max-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-360x240.jpg" media="(max-width: 360px)">
 
-						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-360x240.jpg" alt="riley bathurst designer in the wilderness">
-					</picture>
+				<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-portrait-360x240.jpg" alt="riley bathurst designer in the wilderness">
+			</picture>
 
-					<picture>
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-1080x720.webp" type="image/webp" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-1080x720.jpg" media="(min-width: 960px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-960x640.webp" type="image/webp" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-960x640.jpg" media="(min-width: 720px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-720x480.webp" type="image/webp" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-720x480.jpg" media="(min-width: 640px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-640x426.webp" type="image/webp" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-640x426.jpg" media="(min-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-360x240.webp" type="image/webp" media="(max-width: 360px)">
-						<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-360x240.jpg" media="(max-width: 360px)">
+			<picture>
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-1080x720.webp" type="image/webp" media="(min-width: 960px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-1080x720.jpg" media="(min-width: 960px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-960x640.webp" type="image/webp" media="(min-width: 720px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-960x640.jpg" media="(min-width: 720px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-720x480.webp" type="image/webp" media="(min-width: 640px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-720x480.jpg" media="(min-width: 640px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-640x426.webp" type="image/webp" media="(min-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-640x426.jpg" media="(min-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-360x240.webp" type="image/webp" media="(max-width: 360px)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-360x240.jpg" media="(max-width: 360px)">
 
-						<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-360x240.jpg" alt="riley bathurst designer in tahoe">
-					</picture>
-				</div>
-			</div>
+				<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-profile-360x240.jpg" alt="riley bathurst designer in tahoe">
+			</picture>
 		</div>
+	</div>
+</div>
 
 <?php }
