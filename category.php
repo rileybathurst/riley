@@ -48,7 +48,7 @@
 			<main class="site-main">
 				<article>
 					<div class="spine-border"></div>
-					<div class="article-header">
+					<div class="fp-header">
 						<h2 class="page-title">404</h2>
 					</div>
 

@@ -6,38 +6,28 @@ Template Name: Front Page
 
 <?php get_header(); ?>
 
-<div class="background-primary negative-margin">
+<div class="background-primary">
 	<div class="front-page-titles">
-		<div class="fp-box ccc-west"><!-- stay gold --></div>
+		<div class="fp-box clicks-a"><div class="ghostly presence">C</div></div>
+		<div class="fp-box clicks-b"><div class="ghostly presence">L</div></div>
+		<div class="fp-box clicks-c"><div class="ghostly presence">I</div></div>
+		<div class="fp-box clicks-d"><div class="ghostly presence">C</div></div>
+		<div class="fp-box clicks-e"><div class="ghostly presence">K</div></div>
+		<div class="fp-box clicks-f"><div class="ghostly presence">S</div></div>
 
-		<div class="clicks">
-			<div class="fp-box clicks-a"><div class="ghostly presence">C</div></div>
-			<div class="fp-box clicks-b"><div class="ghostly presence">L</div></div>
-			<div class="fp-box clicks-c"><div class="ghostly presence">I</div></div>
-			<div class="fp-box clicks-d"><div class="ghostly presence">C</div></div>
-			<div class="fp-box clicks-e"><div class="ghostly presence">K</div></div>
-			<div class="fp-box clicks-f"><div class="ghostly presence">S</div></div>
-		</div>
+		<div class="fp-box code-a"><div class="ghostly presence">C</div></div>
+		<div class="fp-box code-b"><div class="ghostly presence">O</div></div>
+		<div class="fp-box code-c"><div class="ghostly presence">D</div></div>
+		<div class="fp-box code-d"><div class="ghostly presence">E</div></div>
+		<div class="fp-box code-e">&nbsp;</div>
+		<div class="fp-box code-f" data-text="&amp;"><div class="ghostly presence">&amp;</div></div>
 
-		<div class="code">
-			<div class="fp-box code-a"><div class="ghostly presence">C</div></div>
-			<div class="fp-box code-b"><div class="ghostly presence">O</div></div>
-			<div class="fp-box code-c"><div class="ghostly presence">D</div></div>
-			<div class="fp-box code-d"><div class="ghostly presence">E</div></div>
-			<div class="fp-box code-e">&nbsp;</div>
-			<div class="fp-box code-f" data-text="&amp;"><div class="ghostly presence">&amp;</div></div>
-		</div>
-
-		<div class="camera">
-			<div class="fp-box camera-a"><div class="ghostly presence">C</div></div>
-			<div class="fp-box camera-b"><div class="ghostly presence">A</div></div>
-			<div class="fp-box camera-c"><div class="ghostly presence">M</div></div>
-			<div class="fp-box camera-d"><div class="ghostly presence">E</div></div>
-			<div class="fp-box camera-e"><div class="ghostly presence">R</div></div>
-			<div class="fp-box camera-f"><div class="ghostly presence">A</div></div>
-		</div>
-
-		<div class="fp-box ccc-east"><!-- stay gold --></div>
+		<div class="fp-box camera-a"><div class="ghostly presence">C</div></div>
+		<div class="fp-box camera-b"><div class="ghostly presence">A</div></div>
+		<div class="fp-box camera-c"><div class="ghostly presence">M</div></div>
+		<div class="fp-box camera-d"><div class="ghostly presence">E</div></div>
+		<div class="fp-box camera-e"><div class="ghostly presence">R</div></div>
+		<div class="fp-box camera-f"><div class="ghostly presence">A</div></div>
 	</div>
 </div>
 

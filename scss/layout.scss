@@ -31,12 +31,30 @@
 */
 
 .spine-border {
+    grid-row: 1/3;
+    grid-column: 1;
+	z-index: 15; // over the top of categories on single
+	justify-self: end;
+	
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-row: 1/3;
+		justify-self: start; // categories takes up that space as well
+	}
+}
+
+.single .spine-border {
+	// grid-row: 1/6;
+	grid-row: 1/5;
+	justify-self: start; // I think this is a browser default
+    /* @media (min-width: map-get($breakpoints, medium)) {
+		// grid-row: 1/6;
+	} */
 	grid-column: 1;
-	grid-row: 1 / 7; // thats a lot of numbers maybe there should be a map or use grid area?
-	border-left: 4px solid $primary-color;
-	margin-top: $global-margin*3; // this gets overwritten with an Intersection Observer
-	padding-top: $global-padding*3;
-	z-index: 15; // why?
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-row: 1/7;
+		justify-self: start; // categories takes up that space as well
+	}
 }
 
 /*--------------------------------------------------------------
@@ -46,28 +64,41 @@
 .site-header {
 	width: 100%;
 	max-width: $page-width;
-	margin: 0 auto;
+	margin: 0 auto $global-margin*2 auto;
 	display: grid;
 	grid-gap: $global-grid-gap;
-	grid-template-columns: 2em 1fr 1fr 1fr 2em;
+	grid-template-columns: 2em 1fr 2em;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+        grid-template-columns: 2em 1fr 1fr 1fr 2em;
+        grid-template-rows: 2em 1fr 2em; // keep it tight up top with the header-logo
+    }
 }
 
 .breadcrumbs {
 	grid-column: 1;
 	grid-row: 2 / 4;
 	writing-mode: vertical-rl;
-	justify-self: start;
+	justify-self: center;
+}
+
+.single .breadcrumbs {
+	grid-row: 1/3;
+	align-self: end;
+    @media (min-width: map-get($breakpoints, medium)) {
+		grid-row: 2;
+		// align-self: start;
+    }
 }
 
 .header-logo {
-	grid-column: 5;
 	grid-row: 1;
-	align-self: start;
-	justify-self: end; // macth the spine
+	grid-column: 3;
+	justify-self: center; // macth the spine
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		justify-self: center;
 		align-self: end; // this is for when the menu is horizontal on single pages
+		grid-column: 5;
 	}
 }
 
@@ -77,15 +108,15 @@
 }
 
 .header-color-blocking {
-	z-index: 15; //same as .spine border? should it be above or below
 	mix-blend-mode: multiply;
 	background: $primary-color;
-	grid-column: 2 / 5;
+	z-index: 15; //same as .spine border? should it be above or below
 	grid-row: 2;
+	grid-column: 2;
 
 	@media (min-width: map-get($breakpoints, medium)) {
+		grid-row: 1 / 4;
 		grid-column: 3;
-		grid-row: 1 / 3;
 	}
 }
 
@@ -95,21 +126,15 @@
 --------------------------------------------------------------*/
 
 .site-branding-text {
-	grid-column: 2 / 5;
 	grid-row: 2;
-	padding-top: 0;
-	padding-bottom: $global-padding;
-	justify-self: center;
+	grid-column: 2;
 	z-index: 20;
-	margin-top: $global-margin;
-	margin-bottom: $global-margin; // can these two be written better as a single line?
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		writing-mode: vertical-rl;
+		grid-row: 1/4;
 		grid-column: 3;
-		grid-row: 2;
-		margin-top: $global-margin*3;
-		margin-bottom: $global-margin*3;
+		place-self: center;
 	}
 }
 
@@ -136,32 +161,39 @@
 	}
 }
 
+/* 
 .site-branding-text h1 {
 	margin: 0;
 	font-size: 1.25em; // can this be written as a variable?
 }
+*/
 
 .spine {
-	grid-column: 5;
-	grid-row: 2 / 2;
+	grid-row: 2 / 4;
+	grid-column: 3;
 	writing-mode: vertical-rl;
-	place-self: end;
-	margin-bottom: $global-margin*2; // match the base of the image
+	justify-self: center;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-row: 1 / 3;
+		grid-row: 2;
+		grid-column: 5;
+		align-self: end;
 	}
 }
 
 .custom-header-media {
 	z-index: 10;
-	grid-column: 2 / 5;
 	grid-row: 1 / 3;
-	margin-bottom: $global-margin*2; // make sure the red overstripe has some room to play
+	grid-column: 2;
 
 	@media (min-width: map-get($breakpoints, medium)) {
+		grid-row: 2;
 		grid-column: 2 / 4;
 	}
+
+	img, picture {
+        width: 100%; // max sure we fill the box
+    }
 }
 
 .custom-header-featured-video {
@@ -244,16 +276,23 @@
 --------------------------------------------------------------*/
 
 .front-page-titles { 
-	width: 100%;
-	max-width: $page-width; // need to keep the internal grids lining up
+	width: calc(100% - 6rem);
+	max-width: 71rem;
 	margin: 0 auto;
 	display: grid; // I am using this for the grid gap it could probably be done better
-	// also it keeps all regions the same size easily
-	grid-gap: $global-grid-gap;
-	grid-template-columns: 0 1fr 0;
-
+	grid-gap: $global-grid-gap/2; // double the grip half the gap
+    grid-template-columns: repeat(6, 1fr);
+    background: $white;
+    padding-left: 1rem;
+	padding-right: 1rem;
+	
+	// this needs a couple of media queries to match the header grid
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-template-columns: 2em 1fr 2em;
+		grid-gap: $global-grid-gap;
+	}
+
+	@media (min-width: 77rem) {
+
 	}
 }
 
@@ -348,6 +387,7 @@
 */
 
 .category-sub {
+	width: calc(100% - 6rem);
 	max-width: $page-width;
 	margin: 0 auto;
 	margin-bottom: $global-margin;
@@ -364,6 +404,7 @@
 	
 	li {
 		list-style: none;
+		text-align: center;
 	}
 }
 
@@ -403,18 +444,22 @@
 3.4 Article
 --------------------------------------------------------------*/
 .site-main article { /* running wordpress post class prevents using a straight clasee */
-	width: 100%;
-	max-width: $page-width;
+	width: calc(100% - 2rem); // slightly different so the sid bar fits
+	max-width: 71rem;
 	margin: 0 auto;
 
 	display: grid;
 	grid-gap: $global-grid-gap;
 	padding-top: $global-padding*2;
 
-	grid-template-columns: 4px 1fr 4fr 4fr 1fr 4px;
+	// grid-template-columns: 4px 1fr 4fr 4fr 1fr 4px; // why 4px?
+	grid-template-columns: 1rem 1fr 1rem; // why 4px?
+	// maybe this should be to match the header and footer grid atleast at large sizes 2em 1fr 2fr 2fr 1fr 2em
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-template-columns: 2em 1fr 4fr 4fr 1fr 2em;
+		width: calc(100% - 6rem); // slightly different so the sid bar fits
+		// grid-template-columns: 2em 1fr 4fr 4fr 1fr 2em;
+		grid-template-columns: repeat(6, 1fr); // slightly more complex to fit with the rest of the page grid
 	}
 }
 
@@ -480,13 +525,12 @@
 }
 
 .article-content {
-	grid-column: 2 / 6;
-	// grid-row: 4; // I guess by not defining it falls into place with whats above
-	// margin-bottom: $global-margin; not needed as all elements inside should have the bottom margin
-	// max-width: 100%; this should be able to extend past a grid
+	grid-column: 2;
+	margin-bottom: $global-margin;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 3 / 5;
+		grid-column: 2 / 6;
+		margin-bottom: $global-margin*3;
 	}
 }
 
@@ -640,14 +684,10 @@
 }
 
 .fp-header {
-	// width: 100%; this should be fine as part of a grid?
-	// max-width: $page-width;
-	// margin: 0 auto;
-	grid-column: 2 / 6;
-	align-self: end;
+	grid-column: 2;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 3 / 5;
+		grid-column: 2 / 6;
 	}
 }
 
@@ -820,15 +860,12 @@
 --------------------------------------------------------------*/
 
 .site-footer {
-	width: calc(100% - 2em);
-	max-width: 75rem; // keeps inside of the margins
+	width: calc(100% - 6rem);
+	max-width: 71rem; // keeps inside of the margins
 	margin: 0 auto;
-	padding: $global-padding 0;
-	// align-items: end; Why am I pushing down?
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		width: calc(100% - 4em);
-		padding-top: $global-padding*5;
+		padding-top: $global-padding*5; // guess and check
 	}
 }
 

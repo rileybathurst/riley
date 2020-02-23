@@ -451,10 +451,12 @@ a:hover {
 	padding: $global-padding; // this is on a transition so its interesting when just on the hover
 }
 
+/*
 .navigation-top a {
-	color: $black;
-	text-decoration: underline;
+	// color: $black;
+	// text-decoration: underline;
 }
+*/
 
 .navigation-top a:hover {
 	text-decoration: line-through;
@@ -694,12 +696,20 @@ img, video, figure {
 }
 
 .site-branding-text {
-	color: $white;
-	font-size: 2em; // type scale?
+	writing-mode: vertical-rl;
+	justify-self: center;
+	background: $black;
+	font-size: 0.8em;
+
+	a {
+		color: $white;
+		padding: $global-padding;
+		display: inline-block; // why?
+	}
 }
 
-.site-branding-text {
-	align-self: end;
+.site-header .site-branding-text {
+	mix-blend-mode: screen;
 }
 
 .overlaying-image {
