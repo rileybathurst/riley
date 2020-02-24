@@ -463,7 +463,6 @@ a:hover {
 }
 
 .site-title {
-	font-size: 0.8em; // type scale?
 	color: $white;
 }
 
@@ -696,20 +695,24 @@ img, video, figure {
 }
 
 .site-branding-text {
-	writing-mode: vertical-rl;
-	justify-self: center;
-	background: $black;
-	font-size: 0.8em;
+    writing-mode: vertical-rl;
+    justify-self: center;
+    background: black; // adding this incase we dont have images the text is still visible // true black not $black for the screen blend to not show anything
 
-	a {
-		color: $white;
-		padding: $global-padding;
-		display: inline-block; // why?
-	}
+    a {
+        color: $white;
+        padding: $global-padding;
+        display: inline-block; // am I sure this is neccessary
+    }
 }
 
-.site-header .site-branding-text {
-	mix-blend-mode: screen;
+.single .site-branding-text { // no longer over the image
+    writing-mode: initial;
+
+    a {
+        color: $black;
+        padding: initial;
+    }
 }
 
 .overlaying-image {

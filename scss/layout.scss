@@ -33,28 +33,25 @@
 .spine-border {
     grid-row: 1/3;
     grid-column: 1;
-	z-index: 15; // over the top of categories on single
-	justify-self: end;
-	
-	@media (min-width: map-get($breakpoints, medium)) {
-		grid-row: 1/3;
-		justify-self: start; // categories takes up that space as well
-	}
+    z-index: 15; // over the top of categories on single
+    justify-self: end;
+    
+    @media (min-width: map-get($breakpoints, medium)) {
+        grid-row: 1/3;
+        justify-self: start; // categories takes up that space as well
+    }
 }
 
-.single .spine-border {
-	// grid-row: 1/6;
-	grid-row: 1/5;
-	justify-self: start; // I think this is a browser default
-    /* @media (min-width: map-get($breakpoints, medium)) {
-		// grid-row: 1/6;
-	} */
-	grid-column: 1;
+.single .spine-border, // even tho these are the same the names help keep them seperate
+.category .spine-border {
+    grid-row: 1/5; // image : header : date : content
+    grid-column: 1;
+    justify-self: start; // I think this is a browser default
 
-	@media (min-width: map-get($breakpoints, medium)) {
-		grid-row: 1/7;
-		justify-self: start; // categories takes up that space as well
-	}
+    @media (min-width: map-get($breakpoints, medium)) {
+        grid-row: 1/4; // what are the 6: header : date : content
+        justify-self: start; // categories takes up that space as well
+    }
 }
 
 /*--------------------------------------------------------------
@@ -226,34 +223,39 @@
 	}
 }
 
-/*--------------------------------------------------------------
-2.1 Navigation
---------------------------------------------------------------*/
+/*------------------------------------*\
+  # NAVIGATON TOP
+\*------------------------------------*/
 
 .navigation-top {
-	grid-column: 2 / 5;
-	grid-row: 3;
+    grid-column: 2;
+    grid-row: 3;
 
-	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 4;
-		grid-row: 1 / 3;
-	}
-
-	display: grid;
-	align-items: start;
+    @media (min-width: map-get($breakpoints, medium)) {
+        grid-column: 4;
+        grid-row: 2 / 4;
+    }
 }
 
 .single .navigation-top {
-	align-items: start; // seems like this is a repeat from .navigation-top
-	grid-row: 2;
+    @media (min-width: map-get($breakpoints, medium)) {
 
-	@media (min-width: map-get($breakpoints, medium)) {
-		grid-row: 1;
-		grid-column: 3/5;
-		place-self: end;
-	}
+        ul {
+            display: flex;
+            margin-top: 0; // browser reset
+        }
+
+        li {
+            margin-bottom: 0;
+            margin-right: $global-margin;
+        }
+        
+        li:last-child() {
+            margin-right: 0;
+        }
+    }
 }
-
+/* Im not sure if this is needed anymore pattern lab doesnt think so
 .home .navigation-top {
 	grid-row: 3;
 	align-self: start;
@@ -265,7 +267,7 @@
 		margin-bottom: $global-margin*3;
 		align-self: center;
 	}
-}
+} */
 
 /*--------------------------------------------------------------
 3.0 Main
@@ -464,14 +466,14 @@
 }
 
 .article-thumbnail {
-	grid-column: 2 / 6;
-	grid-row: 1;
-	// max-height: 100vh; // this causes issues on wide short screens but I get the idea of something tall can be very large
-	// maybe it can be fixed with an overflow and then go even less than 100 to make it obvious and be able to scroll around it
+    grid-row: 1;
+    grid-column: 2;
+    // max-height: 100vh; // this causes issues on wide short screens but I get the idea of something tall can be very large
+    // maybe it can be fixed with an overflow and then go even less than 100 to make it obvious and be able to scroll around it
 
-	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 3 / 5;
-	}
+    @media (min-width: map-get($breakpoints, medium)) {
+        grid-column: 2 / 6;
+    }
 }
 
 .article-thumbnail a, .category-thumbnail a {
@@ -499,15 +501,6 @@
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 3 / 5;
 		// grid-row: 2; // this is a repeat of above
-	}
-}
-
-.article-date {
-	grid-row: 2;
-	grid-column: 2 / 6;
-
-	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 3 / 5;
 	}
 }
 
@@ -543,25 +536,39 @@
 }
 
 .article-category {
-	grid-column: 2 / 5;
-	grid-row: 5;
+    grid-column: 2;
+    grid-row: 4;
 
-	@media (min-width: map-get($breakpoints, medium)) {
-		text-align: right;
-		grid-column: 1 / 3;
-		grid-row: 1 / 3;
-		writing-mode: vertical-rl;
-		align-self: end;
-		overflow-x: scroll;
-		max-height: 45em; // incase of a long category name it will truncate
-	}
+    @media (min-width: map-get($breakpoints, medium)) {
+        text-align: right;
+        grid-row: 1 / 3;
+        grid-column: 1;
+        writing-mode: vertical-rl;
+        align-self: end;
+        overflow-x: scroll;
+        max-height: 45em; // incase of a long category name it will truncate
+    }
+    
+    ul {
+        padding-left: 0; // browser reset
+    }
+
+    a {
+        color: $dark-gray; // purposly not as strong as a regular link
+    }
 }
 
 .single .article-category {
-	@media (min-width: map-get($breakpoints, medium)) {
-		grid-row: 1 / 5;
-		align-self: start;
-	}
+    @media (min-width: map-get($breakpoints, medium)) {
+        grid-row: 1 / 4; // header : date : content
+        align-self: start;
+        grid-column: 1;
+    }
+
+    h3 {
+        margin: 0;
+        grid-column: 1;
+    }
 }
 
 .article-base {
@@ -610,13 +617,12 @@
 }
 
 .article-explore {
-	grid-column: 2 / 6;
-	// grid-row: 5;
-	padding-bottom: $global-padding;
+	grid-column: 2;
+	margin-bottom: $global-margin;
 
-	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 3 / 5
-	}
+    @media (min-width: map-get($breakpoints, medium)) {
+        grid-column: 2/6;
+    }
 }
 
 /* doesnt show in search

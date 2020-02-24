@@ -29,7 +29,7 @@
 
 <?php if (have_posts()) {
 	while (have_posts()) : the_post(); ?>
-		<div class="background-dirty">
+		<div class="background-dirty category-break">
 			<div class="site-main" role="main">
 				<?php get_template_part( 'template-parts/post/category' ); ?>
 				<!-- major difference is the link in the title -->
