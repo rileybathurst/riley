@@ -93,3 +93,22 @@
         margin-bottom: $global-margin*3;
     }
 }
+
+.article-content-specific {
+    grid-column: 2;
+    margin-bottom: $global-margin;
+
+    @media (min-width: map-get($breakpoints, medium)) {
+        grid-column: 2 / 6;
+        margin-bottom: $global-margin*3;
+    }
+
+    iframe {
+        max-width: 100%;
+        height: 100%; // this should be looked at I think it can be done better
+
+        @media (min-width: map-get($breakpoints, medium)) {
+            min-height: 100%;
+        }
+    }
+}

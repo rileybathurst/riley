@@ -10,8 +10,8 @@
 
 
 	<!-- IntersectionObserver Polyfill -->
-	<script src="<?php echo get_template_directory_uri(); ?>/node_modules/lozad/intersection-observer.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/node_modules/lozad/lozad.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
 	<script type="text/javascript">
 
 	// Initialize library to lazy load images

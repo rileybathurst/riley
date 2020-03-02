@@ -289,6 +289,26 @@ figcaption,
   }
 }
 
+.article-content-specific {
+  grid-column: 2;
+  margin-bottom: 1rem;
+}
+@media (min-width: 640px) {
+  .article-content-specific {
+    grid-column: 2/6;
+    margin-bottom: 3rem;
+  }
+}
+.article-content-specific iframe {
+  max-width: 100%;
+  height: 100%;
+}
+@media (min-width: 640px) {
+  .article-content-specific iframe {
+    min-height: 100%;
+  }
+}
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -454,8 +474,8 @@ figcaption,
 }
 */
 .spine {
-  grid-row: 2/4;
   grid-column: 3;
+  grid-row: 2/4;
   writing-mode: vertical-rl;
   justify-self: center;
 }
@@ -467,25 +487,40 @@ figcaption,
   }
 }
 
-.custom-header-media {
+.single .spine {
+  grid-row: 1/3;
+  align-self: end;
+}
+@media (min-width: 640px) {
+  .single .spine {
+    grid-column: 3;
+  }
+}
+
+.custom-header-media,
+.custom-header-photo,
+.custom-header-featured-video {
   z-index: 10;
   grid-row: 1/3;
   grid-column: 2;
 }
 @media (min-width: 640px) {
-  .custom-header-media {
+  .custom-header-media,
+.custom-header-photo,
+.custom-header-featured-video {
     grid-row: 2;
     grid-column: 2/4;
   }
 }
-.custom-header-media img, .custom-header-media picture {
+.custom-header-media img, .custom-header-media picture,
+.custom-header-photo img,
+.custom-header-photo picture,
+.custom-header-featured-video img,
+.custom-header-featured-video picture {
   width: 100%;
 }
 
 .custom-header-featured-video {
-  z-index: 10;
-  grid-column: 2/5;
-  grid-row: 1/3;
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -761,22 +796,22 @@ figcaption,
 
 .article-header {
   width: 100%;
-  grid-column: 2/6;
+  grid-column: 2;
   grid-row: 2;
 }
 @media (min-width: 640px) {
   .article-header {
-    grid-column: 3/5;
+    grid-column: 2/6;
   }
 }
 
 .article-speechbubble {
-  grid-column: 4/6;
+  grid-column: 2;
   justify-self: end;
 }
 @media (min-width: 640px) {
   .article-speechbubble {
-    grid-column: 4;
+    grid-column: 5;
   }
 }
 
@@ -795,8 +830,10 @@ figcaption,
   }
 }
 
-.article-content-specific {
-  grid-column: 2/6;
+@media (min-width: 640px) {
+  .article-content-specific {
+    grid-column: 1/7;
+  }
 }
 
 .article-content-specific img {
@@ -1039,15 +1076,14 @@ figcaption,
 .single .custom-header-media,
 .single .custom-header-photo,
 .single .custom-header-featured-video {
-  grid-column: 2/5;
-  grid-row: 3;
+  grid-row: 2;
   align-self: end;
 }
 @media (min-width: 640px) {
   .single .custom-header-media,
 .single .custom-header-photo,
 .single .custom-header-featured-video {
-    grid-row: 2;
+    grid-column: 2;
   }
 }
 
@@ -1085,20 +1121,28 @@ figcaption,
 
 .specific-grid {
   display: grid;
-  grid-template-columns: 1fr 4fr 4fr 1fr;
-  grid-gap: 1rem;
+}
+@media (min-width: 640px) {
+  .specific-grid {
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-gap: 1rem;
+  }
 }
 
-.subtitle {
-  grid-column: 1;
-  grid-row: 1/3;
-  writing-mode: vertical-rl;
-  text-decoration: line-through;
-  margin-top: 2rem;
+@media (min-width: 640px) {
+  .subtitle {
+    grid-column: 1;
+    grid-row: 1;
+    writing-mode: vertical-rl;
+    text-decoration: line-through;
+    margin: 0;
+  }
 }
 
-.continental {
-  grid-column: 2/4;
+@media (min-width: 640px) {
+  .continental {
+    grid-column: 2;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1208,6 +1252,36 @@ figcaption,
   }
 }
 
+/*------------------------------------*\
+  # RESPONSIVE IFRAME
+  https://css-tricks.com/responsive-iframes/
+\*------------------------------------*/
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+
+[style*="--aspect-ratio"] > img {
+  height: auto;
+}
+
+@supports (--custom: property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }
+
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
 .searchform [type=text] {
   border: 0.1em solid #cacaca;
   border-right: none;

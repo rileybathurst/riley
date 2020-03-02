@@ -37,10 +37,14 @@ if (have_posts()) {
 			
 		<h3 class="box-title">Video</h3>
 		
-		<iframe width="560" height="315" data-src="https://www.youtube.com/embed/ZAcAkvgZ3-o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
+		<div style="--aspect-ratio: 16/9;">
+			<iframe width="560" height="315" data-src="https://www.youtube.com/embed/ZAcAkvgZ3-o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
+		</div>
 		<h4>Jen Gilanfarr - Tahoe Drone Set</h4>
 
-		<iframe width="560" height="315" data-src="https://www.youtube.com/embed/kdy_JgSNnJY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
+		<div style="--aspect-ratio: 16/9;">
+			<iframe width="560" height="315" data-src="https://www.youtube.com/embed/kdy_JgSNnJY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
+		</div>
 		<h4>Jen Gilanfarr - Single Set</h4>
 
 	</div> <!-- .article-content-specific -->

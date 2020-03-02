@@ -41,9 +41,9 @@ if (have_posts()) {
 		</a>
 			
 		<h3 class="box-title">Video</h3>
-		<article class="responsive-embed frame">
+		<div style="--aspect-ratio: 16/9;">
 			<iframe data-src="https://player.vimeo.com/video/97635117" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="lozad" data-index="1"></iframe>
-		</article>
+		</div>
 
 	</div> <!-- .article-content-specific -->
 

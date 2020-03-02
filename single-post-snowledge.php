@@ -92,7 +92,7 @@ if (have_posts()) {
 		<div class="specific-grid">
 			<h3 class="subtitle">Video</h3>
 
-			<section class="responsive-embed widescreen frame continental east-medium">
+			<section class="responsive-embed widescreen frame continental east-medium" style="--aspect-ratio: 16/9;">
 				<iframe width="560" height="315" data-src="https://www.youtube.com/embed/YaRpBbbJ6Ow" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
 			</section>
 
@@ -105,7 +105,7 @@ if (have_posts()) {
 		<hr class="mega-hr">
 
 		<div class="specific-grid">
-			<section class="responsive-embed widescreen frame continental west-medium">
+			<section class="responsive-embed widescreen frame continental west-medium" style="--aspect-ratio: 16/9;">
 				<iframe width="560" height="315" data-src="https://www.youtube.com/embed/zsN5-ZP01l4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
 			</section>
 			<section class="continental east-medium">
@@ -117,7 +117,7 @@ if (have_posts()) {
 		<hr class="mega-hr">
 
 		<div class="specific-grid">
-			<section class="responsive-embed widescreen frame continental east-medium">
+			<section class="responsive-embed widescreen frame continental east-medium"  style="--aspect-ratio: 16/9;">
 				<iframe width="560" height="315" data-src="https://www.youtube.com/embed/fN1l8Ga2pzg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
 			</section>
 			<section class="continental west-medium gr-1-m">

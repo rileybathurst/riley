@@ -7,14 +7,14 @@ if (have_posts()) {
 
 	<div class="article-content-specific">
 
-		<article class="responsive-embed widescreen frame">
+		<div style="--aspect-ratio: 16/9;">
 			<iframe width="560" height="315" data-src="https://www.youtube.com/embed/u7RDN41pKa4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
-		</article>
+		</div>
 		<h4>Episode 2</h4>
 
-		<article class="responsive-embed widescreen frame">
+		<div style="--aspect-ratio: 16/9;">
 			<iframe width="560" height="315" data-src="https://www.youtube.com/embed/OOFLBmfzchM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
-		</article>
+		</div>
 		<h4>Episode 3</h4>
 		
 	</div> <!-- .article-content-specific -->

@@ -4,10 +4,10 @@ This is a messy project as I continue to build it out but it started as a Wordpr
 
 Except I then pulled that out, which is still a little messy so getting everything in place for those being pulled out
 
-Except now some of the project is being build with webpack so that is held over at [riley-webpack](https://github.com/rileybathurst/riley-webpack)
+Except now some of the project is being build with webpack so that is held over at [riley-webpack](https://github.com/rileybathurst/riley-webpack) which is currently needing some love and I want to change a bunch of that
 
 ## Run the Sass
-$ sass scss/app.scss css/app.css --watch
+```% sass scss/app.scss css/app.css --watch```
 
 ## Gutenberg
 Means I have less template pages to work on but also a little less flexibility with the grid?
@@ -16,13 +16,11 @@ This needs a sub grid which is annoying but maybe an interesting piece to work o
 I'll try it out quick on firefox.
 
 ### Fixes needed
-- Featured Video not showing full width
+- webpack build is all over the show and I think quite a lot can be remove
+- lozad is loading from a cdn
 - HTML formatting to make sure the H tag is the first one
-- nice additional movement with JS
 - sort out the code block max-width
 - comments page
-- minify css
-- twenty nineteen are using what I think is gulp so should this to do more than sass
 - deal with some nice header tags so it's not relying on yoast
 - wordpress max variable width
 - can I start adding an chrome lazy load tags to images?

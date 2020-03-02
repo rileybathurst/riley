@@ -29,9 +29,9 @@ if (have_posts()) {
 		
 		<h4 class="box-title">Video</h4>
 		
-		<article class="responsive-embed widescreen frame">
+		<div style="--aspect-ratio: 16/9;">
 			<iframe data-src="https://player.vimeo.com/video/27683356" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="lozad" data-index="1"></iframe>
-		</article>
+		</div>
 		<h4>Yeboi Street Snowboarding Edit</h4>
 	</div> <!-- .article-content-specific -->
 

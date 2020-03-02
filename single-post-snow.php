@@ -99,7 +99,9 @@ if (have_posts()) {
 		</a>
 		<h4><a href="http://rileybathurst.com/taos-large/">Airstream - Taos, New Mexico</a></h4>
 		
-		<iframe width="560" height="315" data-src="https://www.youtube.com/embed/HgRe4rGkyQU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
+		<div style="--aspect-ratio: 16/9;">
+			<iframe width="560" height="315" data-src="https://www.youtube.com/embed/HgRe4rGkyQU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
+		</div>
 		<h4>Last tracks - Ben Comber</h4>
 
 	</div> <!-- .article-content-specific -->

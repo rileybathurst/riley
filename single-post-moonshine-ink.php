@@ -49,22 +49,21 @@ if (have_posts()) {
 		</div>
 			<hr class="mega-hr">
 		<div class="specific-grid">
-
-
 			<h3 class="subtitle">Video</h3>
-
-			<section class="responsive-embed widescreen frame continental west-medium">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/AR5Zh-I9nPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
-			</section>
-
+			
 			<section class="continental west-medium">
 				<h3>KBong</h3>
 				<p>Tiny Porch Concert.</p>
 			</section>
 
-			<hr class="mega-hr">
+			<section class="continental east-medium" style="--aspect-ratio: 16/9;">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/AR5Zh-I9nPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+			</section>
+		</div>
 
-			<section class="responsive-embed widescreen frame continental east-medium">
+			<hr class="mega-hr">
+			<div class="specific-grid">
+			<section class="continental west-medium" style="--aspect-ratio: 16/9;">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/yUBJ-9XrOKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</section>
 			<section class="continental east-medium">
