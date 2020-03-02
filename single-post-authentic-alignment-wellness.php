@@ -1,3 +1,8 @@
+<!--
+	picture elements look broken on purpose 
+	https://apoorv.pro/lozad.js/#example-with-picture-tag
+-->
+
 <?php get_header();
 
 if (have_posts()) {
@@ -28,7 +33,7 @@ if (have_posts()) {
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-640x426.jpg" media="(min-width: 360px)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-360x240.webp" media="(max-width: 360px)" type="image/webp">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-360x240.jpg" media="(max-width: 360px)">
-				<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-360x240.jpg" alt="amanda reaching out to the universe">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0005-360x240.jpg" alt="amanda reaching out to the universe">
 			</picture>
 
 			<div class="east-large"></div> <!-- white spacing -->
@@ -46,7 +51,7 @@ if (have_posts()) {
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0065-640x426.jpg" media="(min-width: 360px)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0065-360x240.webp" media="(max-width: 360px)" type="image/webp">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0065-360x240.jpg" media="(max-width: 360px)">
-				<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0065-360x240.jpg" alt="contemplating life">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0065-360x240.jpg" alt="contemplating life">
 			</picture>
 
 			<picture class="lozad-picture continental west-large">
@@ -62,7 +67,7 @@ if (have_posts()) {
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0043-640x426.jpg" alt="looking forward"  media="(min-width: 360px)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0043-360x240.webp" alt="looking forward" media="(max-width: 360px)" type="image/webp">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0043-360x240.jpg" alt="looking forward"  media="(max-width: 360px)">
-				<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0043-360x240.jpg" alt="looking forward">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0043-360x240.jpg" alt="looking forward">
 			</picture>
 
 			<div class="east-large"></div> <!-- white spacing -->
@@ -80,7 +85,7 @@ if (have_posts()) {
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0192-640x427.jpg" media="(min-width: 360px)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0192-360x240.webp" media="(max-width: 360px)" type="image/webp">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0192-360x240.jpg" media="(max-width: 360px)">
-				<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0192-360x240.jpg" alt="climbing up">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0192-360x240.jpg" alt="climbing up">
 			</picture>
 
 			<picture class="lozad-picture continental west-large">
@@ -96,7 +101,7 @@ if (have_posts()) {
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0214-640x426.jpg"  media="(min-width: 360px)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0214-360x240.webp" media="(max-width: 360px)" type="image/webp">
 				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0214-360x240.jpg"  media="(max-width: 360px)">
-				<img src="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0214-360x240.jpg" alt="reflecting">
+				<source srcset="<?php echo content_url(); ?>/uploads/2019/05/Riley-Bathurst-photography-Authentic-alignment-wellness-Amanda_Lifestyles_0214-360x240.jpg" alt="reflecting">
 			</picture>
 		</div>
 

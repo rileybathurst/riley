@@ -42,3 +42,4 @@ I'll try it out quick on firefox.
 - nav buttons should have the fill slide between
 - the top right svg should also open a menu
 - make a tiny tiny media query thats super boring but works
+- remove all direct links

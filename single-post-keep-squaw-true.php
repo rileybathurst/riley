@@ -1,3 +1,7 @@
+<!--
+	picture elements look broken on purpose 
+	https://apoorv.pro/lozad.js/#example-with-picture-tag
+-->
 <?php get_header();
 
 if (have_posts()) {
@@ -46,7 +50,7 @@ if (have_posts()) {
 				<picture class="lozad-picture">
 					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-large.jpg" media="(min-width: 64em)">
 					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-medium.jpg" media="(min-width: 40em)">
-					<img src="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-small.jpg" alt="keep squaw true clothing shoot">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_Clothing_V2_094-small.jpg" alt="keep squaw true clothing shoot">
 				</picture>
 				<figcaption>Tram Face T</figcaption>
 			</figure>
@@ -57,7 +61,7 @@ if (have_posts()) {
 				<picture class="lozad-picture">
 					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-1.jpg" media="(min-width: 64em)">
 					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-medium.jpg" media="(min-width: 40em)">
-					<img src="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-small.jpg" alt="keep squaw true clothing shoot">
+					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Keep_Squaw_True_apparel_0315-small.jpg" alt="keep squaw true clothing shoot">
 				</picture>
 				<figcaption>Keep Squaw True T Shirt</figcaption>
 			</figure>
