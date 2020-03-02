@@ -633,10 +633,19 @@
 .article-explore {
 	grid-column: 2;
 	margin-bottom: $global-margin;
+	border-top: 2px solid $primary-color;
+	text-align: center;
+	padding: $global-padding; // fix the hack with the a class button below
 
     @media (min-width: map-get($breakpoints, medium)) {
         grid-column: 2/6;
-    }
+	}
+	
+	a {
+		padding-bottom: $global-padding;
+	}
+
+	// I dont like the hover here but need to do actual work on it
 }
 
 /* doesnt show in search

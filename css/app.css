@@ -924,11 +924,17 @@ figcaption,
 .article-explore {
   grid-column: 2;
   margin-bottom: 1rem;
+  border-top: 2px solid #c22127;
+  text-align: center;
+  padding: 1rem;
 }
 @media (min-width: 640px) {
   .article-explore {
     grid-column: 2/6;
   }
+}
+.article-explore a {
+  padding-bottom: 1rem;
 }
 
 /* doesnt show in search
