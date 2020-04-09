@@ -8,6 +8,7 @@ Except now some of the project is being build with webpack so that is held over 
 
 ## Run the Sass
 ```% sass scss/app.scss css/app.css --watch```
+
 ```% sass --style=compressed scss/app.scss css/app.css```
 
 ## Gutenberg

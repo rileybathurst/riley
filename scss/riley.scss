@@ -197,25 +197,32 @@ cite {
 	text-transform: capitalize;
 }
 
-.speechbubble {
-	display: block; // needed for the padding to be effective on a grid
+ .speechbubble {
+	/* display: block; // needed for the padding to be effective on a grid
 	color: $primary-color;
 	padding: $global-padding;
 	margin-top: -$global-grid-gap;
 	border-bottom: 2px solid $primary-color; // why not an em like other places? quite probably use a $global-border-weight
 	border-right: 2px solid $primary-color;
-	border-bottom-right-radius: 3px;
-}
+	border-bottom-right-radius: 3px; */
+
+
+	font-weight: bold;
+	@media (min-width: map-get($breakpoints, medium)) {
+		writing-mode: vertical-rl;
+		margin-top: $global-margin;
+	}
+} 
 
 .page-title {
-	margin: 0;
+	// margin: 0;
 	font-size: 2em; // type scale?
-	border: .2em solid $primary-color;
+	// border: .2em solid $primary-color;
 	justify-self: start;
-	padding: 0.5em; // why half size?
-	color: $primary-color;
+	// padding: 0.5em; // why half size?
+	// color: $primary-color;
 	word-wrap: break-word;
-	text-align: center;
+	// text-align: center;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 3em;
@@ -359,10 +366,10 @@ body { // I think I can do this better just having everything sit inside a littl
 	background: $light-gray;
 }
 
-.site, .site-footer { // why isnt this just body?
-	background: white; // why not variables?
-	color: black; // why not variables?
-}
+/* .site, .site-footer {
+	// background: $light-gray; // why not variables?
+	// color: black; // why not variables?
+} */
 
 table { // do I have any tables?
 	width: 100%;
@@ -419,6 +426,7 @@ a {
 
 a:hover {
 	text-decoration: line-through;
+	color: $secondary-color;
 }
 
 .form-submit {
@@ -426,7 +434,8 @@ a:hover {
 }
 
 .button { // [type="submit"] removed for material
-	margin: 0; /* bring the element back inline */
+	// margin: 0; /* bring the element back inline */
+	margin-bottom: $global-margin;
 	background: none !important; // why important?
 	border-top: none !important;
 	border-left: none !important;
@@ -437,8 +446,10 @@ a:hover {
 	/* padding-right: $global-padding; this was causing issues with hover looking strange but maybe I had done it or a reason?
 	padding-bottom: $global-padding;
 	*/ 
-	transition: 0.5s;
+	transition: $global-transition;
 	padding: $global-padding/2; // front page on 0 doesnt work
+
+	display: inline-block;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 2em; // type scale?
@@ -448,7 +459,7 @@ a:hover {
 .button:hover { // [type="submit"] removed for material
 	background: $primary-color !important; // why important?
 	color: $white !important; // why important?
-	padding: $global-padding; // this is on a transition so its interesting when just on the hover
+	// padding: $global-padding; // this is on a transition so its interesting when just on the hover
 }
 
 /*
@@ -467,7 +478,8 @@ a:hover {
 }
 
 .page-title a {
-	color: $primary-color;
+	// color: $primary-color;
+	color: $white;
 }
 
 .sticky .page-title a {
@@ -517,14 +529,15 @@ a:hover {
 	box-shadow: none;
 	color: $primary-color;
 	background: $white;
-	border-right: .1em solid $primary-color; // global?
-	border-bottom: .1em solid $primary-color;
-	border-bottom-right-radius: 3px;
+	border-right: 0.1em solid $primary-color; // global?
+	border-bottom: 0.1em solid $primary-color;
+	border-radius: 3px;
+	padding: $global-padding;
 }
 
 .article-content .button:hover,
 .quote-content .button:hover {
-	border-bottom: 1px solid $primary-color; // global?
+	border-bottom: 0.1em solid $primary-color; // global?
 }
 
 .breacdcrumbs {
@@ -572,23 +585,24 @@ a:hover {
 .footer_copyright a,
 .footer_nav a,
 .footer_contact a {
-	text-decoration: none;
+	/* text-decoration: none;
 	color: $black;
 	box-shadow: inset 0 -4px 0 $primary-color; // this is alternative underline that rises up on hover
-	transition: 300ms;
+	transition: 300ms; */
+	font-weight: bold;
 }
-
+/* 
 .footer_copyright a:hover,
 .footer_nav a:hover,
 .footer_contact a:hover {
 	border-bottom: none;
 	box-shadow: inset 0 -8px 0 $primary-color;
-}
+} */
 
-.article-category a,
+/* .article-category a,
 .featured-category a{
 	color: $dark-gray;
-}
+} */
 
 .post-navigation a {
 	color: $black;
@@ -646,11 +660,40 @@ a:hover {
 	text-align: center;
 }
 
-.footer_menu li,
+// .footer_menu li,
 .category-sub li {
-	border: .25em solid $primary-color; // global?
-	padding: $global-padding;
-	font-weight: bold;
+	// border: .25em solid $primary-color; // global?
+	
+	a {
+		font-weight: bold;
+		background: $primary-color;
+		color: $white;
+		padding: $global-padding;
+		display: block;
+		text-decoration: none;
+	}
+
+	a:hover {
+		background: $secondary-color;
+		text-decoration: line-through;
+	}
+}
+
+.footer_menu li {
+	
+	a {
+		background: $primary-color;
+		color: $white;
+		padding: $global-padding;
+		text-decoration: none;
+		display: block; // fill the box
+		transition: $global-transition;
+	}
+
+	a:hover {
+		background: $secondary-color;
+		text-decoration: line-through;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -737,14 +780,14 @@ img, video, figure {
 	font-weight: bold;
 }
 
-.fp-box { // what does box mean?
+.fp-box { // front page box these are the red areas behind clicks code and camera on the split levels
 	background: $primary-color;
 	color: $white;
-	padding: 0.5em;
+/* 	padding: 0.5em;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		padding: $global-padding;
-	}
+	} */
 }
 /*--------------------------------------------------------------
 13.3 Regular Content

@@ -86,11 +86,16 @@
 
 .article-content {
     grid-column: 2;
-    margin-bottom: $global-margin;
+    // margin-bottom: $global-margin;
 
     @media (min-width: map-get($breakpoints, medium)) {
         grid-column: 2 / 6;
-        margin-bottom: $global-margin*3;
+        // margin-bottom: $global-margin*3;
+    }
+
+    p {
+        margin-top: $global-margin; // let it breathe
+        margin-bottom: 0; // grid gap does this for us
     }
 }
 

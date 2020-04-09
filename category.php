@@ -17,12 +17,12 @@
 	<div class="category-sub">
 		<ul>
 			<?php $args = array(
-					'child_of'				=> $cat, // defined in inc/cats-one-deep.php
-					'title_li'				=> __( '' ),
-					'show_option_none'		=> '',
-					'depth'					=> '1',
-				);
-				wp_list_categories( $args ); ?>
+				'child_of'				=> $cat, // defined in inc/cats-one-deep.php
+				'title_li'				=> __( '' ),
+				'show_option_none'		=> '',
+				'depth'					=> '1',
+			);
+			wp_list_categories( $args ); ?>
 		</ul>
 	</div>
 </div>

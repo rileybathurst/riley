@@ -25,3 +25,5 @@ function get_breadcrumb() {
 		echo "missing?";
 	}
 }
+
+// categories should only match to an array include the top level

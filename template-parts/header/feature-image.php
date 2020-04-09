@@ -2,7 +2,7 @@
 // check if category has a specific image first
 $current_category = single_cat_title("", false);
 
-$filename = TEMPLATEPATH . "/img/" . $current_category . ".jpg" ; // why is vs code showing quotes in red?
+$filename = TEMPLATEPATH . '/img/' . $current_category . ".jpg" ; // why is vs code showing quotes in red?
 $pathname = get_template_directory_uri() . '/img/' . $current_category;
 
 if (file_exists($filename)) { ?> <!-- currently this is only used for photography sort of as a test case -->

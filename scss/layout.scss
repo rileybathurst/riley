@@ -95,6 +95,7 @@
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		align-self: end; // this is for when the menu is horizontal on single pages
+		// grid-column: 3;
 		grid-column: 5;
 	}
 }
@@ -102,6 +103,16 @@
 .home .header-logo {
 	justify-self: center;
 	align-self: start;
+	grid-column: 5;
+	
+}
+
+.home .header-logo svg {
+	padding: $global-padding/2; // guess and check to fit into the grid
+	transition: $global-transition;
+}
+.home .header-logo svg:hover {
+	background: $light-gray;
 }
 
 .header-color-blocking {
@@ -135,6 +146,7 @@
 	}
 }
 
+// .category .site-branding-text,
 .single .site-branding-text {
 	grid-row: 1;
 	justify-self: start; // fix problems caused by the home page
@@ -290,19 +302,20 @@
 --------------------------------------------------------------*/
 
 .front-page-titles { 
-	width: calc(100% - 6rem);
+	width: 100%;
 	max-width: 71rem;
 	margin: 0 auto;
 	display: grid; // I am using this for the grid gap it could probably be done better
 	grid-gap: $global-grid-gap/2; // double the grip half the gap
     grid-template-columns: repeat(6, 1fr);
     background: $white;
-    padding-left: 1rem;
-	padding-right: 1rem;
 	
 	// this needs a couple of media queries to match the header grid
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-gap: $global-grid-gap;
+		width: calc(100% - 6rem);
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 
 	@media (min-width: 77rem) {
@@ -315,17 +328,19 @@
 --------------------------------------------------------------*/
 
 .category-header {
-	max-width: $page-width;
+	max-width: 77rem; // inside the margins
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: 2em 1fr 8fr 1fr 2em;
+	// grid-template-columns: 2em 1fr 8fr 1fr 2em;
+	grid-template-columns: 2em 1fr 1fr 1fr 2em;
+	grid-gap: $global-grid-gap;
 }
 
 .cat-head {
 	grid-column: 2 / 5;
 	padding-bottom: $global-padding*2;
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 3;
+		// grid-column: 3;
 	}
 }
 
@@ -457,34 +472,47 @@
 /*--------------------------------------------------------------
 3.4 Article
 --------------------------------------------------------------*/
-.site-main article { /* running wordpress post class prevents using a straight clasee */
-	width: calc(100% - 2rem); // slightly different so the sid bar fits
-	max-width: 71rem;
-	margin: 0 auto;
+.site-main article { /* running wordpress post class prevents using a straight class */
+	// @extend .site-header; // Im not sure this is currently working
 
+
+	max-width: 77rem;
+	margin: 0 auto;
+/* 
 	display: grid;
 	grid-gap: $global-grid-gap;
-	padding-top: $global-padding*2;
-
+*/
+	padding: $global-padding*2 0;
+/*
 	// grid-template-columns: 4px 1fr 4fr 4fr 1fr 4px; // why 4px?
 	grid-template-columns: 1rem 1fr 1rem; // why 4px?
 	// maybe this should be to match the header and footer grid atleast at large sizes 2em 1fr 2fr 2fr 1fr 2em
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		width: calc(100% - 6rem); // slightly different so the sid bar fits
+		width: calc(100% - 2rem); // slightly different so the side bar fits
 		// grid-template-columns: 2em 1fr 4fr 4fr 1fr 2em;
-		grid-template-columns: repeat(6, 1fr); // slightly more complex to fit with the rest of the page grid
+		// grid-template-columns: repeat(6, 1fr); // slightly more complex to fit with the rest of the page grid
+		grid-template-columns: 2em 1fr 1fr 1fr 2em;
+	} */
+
+	display: grid;
+	grid-template-columns: 2em 1fr 2em;
+	grid-gap: $global-grid-gap;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		// width: calc(100% - 2rem); // slightly different so the sid bar fits
+		grid-template-columns: 2em 1fr 1fr 1fr 2em;
 	}
 }
 
 .article-thumbnail {
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 1/4;
     // max-height: 100vh; // this causes issues on wide short screens but I get the idea of something tall can be very large
     // maybe it can be fixed with an overflow and then go even less than 100 to make it obvious and be able to scroll around it
 
     @media (min-width: map-get($breakpoints, medium)) {
-        grid-column: 2 / 6;
+        grid-column: 2 / 5;
     }
 }
 
@@ -511,17 +539,20 @@
 	grid-row: 2;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 2 / 6;
-		// grid-row: 2; // this is a repeat of above
+		// grid-column: 2 / 6;
+		grid-row: 2; // this is a repeat of above
 	}
 }
 
 .article-speechbubble {
 	grid-column: 2;
-	justify-self: end;
+	// justify-self: end;
 
 	@media (min-width: map-get($breakpoints, medium)) {
+		grid-row: 1;
 		grid-column: 5;
+		align-self: start;
+		justify-self: center;
 	}
 }
 
@@ -531,17 +562,19 @@
 
 .article-content {
 	grid-column: 2;
-	margin-bottom: $global-margin;
+	// margin-bottom: $global-margin;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 2 / 6;
-		margin-bottom: $global-margin*3;
+		// grid-column: 2 / 6;
+		grid-column: 2/5;
+		// margin-bottom: $global-margin*3;
 	}
 }
 
 .article-content-specific { // single posts have more content in this block which is then held in by a foundation grid
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 1 / 7;
+		// grid-column: 1 / 7;
+		grid-column: 1 / 4;
 	}
 }
 
@@ -549,27 +582,63 @@
 	width: 100%;
 }
 
+.article-content-specific hr {
+	@media (min-width: map-get($breakpoints, medium)) {
+		margin-left: $global-margin*3; // 2 for the page margins 1 for the grid gap
+		margin-right: $global-margin*3;
+	}
+}
+
 .article-category {
     grid-column: 2;
-    grid-row: 4;
+	// grid-row: 4;
+	font-weight: bold;
 
     @media (min-width: map-get($breakpoints, medium)) {
         text-align: right;
         grid-row: 1 / 3;
         grid-column: 1;
         writing-mode: vertical-rl;
-        align-self: end;
+		align-self: start;
+		justify-self: center;
         overflow-x: scroll;
-        max-height: 45em; // incase of a long category name it will truncate
-    }
+		max-height: 45em; // incase of a long category name it will truncate
+		margin-top: $global-margin;
+
+		p, ul {
+			margin: 0; // vertical text removes margins
+		}
+
+		ul {
+			padding-left: 0; // browser reset
+			padding-top: $global-padding; // browser alter
+		}
+	}
+	
+	/* .category-container {
+		// display: flex;
+	} */
+
+	p {
+		display: inline-block;
+	}
     
     ul {
-        padding-left: 0; // browser reset
-    }
+		padding-left: $global-padding;
+		// display: flex;
+		// flex-wrap: wrap;
+		display: inline;
+	}
+	
+	li {
+		list-style: none;
+		margin-right: $global-margin;
+		display: inline;
+	}
 
-    a {
+    /* a {
         color: $dark-gray; // purposly not as strong as a regular link
-    }
+    } */
 }
 
 .single .article-category {
@@ -633,16 +702,25 @@
 .article-explore {
 	grid-column: 2;
 	margin-bottom: $global-margin;
-	border-top: 2px solid $primary-color;
-	text-align: center;
-	padding: $global-padding; // fix the hack with the a class button below
+	// border-top: 2px solid $primary-color;
+	// text-align: center;
+	// padding: $global-padding; // fix the hack with the a class button below
 
     @media (min-width: map-get($breakpoints, medium)) {
-        grid-column: 2/6;
+        grid-column: 2/5;
 	}
 	
 	a {
-		padding-bottom: $global-padding;
+		background: $primary-color;
+		padding: $global-padding;
+		display: inline-block;
+		color: $white;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	a:hover {
+		background: $secondary-color;
 	}
 
 	// I dont like the hover here but need to do actual work on it
@@ -713,10 +791,14 @@
 }
 
 .fp-header {
+	grid-row: 1;
 	grid-column: 2;
+	z-index: 20;
+	align-self: end;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 2 / 6;
+		grid-column: 2 / 5;
+		padding: $global-padding;
 	}
 }
 
@@ -836,11 +918,19 @@
 }
 
 .specific-grid {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-template-columns: 1fr 3fr 3fr;
+		display: grid;
+		grid-template-columns: 2rem 1fr 1fr 1fr 2rem;
 		grid-gap: $global-grid-gap;
+	}
+
+	h3 {
+		@media (min-width: map-get($breakpoints, medium)) {
+			grid-column: 2/5;
+		}
 	}
 }
 
@@ -858,8 +948,20 @@
 .continental {
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 2;
+		grid-column: 2/5;
 	}
+}
+
+.continental-2 {
+	grid-column: 2;
+}
+
+.continental-3 {
+	grid-column: 3;
+}
+
+.continental-4 {
+	grid-column: 4;
 }
 
 .west-medium {
@@ -897,13 +999,15 @@
 --------------------------------------------------------------*/
 
 .site-footer {
-	width: calc(100% - 6rem);
-	max-width: 71rem; // keeps inside of the margins
-	margin: 0 auto;
+	width: 100%;
+	// max-width: 71rem; // keeps inside of the margins 77 - 2 on each side
+	margin: 0 auto 2rem auto;
+	padding-bottom: $global-padding;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		padding-top: $global-padding*5; // guess and check
+		margin-top: $global-margin*5; // guess and check
 	}
+
 }
 
 .footer_menu {
@@ -911,11 +1015,18 @@
 	grid-template-columns: 1fr; // start simple stack then go to direction. maybe this should be a flex
 	grid-gap: $global-grid-gap;
 	padding-top: $global-padding;
-	margin-left: 0;
+	// margin-left: 0;
 	padding-left: 0;
+	max-width: $page-width;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
+		margin: 0 3rem; 
+	}
+
+	@media (min-width: map-get($breakpoints, large)) {
+		max-width: calc(77rem - 6rem);
+		margin: 0 auto;
 	}
 }
 
@@ -923,11 +1034,16 @@
 	display: grid;
 	grid-template-columns: 1fr; // start simple stack then go to direction. maybe this should be a flex
 	grid-gap: $global-grid-gap;
-	padding-top: $global-padding;
+	max-width: $page-width;
+	margin: 0 auto;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 2rem 1fr 1fr 1fr 2rem;
 	}
+}
+
+.footer_info div {
+	background: $light-gray; // step back with the grid gap fill
 }
 
 .footer_menu li {
@@ -938,16 +1054,29 @@
 	padding: 0;
 }
 
+.footer_info {
+	background: $white; // this is a way of filling the grip gap as a different color
+}
+
+.footer_copyright,
+.footer_nav,
+.footer_contact {
+	
+	padding: $global-padding;
+}
+
 .footer_copyright {
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 1;
+		// grid-row: 1;
+		grid-column: 2;
 	}
 }
 
 .footer_nav {
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 2;
-		text-align: center;
+		// grid-row: 1;
+		grid-column: 3;
+		// text-align: center;
 	}
 }
 
@@ -957,12 +1086,12 @@
 }
 
 .footer_nav li {
-	display: inline;
+	display: inline-block;
 }
 
 .footer_contact {
 	@media (min-width: map-get($breakpoints, medium)) {
-		grid-column: 3;
+		grid-column: 4;
 		text-align: right;
 	}
 }
@@ -995,3 +1124,15 @@
 	}  
   }
   
+
+.continental-gallery {
+	display: flex;
+	flex-wrap: wrap;
+
+	section {
+		// flex: 1 1 33%;
+		flex: 1 1 29%; // guess and check number to fit 3
+		padding: $global-padding;
+		
+	}
+}
