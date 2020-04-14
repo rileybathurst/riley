@@ -16,7 +16,7 @@ if (document.getElementsByClassName('ghostly') !== null) {
 
 // front page title changer
 if (document.getElementById('changeText') !== null) {
-	var text = ["Person", "Photographer", "Videographer"];
+	var text = ["Person", "Photographer", "Videographer", "Designer", "Developer"];
 	var counter = 0;
 	var elem = document.getElementById("changeText");
 	var inst = setInterval(change, 1000);

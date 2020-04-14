@@ -7,7 +7,9 @@
 			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 		</figure>
 
-		<div class="category-color-blocking"><a href="<?php the_permalink(); ?>"><!-- stay gold --></a></div>
+		<a href="<?php the_permalink(); ?>?c=<?php single_cat_title(''); ?>" class="category-color-blocking">
+			<div ><!-- stay gold --></div>
+		</a>
 	<?php } ?>
 
 	<div class="fp-header">

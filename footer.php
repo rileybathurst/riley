@@ -7,7 +7,7 @@
 		) ); ?>
 
 
-		<div class="background-dirty">
+		<div class="background-dirty footer-background__step">
 			<div class="footer_info">
 				<div class="footer_1"><!-- stay gold --></div>
 

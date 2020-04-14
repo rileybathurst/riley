@@ -574,7 +574,8 @@
 .article-content-specific { // single posts have more content in this block which is then held in by a foundation grid
 	@media (min-width: map-get($breakpoints, medium)) {
 		// grid-column: 1 / 7;
-		grid-column: 1 / 4;
+		// grid-column: 1 / 4;
+		grid-column: 1/6; // full width
 	}
 }
 
@@ -945,6 +946,10 @@
 	}
 }
 
+.specific-grid__main-width {
+	grid-column: 2/5;
+}
+
 .continental {
 
 	@media (min-width: map-get($breakpoints, medium)) {
@@ -1010,6 +1015,10 @@
 
 }
 
+.footer-background__step {
+	padding: $global-padding; // this allows the grid gap to sit inside as a ruler and not break the edges
+}
+
 .footer_menu {
 	display: grid;
 	grid-template-columns: 1fr; // start simple stack then go to direction. maybe this should be a flex
@@ -1035,10 +1044,14 @@
 	grid-template-columns: 1fr; // start simple stack then go to direction. maybe this should be a flex
 	grid-gap: $global-grid-gap;
 	max-width: $page-width;
-	margin: 0 auto;
+	
+	// margin: $global-margin; // allows the grid gap to sit inside the colored background
+	margin: $global-margin auto; // still working on this
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-template-columns: 2rem 1fr 1fr 1fr 2rem;
+
+		margin: $global-margin auto; // still working on this
 	}
 }
 
@@ -1093,6 +1106,18 @@
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 4;
 		text-align: right;
+	}
+}
+
+.footer_1,
+.footer_5 {
+
+	// Im not super happy with the far edges being white but its getting closer to right
+
+	display: none;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		display: initial;
 	}
 }
 

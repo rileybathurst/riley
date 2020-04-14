@@ -436,18 +436,22 @@ a:hover {
 .button { // [type="submit"] removed for material
 	// margin: 0; /* bring the element back inline */
 	margin-bottom: $global-margin;
-	background: none !important; // why important?
-	border-top: none !important;
-	border-left: none !important;
-	color: $primary-color;
-	border-color: $primary-color !important;
+	// background: none !important; // why important?
+	background: $primary-color;
+/* 	border-top: none !important;
+	border-left: none !important; */
+	border: none;
+	// color: $primary-color;
+	color: $white;
+	// border-color: $primary-color !important;
 	font-weight: bold;
 	font-size: 1.5em; // type scale?
 	/* padding-right: $global-padding; this was causing issues with hover looking strange but maybe I had done it or a reason?
 	padding-bottom: $global-padding;
 	*/ 
 	transition: $global-transition;
-	padding: $global-padding/2; // front page on 0 doesnt work
+	// padding: $global-padding/2; // front page on 0 doesnt work
+	padding: $global-padding/2 $global-padding; // front page on 0 doesnt work
 
 	display: inline-block;
 
@@ -456,8 +460,13 @@ a:hover {
 	}
 }
 
+a.button { // I dont love links as button they should be seperate things but for now
+	text-decoration: none;
+}
+
 .button:hover { // [type="submit"] removed for material
-	background: $primary-color !important; // why important?
+	// background: $primary-color !important; // why important?
+	background: $secondary-color;
 	color: $white !important; // why important?
 	// padding: $global-padding; // this is on a transition so its interesting when just on the hover
 }
@@ -523,7 +532,7 @@ a:hover {
 	text-decoration: line-through;
 }
 
-.article-content .button,
+/* .article-content .button,
 .quote-content .button {
 	text-decoration: none;
 	box-shadow: none;
@@ -533,12 +542,12 @@ a:hover {
 	border-bottom: 0.1em solid $primary-color;
 	border-radius: 3px;
 	padding: $global-padding;
-}
+} */
 
-.article-content .button:hover,
+/* .article-content .button:hover,
 .quote-content .button:hover {
 	border-bottom: 0.1em solid $primary-color; // global?
-}
+} */
 
 .breacdcrumbs {
 	color: $dark-gray;
@@ -688,6 +697,7 @@ a:hover {
 		text-decoration: none;
 		display: block; // fill the box
 		transition: $global-transition;
+		font-weight: bold;
 	}
 
 	a:hover {

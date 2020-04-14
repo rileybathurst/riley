@@ -9,10 +9,9 @@ if (have_posts()) {
 		<hr class="mega-hr">
 
 		<div class="specific-grid">
-			<!-- <h3 class="subtitle">Website</h3> -->
-			<h3>Website</h3>
+			<h3 class="subtitle">Website</h3>
 
-			<div class="specific-grid__main-width">
+			<div class="continental east-medium">
 				<p>I have been working with Priest to develop the website for the past few years, slowly up the site and continuing to do so.</p>
 
 				<p>Written in PHP with a wordpress CMS and a foundation framework allowing for a responive design adapting from phones to desktop screens.</p>
@@ -29,26 +28,7 @@ font-size: 2em;
 				</code></pre>
 			</div>
 
-<!-- 			<div class="continental west-medium gr-1-m mw-18em">
-				<picture class="lozad-picture base">
-!--
-					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-1080x2210.webp" alt="priest sheetmetal website on an iphone x" type="image/webp" media="(min-width: 960px)">
-					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-1080x2210.png" alt="priest sheetmetal website on an iphone x" media="(min-width: 960px)">
-					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-960x1964.png" alt="priest sheetmetal website on an iphone x" media="(min-width: 720px)">
-					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-960x1964.webp" alt="priest sheetmetal website on an iphone x" type="image/webp" media="(min-width: 720px)">
-					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-720x1473.png" alt="priest sheetmetal website on an iphone x" media="(min-width: 640px)">
-					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-720x1473.webp" alt="priest sheetmetal website on an iphone x" type="image/webp" media="(min-width: 640px)">
---
-					<source srcset=" php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-640x1309.png" media="(min-width: 360px)">
-					<source srcset=" php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-640x1309.webp" type="image/webp" media="(min-width: 360px)">
-					<source srcset=" php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-360x736.webp" type="image/webp">
-					<source srcset=" php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-360x736.png">
-					!-- <img src=" php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-360x736.png"> --
-				</picture>
-				<h4 class="caption">Priest sheetmetal site on an iphone.</h4>
-			</div> -->
-
-			<div class="specific-grid__main-width">
+			<div class="continental west-medium gr-1-m mw-18em">
 				<picture class="lozad-picture base">
 <!--
 					<source srcset="php echo content_url(); ?>/uploads/2019/05/riley-bathurst-design-priest-website-iPhoneX-clay-1080x2210.webp" alt="priest sheetmetal website on an iphone x" type="image/webp" media="(min-width: 960px)">
