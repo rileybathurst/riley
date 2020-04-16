@@ -10,7 +10,7 @@
 
 
 	<!-- IntersectionObserver Polyfill -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> <!-- how come this isnt added to riley-webpack -->
 
 	<script type="text/javascript">
 

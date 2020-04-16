@@ -17,11 +17,19 @@
 					$next_id = $next_post->post->ID;
 				endif;
 				?>
+
+				<div class="base-next__grid">
+					<a href="<?php echo get_permalink( $next_id ); ?>">
+						<?php echo get_the_post_thumbnail( $next_id, 'medium' ); ?>
+					
+						<h4><?php echo get_the_title( $next_id ); ?></h4>
+						<div class="color-blocking"><!-- stay gold --></div>
+					</a>
+				</div>
+
+				<?php echo the_excerpt(); ?><!-- I'm going to need to do some work on this -->
 				<a href="<?php echo get_permalink( $next_id ); ?>">
-					<?php echo get_the_post_thumbnail( $next_id, 'medium' ); ?>
-				</a>
-				<a href="<?php echo get_permalink( $next_id ); ?>">
-					<h4><?php echo get_the_title( $next_id ); ?></h4>
+					<h4>Explore <?php echo get_the_title( $next_id ); ?></h4>
 				</a>
 				<?php } else {
 					the_post_navigation();

@@ -444,6 +444,7 @@ a:hover {
 	text-align: left !important; // why important?
 }
 
+button,
 .button { // [type="submit"] removed for material
 	// margin: 0; /* bring the element back inline */
 	margin-bottom: $global-margin;
@@ -475,6 +476,7 @@ a.button { // I dont love links as button they should be seperate things but for
 	text-decoration: none;
 }
 
+button:hover,
 .button:hover { // [type="submit"] removed for material
 	// background: $primary-color !important; // why important?
 	background: $secondary-color;
@@ -624,6 +626,7 @@ a.button { // I dont love links as button they should be seperate things but for
 	color: $dark-gray;
 } */
 
+/* removing this to try and get everything back to a basic style guide
 .post-navigation a {
 	color: $black;
 }
@@ -643,6 +646,15 @@ a.button { // I dont love links as button they should be seperate things but for
 	border-bottom: none;
 	box-shadow: none;
 	background-color: $primary-color;
+} */
+
+.article-tags a {
+	@extend button;
+	margin-bottom: 0;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		text-align: right;
+	}
 }
 
 /*--------------------------------------------------------------

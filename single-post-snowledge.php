@@ -21,7 +21,8 @@ if (have_posts()) {
 						<picture class="lozad-picture">
 							<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-full.jpg" media="(min-width: 64em)">
 							<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-medium.jpg" media="(min-width: 40em)">
-							<img src="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-small.jpg" alt="deep powder snow turn">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-small.jpg" alt="deep powder snow turn">
+							<!-- <img src=" php echo content_url(); ?>/uploads/2018/04/IMG_0049-small.jpg" alt="deep powder snow turn"> -->
 						</picture>
 					</a>
 				<h4>Brandon Craddock - Tahoe Backcountry</h4><!-- this should be an actual caption? -->
@@ -35,7 +36,8 @@ if (have_posts()) {
 						<picture class="lozad-picture">
 							<source srcset="<?php echo content_url(); ?>/uploads/2018/04/DJI_0063-large.jpg" media="(min-width: 64em)">
 							<source srcset="<?php echo content_url(); ?>/uploads/2018/04/DJI_0063-medium.jpg" media="(min-width: 40em)">
-							<img src="<?php echo content_url(); ?>/uploads/2018/04/DJI_0063-small.jpg" alt="drone photo of a snowboarder on a small patch of snow">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/04/DJI_0063-small.jpg" alt="drone photo of a snowboarder on a small patch of snow">
+							<!-- <img src=" php echo content_url(); ?>/uploads/2018/04/DJI_0063-small.jpg" alt="drone photo of a snowboarder on a small patch of snow"> -->
 						</picture>
 					</a>
 					<h4>Garrett Cygan - Tahoe</h4>
@@ -46,7 +48,8 @@ if (have_posts()) {
 							<picture class="lozad-picture">
 								<source srcset="<?php echo content_url(); ?>/uploads/2018/05/IMG_0126.jpg" media="(min-width: 64em)">
 								<source srcset="<?php echo content_url(); ?>/uploads/2018/05/IMG_0126.jpg" media="(min-width: 40em)">
-								<img src="<?php echo content_url(); ?>/uploads/2018/05/IMG_0126.jpg" alt="skier air in the trees in canada">
+								<source srcset="<?php echo content_url(); ?>/uploads/2018/05/IMG_0126.jpg" alt="skier air in the trees in canada">
+								<!-- <img src=" php echo content_url(); ?>/uploads/2018/05/IMG_0126.jpg" alt="skier air in the trees in canada"> -->
 							</picture>
 						</a>
 					<h4>Eric Lee O'Brien - Tree Chute - Revelstoke, BC</h4>
@@ -77,7 +80,8 @@ if (have_posts()) {
 						<picture class="lozad-picture">
 							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/DSC01909-large.jpg" media="(min-width: 64em)">
 							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/DSC01909-medium.jpg" media="(min-width: 40em)">
-							<img src="<?php echo content_url(); ?>/uploads/2018/05/DSC01909-small.jpg" alt="Garrett cygan snowboarder profile">
+							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/DSC01909-small.jpg" alt="Garrett cygan snowboarder profile">
+							<!-- <img src=" php echo content_url(); ?>/uploads/2018/05/DSC01909-small.jpg" alt="Garrett cygan snowboarder profile"> -->
 						</picture>
 					</a>
 					<h4>Garrett Cygan - Snowboarder Profile</h4>
@@ -90,7 +94,8 @@ if (have_posts()) {
 							<picture class="lozad-picture">
 								<source srcset="<?php echo content_url(); ?>/uploads/2018/05/DSC07671-large.jpg" media="(min-width: 64em)">
 								<source srcset="<?php echo content_url(); ?>/uploads/2018/05/DSC07671-medium.jpg" media="(min-width: 40em)">
-								<img src="<?php echo content_url(); ?>/uploads/2018/05/DSC07671-small.jpg" alt="Kenzie Morris skier profile">
+								<source srcset="<?php echo content_url(); ?>/uploads/2018/05/DSC07671-small.jpg" alt="Kenzie Morris skier profile">
+								<!-- <img src=" php echo content_url(); ?>/uploads/2018/05/DSC07671-small.jpg" alt="Kenzie Morris skier profile"> -->
 							</picture>
 						</a>
 					<h4>Kenzie Morris - Skier Profile</h4>
@@ -162,7 +167,8 @@ if (have_posts()) {
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-640x880.webp" alt="snowledge sweepstakes poster design" media="(min-width: 360px)" type="image/webp">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-640x880.jpg" alt="snowledge sweepstakes poster design" media="(min-width: 360px)">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-360x495.webp" alt="snowledge sweepstakes poster design" type="image/webp">
-							<img src="<?php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-360x495.jpg" alt="snowledge sweepstakes poster design">
+							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-360x495.jpg" alt="snowledge sweepstakes poster design">
+							<!-- <img src=" php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-360x495.jpg" alt="snowledge sweepstakes poster design"> -->
 						</picture>
 					</a>
 				<h4>Sweepstakes Poster</h4>
@@ -183,7 +189,8 @@ if (have_posts()) {
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-640x426.webp" alt="snowledge download card front and back" media="(min-width: 360px)" type="image/webp">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-640x426.jpg" alt="snowledge download card front and back" media="(min-width: 360px)">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-360x240.webp" alt="snowledge download card front and back" type="image/webp">
-							<img src="<?php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-360x240.jpg" alt="snowledge download card front and back">
+							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-360x240.jpg" alt="snowledge download card front and back">
+							<!-- <img src=" php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-360x240.jpg" alt="snowledge download card front and back"> -->
 						</picture>
 					</a>
 				<h4>Download Card</h4>
@@ -199,7 +206,6 @@ if (have_posts()) {
 			<p class="continental">Zeros and Ones.</p>
 			<p class="subtitle show-for-medium" style="grid-row: 3; grid-column: 5; justify-self: center;">Zeros and Ones.</p>
 
-
 			<section class="continental">
 				<a href="https://rileybathurst.com/snowledge_dev_screenshot-1080x607/">
 					<picture class="lozad-picture" >
@@ -212,7 +218,8 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-640x360.webp" alt="snowledge development screenshots" media="(min-width: 360px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-640x360.jpg" alt="snowledge development screenshots" media="(min-width: 360px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-360x202.webp" alt="snowledge development screenshots" type="image/webp">
-						<img src="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-360x202.jpg" alt="snowledge development screenshots">
+						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-360x202.jpg" alt="snowledge development screenshots">
+						<!-- <img src=" php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-360x202.jpg" alt="snowledge development screenshots"> -->
 					</picture>
 				</a>
 

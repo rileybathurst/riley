@@ -115,10 +115,14 @@
 	background: $light-gray;
 }
 
-.header-color-blocking {
+.color-blocking {
 	mix-blend-mode: multiply;
 	background: $primary-color;
 	z-index: 15; //same as .spine border? should it be above or below
+}
+
+.header-color-blocking {
+	@extend .color-blocking;
 	grid-row: 2;
 	grid-column: 2;
 
@@ -662,14 +666,19 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0;
-	display: grid;
-	grid-template-columns: 2em 1fr 1fr 1fr 2em;
-	grid-gap: $global-grid-gap;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		display: grid;
+		grid-template-columns: 2em 1fr 1fr 1fr 2em;
+		grid-gap: $global-grid-gap;
+	}
 }
 
 .base-explore {
-	grid-column: 1;
-	writing-mode: vertical-rl;
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-column: 1;
+		writing-mode: vertical-rl;
+	}
 }
 
 .base-tags {
@@ -722,6 +731,7 @@
 
 	a:hover {
 		background: $secondary-color;
+		color: $white; // otherwise this gets overwritten to the default a
 	}
 
 	// I dont like the hover here but need to do actual work on it
@@ -773,6 +783,10 @@
 
 .article-comments {
 	grid-column: 2 / 5;
+
+	padding: $global-padding;
+	@extend .background-dirty;
+	
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-column: 3;
 	}
@@ -1188,4 +1202,21 @@
 
 .specific-grid__col-4 {
 	grid-column: 4;
+}
+
+.base-next__grid a {
+	display: grid;
+
+	img,
+	h4, // the title
+	.color-blocking {
+		grid-row: 1;
+		grid-column: 1;
+	}
+
+	h4 {
+		place-self: center;
+		color: $white;
+		z-index: 16;
+	}
 }

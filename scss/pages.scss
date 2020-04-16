@@ -14,6 +14,8 @@
 	outline: 0.1em solid $primary-color;
 }
 
+/* 
+reducing some parts to get back to a style guide before building up again
 .searchform [type="submit"],
 #commentform [type="submit"] {
 	background: none;
@@ -26,6 +28,11 @@
 	padding: $global-padding;
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
+} */
+
+.searchform [type="submit"],
+#commentform [type="submit"] {
+	@extend button;
 }
 
 // front page
