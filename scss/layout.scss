@@ -1161,3 +1161,31 @@
 		
 	}
 }
+
+.specific-full-picture img {
+	background: $white;
+	padding: $global-padding;
+	width: calc(100% - 2rem);
+}
+
+.specific-overlaying__image-grid {
+	display: grid;
+
+	picture,
+	.overlaying-image {
+		grid-row: 1;
+		grid-column: 1;
+	}
+}
+
+.specific-grid__col-2 {
+	grid-column: 2;
+}
+
+.specific-grid__col-3 {
+	grid-column: 3;
+}
+
+.specific-grid__col-4 {
+	grid-column: 4;
+}

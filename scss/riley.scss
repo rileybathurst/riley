@@ -366,6 +366,17 @@ body { // I think I can do this better just having everything sit inside a littl
 	background: $light-gray;
 }
 
+.background-double--dark {
+	background: #4A4A4A;
+	border-bottom: 2px solid $black;
+	color: $white;
+}
+
+.single-code {
+	@extend .background-double--dark;
+	padding: $global-padding;
+}
+
 /* .site, .site-footer {
 	// background: $light-gray; // why not variables?
 	// color: black; // why not variables?

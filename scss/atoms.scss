@@ -199,8 +199,7 @@ figcaption,
 	opacity: 0.8; // indication of a link
 }
 
-.wp-block-code,
-code { // this is getting overwritten by js that isnt really doing much of what I want at the moment and needs fixing in riley-webpack
+.wp-block-code { // this is getting overwritten by js that isnt really doing much of what I want at the moment and needs fixing in riley-webpack
 	background: $white;
 	padding: $global-padding;
 	line-height: 1.5em;

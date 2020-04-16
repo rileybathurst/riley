@@ -46,6 +46,8 @@
 						'menu_id'        => 'top-menu',
 					) ); ?>
 				</nav>
+				<!-- I think I want to start doing a hover to change the words but this would be custom content not a wp_nav_menu -->
+
 			</div>
 		<?php } else { ?>
 			<div class="site-branding-text">
