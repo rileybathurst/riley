@@ -49,3 +49,4 @@ I'll try it out quick on firefox.
 - the white lines on the base of the footer
 - I dont think the folding laptop screen is working anymore
 - be able to order pages in the category page with meta
+- as soon as im back on the live version get the git origin sorted
