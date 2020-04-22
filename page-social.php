@@ -8,7 +8,7 @@ Template Name: Social
 
 <div class="background-primary">
 	<div class="front-page-titles">
-		<div class="fp-box ccc-west"></div>
+		<!-- <div class="fp-box ccc-west"></div> -->
 
 		<div class="social-icons">
 			<div class="fp-box">
@@ -34,7 +34,7 @@ Template Name: Social
 			</div>
 		</div>
 
-		<div class="fp-box ccc-east"></div>
+		<!-- <div class="fp-box ccc-east"></div> -->
 	</div>
 </div>
 

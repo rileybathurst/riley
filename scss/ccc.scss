@@ -34,7 +34,7 @@
 }
 
 .social-icons {
-	grid-column: 2;
+	grid-column: 1/7; // this might be on the old lots of columns header
 	grid-row: 1/4; // match ccc so we can borrow classes
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr; // repeat this as well

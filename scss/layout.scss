@@ -95,8 +95,8 @@
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		align-self: end; // this is for when the menu is horizontal on single pages
-		// grid-column: 3;
-		grid-column: 5;
+		grid-column: 3;
+		// grid-column: 5;
 	}
 }
 
@@ -420,8 +420,9 @@
 */
 
 .category-sub {
-	width: calc(100% - 6rem);
-	max-width: $page-width;
+	// width: calc(100% - 6rem);
+	width: 100%;
+	max-width: 72rem; // always stay inside the widest columns on the category pages
 	margin: 0 auto;
 	margin-bottom: $global-margin;
 }
@@ -543,7 +544,7 @@
 	grid-row: 2;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		// grid-column: 2 / 6;
+		grid-column: 2 / 6;
 		grid-row: 2; // this is a repeat of above
 	}
 }

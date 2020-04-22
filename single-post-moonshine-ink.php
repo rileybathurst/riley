@@ -13,7 +13,7 @@ if (have_posts()) {
 	<div class="article-content-specific">
 		<div class="specific-grid">
 
-			<section class="continental west-medium">
+			<section class="continental">
 				<a href="https://rileybathurst.com/Moonshine_Ink_Tahoe_Winter_Times_1812-20-1080x721/">
 					<picture class="lozad-picture">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-1080x1358.webp" media="(min-width: 960px)" type="image/webp">
@@ -31,9 +31,7 @@ if (have_posts()) {
 				<h4 class="caption">Lifestyle skiing </h4>
 			</section>
 
-			<div class="east-medium"></div> <!-- white spacing -->
-
-			<section class="continental east-medium">
+			<section class="continental ">
 				<a href="https://rileybathurst.com/Moonshine_Ink_Tahoe_Winter_Times_1812-39-1080x721/">
 					<picture class="lozad-picture">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-1080x1358.webp" media="(min-width: 960px)" type="image/webp">
@@ -54,24 +52,25 @@ if (have_posts()) {
 		</div>
 			<hr class="mega-hr">
 		<div class="specific-grid">
-			<h3 class="subtitle">Video</h3>
+			<h3>Video</h3>
+			<p class="subtitle" style="grid-row: 4; align-self: end;">Video</p>
 			
-			<section class="continental west-medium">
+			<section class="continental">
 				<h3>KBong</h3>
 				<p>Tiny Porch Concert.</p>
 			</section>
 
-			<section class="continental east-medium" style="--aspect-ratio: 16/9;">
+			<section class="continental " style="--aspect-ratio: 16/9;">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/AR5Zh-I9nPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
 			</section>
 		</div>
 
 			<hr class="mega-hr">
 			<div class="specific-grid">
-			<section class="continental west-medium" style="--aspect-ratio: 16/9;">
+			<section class="continental" style="--aspect-ratio: 16/9;">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/yUBJ-9XrOKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</section>
-			<section class="continental east-medium">
+			<section class="continental ">
 				<h3>Marty O'Reilly</h3>
 				<p>Tiny Porch Concert.</p>
 			</section>

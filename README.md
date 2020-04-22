@@ -45,3 +45,7 @@ I'll try it out quick on firefox.
 - the top right svg should also open a menu
 - make a tiny tiny media query thats super boring but works
 - remove all direct links
+- category pages the red pushes down too far
+- the white lines on the base of the footer
+- I dont think the folding laptop screen is working anymore
+- be able to order pages in the category page with meta
