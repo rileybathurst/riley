@@ -95,7 +95,7 @@
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		align-self: end; // this is for when the menu is horizontal on single pages
-		grid-column: 3;
+		grid-column: 5;
 		// grid-column: 5;
 	}
 }

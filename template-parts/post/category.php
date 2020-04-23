@@ -1,3 +1,22 @@
+<?php 
+
+$cat = single_cat_title('');
+
+// if $cat = something from this array then do a new loop by the order
+
+/* maybe do something wirh sticky otherwisw
+
+$the_query = new WP_Query( array (
+          'post_type' => 'page',
+          'post_parent' => $services_id,
+          'orderby' => 'menu_order',
+          'order' => 'ASC'
+        ) );
+        if ( $the_query->have_posts() ) {
+          while ( $the_query->have_posts() ) {
+            $the_query->the_post(); */
+?>
+
 <article <?php post_class(); ?>> <!-- post_class means I cant add my own classes -->
 
 	<!-- <div class="spine-border">stay gold</div> -->
@@ -18,6 +37,7 @@
 			<a href="<?php the_permalink(); ?>?c=<?php single_cat_title(''); ?>">
 			<!-- the trailing slash is included in the permalink this helps to shorten breadcrumbs on single pages --> 
 				<?php the_title(); ?>
+				<!-- php echo get_post_meta(  'myguten_meta_block_field', true ); ?> -->
 			</a>
 		</h2>
 	</div>

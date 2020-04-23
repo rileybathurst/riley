@@ -82,7 +82,7 @@ add_filter( 'wp_mail_from_name', function( $name ) {
 });
 
 
-// test
+// test I'm going to use this data to order the posts in categpries
 function myguten_register_post_meta() {
     register_post_meta( 'post', 'myguten_meta_block_field', array(
         'show_in_rest' => true,
@@ -101,7 +101,84 @@ function myguten_enqueue() {
 }
 add_action( 'enqueue_block_editor_assets', 'myguten_enqueue' );
 
-// custom post types
+// put this meta content to use
+function myguten_content_filter( $content ) {
+    $value = get_post_meta( get_the_ID(), 'myguten_meta_block_field', true );
+    if ( $value ) {
+        return sprintf( "%s <h4> %s </h4>", $content, esc_html( $value ) );
+    } else {
+        return $content;
+    }
+}
+add_filter( 'the_content', 'myguten_content_filter' );
+
+
+
+
+
+
+/* Adding 'menu order' column to custom post type admin screen
+https://wordpress.stackexchange.com/questions/43970/adding-menu-order-column-to-custom-post-type-admin-screen
+ */
+
+/*
+ add order column to admin listing screen for header text
+
+function add_new_header_text_column($header_text_columns) {
+	$header_text_columns['menu_order'] = "Order";
+	return $header_text_columns;
+}
+add_action('manage_header_text_post_columns', 'add_new_header_text_column');
+
+
+ show custom order column values
+
+function show_order_column($name){
+	global $post;
+
+	switch ($name) {
+		case 'menu_order':
+		echo 'her';
+	 }
+  }
+add_action('manage_header_text_posts_custom_column','show_order_column');
+
+
+ make column sortable
+
+function order_column_register_sortable($columns){
+	$columns['menu_order'] = 'menu_order';
+	return $columns;
+}
+add_filter('manage_edit-header_text_sortable_columns','order_column_register_sortable');
+*/
+
+
+
+function my_add_new_columns($columns) {
+    $post_type = get_post_type();
+    if ( $post_type == 'post' ) {
+        $new_columns = array(
+            'order' => esc_html__( 'Order', 'text_domain' ),
+        );
+        return array_merge($columns, $new_columns);
+    }
+}
+add_filter( 'manage_posts_columns',  'my_add_new_columns' );
+
+add_action( 'manage_posts_custom_column', 'order_column', 10, 2); // Not a filter
+function order_column( $column, $post_id ) {
+  if ( 'order' === $column ) {
+    echo get_post_meta(  $post_id, 'myguten_meta_block_field', true ); // this is made in a block and should be all together
+  }
+}
+
+
+
+
+
+/* // custom post types
+// Im not currently using these but for right now they are ok to leave just commented out as if I dont go SSG soon I should do something with these.
 function wp_custom_post_type()
 {
 	register_post_type('riley_portfolio',
@@ -134,4 +211,4 @@ function portfolio_category() {
 	// add_post_type_support ('riley_portfolio', 'title'); // this works if its removed from above so I presume I can make up new ones
 	add_post_type_support ('riley_portfolio', 'category', 'something' ); // might need to figure out the args with this?
 }
-add_action('init', 'portfolio_category');
+add_action('init', 'portfolio_category'); */

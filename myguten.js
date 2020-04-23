@@ -1,3 +1,4 @@
+// start by documenting what I was doing with this or was it just a test?
 ( function( wp ) {
     var el = wp.element.createElement;
     var registerBlockType = wp.blocks.registerBlockType;
