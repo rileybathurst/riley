@@ -1,3 +1,59 @@
+<?php 
+
+// I only reorder a couple of categories so only redo the loop if I have to so things dont get slower
+
+$ordered_cats = [
+	"clicks",
+	"Clicks",
+	"code",
+	"Code",
+	"camera",
+	"Camera"
+];
+
+$cat_title = single_cat_title('', false);
+
+if (in_array($cat_title, $ordered_cats)) {
+
+	// It'd be nice if there was a version of not restarting the query but it's fine for now
+	$args = array(
+		'category_name' => $cat_title,
+		// 'order' => ASC,
+		'order' => DSC,
+		'orderby' => 'meta_value=myguten_meta_block_field'
+		// really struggling to get this to just be top level or maybe its not
+/* 		'tax_query' => array(
+			// 'relation' => 'AND',
+			array(
+				'order' => 1,
+			)
+		) */
+	);
+	$category_posts = new WP_Query($args);
+
+	if($category_posts->have_posts()) : 
+		while($category_posts->have_posts()) : 
+			$category_posts->the_post();
+	?>
+
+
+	<p><?php the_title(); 
+
+			/* echo $post->ID;
+			?> <hr /> <?php */
+
+			// echo get_post_meta( $post->ID, 'order', true );
+			echo ' - ' . get_post_meta( $post->ID, 'myguten_meta_block_field', true );
+	?></p>
+
+<?php
+	  endwhile;
+	endif;
+
+} // the else is just do the regular
+
+?>
+
 <?php get_header(); ?>
 
 <div class="background-dirty">
