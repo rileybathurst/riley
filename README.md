@@ -50,3 +50,17 @@ I'll try it out quick on firefox.
 - I dont think the folding laptop screen is working anymore
 - be able to order pages in the category page with meta
 - as soon as im back on the live version get the git origin sorted
+- a post without a featured image needs a fall back or atleast a readable color
+- meta block updates are not working
+
+### Featured Categories
+
+To be able to organize the posts how I want there are a few complex things going on 
+- Posts have to be marked sticky to show up on the front pages
+- Posts have to be in a parent category this means the sub pages work and it's not a wierd extra query for those that has to be implemented every time it changes
+- There is a new query to reorder only the categories that are needed in hopes of keeping this as speedy as possible so anything new has to be manually added to the array
+- When a post doesnt have an order specified it gives it sort of a number 2
+- doesnt seem to matter if posts have the same number
+- I could do a more complex ordering to have be different for each category but its over kill
+
+AAW should only show up in Code but its also underneath Clicks in website design so I need to deal with that, for now Ive just removed it from design.
