@@ -76,6 +76,10 @@ li {
   margin-bottom: 1rem;
 }
 
+address {
+  font-style: unset;
+}
+
 .text-center {
   text-align: center;
 }

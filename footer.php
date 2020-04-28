@@ -26,14 +26,14 @@
 						'menu_id'        => 'bottom-menu',
 					) ); ?>
 				</div><!-- .footer_nav -->
-				<div class="footer_contact">
+				<address class="footer_contact">
 					<a href="mailto:<?php echo bloginfo ('admin_email'); ?>"><?php echo bloginfo ('admin_email'); ?></a>
 					<!-- add a contact number to the theme -->
 					<?php if (get_option('contact_phone')) {
 						$unspaced_phone = str_replace(' ', '', get_option('contact_phone')); ?>
 						<a href="tel:<?php echo $unspaced_phone; ?>"><?php echo get_option('contact_phone'); ?></a>
 					<?php } ?>
-				</div><!-- .footer_contact -->
+				</address><!-- .footer_contact -->
 				
 				<div class="footer_5"><!-- stay gold --></div>
 
