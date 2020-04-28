@@ -23,7 +23,6 @@ I'll try it out quick on firefox.
 - HTML formatting to make sure the H tag is the first one
 - sort out the code block max-width
 - comments page
-- deal with some nice header tags so it's not relying on yoast
 - wordpress max variable width
 - can I start adding an chrome lazy load tags to images?
 - I have some overly sized grids .article-search { grid-column: 2 / 12; // really?

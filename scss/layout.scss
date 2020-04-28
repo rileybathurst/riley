@@ -311,8 +311,12 @@
 	margin: 0 auto;
 	display: grid; // I am using this for the grid gap it could probably be done better
 	grid-gap: $global-grid-gap/2; // double the grip half the gap
-    grid-template-columns: repeat(6, 1fr);
-    background: $white;
+	grid-template-columns: repeat(6, 1fr);
+	background: $white;
+	@media (prefers-color-scheme: dark) {
+		background: $black;
+	}
+
 	
 	// this needs a couple of media queries to match the header grid
 	@media (min-width: map-get($breakpoints, medium)) {
@@ -1082,6 +1086,9 @@
 
 .footer_info div {
 	background: $light-gray; // step back with the grid gap fill
+	@media (prefers-color-scheme: dark) {
+		background: #2C2C2C; // this should be made a variable
+	}
 }
 
 .footer_menu li {
@@ -1094,6 +1101,9 @@
 
 .footer_info {
 	background: $white; // this is a way of filling the grip gap as a different color
+	@media (prefers-color-scheme: dark) {
+		background: $black;
+	}
 }
 
 .footer_copyright,

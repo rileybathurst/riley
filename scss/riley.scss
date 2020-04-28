@@ -352,10 +352,20 @@ body { // I think I can do this better just having everything sit inside a littl
 	@media (min-width: map-get($breakpoints, large)) {
 		border: 1em solid $white;
 	}
+
+	@media (prefers-color-scheme: dark) {
+		background: $black;
+		color: $white;
+		border-color: $black;
+		margin: 0;
+	}
 }
 
 .background-clean {
 	background: $white;
+	@media (prefers-color-scheme: dark) {
+		background: $black;
+	}
 }
 
 .background-primary {
@@ -364,6 +374,10 @@ body { // I think I can do this better just having everything sit inside a littl
 
 .background-dirty {
 	background: $light-gray;
+
+	@media (prefers-color-scheme: dark) {
+		background: #2C2C2C;
+	}
 }
 
 .background-double--dark {
@@ -438,6 +452,10 @@ a {
 a:hover {
 	text-decoration: line-through;
 	color: $secondary-color;
+
+	@media (prefers-color-scheme: dark) {
+		color: lighten($primary-color, 10%);
+	}
 }
 
 .form-submit {
@@ -480,7 +498,11 @@ button:hover,
 .button:hover { // [type="submit"] removed for material
 	// background: $primary-color !important; // why important?
 	background: $secondary-color;
-	color: $white !important; // why important?
+	// color: $white !important; // why important?
+	@media (prefers-color-scheme: dark) {
+		background: lighten($primary-color, 10%);
+	}
+
 	// padding: $global-padding; // this is on a transition so its interesting when just on the hover
 }
 
@@ -517,7 +539,8 @@ button:hover,
 }
 
 // this must be able to be done better
-.article-content h1 a,
+// back to the simple styles
+/* .article-content h1 a,
 .article-content h2 a,
 .article-content h3 a,
 .article-content h4 a,
@@ -529,8 +552,8 @@ button:hover,
 .quote-content h4 a,
 .quote-content h5 a,
 .quote-content h6 a {
-	color: $black;
-}
+	color: $black; 
+} */
 
 .article-footer a,
 .quote-content p a,
@@ -569,6 +592,10 @@ button:hover,
 .breadcrumbs a {
 	color: #575757; // dark-gray doesn't pass contrast checks but I didn't want to go all the way to black
 	text-decoration: line-through;
+
+	@media (prefers-color-scheme: dark) {
+		color: $light-gray;
+	}
 }
 
 .breadcrumbs a:hover {
@@ -724,8 +751,10 @@ button:hover,
 	}
 
 	a:hover {
-		background: $secondary-color;
 		text-decoration: line-through;
+		background: $secondary-color;
+		@media (prefers-color-scheme: dark) {
+			background: lighten($primary-color, 10%);
 	}
 }
 
@@ -794,6 +823,9 @@ img, video, figure {
 .overlaying-image {
 	filter: grayscale(100%); // does this need a 100% or is this a default?
 	mix-blend-mode: multiply;
+	@media (prefers-color-scheme: dark) {
+		mix-blend-mode: screen;
+	}
 	z-index: 14; // why this number?
 }
 
@@ -808,7 +840,7 @@ img, video, figure {
 
 .front-page-titles {
 
-	background: $white;
+	// background: $white;
 	text-align: center;
 	font-weight: bold;
 }
