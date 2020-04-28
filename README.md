@@ -48,6 +48,7 @@ I'll try it out quick on firefox.
 - I dont think the folding laptop screen is working anymore
 - as soon as im back on the live version get the git origin sorted
 - meta block updates are not working
+- dark mode should load independantly to light and both split from the layout styling
 
 ### Featured Categories
 

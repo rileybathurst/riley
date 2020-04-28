@@ -130,9 +130,6 @@ hr {
 .mega-hr { // this might be able to become a gutenberg style in for most places
 	border-bottom-width: 0.5em;
 	border-color: $white;
-	@media (prefers-color-scheme: dark) {
-		border-color: $black;
-	}
 
 	border-style: solid;
 

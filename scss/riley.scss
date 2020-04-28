@@ -55,13 +55,13 @@ svg:not(:root) { // thats a pretty strange selector is it right?
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
+	background-color: #f1f1f1; // would I just prefer to leave screen readers to do whatever they want and not mess with them?
 	-webkit-border-radius: 3px; // do I need this in scss?
 	border-radius: 3px;
 	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); // do I need this in scss?
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
-	color: #21759b;
+	color: #21759b; // this should be changed to something like the theme
 	display: block;
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -136,13 +136,14 @@ p {
 ::selection {
   background: $primary-color; /* WebKit/Blink Browsers */
 }
-::-moz-selection {
-  background: $primary-color; /* Gecko Browsers */
-}
 
 blockquote {
 	margin: 0;
 	color: $black;
+	@media (prefers-color-scheme: dark) {
+		color: $white;
+	}
+
 	font-size: 2em; // type scale?
 	font-weight: bold;
 	border-left: none; // I think this is a browser override?
@@ -619,6 +620,9 @@ button:hover,
 	border-bottom: none;
 	box-shadow: none; // would this have a box shadow?
 	color: $black;
+	@media (prefers-color-scheme: dark) {
+		color: $white;
+	}
 }
 
 .pagination .nav-links .next,
@@ -755,6 +759,7 @@ button:hover,
 		background: $secondary-color;
 		@media (prefers-color-scheme: dark) {
 			background: lighten($primary-color, 10%);
+		}
 	}
 }
 
@@ -815,9 +820,12 @@ img, video, figure {
     writing-mode: initial;
 
     a {
-        color: $black;
-        padding: initial;
-    }
+		padding: initial;
+		color: $black;
+		@media (prefers-color-scheme: dark) {
+			color: $white;
+		}
+	}
 }
 
 .overlaying-image {
@@ -988,13 +996,13 @@ img, video, figure {
 	margin-left: 1em;
 }
 
-.comment-body {
-	color: #333;
-	font-size: 14px;
+/* .comment-body {
+	// color: #333;
+	font-size: 14px; // this should get fixed
 	font-size: 0.875rem;
 	margin-bottom: 4em;
 }
-
+ */
 .comment-reply-link {
 	font-weight: 800;
 	position: relative;
@@ -1016,16 +1024,15 @@ img, video, figure {
 }
 
 .bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
-	border: 1px solid #333;
+	border: 1px solid #333; // why not a $variable
 	padding: 2px;
 }
 
 .no-comments,
 .comment-awaiting-moderation {
 	color: #767676;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-style: italic;
+	font-size: 14px; // this is wrong
+	font-style: italic; // this is wrong
 }
 
 .comments-pagination {
