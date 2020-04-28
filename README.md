@@ -49,6 +49,8 @@ I'll try it out quick on firefox.
 - as soon as im back on the live version get the git origin sorted
 - meta block updates are not working
 - dark mode should load independantly to light and both split from the layout styling
+- page 2 of reordered categories doesn't work it kinda shouldn't ever have to come up but it should work
+- drop shadows in dark mode
 
 ### Featured Categories
 

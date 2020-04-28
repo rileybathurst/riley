@@ -219,7 +219,10 @@ figcaption,
 }
 
 .base {
-	filter: drop-shadow(16px 16px 10px $dark-gray)
+	filter: drop-shadow(16px 16px 10px $dark-gray);
+	@media (prefers-color-scheme: dark) {
+		filter: drop-shadow(16px 16px 10px black);
+	}
 }
 
 .show-for-medium {
@@ -276,6 +279,7 @@ body.category-code { // needs to be on the body tag or a single article can be d
 	
 	.category-overlaying-image {
 		filter: none;
+		mix-blend-mode: initial;
 	}
 
 	.category-color-blocking {

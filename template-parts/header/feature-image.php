@@ -28,14 +28,15 @@ elseif ( is_attachment()) { ?>
 	</figure>
 <?php } // end of attachment
 
-// this needs to automate
+/* // this needs to automate
+// I would like to get back to the folding laptop its a pretty cool little demo
 elseif ( is_single('Priest')) {
 	get_template_part( 'template-parts/header/priest-image' );
-}
+} */
 
-elseif ( is_single('Authentic Alignment Wellness')) {
+/* elseif ( is_single('Authentic Alignment Wellness')) {
 	get_template_part( 'template-parts/header/aaw-image' );
-}
+} */
 
 elseif ( is_single()) {
 
