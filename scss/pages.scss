@@ -8,6 +8,11 @@
 	padding: $global-padding/2; // fit to the button
 	border-top-left-radius: 2px;
 	border-bottom-left-radius: 2px;
+
+	width: 100%; // max-width wasn't fixing the problem
+	@media (min-width: map-get($breakpoints, medium)) {
+		width: auto;
+	}
 }
 
 .searchform [type="text"]:focus {

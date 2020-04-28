@@ -71,15 +71,6 @@ if (in_array($cat_title, $ordered_cats)) {
 			$category_posts->the_post();
 	?>
 
-<hr />
-<?php echo get_post_meta( $post->ID, 'myguten_meta_block_field', true ) . ' - '; 
-// prove this is a number
-$doubler = (get_post_meta( $post->ID, 'myguten_meta_block_field', true )*2);
-echo $doubler;
-?>
-	<hr />
-
-
 		<div class="background-dirty category-break">
 			<div class="site-main" role="main">
 				<?php get_template_part( 'template-parts/post/category' ); ?>

@@ -101,7 +101,7 @@ function myguten_enqueue() {
 }
 add_action( 'enqueue_block_editor_assets', 'myguten_enqueue' );
 
-// put this meta content to use
+/* // put this meta content to use
 function myguten_content_filter( $content ) {
     $value = get_post_meta( get_the_ID(), 'myguten_meta_block_field', true );
     if ( $value ) {
@@ -110,7 +110,7 @@ function myguten_content_filter( $content ) {
         return $content;
     }
 }
-add_filter( 'the_content', 'myguten_content_filter' );
+add_filter( 'the_content', 'myguten_content_filter' ); */
 
 
 
