@@ -102,7 +102,10 @@
 .home .header-logo {
 	justify-self: center;
 	align-self: start;
-	grid-column: 5;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-column: 5;
+	}
 	
 }
 
@@ -1087,7 +1090,8 @@
 	}
 }
 
-.footer_info div {
+.footer_info div,
+.footer_info address {
 	background: $light-gray; // step back with the grid gap fill
 	@media (prefers-color-scheme: dark) {
 		background: #2C2C2C; // this should be made a variable
