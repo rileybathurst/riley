@@ -157,7 +157,7 @@ blockquote:before {
 }
 
 blockquote p {
-	display: inline;
+	// display: inline; this was to have the quotes inline but it looses the margins so for now it's removed
 	font-size: 1.125em; // type scale?
 }
 

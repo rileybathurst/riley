@@ -1864,7 +1864,6 @@ blockquote:before {
 }
 
 blockquote p {
-  display: inline;
   font-size: 1.125em;
 }
 
