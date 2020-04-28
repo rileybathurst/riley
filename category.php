@@ -108,45 +108,41 @@ if (in_array($cat_title, $ordered_cats)) {
 wp_reset_query();
 
 } else { // the else is just do the regular
-?>
+	if (have_posts()) {
+		while (have_posts()) : the_post(); ?>
+			<div class="background-dirty category-break">
+				<div class="site-main" role="main">
+					<?php get_template_part( 'template-parts/post/category' ); ?>
+					<!-- major difference is the link in the title -->
+				</div>
+			</div>
+			<!-- <div class="article-base">stay gold</div> -->
+		<?php endwhile;
 
+		if ( $wp_query->max_num_pages > 1 ) {
+			the_posts_pagination();
+		}
 
+	} else { ?> <!-- if dont have posts -->
+		<div class="cat-404">
+			<div class="background-dirty">
+				<main class="site-main">
+					<article>
+						<div class="spine-border"></div>
+						<div class="fp-header">
+							<h2 class="page-title">404</h2>
+						</div>
 
-<?php if (have_posts()) {
-	while (have_posts()) : the_post(); ?>
-		<div class="background-dirty category-break">
-			<div class="site-main" role="main">
-				<?php get_template_part( 'template-parts/post/category' ); ?>
-				<!-- major difference is the link in the title -->
+						<div class="article-content">
+							<p>Oh no we don&#39;t have any posts for you. Perhaps searching can help.</p>
+							<?php get_search_form(); ?>
+						</div>
+					</article>
+				</main>
 			</div>
 		</div>
-		<!-- <div class="article-base">stay gold</div> -->
-	<?php endwhile;
 
-	if ( $wp_query->max_num_pages > 1 ) {
-		the_posts_pagination();
-	}
-
-} else { ?> <!-- if dont have posts -->
-	<div class="cat-404">
-		<div class="background-dirty">
-			<main class="site-main">
-				<article>
-					<div class="spine-border"></div>
-					<div class="fp-header">
-						<h2 class="page-title">404</h2>
-					</div>
-
-					<div class="article-content">
-						<p>Oh no we don&#39;t have any posts for you. Perhaps searching can help.</p>
-						<?php get_search_form(); ?>
-					</div>
-				</article>
-			</main>
-		</div>
-	</div>
-
-<?php }
+<?php } // dont have posts
 
 } // else doing the regular loop
 

@@ -10,18 +10,30 @@
 		<a href="<?php the_permalink(); ?>?c=<?php single_cat_title(''); ?>" class="category-color-blocking">
 			<div ><!-- stay gold --></div>
 		</a>
-	<?php } ?>
 
-	<div class="fp-header">
-		<hr class="mega-hr" />
-		<h2 class="page-title">
-			<a href="<?php the_permalink(); ?>?c=<?php single_cat_title(''); ?>">
-			<!-- the trailing slash is included in the permalink this helps to shorten breadcrumbs on single pages --> 
-				<?php the_title(); ?>
-				<!-- php echo get_post_meta(  'myguten_meta_block_field', true ); ?> -->
-			</a>
-		</h2>
-	</div>
+		<div class="fp-header">
+			<hr class="mega-hr" />
+			<h2 class="page-title">
+				<a href="<?php the_permalink(); ?>?c=<?php single_cat_title(''); ?>">
+				<!-- the trailing slash is included in the permalink this helps to shorten breadcrumbs on single pages --> 
+					<?php the_title(); ?>
+					<!-- php echo get_post_meta(  'myguten_meta_block_field', true ); ?> -->
+				</a>
+			</h2>
+		</div>
+
+	<?php } else { ?>
+		<!-- the main difference is the additional styling over where an image would be is pretty well removed -->
+		<div class="category-post--header">
+			<h2>
+				<a href="<?php the_permalink(); ?>?c=<?php single_cat_title(''); ?>">
+				<!-- the trailing slash is included in the permalink this helps to shorten breadcrumbs on single pages --> 
+					<?php the_title(); ?>
+					<!-- php echo get_post_meta(  'myguten_meta_block_field', true ); ?> -->
+				</a>
+			</h2>
+		</div>
+	<?php } ?>
 	
 	<div class="article-content"><?php the_content(); ?></div>
 	

@@ -46,11 +46,8 @@ I'll try it out quick on firefox.
 - make a tiny tiny media query thats super boring but works
 - remove all direct links
 - category pages the red pushes down too far
-- the white lines on the base of the footer
 - I dont think the folding laptop screen is working anymore
-- be able to order pages in the category page with meta
 - as soon as im back on the live version get the git origin sorted
-- a post without a featured image needs a fall back or atleast a readable color
 - meta block updates are not working
 
 ### Featured Categories

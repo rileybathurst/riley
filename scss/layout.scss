@@ -818,6 +818,16 @@
 	}
 }
 
+.category-post--header { // very similar to the .fp-header but a new more useful name and the padding without the image background
+	grid-row: 1;
+	grid-column: 2;
+	// align-self: end;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-column: 2 / 5;
+	}
+}
+
 
 /*--------------------------------------------------------------
 2.7 Featured Category
