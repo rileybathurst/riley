@@ -52,6 +52,7 @@ I'll try it out quick on firefox.
 - page 2 of reordered categories doesn't work it kinda shouldn't ever have to come up but it should work
 - drop shadows in dark mode
 - check into redirects for changed categories
+- wp-pages folder needs to be fillled in
 
 ### Featured Categories
 

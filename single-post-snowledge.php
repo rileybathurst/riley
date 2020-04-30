@@ -156,7 +156,7 @@ if (have_posts()) {
 			<p class="subtitle show-for-medium" style="grid-row: 3; grid-column: 5; justify-self: center;">Building on a visual brand.</p>
 
 			<section class="continental">
-					<a href="https://rileybathurst.com/snowledge_sweepstakes_poster-1080x1485.jpg/">
+					<a href="https://rileybathurst.com/snowledge_sweepstakes_poster-1080x1485/">
 						<picture class="lozad-picture">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-1080x1485.webp" alt="snowledge sweepstakes poster design" media="(min-width: 960px)" type="image/webp">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-1080x1485.jpg" alt="snowledge sweepstakes poster design" media="(min-width: 960px)">
