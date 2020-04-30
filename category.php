@@ -76,15 +76,30 @@ if (in_array($cat_title, $ordered_cats)) {
 				<?php get_template_part( 'template-parts/post/category' ); ?>
 				<!-- major difference is the link in the title -->
 			</div>
+
 		</div>
 		<!-- <div class="article-base">stay gold</div> -->
-	<?php } // endwhile;
+	<?php } ?> <!-- endwhile; -->
 
+<!-- I need a custom version of additional sub categories or other posts
 	if ( $wp_query->max_num_pages > 1 ) {
 		the_posts_pagination();
-	}
+	} -->
+	<!-- sub categories -->
+			<div class="category-sub">
+				<ul>
+					<?php $args = array(
+						'child_of'				=> $cat, // defined in inc/cats-one-deep.php
+						'title_li'				=> __( '' ),
+						'show_option_none'		=> '',
+						'depth'					=> '1',
+					);
+					wp_list_categories( $args ); ?>
+				</ul>
+				<hr class="mega-hr-dirty "/>
+			</div>
 
-} else { ?> <!-- if dont have posts -->
+<?php } else { ?> <!-- if dont have posts -->
 	<div class="cat-404">
 		<div class="background-dirty">
 			<main class="site-main">

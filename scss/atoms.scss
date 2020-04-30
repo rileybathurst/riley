@@ -144,6 +144,11 @@ hr {
 	border-color: $primary-color;
 }
 
+.mega-hr-dirty {
+	@extend .mega-hr;
+	border-color: $light-gray;
+}
+
 .mw-18em { // this should be renamed
 	max-width: 18rem;
 	justify-self: center;

@@ -51,6 +51,7 @@ I'll try it out quick on firefox.
 - dark mode should load independantly to light and both split from the layout styling
 - page 2 of reordered categories doesn't work it kinda shouldn't ever have to come up but it should work
 - drop shadows in dark mode
+- check into redirects for changed categories
 
 ### Featured Categories
 
