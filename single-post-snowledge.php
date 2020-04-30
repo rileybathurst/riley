@@ -176,7 +176,7 @@ if (have_posts()) {
 			</section>
 
 			<section class="continental">
-					<a href="https://rileybathurst.com/snowledge_download_card_Mockup-1457x971.jpg/">
+					<a href="https://rileybathurst.com/snowledge_download_card_mockup-1457x971/">
 						<picture class="lozad-picture">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-1457x971.webp" alt="snowledge download card front and back" media="(min-width: 1080px)" type="image/webp">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-1457x971.jpg" alt="snowledge download card front and back" media="(min-width: 1080px)">

@@ -21,10 +21,10 @@ if (have_posts()) {
 		</section>
 
 		<section class="continental ">
-			<a href="https://rileybathurst.com/jess_josho_wedding_2/">
+			<a href="https://rileybathurst.com/sophie_jo__0345/">
 				<img src="<?php echo content_url(); ?>/uploads/2019/06/Sophie_Jo__0345.jpg" alt="Wedding party">
 			</a>
-			<h4><a href="https://rileybathurst.com/jess_josho_wedding_2/">Wedding Party</a></h4>
+			<h4><a href="https://rileybathurst.com/sophie_jo__0345/">Wedding Party</a></h4>
 		</section>
 
 		<section class="continental  ">
@@ -35,10 +35,10 @@ if (have_posts()) {
 		</section>
 
 		<section class="continental  ">
-			<a href="https://rileybathurst.com/moonshine-band-photo-2/">
+			<a href="https://rileybathurst.com/processed-with-vsco-with-a6-preset-3/">
 				<img src="<?php echo content_url(); ?>/uploads/2019/06/moonshine-band-photo-2.jpg" alt="flower girl wedding photo">
 			</a>
-			<h4><a href="https://rileybathurst.com/moonshine-band-photo-2/">Wedding Band</a></h4>
+			<h4><a href="https://rileybathurst.com/processed-with-vsco-with-a6-preset-3/">Wedding Band</a></h4>
 		</section>
 
 		<section class="continental ">

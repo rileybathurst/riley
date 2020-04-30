@@ -57,19 +57,19 @@ if (have_posts()) {
 		</a>
 		<h4><a href="https://rileybathurst.com/sophie_jo__0538/">Sophie Jo</a></h4>
 		
-		<a href="https://rileybathurst.com/katerina/katerina_41-large/">
+		<a href="https://rileybathurst.com/2015/02/katerina/katerina_41-large/">
 			<picture class="lozad-picture">
 				<source srcset="<?php echo content_url(); ?>/uploads/2015/02/Katerina_41-large.jpg" media="(min-width: 64em)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2015/02/Katerina_41-medium.jpg" media="(min-width: 40em)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2015/02/Katerina_41-small.jpg" alt="Katerina dress fashion image">
 			</picture>
 		</a>
-		<h4><a href="https://rileybathurst.com/katerina/katerina_41-large/">Katerina</a></h4>
+		<h4><a href="https://rileybathurst.com/2015/02/katerina/katerina_41-large/">Katerina</a></h4>
 			
-		<a href="https://rileybathurst.com/snow/madi_298/">
+		<a href="https://rileybathurst.com/2013/02/madi-2/madi_298-2/">
 			<img src="<?php echo content_url(); ?>/uploads/2013/02/Madi_298.jpg" alt="Madi">
 		</a>
-		<h4><a href="https://rileybathurst.com/snow/madi_298/">Madi</a></h4>
+		<h4><a href="https://rileybathurst.com/2013/02/madi-2/madi_298-2/">Madi</a></h4>
 	</div> <!-- .article-content-specific -->
 
 	<?php get_template_part( 'template-parts/post/specific-bottom' );

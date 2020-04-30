@@ -29,10 +29,10 @@ if (have_posts()) {
 		</a>
 		<h4><a href="https://rileybathurst.com/andrew-pastura-first-roll/">Andrew Pastura - First Roll, Tahoe. CA</a></h4>
 			
-		<a href="https://rileybathurst.com/brad-smeele-nollie/brad-ski-jump-nollie1/">
+		<a href="https://rileybathurst.com/2013/02/brad-smeele-nollie/brad-ski-jump-nollie1/">
 			<img src="<?php echo content_url(); ?>/uploads/2013/02/Brad-Ski-Jump-Nollie1-1.jpg" alt="brad smeele ski jump wakeboard nolie">
 		</a>
-		<h4><a href="https://rileybathurst.com/brad-smeele-nollie/brad-ski-jump-nollie1/">Brad Smeele Nollie</a><br />
+		<h4><a href="https://rileybathurst.com/2013/02/brad-smeele-nollie/brad-ski-jump-nollie1/">Brad Smeele Nollie</a><br />
 			Printed in Wake Magazine</h4>
 			
 		<h3 class="box-title">Video</h3>

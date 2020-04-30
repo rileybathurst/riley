@@ -54,6 +54,9 @@ I'll try it out quick on firefox.
 - check into redirects for changed categories
 - wp-pages folder needs to be fillled in
 - breadcrumbs if is attachment isnt working?
+- connect references and posts
+- add social networks to the footers
+- snow page needs love to fix broken links
 
 ### Featured Categories
 
