@@ -57,6 +57,7 @@ I'll try it out quick on firefox.
 - connect references and posts
 - add social networks to the footers
 - snow page needs love to fix broken links
+- Tag titles without images are not attached to the permalink
 
 ### Featured Categories
 
