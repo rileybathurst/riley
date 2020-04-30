@@ -53,6 +53,7 @@ I'll try it out quick on firefox.
 - drop shadows in dark mode
 - check into redirects for changed categories
 - wp-pages folder needs to be fillled in
+- breadcrumbs if is attachment isnt working?
 
 ### Featured Categories
 

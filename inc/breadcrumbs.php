@@ -21,6 +21,8 @@ function get_breadcrumb() {
 		echo '"<em>';
 		echo the_search_query();
 		echo '</em>"';
+	} elseif (is_attachment()) {
+		echo "Attachment";
 	} elseif (is_404()) {
 		echo "missing?";
 	}
