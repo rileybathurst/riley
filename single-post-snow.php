@@ -90,16 +90,18 @@ if (have_posts()) {
 			<picture class="lozad-picture">
 				<source srcset="<?php echo content_url(); ?>/uploads/2014/12/Diaries_Cardona_14_0231-large.jpg" media="(min-width: 64em)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2014/12/Diaries_Cardona_14_0231-medium.jpg" media="(min-width: 40em)">
-				<img src="<?php echo content_url(); ?>/uploads/2014/12/Diaries_Cardona_14_0231-small.jpg" alt="Nick Hyne - Frontside 360, Cardrona Front Country">
+				<source srcset="<?php echo content_url(); ?>/uploads/2014/12/Diaries_Cardona_14_0231-small.jpg" >
+				<!-- <img src=" php echo content_url(); ?>/uploads/2014/12/Diaries_Cardona_14_0231-small.jpg" alt="Nick Hyne - Frontside 360, Cardrona Front Country"> -->
 			</picture>
 		</a>
 		<h4><a href="https://rileybathurst.com/2014/12/diaries_cardona_14_0231-large/">Nick Hyne - Frontside 360, Cardrona Front Country</a></h4>
 		
 		<a href="https://rileybathurst.com/2015/08/taos-large/">
 			<picture class="lozad-picture">
-				<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Taos-large.jpg" alt="Taos Airtstream"  media="(min-width: 64em)">
-				<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Taos-medium.jpg" alt="Taos Airtstream"  media="(min-width: 40em)">
-				<img src="<?php echo content_url(); ?>/uploads/2015/08/Taos-small.jpg" alt="Taos Airtstream">
+				<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Taos-large.jpg" alt="Taos Airtstream" media="(min-width: 64em)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Taos-medium.jpg" alt="Taos Airtstream" media="(min-width: 40em)">
+				<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Taos-small.jpg" alt="Taos Airtstream" >
+				<!-- <img src=" php echo content_url(); ?>/uploads/2015/08/Taos-small.jpg" alt="Taos Airtstream"> -->
 			</picture>
 		</a>
 		<h4><a href="https://rileybathurst.com/2015/08/taos-large/">Airstream - Taos, New Mexico</a></h4>
