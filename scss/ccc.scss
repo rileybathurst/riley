@@ -33,6 +33,10 @@
 	}
 }
 
+.background-primary__social-icons {
+	margin-top: $global-margin;
+}
+
 .social-icons {
 	grid-column: 1/7; // this might be on the old lots of columns header
 	grid-row: 1/4; // match ccc so we can borrow classes
@@ -41,8 +45,14 @@
 	grid-gap: 1em;
 }
 
+.social-icons > .fp-box > a {
+	display: inline-block;
+}
+
 .social-icons svg {
 	width: 2em;
+	padding-top: $global-padding;
+	padding-bottom: $global-padding;
 
 	@media (min-width: map-get($breakpoints, medium)) { // red text on brackets isnt a good sign does it need a prefix
 		width: 3em;

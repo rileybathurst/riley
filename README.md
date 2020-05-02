@@ -7,9 +7,9 @@ Except I then pulled that out, which is still a little messy so getting everythi
 Except now some of the project is being build with webpack so that is held over at [riley-webpack](https://github.com/rileybathurst/riley-webpack) which is currently needing some love and I want to change a bunch of that
 
 ## Run the Sass
-```% sass scss/app.scss css/app.css --watch```
+```% sass scss/app.scss css/app.css --watch ```
 
-```% sass --style=compressed scss/app.scss css/app.css```
+```% sass --style=compressed scss/app.scss css/app.css ```
 
 ## Gutenberg
 Means I have less template pages to work on but also a little less flexibility with the grid?
@@ -62,6 +62,9 @@ I'll try it out quick on firefox.
 - this should be renamed https://rileybathurst.com/2015/05/new-zealand-snowboarder-2015/annabel_226/
 - captcha, checkbox, form page? probably other ones
 - I need a custom form to remove the material contact its messy
+- front page needs more vertical pieces
+- a:selection color needs to not be primary
+- social icons need work to have a full hover state
 
 ### Featured Categories
 

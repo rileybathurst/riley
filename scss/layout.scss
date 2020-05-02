@@ -543,8 +543,22 @@
 }
 */
 
-.article-thumbnail > a > img, .category-thumbnail > a > img {
+.article-thumbnail > a > img,
+.category-thumbnail > a > img,
+.article-thumbnail > a > picture,
+.category-thumbnail > a > picture {
 	width: 100%;
+}
+
+.article-thumbnail img { // specifically needed for the front page
+	display: inline-block;
+	width: 100%;
+}
+
+.featured-header {
+	max-width: calc(77rem - 6rem);
+	margin: $global-margin auto;
+	padding-top: $global-padding;
 }
 
 .article-header {
@@ -860,6 +874,14 @@
 	grid-column: 3 / 5;
 }
 
+.featured--excerpt {
+	grid-column: 2;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		grid-column: 2/5;
+	}
+}
+
 /*--------------------------------------------------------------
 3.6 Pagination
 --------------------------------------------------------------*/
@@ -1048,6 +1070,11 @@
 		margin-top: $global-margin*5; // guess and check
 	}
 
+}
+
+.site-footer--browse {
+	max-width: calc(77rem - 6rem);
+	margin: 0 auto;
 }
 
 .footer-background__step {
