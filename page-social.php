@@ -39,7 +39,7 @@ Template Name: Social
 </div>
 
 <div class="background-dirty">
-	<main class="site-main" role="main">
+	<main class="site-main">
 		<?php if (have_posts()) {
 
 			while (have_posts()) : the_post(); ?>

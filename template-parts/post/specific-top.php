@@ -1,5 +1,5 @@
 <div class="background-dirty">
-	<main class="site-main" role="main">
+	<main class="site-main">
 		<article <?php post_class(); ?>> <!-- post_class means I cant add my own classes -->
 
 			<!-- normally this is the /template-parts/post/content.php -->

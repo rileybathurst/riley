@@ -29,7 +29,7 @@ get_header();
 	if (have_posts()) {
 		while (have_posts()) : the_post(); ?>
 			<div class="background-dirty">
-				<main class="site-main" role="main">
+				<main class="site-main">
 					<!-- get_template_part( 'template-parts/page/content' ); -->
 					<article <?php post_class(); ?>> <!-- post_class means I cant add my own classes -->
 
