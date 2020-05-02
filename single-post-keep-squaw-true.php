@@ -45,7 +45,7 @@ if (have_posts()) {
 			<p class="show-for-medium subtitle">Photography</p>
 
 			<div class="continental">
-				<p>I worked with Keep Squaw True to shoot many of the purple products they have on <a href="https://sierra-watch.myshopify.com/collections/all" target="_blank">their store</a>.</p>
+				<p>I worked with Keep Squaw True to shoot many of the purple products they have on <a href="https://sierra-watch.myshopify.com/collections/all" target="_blank" rel="noopener" >their store</a>.</p>
 			</div>
 
 			<figure class="continental">

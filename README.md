@@ -61,6 +61,7 @@ I'll try it out quick on firefox.
 - this image could be sharper https://rileybathurst.com/2015/05/new-zealand-snowboarder-2015/clubbies_trip_14_0164/
 - this should be renamed https://rileybathurst.com/2015/05/new-zealand-snowboarder-2015/annabel_226/
 - captcha, checkbox, form page? probably other ones
+- I need a custom form to remove the material contact its messy
 
 ### Featured Categories
 
