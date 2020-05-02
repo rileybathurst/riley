@@ -77,14 +77,14 @@ if (have_posts()) {
 		<h4><a href="https://rileybathurst.com/2014/06/ollie-hunt-cheesman/alex_and_ollie_0108/">Ollie Hunt - Powder Turn, Mt Cheeseman Backountry</a><br />
 			Printed in the <a href="https://chillout.co.nz" target="_blank">CHILL Winter magazine</a></h4>
 			
-		<a href="https://rileybathurst.com/2014/05/pipes/pipes_0079/">
+		<a href="https://rileybathurst.com/pipes_0079-large/">
 			<img src="<?php echo content_url(); ?>/uploads/2014/05/Pipes_0079.jpg" alt="snowboard streetish shot">
 		</a>
-		<h4><a href="https://rileybathurst.com/2014/05/pipes/pipes_0079/">Ben Comber - Pipe Slide</a></h4>
+		<h4><a href="https://rileybathurst.com/pipes_0079-large/">Ben Comber - Pipe Slide</a></h4>
 		
-		<a href="https://rileybathurst.com/2014/12/dsc03580-large/">
+		<a href="https://rileybathurst.com/dsc03580-large/">
 			<img src="<?php echo content_url(); ?>/uploads/2014/12/DSC03580-large.jpg" alt="charlie lyons will jackways mountain outlook">
-		<h4><a href="https://rileybathurst.com/2014/12/dsc03580-large/">Will Jackways and Charlie Lyons - Mountain Outlook</a></h4>
+		<h4><a href="https://rileybathurst.com/dsc03580-large/">Will Jackways and Charlie Lyons - Mountain Outlook</a></h4>
 		
 		<a href="https://rileybathurst.com/2014/12/diaries_cardona_14_0231-large/">
 			<picture class="lozad-picture">
@@ -96,7 +96,7 @@ if (have_posts()) {
 		</a>
 		<h4><a href="https://rileybathurst.com/2014/12/diaries_cardona_14_0231-large/">Nick Hyne - Frontside 360, Cardrona Front Country</a></h4>
 		
-		<a href="https://rileybathurst.com/2015/08/taos-large/">
+		<a href="https://rileybathurst.com/2015/08/taos/">
 			<picture class="lozad-picture">
 				<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Taos-large.jpg" alt="Taos Airtstream" media="(min-width: 64em)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2015/08/Taos-medium.jpg" alt="Taos Airtstream" media="(min-width: 40em)">
@@ -104,7 +104,7 @@ if (have_posts()) {
 				<!-- <img src=" php echo content_url(); ?>/uploads/2015/08/Taos-small.jpg" alt="Taos Airtstream"> -->
 			</picture>
 		</a>
-		<h4><a href="https://rileybathurst.com/2015/08/taos-large/">Airstream - Taos, New Mexico</a></h4>
+		<h4><a href="https://rileybathurst.com/2015/08/taos/">Airstream - Taos, New Mexico</a></h4>
 		
 		<div style="--aspect-ratio: 16/9;">
 			<iframe width="560" height="315" data-src="https://www.youtube.com/embed/HgRe4rGkyQU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1"></iframe>
