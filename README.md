@@ -60,6 +60,7 @@ I'll try it out quick on firefox.
 - Tag titles without images are not attached to the permalink
 - this image could be sharper https://rileybathurst.com/2015/05/new-zealand-snowboarder-2015/clubbies_trip_14_0164/
 - this should be renamed https://rileybathurst.com/2015/05/new-zealand-snowboarder-2015/annabel_226/
+- captcha, checkbox, form page? probably other ones
 
 ### Featured Categories
 
