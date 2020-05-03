@@ -9,10 +9,10 @@
 		<?php get_template_part( 'template-parts/post/base' ); ?>
 
 
-	<!-- IntersectionObserver Polyfill -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> <!-- how come this isnt added to riley-webpack -->
+	<!-- IntersectionObserver Polyfill this was a default before the webpack build so it shouldnt be needed -->
+	<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> -->
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 
 	// Initialize library to lazy load images
 	var observer = lozad('.lozad', {
@@ -30,4 +30,4 @@
 
 	observer.observe()
 	pictureObserver.observe()
-	</script>
+	</script> -->
