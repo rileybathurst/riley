@@ -48,6 +48,10 @@ if (have_posts()) {
 				</picture>
 				<h4 class="caption">Priest sheetmetal site on an iphone.</h4>
 			</div><!-- .specific-grid__main-width specific-overlaying__image-grid -->
+
+			<p class="subtitle show-for-medium" style="grid-row: 3; align-self: end;">Priest &#187; Website</p>
+			<p class="subtitle show-for-medium" style="grid-row: 2; grid-column: 5; justify-self: center;">Development.</p>
+
 		</div><!-- .specific-grid -->
 
 		<hr class="mega-hr specific-grid__main-width" />
@@ -62,15 +66,11 @@ if (have_posts()) {
 				<!-- <img src=" php echo content_url(); ?>/uploads/2018/05/Priest_Sheet_Metal_0130-small.jpg" alt="sheetmetal worker on the press"> -->
 			</picture>
 
-
-
 			<picture class="lozad-picture specific-grid__col-2">
 				<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Priest_Sheet_Metal_0125.jpg" media="(min-width: 40em)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Priest_Sheet_Metal_0125-small.jpg">
 				<!-- <img src=" php echo content_url(); ?>/uploads/2018/05/Priest_Sheet_Metal_0125-small.jpg" alt="sheetmetal factory with workers"> -->
 			</picture>
-
-
 
 			<picture class="lozad-picture specific-grid__col-3">
 				<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Priest_Sheet_Metal_0147.jpg" media="(min-width: 40em)">
@@ -78,26 +78,40 @@ if (have_posts()) {
 				<!-- <img src=" php echo content_url(); ?>/uploads/2018/05/Priest_Sheet_Metal_0147-small.jpg" alt="welder working in a factory"> -->
 			</picture>
 
-
-
 			<picture class="lozad-picture specific-grid__col-4">
 				<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Priest_Sheet_Metal_0080.jpg" media="(min-width: 40em)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Priest_Sheet_Metal_0080-small.jpg">
 				<!-- <img src=" php echo content_url(); ?>/uploads/2018/05/Priest_Sheet_Metal_0080-small.jpg" alt="sheetmetal workshop"> -->
 			</picture>
+
+			<p class="subtitle show-for-medium" style="grid-row: 1/5; align-self: end;">Priest &#187; Photography</p>
+			<p class="subtitle show-for-medium" style="grid-row: 2; grid-column: 5; justify-self: center;">Images.</p>
 		</div>
 
 		<hr class="mega-hr specific-grid__main-width" />
 
 		<div class="specific-grid">
+			<h3 class="specific-grid__main-width">Business Cards</h3>
+			<p class="specific-grid__main-width">As we have gone througha few versions of business cards for Priest we have landed on a modernist front with a bold logo and a large amount of the bright blue primary color and then an information dense back to give potential customers a list of services available as Priest have a large number copared to many of their compeitors as well as a number of contact points for the front desk as well as the employee on the card.</p>
 			<picture class="lozad-picture specific-grid__main-width">
 				<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Priest-Business-Card-Mockup-large.jpg" media="(min-width: 64em)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Priest-Business-Card-Mockup-medium.jpg" media="(min-width: 40em)">
 				<source srcset="<?php echo content_url(); ?>/uploads/2018/05/Priest-Business-Card-Mockup-small.jpg">
 				<!-- <img src="<?php echo content_url(); ?>/uploads/2018/05/Priest-Business-Card-Mockup-small.jpg" alt="priest sheetmetal business cards"> -->
 			</picture>
-			<h3 class="specific-grid__main-width">Business Cards</h3>
-			<p class="specific-grid__main-width">As we have gone througha few versions of business cards for Priest we have landed on a modernist front with a bold logo and a large amount of the bright blue primary color and then an information dense back to give potential customers a list of services available as Priest have a large number copared to many of their compeitors as well as a number of contact points for the front desk as well as the employee on the card.</p>
+
+			<p class="subtitle show-for-medium" style="grid-row: 1/4; align-self: end;">Priest &#187; Design</p>
+			<p class="subtitle show-for-medium" style="grid-row: 2; grid-column: 5; justify-self: center;">Graphic Design.</p>
+		</div>
+
+		<hr class="mega-hr specific-grid__main-width" />
+
+		<div class="specific-grid">
+			<h3 class="specific-grid__main-width">Video</h3>
+			<!-- <p class="specific-grid__main-width">As we have gone througha few versions of business cards for Priest we have landed on a modernist front with a bold logo and a large amount of the bright blue primary color and then an information dense back to give potential customers a list of services available as Priest have a large number copared to many of their compeitors as well as a number of contact points for the front desk as well as the employee on the card.</p> -->
+			<div class="specific-grid__main-width" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/396200984?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+			<p class="subtitle show-for-medium" style="grid-row: 1/3; align-self: end;">Priest &#187; Video</p>
+			<p class="subtitle show-for-medium" style="grid-row: 2; grid-column: 5; justify-self: center;">Moving images.</p>
 		</div>
 
 	</div> <!-- .article-content-specific -->
