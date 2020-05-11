@@ -4,7 +4,7 @@
 		while (have_posts()) : the_post(); ?>
 			<div class="background-dirty category-break">
 				<div class="site-main" role="main">
-					<?php get_template_part( 'template-parts/post/category' ); ?>
+					<?php get_template_part( 'template-parts/post/post' ); ?>
 					<!-- major difference is the link in the title -->
 				</div>
 			</div>

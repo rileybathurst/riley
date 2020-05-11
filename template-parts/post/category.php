@@ -2,6 +2,7 @@
 
 	<!-- <div class="spine-border">stay gold</div> -->
 
+	<!-- this is of course showing up in the blog single posts -->
 	<?php if ( has_post_thumbnail() ) { ?>
 		<figure class="article-thumbnail category-thumbnail category-overlaying-image">
 			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
