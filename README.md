@@ -65,6 +65,7 @@ I'll try it out quick on firefox.
 - front page needs more vertical pieces
 - a:selection color needs to not be primary
 - social icons need work to have a full hover state
+- explore more the underline and strike is in the wrong color
 
 ### Featured Categories
 

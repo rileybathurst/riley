@@ -5,44 +5,143 @@ if (have_posts()) {
 
 	get_template_part( 'template-parts/post/specific-top' ); ?>
 
-<!-- is this where theres an extra line gap? -->
-
 	<div class="article-content-specific">
 		<hr class="mega-hr">
 
+
+		<div class="specific-grid">
+			<!-- <h3>About Snowledge</h3> -->
+			<blockquote cite="https://www.snowledge.co/" class="continental">
+				<p>Snowledge is the only app you need on the mountain. Use GPS to get real-time info from resorts, track your day on the slopes, and easily find and locate your friends and family. Snowledge is Powder!</p>
+				<footer><cite><a href="https://www.snowledge.co/">https://www.snowledge.co</a></cite>
+			</blockquote>
+		</div>
+
+		<hr class="mega-hr">
+
+		<!-- Lets add a tryptych -->
+		<div id="gallery">
+
+			<section id="snap-scroll-container-coordinates">
+				<div class="child" id="first">
+					<!-- <h1>1</h1> -->
+					<picture class="lozad-picture">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-1080x720.webp" media="(min-width: 960px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-1080x720.jpg" media="(min-width: 960px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-960x640.webp" media="(min-width: 720px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-960x640.jpg" media="(min-width: 720px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-720x480.webp" media="(min-width: 640px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-720x480.jpg" media="(min-width: 640px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-640x426.webp" media="(min-width: 360px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-640x426.jpg" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-360x240.webp" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-360x240.jpg">
+						<!-- <img src=" ?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-1080x720.jpg" alt="drone photo of a snowboarder on a small patch of snow"> -->
+					</picture>
+					<h4 class="tryptych-caption">Garrett Cygan - Tahoe, California</h4>
+				</div>
+				<div class="child" id="target">
+					<!-- <h1>2</h1> -->
+					<picture class="lozad-picture">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-full.jpg" media="(min-width: 64em)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-medium.jpg" media="(min-width: 40em)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-small.jpg" alt="deep powder snow turn">
+						<!-- <img src=" php echo content_url(); ?>/uploads/2018/04/IMG_0049-small.jpg" alt="deep powder snow turn"> -->
+					</picture>
+					<h4 class="tryptych-caption">Brandon Craddock - Tahoe Backcountry</h4><!-- this should be an actual caption? -->
+				</div>
+				<div class="child">
+					<!-- <h1>3</h1> -->
+					<picture class="lozad-picture">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-1080x720.webp" media="(min-width: 960px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-1080x720.jpg" media="(min-width: 960px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-960x640.webp" media="(min-width: 720px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-960x640.jpg" media="(min-width: 720px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-720x480.webp" media="(min-width: 640px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-720x480.jpg" media="(min-width: 640px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-640x426.webp" media="(min-width: 360px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-640x426.jpg" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-360x240.webp" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-360x240.jpg">
+						<!-- <img src=" ?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-1080x720.jpg" alt="drone photo of a snowboarder on a small patch of snow"> -->
+					</picture>
+					<h4 class="tryptych-caption">Brian Stenerson - Revelstoke, BC</h4>
+				</div>
+				
+			</section>
+
+			<!-- <div id="controls"> -->
+				<div id="left" class="show-for-medium"><a href="#">&lsaquo;</a></div>
+				<div id="right" class="show-for-medium"><a href="#">&rsaquo;</a></div>
+			<!-- </div> -->
+
+		</div> <!-- #gallery -->
+
+		<hr class="mega-hr" />
+
+		<div id="thumbnails" class="specific-grid">
+			<!-- <section class=""> -->
+				<a href="#" class="continental-2">
+					<!-- somehow Ive broken the picture tags so im ending up with either a broken tag or an additional img element -->
+					<picture id="th1"> <!-- class="lozad-picture" -->
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-640x426.webp" media="(min-width: 360px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-640x426.jpg" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-360x240.webp" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-360x240.jpg">
+						<img src="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-360x240.jpg" />
+					</picture>
+				</a>
+				<a href="#" class="continental-3">
+					<picture class="lozad-picture">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-full.jpg" media="(min-width: 64em)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-medium.jpg" media="(min-width: 40em)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-small.jpg" alt="deep powder snow turn">
+						<!-- <img src=" php echo content_url(); ?>/uploads/2018/04/IMG_0049-small.jpg" alt="deep powder snow turn"> -->
+					</picture>
+				</a>
+				<a href="#" class="continental-4">
+					<picture class="lozad-picture">
+						
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-720x480.webp" media="(min-width: 640px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-720x480.jpg" media="(min-width: 640px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-640x426.webp" media="(min-width: 360px)" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-640x426.jpg" media="(min-width: 360px)">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-360x240.webp" type="image/webp">
+						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-360x240.jpg">
+						<!-- <img src=" ?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-brian_stenerson-revelstoke_bc_canada-shot_for_snowledge-1080x720.jpg" alt="drone photo of a snowboarder on a small patch of snow"> -->
+					</picture>
+				</a>
+			<!-- </section> -->
+		</div>
+
+		<hr class="mega-hr" />
+
 		<div class="specific-grid">
 			<h3>Photography</h3>
-			<p class="subtitle show-for-medium" style="grid-row: 4; align-self: end;">Snowledge &#187; Photography</p>
+			<p class="subtitle show-for-medium" style="grid-row: 3; align-self: end;">Snowledge &#187; Photography</p>
 			<p class="continental">A selection of images shot for Snowledge.</p>
 			<p class="subtitle show-for-medium" style="grid-row: 3; grid-column: 5; justify-self: center;">A selection of images shot for Snowledge.</p>
 
-			<section class="continental">
-					<a href="https://rileybathurst.com/img_0049-full/">
-						<picture class="lozad-picture">
-							<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-full.jpg" media="(min-width: 64em)">
-							<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-medium.jpg" media="(min-width: 40em)">
-							<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-small.jpg" alt="deep powder snow turn">
-							<!-- <img src=" php echo content_url(); ?>/uploads/2018/04/IMG_0049-small.jpg" alt="deep powder snow turn"> -->
-						</picture>
-					</a>
-				<h4>Brandon Craddock - Tahoe Backcountry</h4><!-- this should be an actual caption? -->
-			</section>
-
-			<!-- <div class="east-medium"></div> -- white spacing -->
-
 			<div class="continental continental-gallery">
-				<section >
-					<a href="https://rileybathurst.com/dji_0063-full/">
-						<picture class="lozad-picture">
-							<source srcset="<?php echo content_url(); ?>/uploads/2018/04/DJI_0063-large.jpg" media="(min-width: 64em)">
-							<source srcset="<?php echo content_url(); ?>/uploads/2018/04/DJI_0063-medium.jpg" media="(min-width: 40em)">
-							<source srcset="<?php echo content_url(); ?>/uploads/2018/04/DJI_0063-small.jpg" alt="drone photo of a snowboarder on a small patch of snow">
-							<!-- <img src=" php echo content_url(); ?>/uploads/2018/04/DJI_0063-small.jpg" alt="drone photo of a snowboarder on a small patch of snow"> -->
-						</picture>
-					</a>
-					<h4>Garrett Cygan - Tahoe</h4>
+				<section class="continental-2">
+						<a href="https://rileybathurst.com/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-1080x1618/">
+							<picture class="lozad-picture">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-1080x1618.webp" media="(min-width: 960px)" type="image/webp">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-1080x1618.jpg" media="(min-width: 960px)">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-960x1438.webp" media="(min-width: 720px)" type="image/webp">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-960x1438.jpg" media="(min-width: 720px)">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-720x1079.webp" media="(min-width: 640px)" type="image/webp">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-720x1079.jpg" media="(min-width: 640px)">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-640x959.webp" media="(min-width: 360px)" type="image/webp">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-640x959.jpg" media="(min-width: 360px)">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-360x539.webp" type="image/webp">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-360x539.jpg">
+								<!-- <img src=" ?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-1080x1618.jpg" alt="drone photo of a snowboarder on a small patch of snow"> -->
+							</picture>
+						</a>
+					<h4>Eric Lee O'Brien - Tree Chute - Revelstoke, BC</h4>
 				</section>
-
+				
 				<section class="continental-3">
 						<a href="https://rileybathurst.com/img_0126/">
 							<picture class="lozad-picture">
@@ -70,6 +169,7 @@ if (have_posts()) {
 
 		<div class="specific-grid">
 			<h3>Profiles</h3>
+			<!-- these might be more interesting to be square -->
 			<p class="subtitle show-for-medium" style="grid-row: 4; align-self: end;">Snowledge &#187; Profiles</p>
 			<p class="continental">A selection of those involved.</p>
 			<p class="subtitle show-for-medium" style="grid-row: 3; grid-column: 5; justify-self: center;">A selection of those involved.</p>
@@ -78,27 +178,60 @@ if (have_posts()) {
 				<section>
 					<a href="https://rileybathurst.com/dsc01909-2/">
 						<picture class="lozad-picture">
-							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/DSC01909-large.jpg" media="(min-width: 64em)">
-							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/DSC01909-medium.jpg" media="(min-width: 40em)">
-							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/DSC01909-small.jpg" alt="Garrett cygan snowboarder profile">
-							<!-- <img src=" php echo content_url(); ?>/uploads/2018/05/DSC01909-small.jpg" alt="Garrett cygan snowboarder profile"> -->
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboarder_portrait-photo-garrett_cygan-tahoe_california-shot_for_snowledge-1080x721.webp" media="(min-width: 960px)" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboarder_portrait-photo-garrett_cygan-tahoe_california-shot_for_snowledge-1080x721.jpg" media="(min-width: 960px)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboarder_portrait-photo-garrett_cygan-tahoe_california-shot_for_snowledge-960x640.webp" media="(min-width: 720px)" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboarder_portrait-photo-garrett_cygan-tahoe_california-shot_for_snowledge-960x640.jpg" media="(min-width: 720px)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboarder_portrait-photo-garrett_cygan-tahoe_california-shot_for_snowledge-720x480.webp" media="(min-width: 640px)" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboarder_portrait-photo-garrett_cygan-tahoe_california-shot_for_snowledge-720x480.jpg" media="(min-width: 640px)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboarder_portrait-photo-garrett_cygan-tahoe_california-shot_for_snowledge-640x427.webp" media="(min-width: 360px)" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboarder_portrait-photo-garrett_cygan-tahoe_california-shot_for_snowledge-640x427.jpg" media="(min-width: 360px)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboarder_portrait-photo-garrett_cygan-tahoe_california-shot_for_snowledge-360x240.webp" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboarder_portrait-photo-garrett_cygan-tahoe_california-shot_for_snowledge-360x240.jpg">
+							<!-- <img src=" ?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-360x240.jpg"> -->
 						</picture>
 					</a>
-					<h4>Garrett Cygan - Snowboarder Profile</h4>
+					<h4>Garrett Cygan</h4>
 				</section>
 
 				<!-- <div class="east-medium"></div> white spacing -->
 
 				<section>
-						<a href="https://rileybathurst.com/dsc07671-3/">
+					<a href="https://rileybathurst.com/dsc07671-3/">
+						<picture class="lozad-picture">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-kenzie_morris-yosemite_california-shot_for_snowledge-1080x721.webp" media="(min-width: 960px)" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-kenzie_morris-yosemite_california-shot_for_snowledge-1080x721.jpg" media="(min-width: 960px)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-kenzie_morris-yosemite_california-shot_for_snowledge-960x640.webp" media="(min-width: 720px)" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-kenzie_morris-yosemite_california-shot_for_snowledge-960x640.jpg" media="(min-width: 720px)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-kenzie_morris-yosemite_california-shot_for_snowledge-720x480.webp" media="(min-width: 640px)" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-kenzie_morris-yosemite_california-shot_for_snowledge-720x480.jpg" media="(min-width: 640px)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-kenzie_morris-yosemite_california-shot_for_snowledge-640x427.webp" media="(min-width: 360px)" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-kenzie_morris-yosemite_california-shot_for_snowledge-640x427.jpg" media="(min-width: 360px)">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-kenzie_morris-yosemite_california-shot_for_snowledge-360x240.webp" type="image/webp">
+							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-kenzie_morris-yosemite_california-shot_for_snowledge-360x240.jpg">
+							<!-- <img src=" ?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-360x240.jpg"> -->
+						</picture>
+					</a>
+					<h4>Kenzie Morris</h4>
+				</section>
+
+				<section class="continental-3">
+						<a href="https://rileybathurst.com/img_0126/">
 							<picture class="lozad-picture">
-								<source srcset="<?php echo content_url(); ?>/uploads/2018/05/DSC07671-large.jpg" media="(min-width: 64em)">
-								<source srcset="<?php echo content_url(); ?>/uploads/2018/05/DSC07671-medium.jpg" media="(min-width: 40em)">
-								<source srcset="<?php echo content_url(); ?>/uploads/2018/05/DSC07671-small.jpg" alt="Kenzie Morris skier profile">
-								<!-- <img src=" php echo content_url(); ?>/uploads/2018/05/DSC07671-small.jpg" alt="Kenzie Morris skier profile"> -->
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-1080x720.webp" media="(min-width: 960px)" type="image/webp">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-1080x720.jpg" media="(min-width: 960px)">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-960x640.webp" media="(min-width: 720px)" type="image/webp">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-960x640.jpg" media="(min-width: 720px)">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-720x480.webp" media="(min-width: 640px)" type="image/webp">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-720x480.jpg" media="(min-width: 640px)">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-640x426.webp" media="(min-width: 360px)" type="image/webp">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-640x426.jpg" media="(min-width: 360px)">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-360x240.webp" type="image/webp">
+								<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-360x240.jpg">
+								<!-- <img src=" ?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-1080x720.jpg" alt="drone photo of a snowboarder on a small patch of snow"> -->
 							</picture>
 						</a>
-					<h4>Kenzie Morris - Skier Profile</h4>
+					<h4>Brandon Craddock</h4>
 				</section>
 			</div>
 		</div>
