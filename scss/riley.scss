@@ -166,6 +166,11 @@ cite {
 	color: $dark-gray;
 	margin-left: $global-margin;
 	margin-bottom: $global-margin*1.5;
+	word-break: break-all; // I was having problems on small screens citing urls
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		word-break: normal; // revert back when the small problem doesnt exsist
+	}
 }
 
 .article-content .wp-block-code {

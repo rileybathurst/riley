@@ -238,8 +238,14 @@ figcaption,
 	}
 }
 
-.hide-for-large {
+.hide-for-medium {
 	@media (min-width: map-get($breakpoints, medium)) {
+		display: none;
+	}
+
+}
+.hide-for-large {
+	@media (min-width: map-get($breakpoints, large)) {
 		display: none;
 	}
 }
