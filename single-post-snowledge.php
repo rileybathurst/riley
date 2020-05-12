@@ -256,7 +256,7 @@ if (have_posts()) {
 
 			<div class="continental">
 				<section class="responsive-embed widescreen frame continental east-medium" style="--aspect-ratio: 16/9;">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/O-WHcykonMg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="lozad" data-index="20"></iframe>
+					<iframe width="560" height="315" data-src="https://www.youtube.com/embed/O-WHcykonMg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="lozad" data-index="20"></iframe>
 				</section>
 			
 				<h3><a href="https://rileybathurst.com/2020/04/passage/">Passage - An Eaglecrest Experience</a></h3>
@@ -276,7 +276,7 @@ if (have_posts()) {
 			
 			<div class="continental continental-3">
 				<section class="responsive-embed widescreen frame continental west-medium" style="--aspect-ratio: 16/9;">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/YJhfVQYQb4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="lozad" data-index="22"></iframe>
+					<iframe width="560" height="315" data-src="https://www.youtube.com/embed/YJhfVQYQb4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="lozad" data-index="22"></iframe>
 				</section>
 
 				<h3><a href="https://rileybathurst.com/2019/12/snowledge-team-edit-18-19">Team Edit 18 // 19</a></h3>
@@ -291,7 +291,7 @@ if (have_posts()) {
 
 			<div class="continental continental-4">
 				<section class="responsive-embed widescreen frame continental east-medium"  style="--aspect-ratio: 16/9;">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/vZ-UgL-xY20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="lozad" data-index="23"></iframe>
+					<iframe width="560" height="315" data-src="https://www.youtube.com/embed/vZ-UgL-xY20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="lozad" data-index="23"></iframe>
 				</section>
 				
 				<h3><A href="https://rileybathurst.com/2018/11/how-to-gopro/">How To GoPro</a></h3>
