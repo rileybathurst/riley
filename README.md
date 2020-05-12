@@ -66,6 +66,8 @@ I'll try it out quick on firefox.
 - a:selection color needs to not be primary
 - social icons need work to have a full hover state
 - explore more the underline and strike is in the wrong color
+- check for data-index="9" on lozad
+- image should lazy load by defaultt on chrome
 
 ### Featured Categories
 
