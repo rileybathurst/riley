@@ -491,6 +491,8 @@ button,
 
 	display: inline-block;
 
+	-webkit-appearance: none; // browser reset
+
 	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 2em; // type scale?
 	}
