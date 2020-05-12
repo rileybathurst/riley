@@ -67,6 +67,7 @@ I'll try it out quick on firefox.
 - social icons need work to have a full hover state
 - explore more the underline and strike is in the wrong color
 - check for data-index="9" on lozad
+- double check on data-alt=" for lozad images
 - image should lazy load by defaultt on chrome
 
 ### Featured Categories

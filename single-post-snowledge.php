@@ -33,7 +33,7 @@ if (have_posts()) {
 			<section id="snap-scroll-container-coordinates">
 				<div class="child" id="first">
 					<!-- <h1>1</h1> -->
-					<picture class="lozad-picture" data-index="9">
+					<picture class="lozad-picture" data-index="9" data-alt="drone photo of a snowboarder on a small patch of snow">
 						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-1080x720.webp" media="(min-width: 960px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-1080x720.jpg" media="(min-width: 960px)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard_drone-photo-garrett_cygan-tahoe_california-shot_for_snowledge-960x640.webp" media="(min-width: 720px)" type="image/webp">
@@ -50,7 +50,7 @@ if (have_posts()) {
 				</div>
 				<div class="child" id="target">
 					<!-- <h1>2</h1> -->
-					<picture class="lozad-picture" data-index="10">
+					<picture class="lozad-picture" data-index="10" data-alt="deep powder snow turn">
 						<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-full.jpg" media="(min-width: 64em)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-medium.jpg" media="(min-width: 40em)">
 						<source srcset="<?php echo content_url(); ?>/uploads/2018/04/IMG_0049-small.jpg" alt="deep powder snow turn">
@@ -79,8 +79,8 @@ if (have_posts()) {
 			</section>
 
 			<!-- <div id="controls"> -->
-				<button id="left" class="show-for-medium">&lsaquo;</button> <!-- these should probably be buttons -->
-				<button id="right" class="show-for-medium">&rsaquo;</button>
+			<button id="left" class="show-for-medium">&lsaquo;</button> <!-- these should probably be buttons -->
+			<button id="right" class="show-for-medium">&rsaquo;</button>
 			<!-- </div> -->
 
 		</div> <!-- #gallery -->

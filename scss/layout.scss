@@ -1278,10 +1278,10 @@
 	grid-column: 4;
 }
 
-.base-next__grid a {
+.base-next__grid {
 	display: grid;
 
-	img,
+	a, // the image
 	h4, // the title
 	.color-blocking {
 		grid-row: 1;
@@ -1290,7 +1290,11 @@
 
 	h4 {
 		place-self: center;
+	}
+	
+	h4 a {
 		color: $white;
 		z-index: 16;
+		position: relative;
 	}
 }

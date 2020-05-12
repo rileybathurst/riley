@@ -1652,20 +1652,23 @@ body.category-code .fp-header hr {
   grid-column: 4;
 }
 
-.base-next__grid a {
+.base-next__grid {
   display: grid;
 }
-.base-next__grid a img,
-.base-next__grid a h4,
-.base-next__grid a .color-blocking,
-.base-next__grid a .header-color-blocking {
+.base-next__grid a,
+.base-next__grid h4,
+.base-next__grid .color-blocking,
+.base-next__grid .header-color-blocking {
   grid-row: 1;
   grid-column: 1;
 }
-.base-next__grid a h4 {
+.base-next__grid h4 {
   place-self: center;
+}
+.base-next__grid h4 a {
   color: #fefefe;
   z-index: 16;
+  position: relative;
 }
 
 .searchform [type=text] {
