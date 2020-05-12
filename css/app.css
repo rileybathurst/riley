@@ -2279,6 +2279,7 @@ button, .article-tags a, .searchform [type=submit],
   transition: 0.5s ease;
   padding: 0.5rem 1rem;
   display: inline-block;
+  -webkit-appearance: none;
 }
 @media (min-width: 640px) {
   button, .article-tags a, .searchform [type=submit],
@@ -5316,7 +5317,7 @@ pre[class*=language-] {
 
   .child {
     width: 92%;
-    margin: 0 auto;
+    margin: 1rem;
     position: relative;
     background-color: #F0F0F0;
     display: inline-block;
@@ -5395,6 +5396,20 @@ pre[class*=language-] {
 
   .tryptych-caption {
     text-align: center;
+  }
+
+  button, .searchform [type=submit],
+#commentform [type=submit], .article-tags a {
+    padding: 0;
+    background: none;
+    color: #c22127;
+    opacity: 0.8;
+  }
+
+  button:hover, .searchform [type=submit]:hover,
+#commentform [type=submit]:hover, .article-tags a:hover {
+    background: none;
+    color: #8a0000;
   }
 }
 

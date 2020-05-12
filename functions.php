@@ -37,7 +37,7 @@ add_action( 'after_setup_theme', 'riley_setup' );
 function riley_scripts() {
 	wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/app.css');
 	wp_enqueue_script('uncompressed', get_template_directory_uri() . '/js/uncompressed.js', array(), false, true); // needs the optional tags to get it in the footer this would be good to add to webpack
-	// wp_enqueue_script('bundle', get_template_directory_uri() . '/js/bundle.js'); // webpack manually updated
+	wp_enqueue_script('bundle', get_template_directory_uri() . '/js/bundle.js'); // webpack manually updated
 	wp_register_style( 'myguten-style', get_template_directory_uri() . '/css/gutenberg.css' );
 }
 add_action( 'wp_enqueue_scripts', 'riley_scripts' );

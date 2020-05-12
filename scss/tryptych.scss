@@ -23,7 +23,8 @@
     
     .child {
         width: 92%; // guess and check // I think this only works right at largest size
-        margin: 0 auto;
+        // margin: 0 auto;
+        margin: $global-margin; // both sides comes to the same as a grid gap
         position: relative;
         background-color: #F0F0F0;
         display: inline-block;
@@ -107,5 +108,18 @@
 
     .tryptych-caption {
         text-align: center;
+    }
+
+    button {
+        // a lot of resets from what I have done
+        padding: 0;
+        background: none;
+        color: $primary-color;
+        opacity: 0.8;
+    }
+
+    button:hover {
+        background: none;
+        color: $secondary-color;
     }
 } // medium up only // everything should be inside this
