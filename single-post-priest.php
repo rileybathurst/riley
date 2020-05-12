@@ -72,7 +72,7 @@ if (have_posts()) {
 		<div class="specific-grid">
 			<h3 class="continental">Branding</h3>
 			<p class="continental">The logo for Priest Sheetmetal was designed to show the strength and presence of metal with the slab serif typography beside a sheet press icon.</p>
-			<img src="http://localhost:8001/wp-content/uploads/2018/04/priest-door-logo-mockup-large.jpg" alt="priest sheetmetal branding" class="continental" />
+			<img src="<?php echo content_url(); ?>/uploads/2018/04/priest-door-logo-mockup-large.jpg" alt="priest sheetmetal branding" class="continental" />
 		</div>
 
 		<hr class="mega-hr specific-grid__main-width" />
