@@ -716,7 +716,8 @@ button:hover,
 .navigation-top ul li {
 	font-size: 1.5em; // type scale?
 	font-weight: bold;
-	margin-top: $global-margin;
+	// margin-top: $global-margin;
+	padding-top: $global-padding; // this has to be a padding otherwise you loose the hr on scroll between
 	margin-bottom: 0;
 	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 2.25em; // type scale?

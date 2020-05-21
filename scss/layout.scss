@@ -281,7 +281,8 @@
 
         li {
             margin-bottom: 0;
-            margin-right: $global-margin;
+            // margin-right: $global-margin;
+            padding-right: $global-padding; // does making this padding solve my js finding the width problems?
         }
         
         li:last-child() {

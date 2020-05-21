@@ -69,6 +69,7 @@ I'll try it out quick on firefox.
 - check for data-index="9" on lozad
 - double check on data-alt=" for lozad images
 - image should lazy load by defaultt on chrome
+- I wonder if I should split the templates for vertical and horizontal menus
 
 ### Featured Categories
 
