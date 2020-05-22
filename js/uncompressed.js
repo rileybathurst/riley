@@ -127,62 +127,65 @@ if (menu != null) {
   let hr = document.createElement('hr');
   menu.appendChild(hr);
 
-  // when the menu is horizontal I need to know the width and push different amounts which currently has guess and check math
-  // console.log(menu.children[0].offsetWidth);
-  let clicks = menu.children[0];
+  if (document.body.classList.contains('single')) { // horizontal
 
-  let clicksStyle = window.getComputedStyle(clicks);
-  let clicksRem = clicksStyle.getPropertyValue('font-size');
-  console.log('clicksRem = ' + clicksRem); // this includes px
+    // when the menu is horizontal I need to know the width and push different amounts which currently has guess and check math
+    // console.log(menu.children[0].offsetWidth);
+    let clicks = menu.children[0];
 
-  let ClicksPx = clicksRem.replace('px', '');
-  let clicksNum = parseInt(ClicksPx, 10); // The second argument is called the radix. This is the base number used in mathematical systems. For our use, it should always be 10.
-  console.log(ClicksPx); // I think I only need to do this once as its just pulling the font size
+    let clicksStyle = window.getComputedStyle(clicks);
+    let clicksRem = clicksStyle.getPropertyValue('font-size');
+    console.log('clicksRem = ' + clicksRem); // this includes px
 
-  // console.log(menu.children[1].offsetWidth);
-  let code = menu.children[1];
+    let ClicksPx = clicksRem.replace('px', '');
+    let clicksNum = parseInt(ClicksPx, 10); // The second argument is called the radix. This is the base number used in mathematical systems. For our use, it should always be 10.
+    console.log(ClicksPx); // I think I only need to do this once as its just pulling the font size
 
-  // console.log(menu.children[2].offsetWidth);
-  let camera = menu.children[2];
+    // console.log(menu.children[1].offsetWidth);
+    let code = menu.children[1];
 
-  // on hover of element set the width of the hr to this and the margin to
-  clicks.addEventListener("mouseenter", function( event ) {
-    hr.style.width = clicks.offsetWidth + 'px';
-    let ClicksPush = clicksNum/4 + 'px'; // Guess and Check
-    console.log('clicksPush ' + ClicksPush);
+    // console.log(menu.children[2].offsetWidth);
+    let camera = menu.children[2];
 
-    hr.style.marginLeft = ClicksPush;
-  }, false);
+    // on hover of element set the width of the hr to this and the margin to
+    clicks.addEventListener("mouseenter", function( event ) {
+      hr.style.width = clicks.offsetWidth + 'px';
+      let ClicksPush = clicksNum/4 + 'px'; // Guess and Check
+      console.log('clicksPush ' + ClicksPush);
 
-  code.addEventListener("mouseenter", function( event ) {
-    hr.style.width = code.offsetWidth + 'px';
-    let codePush = clicks.offsetWidth + clicksNum/1.25 + 'px'; // guess and check
-    console.log('codePush ' + codePush);
+      hr.style.marginLeft = ClicksPush;
+    }, false);
 
-    hr.style.marginLeft = codePush;
+    code.addEventListener("mouseenter", function( event ) {
+      hr.style.width = code.offsetWidth + 'px';
+      let codePush = clicks.offsetWidth + clicksNum/1.25 + 'px'; // guess and check
+      console.log('codePush ' + codePush);
+
+      hr.style.marginLeft = codePush;
+      
+    }, false);
+
+    camera.addEventListener("mouseenter", function( event ) {
+      hr.style.width = camera.offsetWidth + 'px';
+      
+      let cameraPush = clicks.offsetWidth + code.offsetWidth + clicksNum*1.4 + 'px'; // guess and check
+      console.log('codePush ' + cameraPush);
+
+      hr.style.marginLeft = cameraPush;
+    }, false);
+
+    clicks.addEventListener("mouseleave", function( event ) {
+      hr.style.marginLeft = '-33px';
+    }, false);
+
+    code.addEventListener("mouseleave", function( event ) {
+      hr.style.marginLeft = '-33px';
+    }, false);
     
-  }, false);
-
-  camera.addEventListener("mouseenter", function( event ) {
-    hr.style.width = camera.offsetWidth + 'px';
-    
-    let cameraPush = clicks.offsetWidth + code.offsetWidth + clicksNum*1.4 + 'px'; // guess and check
-    console.log('codePush ' + cameraPush);
-
-    hr.style.marginLeft = cameraPush;
-  }, false);
-
-  clicks.addEventListener("mouseleave", function( event ) {
-    hr.style.marginLeft = '-33px';
-  }, false);
-
-  code.addEventListener("mouseleave", function( event ) {
-     hr.style.marginLeft = '-33px';
-  }, false);
-  
-  camera.addEventListener("mouseleave", function( event ) {
-    hr.style.marginLeft = '-33px';
-  }, false);
+    camera.addEventListener("mouseleave", function( event ) {
+      hr.style.marginLeft = '-33px';
+    }, false);
+  } // if horizontal
 
 } // menu
 

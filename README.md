@@ -70,6 +70,7 @@ I'll try it out quick on firefox.
 - double check on data-alt=" for lozad images
 - image should lazy load by defaultt on chrome
 - I wonder if I should split the templates for vertical and horizontal menus
+- theres defintley a problem with running webpack compressed js I keep getting errors of 'undefined' in the console even on basic get Element by Id queries so for now I am running an uncompressed version and using webpack for npm modules.
 
 ### Featured Categories
 
