@@ -137,6 +137,10 @@ p {
   background: $primary-color; /* WebKit/Blink Browsers */
 }
 
+a::selection {
+	color: $white;
+}
+
 blockquote {
 	margin: 0;
 	color: $black;
