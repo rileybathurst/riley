@@ -1,58 +1,3 @@
-// Remeber to hide the imports if testing uncompressed on the site
-
-// import _ from 'lodash';
-
-/* 
-import {MDCTextField} from '@material/textfield';
-import {MDCTextFieldIcon} from '@material/textfield/icon';
-
-import {MDCRipple} from '@material/ripple/index';
-
-const textFieldElements = [].slice.call(document.querySelectorAll('.mdc-text-field'));
-textFieldElements.forEach((textFieldEl) => {
-  new MDCTextField(textFieldEl);
-});
-
-const icon = new MDCTextFieldIcon(document.querySelector('.mdc-text-field-icon'));
-const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
- */
-
- // --------------------------------- //
-
-// const Prism = require('prismjs');
-// Im going to do this custom at the moment but it's something interesting to think about again down the road
-
-// --------------------------------- //
-
-// import lozad from 'lozad';
-// const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-// observer.observe();
-
-
-// move around images so I can see thumbnails as the hero on hover
-// It's kinda jerky so maybe it's too much
-/* let starter = document.getElementById("starter");
-let thumb1 = document.getElementById("thumb1");
-let thumb2 = document.getElementById("thumb2");
-
-thumb1.addEventListener("mouseenter", function( event ) {
-  // needs to be a const to not get updated
-  const holder = starter.src;
-
-  // change the top image
-  starter.setAttribute("src", thumb1.src);
-
-  // change the bottom image to what was in top
-  thumb1.setAttribute("src", holder);
-});
-
-thumb2.addEventListener("mouseenter", function( event ) {
-  const holder = starter.src;
-  starter.setAttribute("src", thumb2.src);
-  thumb2.setAttribute("src", holder);
-}); */
-
-
 // Tryptych
 
 var first = document.getElementById('first');
@@ -188,6 +133,83 @@ if (menu != null) {
   } // if horizontal
 
 } // menu
+
+
+// folding laptops
+// https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+if (document.title === 'Priest – Riley Bathurst') { // super specific
+
+  // check we have the ability in the browser
+  if ('IntersectionObserver' in window &&
+  'IntersectionObserverEntry' in window &&
+  'intersectionRatio' in window.IntersectionObserverEntry.prototype) {
+
+    // grab the screen
+    let flatten = document.querySelector('.folding');
+    // console.log(flatten.classList);
+    // console.log(flatten.classList[1]); // new
+    // add a flatten class? why am I not just starting with this?
+    flatten.classList.add('flatten');
+
+    // var numSteps = 20.0;
+
+    var boxElement; // why am I defining this before its a thing?
+    var prevRatio = 0.0; // starting point this makes sense
+    var wkT = "rotateX(ratiodeg)"; // what we are transforming
+
+    // wait till the page loads before creating the observer
+    window.addEventListener("load", (event) => {
+
+      // what am I transforming
+      boxElement = document.querySelector(".folding").lastChild; // well not anymore as we actually now want the img not the picture element
+
+      for (let i = 0; i < boxElement.children.length; i++) {
+        console.log(boxElement.children[i].tagName);
+      }
+
+
+      createObserver();
+    }, false); // I cant work this out but I mostly use false here https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+    // the actual function
+    function createObserver() {
+      var observer;
+
+      var options = {
+        root: null,
+        rootMargin: "0px", // I think this is the start when its on the edge
+        threshold: buildThresholdList()
+      };
+
+      observer = new IntersectionObserver(handleIntersect, options); // what are the specifics you do
+      observer.observe(boxElement); // what we are altering
+    }
+
+    function buildThresholdList() {
+      var thresholds = []; // make an empty array
+      var numSteps = 20; // how many midpoints
+
+      // add each step to the array
+      for (var i=1.0; i<=numSteps; i++) {
+        var ratio = i/numSteps;
+        thresholds.push(ratio);
+      }
+
+      thresholds.push(0);
+      return thresholds;
+    }
+
+    function handleIntersect(entries, observer) {
+      entries.forEach(function(entry) { // why is this a foreach? isnt there only one?
+
+        entry.target.style.webkitTransform = wkT.replace("ratio", (90-(entry.intersectionRatio*90))); // wierd backward math
+        // console.log(entry);
+        
+        prevRatio = entry.intersectionRatio;
+      }); // entries.forEach
+    } // handleIntersect()
+  } // if has observer
+} // if title === priest
 
 
 // Keep this here so I know were making the file

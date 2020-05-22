@@ -219,8 +219,15 @@ figcaption,
 	line-height: 1.5em;
 }
 
-.flatten {
+.flatten
+// .flatten img
+ {
 	transform: rotateX(90deg);
+}
+
+.flatten img {
+	transform-origin: bottom;
+	transition: 3s ease;
 }
 
 .base {
