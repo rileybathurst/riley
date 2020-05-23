@@ -137,6 +137,9 @@ if (menu != null) {
 
 // folding laptops
 // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+
+console.log(document.title);
+
 if (document.title === 'Priest – Riley Bathurst') { // super specific
 
   console.log('the page');
