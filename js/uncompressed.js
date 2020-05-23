@@ -200,6 +200,7 @@ if (document.title === 'Priest – Riley Bathurst') { // super specific
     }
 
     let i = 1;
+    console.log('before the io');
     function handleIntersect(entries, observer) {
       console.log(i++);
 
