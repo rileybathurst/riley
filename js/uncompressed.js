@@ -199,11 +199,14 @@ if (document.title === 'Priest – Riley Bathurst') { // super specific
       return thresholds;
     }
 
+    let i = 1;
     function handleIntersect(entries, observer) {
+      console.log(i++);
+
       entries.forEach(function(entry) { // why is this a foreach? isnt there only one?
 
         entry.target.style.webkitTransform = wkT.replace("ratio", (90-(entry.intersectionRatio*90))); // wierd backward math
-        // console.log(entry);
+        // console.log(entry.target.style.webkitTransform);
         
         prevRatio = entry.intersectionRatio;
       }); // entries.forEach
