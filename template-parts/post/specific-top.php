@@ -12,11 +12,7 @@
 			} ?>
 
 			<div class="article-header">
-				<h2 class="page-title">
-					<!-- <a href=" php the_permalink(); ?>"> -->
-						<?php the_title(); ?>
-					<!-- </a> -->
-				</h2>
+				<h2 id="specific-title" class="page-title"><?php the_title(); ?></h2>
 			</div>
 
 			<!-- as these are all specific that means they are portfolio key pieces so they dont need to be dated

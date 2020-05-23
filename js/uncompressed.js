@@ -138,9 +138,10 @@ if (menu != null) {
 // folding laptops
 // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 
-console.log(document.title);
+// console.log(document.title);
+let PriestCheck = document.getElementById('specific-title').textContent
 
-if (document.title === 'Priest - Riley Bathurst') { // super specific
+if (PriestCheck === "Priest") { // super specific
 
   console.log('the page');
 
@@ -167,10 +168,10 @@ if (document.title === 'Priest - Riley Bathurst') { // super specific
 
       // what am I transforming
       boxElement = document.querySelector(".folding").lastChild; // well not anymore as we actually now want the img not the picture element
-
-      for (let i = 0; i < boxElement.children.length; i++) {
-        console.log(boxElement.children[i].tagName);
-      }
+      console.log('boxElement ' + boxElement);
+/*       for (let i = 0; i < boxElement.children.length; i++) {
+        console.log('tag names ' + boxElement.children[i].tagName);
+      } */
 
 
       createObserver();
