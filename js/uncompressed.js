@@ -139,6 +139,8 @@ if (menu != null) {
 // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 if (document.title === 'Priest – Riley Bathurst') { // super specific
 
+  console.log('the page');
+
   // check we have the ability in the browser
   if ('IntersectionObserver' in window &&
   'IntersectionObserverEntry' in window &&
@@ -147,9 +149,9 @@ if (document.title === 'Priest – Riley Bathurst') { // super specific
     // grab the screen
     let flatten = document.querySelector('.folding');
     // console.log(flatten.classList);
-    // console.log(flatten.classList[1]); // new
     // add a flatten class? why am I not just starting with this?
     flatten.classList.add('flatten');
+    // console.log(flatten.classList[1]); // new
 
     // var numSteps = 20.0;
 
