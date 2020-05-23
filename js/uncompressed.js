@@ -140,7 +140,7 @@ if (menu != null) {
 
 console.log(document.title);
 
-if (document.title === 'Priest – Riley Bathurst') { // super specific
+if (document.title === 'Priest - Riley Bathurst') { // super specific
 
   console.log('the page');
 
@@ -218,6 +218,8 @@ if (document.title === 'Priest – Riley Bathurst') { // super specific
       }); // entries.forEach
     } // handleIntersect()
   } // if has observer
+} else {
+  console.log('the page isnt it');
 } // if title === priest
 
 
