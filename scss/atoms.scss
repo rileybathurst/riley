@@ -326,3 +326,11 @@ body.category-code { // needs to be on the body tag or a single article can be d
 		}
 	}
 }
+
+// rebuilding this
+.spine-border {
+	background: $primary-color;
+	width: $global-grid-gap;
+	transition: 3s ease;
+	justify-self: center;
+}
