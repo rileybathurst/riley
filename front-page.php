@@ -126,7 +126,8 @@ Template Name: Front Page
 				<div class="subheading"><p>This Project contains</p>
 					<ul>
 						<li><a href="<?php get_site_url(); ?>/category/clicks/">Clicks</a></li>
-						<li><a href="<?php get_site_url(); ?>/category/clicks/">Camera</a></li>
+						<li><a href="<?php get_site_url(); ?>/category/camera/">Camera</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
