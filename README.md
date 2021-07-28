@@ -85,3 +85,5 @@ To be able to organize the posts how I want there are a few complex things going
 - I could do a more complex ordering to have be different for each category but its over kill
 
 AAW should only show up in Code but its also underneath Clicks in website design so I need to deal with that, for now Ive just removed it from design.
+
+🦄
