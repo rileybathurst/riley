@@ -264,7 +264,7 @@ if (document.getElementById('specific-title')) { // if a single page first
     return thresholds2;
   }
 
-   function handleIntersect2(entries, observer2) {
+  function handleIntersect2(entries, observer2) {
     entries.forEach(function(entry) {
       entry.target.style.marginTop = mT.replace("ratio2", (entry.intersectionRatio*5));
       prevRatio2 = entry.intersectionRatio;
@@ -274,3 +274,26 @@ if (document.getElementById('specific-title')) { // if a single page first
 
 // Keep this here so I know were making the file
 console.log('end of file');
+
+
+DataTransferItemList
+
+/*------------------------------------*\
+  #changetext
+\*------------------------------------*/
+
+// on the front page there is a sort of spinner
+
+var text = ["Person", "Photographer", "Videographer"];
+var counter = 0;
+var elem = document.getElementById("changeText");
+var inst = setInterval(change, 1000);
+
+function change() {
+  elem.innerHTML = text[counter];
+  counter++;
+  if (counter >= text.length) {
+  counter = 0;
+  // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+  }
+}
