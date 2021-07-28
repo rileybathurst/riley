@@ -1,0 +1,36 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+<IfModule mod_headers.c>
+  Header set Content-Security-Policy: "default-src 'self'; \
+style-src 'self' 'unsafe-inline'; \
+script-src 'self' https://www.google.com https://www.gstatic.com https://cdn.jsdelivr.net 'nonce-351731468999'; \
+img-src 'self' secure.gravatar.com; \
+font-src 'self' data:; \
+child-src https://www.youtube.com https://player.vimeo.com; \
+frame-ancestors 'none';"
+
+Header set Strict-Transport-Security: max-age=63072000
+
+Header set X-Content-Type-Options: nosniff
+
+Header set X-Frame-Options: DENY
+
+</IfModule>

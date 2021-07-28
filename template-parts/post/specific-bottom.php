@@ -10,7 +10,7 @@
 
 
 	<!-- IntersectionObserver Polyfill this was a default before the webpack build so it shouldnt be needed -->
-	 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 	<script type="text/javascript" nonce="351731468999">
 
