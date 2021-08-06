@@ -1,3 +1,7 @@
+# scp htaccess rilbat2@sumter.dreamhost.com:rileybathurst.com
+# rm .htaccess
+# mv mtaccess .htaccess
+
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
@@ -19,13 +23,6 @@ RewriteRule . /index.php [L]
 # END WordPress
 
 <IfModule mod_headers.c>
-  Header set Content-Security-Policy: "default-src 'self'; \
-style-src 'self' 'unsafe-inline'; \
-script-src 'self' https://www.google.com https://www.gstatic.com https://cdn.jsdelivr.net 'nonce-351731468999'; \
-img-src 'self' secure.gravatar.com; \
-font-src 'self' data:; \
-child-src https://www.youtube.com https://player.vimeo.com; \
-frame-ancestors 'none';"
 
 Header set Strict-Transport-Security: max-age=63072000
 

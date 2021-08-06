@@ -32,6 +32,17 @@
 	<meta name="msapplication-TileColor" content="#c22127">
 	<meta name="theme-color" content="#ffffff">
 
+	<meta
+		http-equiv="Content-Security-Policy"
+		content="default-src 'self'; \
+			style-src 'self' 'unsafe-inline'; \
+			script-src 'self' https://www.google.com https://www.gstatic.com https://cdn.js$
+			img-src 'self' secure.gravatar.com; \
+			font-src 'self' data:; \
+			child-src https://www.youtube.com https://player.vimeo.com; \
+			frame-ancestors 'none';"
+	/>
+
 	<?php wp_head(); ?>
 </head>
 
