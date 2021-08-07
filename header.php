@@ -18,7 +18,7 @@
 	<meta name="hasOccupation" content="Designer">
 	<meta name="jobTitle" content="Designer">
 	<meta name="nationality" content="New Zealand">
-	<meta name="worksFor" content="Snowledge">
+	<meta name="worksFor" content="Tahoe Web Shop">
 
 	<!-- recaptcha -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
@@ -34,12 +34,12 @@
 
 	<meta
 		http-equiv="Content-Security-Policy"
-		content="default-src 'self'; \
-			style-src 'self' 'unsafe-inline'; \
-			script-src 'self' https://www.google.com https://www.gstatic.com https://cdn.js$
-			img-src 'self' secure.gravatar.com; \
-			font-src 'self' data:; \
-			child-src https://www.youtube.com https://player.vimeo.com; \
+		content="default-src 'self';
+			style-src 'self' 'unsafe-inline';
+			script-src 'self' https://www.google.com https://www.gstatic.com https://cdn.js;
+			img-src 'self' secure.gravatar.com;
+			font-src 'self' data:;
+			child-src https://www.youtube.com https://player.vimeo.com;
 			frame-ancestors 'none';"
 	/>
 
