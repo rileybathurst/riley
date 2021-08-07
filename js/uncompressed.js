@@ -284,7 +284,7 @@ DataTransferItemList
 
 // on the front page there is a sort of spinner
 
-var text = ["Person", "Photographer", "Videographer"];
+/* var text = ["Person", "Photographer", "Videographer"];
 var counter = 0;
 var elem = document.getElementById("changeText");
 var inst = setInterval(change, 1000);
@@ -296,4 +296,4 @@ function change() {
   counter = 0;
   // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
   }
-}
+} */
