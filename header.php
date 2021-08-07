@@ -34,7 +34,7 @@
 
 	<meta
 		http-equiv="Content-Security-Policy"
-		content="default-src 'self';
+		content="default-src 'self' https://www.google.com https://www.gstatic.com;
 			style-src 'self' 'unsafe-inline';
 			script-src 'self' https://www.google.com https://www.gstatic.com https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js https://player.vimeo.com 'nonce-351731468999';
 			img-src 'self' secure.gravatar.com;
