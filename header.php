@@ -36,7 +36,7 @@
 		http-equiv="Content-Security-Policy"
 		content="default-src 'self';
 			style-src 'self' 'unsafe-inline';
-			script-src 'self' https://www.google.com https://www.gstatic.com https://cdn.jsdelivr.net https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js;
+			script-src 'self' https://www.google.com https://www.gstatic.com https://cdn.jsdelivr.net https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js 'nonce-351731468999';
 			img-src 'self' secure.gravatar.com;
 			font-src 'self' data:;
 			child-src https://www.youtube.com https://player.vimeo.com;
