@@ -39,8 +39,7 @@
 			script-src 'self' https://www.google.com https://www.gstatic.com https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js https://player.vimeo.com 'nonce-351731468999';
 			img-src 'self' secure.gravatar.com;
 			font-src 'self' data:;
-			child-src https://www.youtube.com https://player.vimeo.com;
-			frame-ancestors 'none';"
+			child-src https://www.youtube.com https://player.vimeo.com;"
 	/>
 
 	<?php wp_head(); ?>
