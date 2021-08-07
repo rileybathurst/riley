@@ -23,14 +23,21 @@ RewriteRule . /index.php [L]
 
 <IfModule mod_headers.c>
 
+# I know this works save it as a test
+#Header set Content-Security-Policy-Report-Only: "default-src 'self'; \
+#report-uri /csp-violation-report-endpoint.php
+#"
+# yes the last " should be there. maybe atleast it works
+
 Header set Content-Security-Policy-Report-Only: "default-src 'self'; \
 style-src 'self' 'unsafe-inline'; \
-script-src 'self' https://www.google.com https://www.gstatic.com https://cdn.jsdelivr.net 'nonce-351731468999'; \
+script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com https://cdn.jsdelivr.net 'nonce-35$
 img-src 'self' secure.gravatar.com; \
 font-src 'self' data:; \
 child-src https://www.youtube.com https://player.vimeo.com; \
-frame-ancestors 'none';"
-report-uri /csp-hotline.php
+frame-ancestors 'none'; \
+report-uri /csp-violation-report-endpoint.php
+"
 
 Header set Strict-Transport-Security: max-age=63072000
 
