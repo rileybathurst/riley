@@ -7,6 +7,15 @@ if (have_posts()) {
 
 	<div class="article-content-specific">
 
+	<div class="specific-grid">
+			<blockquote cite="http://wakenz.co.nz/about/" class="continental">
+				<p>Wake NZ exists to promote, develop and support the sport of wakeboarding in New Zealand and strive to be at the heart of Wakeboarding in New Zealand.</p>
+				<footer>
+					<cite class="hide-for-medium"><a href="http://wakenz.co.nz/" target="_blank" rel="noopener">wakenz.co.nz</a></cite> <!-- with a large font running an abreviation where this is shorter on small screens? -->
+					<cite class="show-for-medium"><a href="http://wakenz.co.nz/" target="_blank" rel="noopener">wakenz.co.nz</a></cite>
+				</footer>
+			</blockquote>
+		</div>
 		<a href="https://rileybathurst.com/09/auckland-wakeboard-open-2/">
 			<img src="<?php echo content_url(); ?>/uploads/2013/02/Auckland-Wakeboard-Open.jpg" alt="auckland wakeboard open poster design">
 		</a>

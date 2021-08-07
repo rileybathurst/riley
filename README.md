@@ -73,6 +73,19 @@ I'll try it out quick on firefox.
 - theres defintley a problem with running webpack compressed js I keep getting errors of 'undefined' in the console even on basic get Element by Id queries so for now I am running an uncompressed version and using webpack for npm modules.
 - picture elements have a couple pixels of clear space at the bottom this is a bigger problem with the folding laptop header
 - mani menu slider colors need dark mode adjustments
+main menu slider colors need dark mode adjustments
+- chk order page needs ipad chrome cut off
+- On small screens stop the page from jumping with the change in text maybe this is a grid not a full replace?
+- .spine is using a darker than dark gray to pass contrast checks I need to work on what I am doing with all of those
+
+#### Break these notes up they are getting unruly
+
+### Dev Notes
+
+### Design Notes
+
+- I could thicken up some of the small lines and gaps in the icon
+- on small Im getting some bottom margin push down when hovering over Camera at the bottom of the top menu
 
 ### Featured Categories
 
@@ -86,4 +99,43 @@ To be able to organize the posts how I want there are a few complex things going
 
 AAW should only show up in Code but its also underneath Clicks in website design so I need to deal with that, for now Ive just removed it from design.
 
-🦖
+### Resources
+
+I need to bring these together in a smart way, I think markdown notes probably helps most for now
+
+- [Pattern Lab](https://www.pattern.rileybathurst.com/?p=all)
+- Reminders and Notes on iOS
+- Zepplin
+- [Adobe Library](https://color.adobe.com/mythemes) - Needs more assets added here
+- Markdown docs in GitHub
+
+#### Pattern Lab
+
+Having an idea of color contrast could be really useful as I'm breaking somethings up
+
+
+
+### Projects to add
+
+- After Effects / dimension of wedding invite
+- show reel of video titles - needs updating as well
+- Rip N Grip animation
+- Homewood homepage in snowledge 
+
+
+
+### Type Scale
+
+Base 16px
+
+h1 - 3.052em - 48px
+
+h2 -2.441em - 39px
+
+h3 - 1.953em - 31.2px
+
+h4 - 1.563em - 25px
+
+h5 - 1.25em - 20px
+
+small - 0.8em - 12.8px

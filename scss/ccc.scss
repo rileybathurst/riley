@@ -46,7 +46,12 @@
 }
 
 .social-icons > .fp-box > a {
-	display: inline-block;
+	// display: inline-block;
+	display: block; // fill the social areas for a hover
+}
+
+.social-icons > .fp-box > a:hover {
+	background: $secondary-color;
 }
 
 .social-icons svg {

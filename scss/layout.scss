@@ -521,6 +521,10 @@
 	}
 }
 
+.home .site-main article { // I need to look into this in other places as I want the spine border to sit on the bottom
+	padding: 0;
+}
+
 .article-thumbnail {
     grid-row: 1;
     grid-column: 1/4;
@@ -1297,5 +1301,105 @@
 		color: $white;
 		z-index: 16;
 		position: relative;
+	}
+}
+
+.searchBox {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background: $white;
+
+	[type="text"] {
+		grid-row: 1;
+		grid-column: 1;
+		z-index: 1; // above the p tag
+		background: none; // browser reset
+		padding: $global-padding;
+		max-width: calc(100% - 2rem); // small size check
+	}
+
+	[type="submit"] {
+		grid-row: 1;
+		grid-column: 2;
+		margin-bottom: 0 !important; // reset but the important can probably be removed with some pruning
+	}
+
+	p {
+		padding: $global-padding !important; // prune for this
+		grid-row: 1;
+		grid-column: 1;
+		transition: 0.3s ease;
+		align-self: center;
+		margin: 0;
+	}
+
+	
+}
+
+.filled {
+	p {
+		font-size: 0.8rem;
+		align-self: start;
+		padding-top: 0;
+	}
+
+	[type="text"] {
+
+		padding-top: $global-padding*2;
+	}
+
+} // .filled
+
+
+.titleSpinner {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: map-get($breakpoints, medium)) {
+		flex-direction: row;
+	}
+}
+
+#changeText {
+	height: 2.5rem;
+	overflow-y: hidden;
+	
+	@media (min-width: map-get($breakpoints, medium)) {
+		height: 3.5rem; // 3 to match the text .5 to catch the descenders
+		margin-bottom: $global-margin;
+		margin-top: 2.75rem; // match the text beside
+	}
+
+	h2 {
+		margin: 0; // this is now in the box above
+		/* @keyframes duration | delay | iteration-count | name */
+		animation: 5s 3s infinite slideUp;
+	}
+}
+
+/* 100% divided by double the number of lines to account for pauses */
+@keyframes slideUp{
+	0% {
+		transform: translateY(0);
+	}
+
+	16% {
+		transform: translateY(-100%)
+	}
+
+	32% {
+		transform: translateY(-100%)
+	}
+
+	48% {
+		transform: translateY(-200%)
+	}
+
+	64% {
+		transform: translateY(-200%)
+	}
+
+	80% {
+		transform: translateY(0);
 	}
 }

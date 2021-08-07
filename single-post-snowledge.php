@@ -79,8 +79,8 @@ if (have_posts()) {
 			</section>
 
 			<!-- <div id="controls"> -->
-			<button id="left" class="show-for-medium">&lsaquo;</button> <!-- these should probably be buttons -->
-			<button id="right" class="show-for-medium">&rsaquo;</button>
+			<button id="left" class="tryptych-button show-for-medium">&lsaquo;</button> <!-- these should probably be buttons -->
+			<button id="right" class="tryptych-button show-for-medium">&rsaquo;</button>
 			<!-- </div> -->
 
 		</div> <!-- #gallery -->

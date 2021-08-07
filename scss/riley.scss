@@ -148,7 +148,10 @@ blockquote {
 		color: $white;
 	}
 
-	font-size: 2em; // type scale?
+	font-size: 1em;
+	@media (min-width: map-get($breakpoints, medium)) {
+		font-size: 1.563em; // same as an h4
+	}
 	font-weight: bold;
 	border-left: none; // I think this is a browser override?
 }

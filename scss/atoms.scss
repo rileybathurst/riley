@@ -96,6 +96,12 @@ li {
 	margin-bottom: $global-margin;
 }
 
+// I was hoving a problem with a small bottom margin on images
+img {
+	// https://stackoverflow.com/questions/10844205/html-5-strange-img-always-adds-3px-margin-at-bottom
+	vertical-align: middle;
+}
+
 address {
 	font-style: unset; // revert from browser styles currently used in the footer
 }

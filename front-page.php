@@ -41,8 +41,13 @@ Template Name: Front Page
 
 					<div class="spine-border"></div>
 
-					<div class="fp-header">
-						<h2 class="page-title">I&rsquo;m A <span id="changeText">Designer</span></h2>
+					<div class="fp-header titleSpinner">
+						<h2 class="page-title">I&rsquo;m A&nbsp;</h2>
+						<div id="changeText">
+							<h2 class="page-title">Designer</h2>
+							<h2 class="page-title">Developer</h2>
+							<h2 class="page-title">Photographer</h2>
+							</div>
 					</div>
 
 					<div class="article-content">

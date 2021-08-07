@@ -1,3 +1,11 @@
+// Contents
+// Tryptych
+// menu border slider
+// folding laptops
+// Spine Border io
+// inline labels on the searchform
+// Ghosts - The letters of CCC fade after a little while
+
 // Tryptych
 
 var first = document.getElementById('first');
@@ -271,6 +279,64 @@ if (document.getElementById('specific-title')) { // if a single page first
     });
   }
 // end of spine border
+
+// inline labels on the searchform
+if (document.getElementById('searchform')) {
+  // console.log(document.getElementById('searchform'));
+
+  // build the label
+  var searchForm = document.getElementById('searchform').children[0];
+  searchForm.classList.add('searchBox');
+
+  // console.log('searchForm ' + searchForm);
+  var searchLabel = document.createElement('p');
+  searchLabel.textContent =  'Search';
+  searchForm.appendChild(searchLabel);
+
+  // console.log('one ' + searchForm.children[1]);
+  // console.log('one plus value ' + searchForm.children[1].value);
+
+  // move it out of the way when needed
+  // the first time is before a key
+  if (searchForm.children[1].value != '') {
+    searchForm.classList.add('filled');
+  }
+
+  // then only when the key comes up
+  document.addEventListener("keyup", event => {
+    if (searchForm.children[1].value != '') {
+      // push the label
+
+      // console.log('push');
+      searchForm.classList.add('filled');
+    } else {
+
+      // console.log('pull');
+      // console.log('one plus value ' + searchForm.children[1].value);
+      // return the label to where it started
+      searchForm.classList.remove('filled');
+    };
+  }); // event listner
+} // searchform
+
+// ghosts
+// The letters of CCC fade after a little while
+function code() {
+	var ghosts = document.getElementsByClassName('ghostly');
+	// console.log(ghosts.length);
+	for (var i=0; i<ghosts.length; i++) {
+		ghosts[i].classList.remove('presence');
+	}
+}
+
+// wait a while before we let the function run
+// if (document.getElementsByClassName('ghostly') !== null) {
+if (document.getElementsByClassName('ghostly')) {
+	window.onload = function() {
+		setTimeout(code, 3000);
+	}
+}
+// end of ghosts
 
 // Keep this here so I know were making the file
 console.log('end of file');

@@ -91,7 +91,10 @@
   }
 
   li {
-    display: inline-block;
+    display: block;
+    @media (min-width: map-get($breakpoints, medium)) {
+      display: inline-block;
+    }
   }
 
   li:first-child:hover ~ hr {

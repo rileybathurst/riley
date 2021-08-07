@@ -9,6 +9,9 @@
 			'menu_class'		=> 'footer_menu text-center',
 		) ); ?>
 
+		<div class="featured-header"> <!-- reused class just happens to be right styles I should work on this -->
+			<?php get_search_form(); ?>
+		</div>
 
 		<div class="background-dirty footer-background__step">
 			<div class="footer_info">

@@ -1,7 +1,5 @@
 # Im currently running this file without the . so it can never do anything
-# scp htaccess rilbat2@sumter.dreamhost.com:rileybathurst.com
-# rm .htaccess
-# mv mtaccess .htaccess
+# scp .htaccess rilbat2@sumter.dreamhost.com:rileybathurst.com
 
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
@@ -39,10 +37,5 @@ Header set Strict-Transport-Security: max-age=63072000
 Header set X-Content-Type-Options: nosniff
 
 Header set X-Frame-Options: DENY
-
-# try send some responses here
-Header set MyHeader "Hello Joe. It took %D microseconds for Apache to serve this request."
-
-Content-Security-Policy-Report-Only: default-src https:; report-uri https://rileybathurst.com/csp-violation-report-endpoint.php; report-to groupname
 
 </IfModule>
