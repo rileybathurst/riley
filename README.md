@@ -77,6 +77,7 @@ main menu slider colors need dark mode adjustments
 - chk order page needs ipad chrome cut off
 - On small screens stop the page from jumping with the change in text maybe this is a grid not a full replace?
 - .spine is using a darker than dark gray to pass contrast checks I need to work on what I am doing with all of those
+- I removed prism from having it in the webpack do I care enough to bring it back or do it a new way
 
 #### Break these notes up they are getting unruly
 
