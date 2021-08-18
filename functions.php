@@ -30,9 +30,13 @@ if ( ! function_exists( 'riley_setup' ) ) :
 
 		add_theme_support( 'post-thumbnails' );
 
+		// https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#editor-styles
+		add_theme_support( 'editor-styles' );
+		add_editor_style( '/style-editor.css' );
+
 	}
 endif; // riley_setup
-add_action( 'after_setup_theme', 'riley_setup' );
+add_action( 'after_setup_theme', 'riley_setup', 100 );
 
 function riley_scripts() {
 	wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/app.css');

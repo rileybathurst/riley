@@ -140,5 +140,3 @@ h4 - 1.563em - 25px
 h5 - 1.25em - 20px
 
 small - 0.8em - 12.8px
-
-two

@@ -513,12 +513,16 @@ button:hover,
 .button:hover { // [type="submit"] removed for material
 	// background: $primary-color !important; // why important?
 	background: $secondary-color;
-	// color: $white !important; // why important?
+	color: $white !important; // why important?
 	@media (prefers-color-scheme: dark) {
 		background: lighten($primary-color, 10%);
 	}
 
 	// padding: $global-padding; // this is on a transition so its interesting when just on the hover
+}
+
+.wp-block-button__link {
+	border-radius: 0; // overwrite wp default
 }
 
 /*
