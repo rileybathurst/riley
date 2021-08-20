@@ -46,34 +46,9 @@ svg:not(:root) { // thats a pretty strange selector is it right?
 
 /* Text meant only for screen readers. These are the wordpress twentyseventeen option for the default places its needed */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	height: 1px;
+	width: 0;
+	height: 0;
 	overflow: hidden;
-	position: absolute !important;
-	width: 1px;
-	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1; // would I just prefer to leave screen readers to do whatever they want and not mess with them?
-	-webkit-border-radius: 3px; // do I need this in scss?
-	border-radius: 3px;
-	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); // do I need this in scss?
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b; // this should be changed to something like the theme
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: 700;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
 }
 
 /*--------------------------------------------------------------
@@ -554,7 +529,7 @@ button:hover,
 .sticky .page-title a:hover {
 	border-bottom: none;
 	box-shadow: none;
-	background-color: rgba($warning-color, 0.3); // why am I using a warning color here?
+	background-color: rgba($secondary-color, 0.3); // why am I using a warning color here?
 }
 
 // this must be able to be done better

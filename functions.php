@@ -72,6 +72,7 @@ require get_parent_theme_file_path( '/inc/breadcrumbs.php' );
 require get_parent_theme_file_path( '/inc/featured-video.php' );
 require get_parent_theme_file_path( '/inc/cats-one-deep.php' );
 require get_parent_theme_file_path( '/inc/post-order.php' ); // this might get way too complicated with projects across categories
+require get_parent_theme_file_path( '/inc/logo.php' ); // this might get way too complicated with projects across categories
 
 
 // Change the email that root level mail is sent from
