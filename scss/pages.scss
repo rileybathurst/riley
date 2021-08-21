@@ -68,3 +68,20 @@ reducing some parts to get back to a style guide before building up again
 	}
 
 }
+
+.logos {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 2rem;
+	max-width: calc(77rem - 6rem);
+	overflow-x: hidden;
+	margin-block-start: 3rem;
+	margin-inline: auto;
+	justify-content: space-around;
+
+	img {
+		flex: 0 1 2rem;
+		max-width: 10vw; // the flex should do this but its not
+		filter: saturate(0);
+	}
+}

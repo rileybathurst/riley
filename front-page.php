@@ -156,4 +156,6 @@ Template Name: Front Page
 	</section>
 </div>
 
+<?php get_template_part( 'template-parts/page/logos' ) ?>
+
 <?php get_footer(); ?>
