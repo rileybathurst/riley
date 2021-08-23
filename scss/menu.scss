@@ -34,7 +34,7 @@
       margin-top: -6rem; // weird backwards math
       opacity: 1;
       @media (min-width: map-get($breakpoints, medium)) {
-        margin-top: -8rem; // guess and check but from where?
+        margin-top: -10rem; // guess and check but from where?
       }
     }
   
@@ -43,13 +43,16 @@
       opacity: 1;
 
       @media (min-width: map-get($breakpoints, medium)) {
-        margin-top: -4rem; // 1rem from padding-top 3rem from camera
+        margin-top: -5.5rem; // 1rem from padding-top 3rem from camera
       }
     }
   
     li:nth-child(3):hover ~ hr {
       margin-top: 0;
       opacity: 1;
+      @media (min-width: map-get($breakpoints, medium)) {
+        margin-top: -1rem; // guess and check but from where?
+      }
     }
 
     // math

@@ -704,11 +704,11 @@ button:hover,
 	font-size: 1.5rem; // type scale?
 	font-weight: bold;
 	// margin-top: $global-margin;
-	padding-top: $global-padding; // this has to be a padding otherwise you loose the hr on scroll between
+	// padding-top: $global-padding; // this has to be a padding otherwise you loose the hr on scroll between
 	margin-bottom: 0;
 	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 2.25rem; // type scale?
-		line-height: 3rem;
+		line-height: 4.5rem;
 	}
 }
 

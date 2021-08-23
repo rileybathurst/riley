@@ -1988,7 +1988,7 @@ reducing some parts to get back to a style guide before building up again
   .home #top-menu li:first-child:hover ~ hr,
 .category #top-menu li:first-child:hover ~ hr,
 .page #top-menu li:first-child:hover ~ hr {
-    margin-top: -8rem;
+    margin-top: -10rem;
   }
 }
 .home #top-menu li:nth-child(2):hover ~ hr,
@@ -2001,7 +2001,7 @@ reducing some parts to get back to a style guide before building up again
   .home #top-menu li:nth-child(2):hover ~ hr,
 .category #top-menu li:nth-child(2):hover ~ hr,
 .page #top-menu li:nth-child(2):hover ~ hr {
-    margin-top: -4rem;
+    margin-top: -5.5rem;
   }
 }
 .home #top-menu li:nth-child(3):hover ~ hr,
@@ -2009,6 +2009,13 @@ reducing some parts to get back to a style guide before building up again
 .page #top-menu li:nth-child(3):hover ~ hr {
   margin-top: 0;
   opacity: 1;
+}
+@media (min-width: 640px) {
+  .home #top-menu li:nth-child(3):hover ~ hr,
+.category #top-menu li:nth-child(3):hover ~ hr,
+.page #top-menu li:nth-child(3):hover ~ hr {
+    margin-top: -1rem;
+  }
 }
 .home #top-menu hr,
 .category #top-menu hr,
@@ -2796,13 +2803,12 @@ button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
 .navigation-top ul li {
   font-size: 1.5rem;
   font-weight: bold;
-  padding-top: 1rem;
   margin-bottom: 0;
 }
 @media (min-width: 640px) {
   .navigation-top ul li {
     font-size: 2.25rem;
-    line-height: 3rem;
+    line-height: 4.5rem;
   }
 }
 
