@@ -1,14 +1,15 @@
 <?php 
 // I only reorder a couple of categories so only redo the loop if I have to so things dont get slower
+// only show 5 sticky posts in each category
+
+	$cat_title = single_cat_title('', false);
 
 	wp_reset_query();
 	// if posts dont have a order they should get a 6 or 11 or whatever number I then choose but I don't want to do an additional loop before starting
 	// It'd be nice if there was a version of not restarting the query but it's fine for now
 	$args = array(
-		'category_name'	=> $cat_title, 	// to be able to have these posts as the parent category it helps so I can show children category further on
-		// do I only display sticky posts?
-		'post__in' 			=> get_option('sticky_posts'), // this becomes problematic if it should be sticky in one of the three categories but not another or if we want a different number for each - ie website design in clicks but they are also in code
-		'meta_key'			=> 'myguten_order_block_field',
+		'category_name'		=> $cat_title, 	// to be able to have these posts as the parent category it helps so I can show children category further on
+		'post__in' 			=> get_option('sticky_posts'),
 		'orderby'			=> 'meta_value_num',
 		'order'				=> ASC,
 		'post_parent'		=> 0,
