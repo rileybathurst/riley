@@ -14,7 +14,7 @@ if ( ! function_exists( 'riley_setup' ) ) :
 		register_nav_menus( array(
 			'primary'		=> __( 'Primary Menu', 'text_domain' ),
 			'secondary'		=> __( 'Secondary Menu', 'text_domain' ),
-			'social'		=> __( 'Social Links Menu', 'text_domain' ),
+			// 'social'		=> __( 'Social Links Menu', 'text_domain' ),
 		) );
 		
 		add_theme_support( 'html5', array(
@@ -62,8 +62,9 @@ require get_parent_theme_file_path( '/inc/captcha-checkbox.php' ); // working fi
 require get_parent_theme_file_path( '/inc/backend-options.php' );
 require get_parent_theme_file_path( '/inc/breadcrumbs.php' );
 require get_parent_theme_file_path( '/inc/featured-video.php' );
+require get_parent_theme_file_path( '/inc/category-order.php' );
 require get_parent_theme_file_path( '/inc/cats-one-deep.php' );
-require get_parent_theme_file_path( '/inc/post-order.php' ); // this might get way too complicated with projects across categories
+require get_parent_theme_file_path( '/inc/admin-order.php' ); // this might get way too complicated with projects across categories
 require get_parent_theme_file_path( '/inc/logo.php' ); // this might get way too complicated with projects across categories
 
 // Change the email that root level mail is sent from
@@ -105,11 +106,11 @@ function order_column( $column, $post_id ) {
 }
 
 // try and add some additional functionality thats outside the regular supports
-function portfolio_category() {
+/* function portfolio_category() {
 	// add_post_type_support ('riley_portfolio', 'title'); // this works if its removed from above so I presume I can make up new ones
 	add_post_type_support ('riley_portfolio', 'category', 'something' ); // might need to figure out the args with this?
 }
-add_action('init', 'portfolio_category');
+add_action('init', 'portfolio_category'); */
 
 // REMOVE WP EMOJI
 // https://www.denisbouquet.com/remove-wordpress-emoji-code/
@@ -118,15 +119,3 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
-
-// for some reason this breaks adding new columns
-/* function my_add_new_columns($columns) {
-    $post_type = get_post_type();
-    if ( $post_type == 'post' ) {
-        $new_columns = array(
-            'order' => esc_html__( 'Order', 'text_domain' ),
-        );
-        return array_merge($columns, $new_columns);
-    }
-}
-add_filter( 'manage_posts_columns',  'my_add_new_columns' ); */
