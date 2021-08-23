@@ -41,7 +41,6 @@ $ordered_cats = [
 $cat_title = single_cat_title('', false);
 if (in_array($cat_title, $ordered_cats)) {
 	get_template_part( 'template-parts/category/ordered-cats' );
-	echo ('after');
 
 } else { // the else is just do the regular
 	if (have_posts()) {
