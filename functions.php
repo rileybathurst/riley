@@ -78,5 +78,3 @@ add_filter( 'wp_mail_from_name', function( $name ) {
 	return 'Riley Bathurst'; // these should be variables - site name
 	// bloginfo( 'name' ); need to do some checks with this first
 });
-
-

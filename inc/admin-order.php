@@ -1,6 +1,5 @@
-<!-- Show an order in the admin menu so I can arrange the sticky posts which I need -->
-
 <?php
+// Show an order in the admin menu so I can arrange the sticky posts which I need
 add_filter('manage_posts_columns', 'my_columns');
 function my_columns($columns) {
 	$columns['order'] = 'Order';
@@ -18,3 +17,4 @@ function my_show_columns($order) {
 		break;
 	}
 }
+?>

@@ -2,6 +2,19 @@
 <!-- this breaks on default permalink settings I have no idea why and I dont need to fix it now -->
 <?php get_header(); ?>
 
+<!-- testing
+php
+if ( have_posts() ) {
+	while ( have_posts() ) {
+		the_post(); 
+		//
+			the_title();
+		//
+	} // end while
+} // end if
+-->
+
+
 <div class="background-dirty">
 	<div class="site-main" role="main">
 		<div class="category-header">
@@ -19,10 +32,10 @@
 	<div class="category-sub">
 		<ul>
 			<?php $args = array(
-				'child_of'				=> $cat, // defined in inc/cats-one-deep.php
-				'title_li'				=> __( '' ),
-				'show_option_none'		=> '',
-				'depth'					=> '1',
+				'child_of'					=> $cat, // defined in inc/cats-one-deep.php
+				'title_li'					=> __( '' ),
+				'show_option_none'	=> '',
+				'depth'							=> '1',
 			);
 			wp_list_categories( $args ); ?>
 		</ul>
