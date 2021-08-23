@@ -64,8 +64,9 @@ require get_parent_theme_file_path( '/inc/breadcrumbs.php' );
 require get_parent_theme_file_path( '/inc/featured-video.php' );
 require get_parent_theme_file_path( '/inc/category-order.php' );
 require get_parent_theme_file_path( '/inc/cats-one-deep.php' );
-require get_parent_theme_file_path( '/inc/admin-order.php' ); // this might get way too complicated with projects across categories
-require get_parent_theme_file_path( '/inc/logo.php' ); // this might get way too complicated with projects across categories
+require get_parent_theme_file_path( '/inc/admin-order.php' );
+require get_parent_theme_file_path( '/inc/logo.php' );
+require get_parent_theme_file_path( '/inc/remove-emoji.php' );
 
 // Change the email that root level mail is sent from
 add_filter( 'wp_mail_from', function( $email ) {
@@ -78,44 +79,4 @@ add_filter( 'wp_mail_from_name', function( $name ) {
 	// bloginfo( 'name' ); need to do some checks with this first
 });
 
-function myguten_enqueue() {
-    wp_enqueue_script(
-        'myguten-script',
-        get_template_directory_uri() . '/myguten.js',
-        array( 'wp-blocks', 'wp-element', 'wp-components' )
-    );
-}
-add_action( 'enqueue_block_editor_assets', 'myguten_enqueue' );
 
-// put this meta content to use
-function myguten_content_filter( $content ) {
-    $value = get_post_meta( get_the_ID(), 'myguten_meta_block_field', true );
-    if ( $value ) {
-        return sprintf( "%s <h4> %s </h4>", $content, esc_html( $value ) );
-    } else {
-        return $content;
-    }
-}
-add_filter( 'the_content', 'myguten_content_filter' );
-
-add_action( 'manage_posts_custom_column', 'order_column', 10, 2); // Not a filter
-function order_column( $column, $post_id ) {
-  if ( 'order' === $column ) {
-    echo get_post_meta(  $post_id, 'myguten_meta_block_field', true ); // this is made in a block and should be all together
-  }
-}
-
-// try and add some additional functionality thats outside the regular supports
-/* function portfolio_category() {
-	// add_post_type_support ('riley_portfolio', 'title'); // this works if its removed from above so I presume I can make up new ones
-	add_post_type_support ('riley_portfolio', 'category', 'something' ); // might need to figure out the args with this?
-}
-add_action('init', 'portfolio_category'); */
-
-// REMOVE WP EMOJI
-// https://www.denisbouquet.com/remove-wordpress-emoji-code/
-remove_action('wp_head', 'print_emoji_detection_script', 7);
-remove_action('wp_print_styles', 'print_emoji_styles');
-
-remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-remove_action( 'admin_print_styles', 'print_emoji_styles' );

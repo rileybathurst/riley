@@ -88,7 +88,7 @@ if (menu != null) {
 
     let clicksStyle = window.getComputedStyle(clicks);
     let clicksRem = clicksStyle.getPropertyValue('font-size');
-    // console.log('clicksRem = ' + clicksRem); // this includes px
+    console.log('clicksRem = ' + clicksRem); // this includes px
 
     let ClicksPx = clicksRem.replace('px', '');
     let clicksNum = parseInt(ClicksPx, 10); // The second argument is called the radix. This is the base number used in mathematical systems. For our use, it should always be 10.
@@ -104,7 +104,7 @@ if (menu != null) {
     clicks.addEventListener("mouseenter", function( event ) {
       hr.style.width = clicks.offsetWidth + 'px';
       let ClicksPush = clicksNum/4 + 'px'; // Guess and Check
-      // console.log('clicksPush ' + ClicksPush);
+      console.log('clicksPush ' + ClicksPush);
 
       hr.style.marginLeft = ClicksPush;
     }, false);
@@ -341,7 +341,7 @@ if (document.getElementsByClassName('ghostly')) {
 // Keep this here so I know were making the file
 console.log('end of file');
 
-
+// what is this?
 DataTransferItemList
 
 /*------------------------------------*\

@@ -213,7 +213,8 @@ cite {
 	// text-align: center;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		font-size: 3em;
+		font-size: 3rem;
+		line-height: 4rem;
 	}
 }
 
@@ -700,13 +701,14 @@ button:hover,
 }
 
 .navigation-top ul li {
-	font-size: 1.5em; // type scale?
+	font-size: 1.5rem; // type scale?
 	font-weight: bold;
 	// margin-top: $global-margin;
 	padding-top: $global-padding; // this has to be a padding otherwise you loose the hr on scroll between
 	margin-bottom: 0;
 	@media (min-width: map-get($breakpoints, medium)) {
-		font-size: 2.25em; // type scale?
+		font-size: 2.25rem; // type scale?
+		line-height: 3rem;
 	}
 }
 

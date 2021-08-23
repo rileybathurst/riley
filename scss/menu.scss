@@ -34,7 +34,7 @@
       margin-top: -6rem; // weird backwards math
       opacity: 1;
       @media (min-width: map-get($breakpoints, medium)) {
-        margin-top: -8rem;
+        margin-top: -8rem; // guess and check but from where?
       }
     }
   
@@ -43,7 +43,7 @@
       opacity: 1;
 
       @media (min-width: map-get($breakpoints, medium)) {
-        margin-top: -4rem;
+        margin-top: -4rem; // 1rem from padding-top 3rem from camera
       }
     }
   
@@ -51,16 +51,17 @@
       margin-top: 0;
       opacity: 1;
     }
+
+    // math
+    // medium up
+    // each of the lower 2 has a 1rem padding-top
   
     hr {
-    //   position: absolute; // without this it does a freakout dance on hover
       position: sticky; // lets me remove width and defaults to 100% which absolute does not
-    //   width: 89%; // guess and check
       background: $secondary-color;
       border: none;
       transition: 0.3s ease-in-out;
       z-index: -1; // slide behind and dont get in the way of the hover
-      // margin-top: 2rem; // start at the bottom
       margin-top: -9rem; // start at the top makes more sense as thats where people come from // this also causes the shape of the resting ul to be tiny
       opacity: 0;
       height: 0.5rem;
