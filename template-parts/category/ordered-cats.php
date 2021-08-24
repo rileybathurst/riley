@@ -11,7 +11,8 @@
 		'category_name'		=> $cat_title, 	// to be able to have these posts as the parent category it helps so I can show children category further on
 		'post__in' 			=> get_option('sticky_posts'),
 		'orderby'			=> 'meta_value_num',
-		'order'				=> ASC,
+		'meta_key'			=> 'category_order',
+		'order'				=> 'ASC',
 		'post_parent'		=> 0,
 		'posts_per_page'	=> 5,
 	);

@@ -32,8 +32,8 @@ function category_order_meta_box( $post ) { ?>
 	<?php wp_nonce_field( basename( __FILE__ ), 'category_order_nonce' ); ?>
 
 	<p>
-		<label for="category-order"><?php _e( "Order as you wish", 'example' ); ?></label>
-		<br />
+<!-- 		<label for="category-order"><?php _e( "Order as you wish", 'example' ); ?></label>
+		<br /> -->
 		<input class="widefat" type="text" name="category-order" id="category-order" value="<?php echo esc_attr( get_post_meta( $post->ID, 'category_order', true ) ); ?>" size="30" />
 	</p>
 <?php }

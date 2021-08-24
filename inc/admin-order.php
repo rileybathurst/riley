@@ -13,7 +13,6 @@ function my_show_columns($order) {
 	switch ($order) {
 		case 'order':
 			echo get_post_meta( $post->ID, 'category_order', true );
-			echo (' its after here ');
 		break;
 	}
 }
