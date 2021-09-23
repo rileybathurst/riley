@@ -26,28 +26,28 @@ if ( $the_query->have_posts() ) {
     <!-- wine enthusiast skinny logo is kinda terrible maybe I should skip it small -->
     <li class="show-for-large">
     <picture>
-    <img src="<?php echo content_url(); ?>/uploads/2021/08/wine-enthusiast-logo-1.png" alt="wine enthusiast" />
+    <img src="<?php echo content_url(); ?>/uploads/2021/08/wine-enthusiast-logo.png" alt="wine enthusiast" />
     </picture>
     </li>
 
     <li>
     <picture>
-        <source srcset="<?php echo content_url(); ?>/uploads/2021/08/Monster_Energy_logo-1.png" media="(min-width: 64rem)" />
-        <img src="<?php echo content_url(); ?>/uploads/2021/09/Monster_Energy_logo-square.png" alt="" />    
+        <source srcset="<?php echo content_url(); ?>/uploads/2021/08/Monster_Energy_logo.png" media="(min-width: 64rem)" />
+        <img src="<?php echo content_url(); ?>/uploads/2021/09/Monster_Energy_logo-square.png" alt="monster energy" />
     </picture>
     </li>
 
     <li>
         <picture>
-            <source srcset="<?php echo content_url(); ?>/uploads/2021/08/macpac-1.png" media="(min-width: 64rem)" />
-            <img src="<?php echo content_url(); ?>/uploads/2021/09/macpac-square.png" alt="" />
+            <source srcset="<?php echo content_url(); ?>/uploads/2021/08/macpac.png" media="(min-width: 64rem)" />
+            <img src="<?php echo content_url(); ?>/uploads/2021/09/macpac-square.png" alt="macpac" />
         </picture>
     </li>
 
     <li>
         <picture>
-            <source srcset="<?php echo content_url(); ?>/uploads/2021/08/msp_logo-1.png" media="(min-width: 64rem)" />
-            <img src="<?php echo content_url(); ?>/uploads/2021/09/msp_logo-square.png" alt="" />    
+            <source srcset="<?php echo content_url(); ?>/uploads/2021/08/msp_logo.png" media="(min-width: 64rem)" />
+            <img src="<?php echo content_url(); ?>/uploads/2021/09/msp_logo-square.png" alt="matchstick productions" />
         </picture>
     </li>
 
@@ -55,7 +55,7 @@ if ( $the_query->have_posts() ) {
         <picture>
             <source srcset="<?php echo content_url(); ?>/uploads/2021/09/Eagle.png"
                 media="(min-width: 64rem)">
-            <img src="<?php echo content_url(); ?>/uploads/2021/09/Eagle-squre.png" alt="" />
+            <img src="<?php echo content_url(); ?>/uploads/2021/09/Eagle-squre.png" alt="palisades tahoe" />
     </picture>
     </li>
 
