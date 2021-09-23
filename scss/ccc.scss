@@ -4,7 +4,7 @@
 		display: inline;
 		grid-column: 1;
 		grid-row: 1/4;
-	// 	margin-bottom: $global-margin;
+	// 	margin-block-end: var(--global-margin);
 	}
 }
 
@@ -16,7 +16,7 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; // this is a repeat
 
 	grid-gap: 0.5em;
-	// margin-bottom: $global-margin;
+	// margin-block-end: var(--global-margin);
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		grid-gap: 1em;
@@ -29,12 +29,12 @@
 		display: initial;
 		grid-column: 3;
 		grid-row: 1/4;
-	// 	margin-bottom: $global-margin;
+	// 	margin-block-end: var(--global-margin);
 	}
 }
 
 .background-primary__social-icons {
-	margin-top: $global-margin;
+	margin-block-start: var(--global-margin);
 }
 
 .social-icons {
@@ -51,13 +51,13 @@
 }
 
 .social-icons > .fp-box > a:hover {
-	background: $secondary-color;
+	background: var(--cardinal);
 }
 
 .social-icons svg {
 	width: 2em;
-	padding-top: $global-padding;
-	padding-bottom: $global-padding;
+	padding-block-start: var(--global-padding);
+	padding-block-end: var(--global-padding);
 
 	@media (min-width: map-get($breakpoints, medium)) { // red text on brackets isnt a good sign does it need a prefix
 		width: 3em;
@@ -65,9 +65,9 @@
 }
 
 .social-icons svg {
-	fill: $white;
+	fill: var(--white);
 }
 
 .social-icons svg:hover {
-	fill: $light-gray;
+	fill: var(--mercury);
 }

@@ -1,0 +1,75 @@
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+// $print-breakpoint: large;
+// $breakpoint-classes: (small medium large); // should this not include all the way to xx if I have it above?
+
+// $primary-color: #c22127;
+// $secondary-color: #8a0000;
+
+// $black: #0a0a0a; // 4%
+// $white: #fefefe; // 100%
+// $light-gray: #e6e6e6; // 90%
+// $medium-gray: #cacaca; // 79%
+// $dark-gray: #8a8a8a; // 54%
+
+// $global-margin: 1rem;
+// $global-padding: 1rem;
+// $global-grid-gap: var(--global-margin);
+
+// $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+// $header-font-family: var(--body-font-family);
+
+// $page-width: 77rem;
+
+// $global-transition: 0.5s ease;
+
+:root {
+  --cinnabar: hsl(1, 70%, 45%);
+  --cardinal: hsl(1, 100%, 27%); // this doesnt have enough contrast with cinnabar
+  // --caramel: hsl(24, 100%, 72%); // havent used this yet but it's interesting
+
+  // Check how I actually like these color edits
+  --cinnabar__base: 1, 70%;
+  --cinnabar__lightness: 45%;
+
+  --black: hsl(0, 0%, 2.5%);
+  --white: hsl(0, 0%, 97.5%);
+
+  // 📣 check which I am actually using
+  --lead: hsl(0, 0%, 10%);
+  --tungsten: hsl(0, 0%, 20%);
+  --iron: hsl(0, 0%, 30%);
+  --steel: hsl(0, 0%, 40%);
+  --nickel: hsl(0, 0%, 50%);
+  --aluminium: hsl(0, 0%, 60%);
+  --magnesium: hsl(0, 0%, 70%);
+  --silver: hsl(0, 0%, 80%);
+  --mercury: hsl(0, 0%, 90%);
+
+  --small: 0;
+  --medium: 40rem;
+  --large: 64rem;
+  --xlarge: 75rem;
+  --xxlarge: 90rem;
+
+  --page-width: 77rem;
+  // --print-breakpoint: var(--large);
+
+  // these need love
+  --global-margin: 1rem;
+  --global-padding: 1rem;
+  --global-grid-gap: var(--global-margin);
+
+  --baseline: 1.25rem; // 20px
+
+  --body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  --header-font-family: var(--body-font-family);
+
+  --global-transition: 0.5s ease;
+}
+

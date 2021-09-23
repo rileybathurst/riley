@@ -29,7 +29,7 @@ function prefix_admin_contact() {
 
 							<tr>
 								<td width="596" align="center" style="background-color: #ffffff; border-top: 0px solid #000000; text-align: left; height: 50px;">
-									<p style="margin-bottom: 10px; font-size: 22px; font-weight: bold; color: #494a48; font-family: arial; line-height: 110%; text-align: center;">Riley Bathurst Enquiry</p>
+									<p style="margin-block-end: 10px; font-size: 22px; font-weight: bold; color: #494a48; font-family: arial; line-height: 110%; text-align: center;">Riley Bathurst Enquiry</p>
 								</td>
 							</tr>
 

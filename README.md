@@ -1,12 +1,9 @@
 # Riley Bathurst Wordpress Site
 
-This is a messy project as I continue to build it out but it started as a Wordpress project built with [foundation](https://github.com/zurb/foundation-sites)
-
-Except I then pulled that out, which is still a little messy so getting everything in place for those being pulled out
-
 Except now some of the project is being build with webpack so that is held over at [riley-webpack](https://github.com/rileybathurst/riley-webpack) which is currently needing some love and I want to change a bunch of that
 
 ## Run the Sass
+
 ```% sass scss/app.scss css/app.css --watch ```
 
 ```% sass --style=compressed scss/app.scss css/app.css ```
@@ -18,8 +15,6 @@ This needs a sub grid which is annoying but maybe an interesting piece to work o
 I'll try it out quick on firefox.
 
 ### Fixes needed
-- webpack build is all over the show and I think quite a lot can be remove
-- lozad is loading from a cdn
 - HTML formatting to make sure the H tag is the first one
 - sort out the code block max-width
 - comments page

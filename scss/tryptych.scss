@@ -24,7 +24,7 @@
     .child {
         width: 92%; // guess and check // I think this only works right at largest size
         // margin: 0 auto;
-        margin: $global-margin; // both sides comes to the same as a grid gap
+        margin: var(--global-margin); // both sides comes to the same as a grid gap
         position: relative;
         background-color: #F0F0F0;
         display: inline-block;
@@ -96,7 +96,7 @@
     #left a,
     #right a {
         text-decoration: none;
-        color: $primary-color;
+        color: var(--cinnabar);
         opacity: 0.8;
         mix-blend-mode: multiply;
     }
@@ -115,12 +115,12 @@
         // a lot of resets from what I have done
         padding: 0;
         background: none;
-        color: $primary-color;
+        color: var(--cinnabar);
         opacity: 0.8;
     }
 
     tryptych-button:hover {
         background: none;
-        color: $secondary-color;
+        color: var(--cardinal);
     }
 } // medium up only // everything should be inside this

@@ -15,6 +15,17 @@ if (have_posts()) {
 
 		<section class="continental ">
 			<a href="https://rileybathurst.com/jess_josho_wedding_2/">
+				<img src="<?php echo content_url(); ?>/uploads/2021/09/DSC0142-3840-scaled.jpg" alt="flower girl wedding photo">
+			</a>
+			<h4><a href="https://rileybathurst.com/jess_josho_wedding_2/">Flower Girl</a></h4>
+			<a href="https://rileybathurst.com/jess_josho_wedding_2/">
+				<img src="<?php echo content_url(); ?>/uploads/2021/09/DSC0209-3840-scaled.jpg" alt="flower girl wedding photo">
+			</a>
+			<h4><a href="https://rileybathurst.com/jess_josho_wedding_2/">Flower Girl</a></h4>
+		</section>
+
+		<section class="continental ">
+			<a href="https://rileybathurst.com/jess_josho_wedding_2/">
 				<img src="<?php echo content_url(); ?>/uploads/2019/06/jess_josho_wedding_2.jpg" alt="flower girl wedding photo">
 			</a>
 			<h4><a href="https://rileybathurst.com/jess_josho_wedding_2/">Flower Girl</a></h4>

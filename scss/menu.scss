@@ -31,27 +31,27 @@
     }
   
     li:first-child:hover ~ hr {
-      margin-top: -6rem; // weird backwards math
+      margin-block-start: -6rem; // weird backwards math
       opacity: 1;
       @media (min-width: map-get($breakpoints, medium)) {
-        margin-top: -10rem; // guess and check but from where?
+        margin-block-start: -10rem; // guess and check but from where?
       }
     }
   
     li:nth-child(2):hover ~ hr {
-      margin-top: -3rem;
+      margin-block-start: -3rem;
       opacity: 1;
 
       @media (min-width: map-get($breakpoints, medium)) {
-        margin-top: -5.5rem; // 1rem from padding-top 3rem from camera
+        margin-block-start: -5.5rem; // 1rem from padding-top 3rem from camera
       }
     }
   
     li:nth-child(3):hover ~ hr {
-      margin-top: 0;
+      margin-block-start: 0;
       opacity: 1;
       @media (min-width: map-get($breakpoints, medium)) {
-        margin-top: -1rem; // guess and check but from where?
+        margin-block-start: -1rem; // guess and check but from where?
       }
     }
 
@@ -61,11 +61,11 @@
   
     hr {
       position: sticky; // lets me remove width and defaults to 100% which absolute does not
-      background: $secondary-color;
+      background: var(--cardinal);
       border: none;
       transition: 0.3s ease-in-out;
       z-index: -1; // slide behind and dont get in the way of the hover
-      margin-top: -9rem; // start at the top makes more sense as thats where people come from // this also causes the shape of the resting ul to be tiny
+      margin-block-start: -9rem; // start at the top makes more sense as thats where people come from // this also causes the shape of the resting ul to be tiny
       opacity: 0;
       height: 0.5rem;
 
@@ -73,7 +73,7 @@
         // width: 22%; // guess and check
         // max-width: 22rem; // guess and check
         height: 1rem;
-        margin-top: -10rem; // start at the top makes more sense as thats where people come from
+        margin-block-start: -10rem; // start at the top makes more sense as thats where people come from
       } // medium
     } // hr
 } // #top-menu
@@ -120,10 +120,10 @@
       height: 1rem;
       // width: 33%;
       margin: 0;
-      margin-bottom: -1rem; // sit in the grid gap
+      margin-block-end: -1rem; // sit in the grid gap
       // margin-left: -33%; // hide when its not in use
       opacity: 0;
-      background: $secondary-color;
+      background: var(--cardinal);
       border: none;
       transition: .3s ease-in-out;
     }

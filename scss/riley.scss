@@ -57,12 +57,12 @@ svg:not(:root) { // thats a pretty strange selector is it right?
 
 .alignleft {
 	text-align: left;
-	margin-right: $global-margin;
+	margin-right: var(--global-margin);
 }
 
 .alignright {
 	text-align: right;
-	margin-left: $global-margin;
+	margin-left: var(--global-margin);
 }
 
 .aligncenter {
@@ -74,7 +74,7 @@ svg:not(:root) { // thats a pretty strange selector is it right?
 }
 
 img.alignleft, .alignleft img {
-	margin-right: $global-margin !important; // what is the !important over writting?
+	margin-right: var(--global-margin) !important; // what is the !important over writting?
 	margin-left: 0 !important; // what is the !important over writting?
 }
 
@@ -83,7 +83,7 @@ img.alignleft, .alignleft img {
 }
 
 img.alignright, .alignright img {
-	margin-left: $global-margin;
+	margin-left: var(--global-margin);
 	margin-right: 0 !important; // what is the !important over writting?
 }
 
@@ -109,18 +109,18 @@ p {
 */
 
 ::selection {
-  background: $primary-color; /* WebKit/Blink Browsers */
+  background: var(--cinnabar); /* WebKit/Blink Browsers */
 }
 
 a::selection {
-	color: $white;
+	color: var(--white);
 }
 
 blockquote {
 	margin: 0;
-	color: $black;
+	color: var(--black);
 	@media (prefers-color-scheme: dark) {
-		color: $white;
+		color: var(--white);
 	}
 
 	font-size: 1em;
@@ -133,10 +133,10 @@ blockquote {
 
 blockquote:before {
 	content: "\201C "; // quotation mark?
-	font-family: $header-font-family;
+	font-family: var(--header-font-family);
 	font-weight: bold;
 	font-size: 32px; // hack this should be an em on the type scale
-	margin-right: $global-margin*0.5; // why so small?
+	margin-right: calc(var(--global-margin) * 0.5); // why so small?
 }
 
 blockquote p {
@@ -145,9 +145,9 @@ blockquote p {
 }
 
 cite {
-	color: $dark-gray;
-	margin-left: $global-margin;
-	margin-bottom: $global-margin*1.5;
+	color: var(--nickel);
+	margin-left: var(--global-margin);
+	margin-block-end: calc(var(--global-margin) * 1.5); // 📣
 	word-break: break-all; // I was having problems on small screens citing urls
 
 	@media (min-width: map-get($breakpoints, medium)) {
@@ -165,8 +165,8 @@ cite {
 
 .is-style-box-title,
 .box-title, .box-title a {
-	border: .25em solid $black;
-	padding: $global-padding;
+	border: .25em solid var(--black);
+	padding: var(--global-padding);
 }
 
 .box-title a:hover {
@@ -187,28 +187,28 @@ cite {
 
  .speechbubble {
 	/* display: block; // needed for the padding to be effective on a grid
-	color: $primary-color;
-	padding: $global-padding;
-	margin-top: -$global-grid-gap;
-	border-bottom: 2px solid $primary-color; // why not an em like other places? quite probably use a $global-border-weight
-	border-right: 2px solid $primary-color;
+	color: var(--cinnabar);
+	padding: var(--global-padding);
+	margin-block-start: -var(--global-margin);
+	border-bottom: 2px solid var(--cinnabar); // why not an em like other places? quite probably use a $global-border-weight
+	border-right: 2px solid var(--cinnabar);
 	border-bottom-right-radius: 3px; */
 
 
 	font-weight: bold;
 	@media (min-width: map-get($breakpoints, medium)) {
 		writing-mode: vertical-rl;
-		margin-top: $global-margin;
+		margin-block-start: var(--global-margin);
 	}
 } 
 
 .page-title {
 	// margin: 0;
 	font-size: 2em; // type scale?
-	// border: .2em solid $primary-color;
+	// border: .2em solid var(--cinnabar);
 	justify-self: start;
 	// padding: 0.5em; // why half size?
-	// color: $primary-color;
+	// color: var(--cinnabar);
 	word-wrap: break-word;
 	// text-align: center;
 
@@ -235,7 +235,7 @@ cite {
 
 .article-form input, .article-form textarea {
 	width: 100%;
-	padding: $global-padding;
+	padding: var(--global-padding);
 }
 
 /* removed with material
@@ -248,16 +248,16 @@ cite {
 }
 
 .article-form button {
-	padding: $global-padding;
-	margin: $global-margin 0;
+	padding: var(--global-padding);
+	margin: var(--global-margin) 0;
 }
 
 .article-form textarea {
-	border-color: $medium-gray;
+	border-color: var(--nickel);
 }
 
 .g-recaptcha {
-	margin-bottom: $global-margin;
+	margin-block-end: var(--global-margin);
 }
 
 .post-password-form label {
@@ -276,7 +276,7 @@ cite {
 }
 
 .searchform [type="text"], .post-password-form [type="password"] {
-	border: 1px solid $medium-gray;
+	border: 1px solid var(--nickel);
 	line-height: 1.15;
 	padding: 1em;
 	border-top-left-radius: 2px;
@@ -290,13 +290,13 @@ cite {
 }
 
 .searchform [type="text"]:active, .post-password-form [type="password"]:active {
-	border-color: $primary-color;
-	outline-color: $primary-color;
+	border-color: var(--cinnabar);
+	outline-color: var(--cinnabar);
 }
 
 [type="submit"] {
-	background: $medium-gray;
-	border: .1em solid $medium-gray;
+	background: var(--nickel);
+	border: .1em solid var(--nickel);
 	margin-left: -.25em; /* hack to sit the search beside the field
 	padding: 1em;
 	border-top-right-radius: 2px;
@@ -309,22 +309,22 @@ cite {
 }
 
 .searchform [type="submit"]:hover, .post-password-form [type="submit"]:hover {
-	background-color: $primary-color;
-	border-color: $primary-color;
-	color: $white;
+	background-color: var(--cinnabar);
+	border-color: var(--cinnabar);
+	color: var(--white);
 }
 
 .hollow:hover,  {
-	background: $primary-color !important;
-	border-color: $primary-color !important;
-	color: $primary-color !important;
+	background: var(--cinnabar) !important;
+	border-color: var(--cinnabar) !important;
+	color: var(--cinnabar) !important;
 }
 
 /* removed with material
 [type='submit']:hover {
-	background: $primary-color !important;
-	border-color: $primary-color !important;
-	color: $primary-color !important;
+	background: var(--cinnabar) !important;
+	border-color: var(--cinnabar) !important;
+	color: var(--cinnabar) !important;
 } */
 
 /*--------------------------------------------------------------
@@ -332,37 +332,37 @@ cite {
 --------------------------------------------------------------*/
 
 body { // I think I can do this better just having everything sit inside a little
-	border: 0.25em solid $white;
+	border: 0.25em solid var(--white);
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		border: 0.5em solid $white;
+		border: 0.5em solid var(--white);
 	}
 
 	@media (min-width: map-get($breakpoints, large)) {
-		border: 1em solid $white;
+		border: 1em solid var(--white);
 	}
 
 	@media (prefers-color-scheme: dark) {
-		background: $black;
-		color: $white;
-		border-color: $black;
+		background: var(--black);
+		color: var(--white);
+		border-color: var(--black);
 		margin: 0;
 	}
 }
 
 .background-clean {
-	background: $white;
+	background: var(--white);
 	@media (prefers-color-scheme: dark) {
-		background: $black;
+		background: var(--black);
 	}
 }
 
 .background-primary {
-	background: $primary-color;
+	background: var(--cinnabar);
 }
 
 .background-dirty {
-	background: $light-gray;
+	background: var(--mercury);
 
 	@media (prefers-color-scheme: dark) {
 		background: #2C2C2C;
@@ -371,17 +371,17 @@ body { // I think I can do this better just having everything sit inside a littl
 
 .background-double--dark {
 	background: #4A4A4A;
-	border-bottom: 2px solid $black;
-	color: $white;
+	border-bottom: 2px solid var(--black);
+	color: var(--white);
 }
 
 .single-code {
 	@extend .background-double--dark;
-	padding: $global-padding;
+	padding: var(--global-padding);
 }
 
 /* .site, .site-footer {
-	// background: $light-gray; // why not variables?
+	// background: var(--mercury); // why not variables?
 	// color: black; // why not variables?
 } */
 
@@ -390,7 +390,7 @@ table { // do I have any tables?
 }
 
 .overlay { // hack where is this?
-	background: $primary-color;
+	background: var(--cinnabar);
 	z-index: 1;
 	grid-column: 11 / span 3; // this could be better
 	grid-row: 1 / span 4;
@@ -406,7 +406,7 @@ table { // do I have any tables?
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		display: block;
-		color: $white;
+		color: var(--white);
 		writing-mode: vertical-rl;
 		grid-column: 11 / span 2;
 		grid-row: 1 / span 4;
@@ -419,7 +419,7 @@ table { // do I have any tables?
 --------------------------------------------------------------*/
 
 .menu li {
-	margin-right: $global-margin;
+	margin-right: var(--global-margin);
 }
 
 .menu li:last-child {
@@ -435,15 +435,16 @@ table { // do I have any tables?
 --------------------------------------------------------------*/
 
 a {
-	color: $primary-color;
+	color: var(--cinnabar);
 }
 
 a:hover {
 	text-decoration: line-through;
-	color: $secondary-color;
+	color: var(--cardinal);
 
 	@media (prefers-color-scheme: dark) {
-		color: lighten($primary-color, 10%);
+		// color: lighten (var(--cinnabar), 10%);
+		color: hsl(var(--cinnabar__base), calc(var(--cinnibar) + 10%));
 	}
 }
 
@@ -454,23 +455,23 @@ a:hover {
 button,
 .button { // [type="submit"] removed for material
 	// margin: 0; /* bring the element back inline */
-	margin-bottom: $global-margin;
+	margin-block-end: var(--global-margin);
 	// background: none !important; // why important?
-	background: $primary-color;
+	background: var(--cinnabar);
 /* 	border-top: none !important;
 	border-left: none !important; */
 	border: none;
-	// color: $primary-color;
-	color: $white;
-	// border-color: $primary-color !important;
+	// color: var(--cinnabar);
+	color: var(--white);
+	// border-color: var(--cinnabar) !important;
 	font-weight: bold;
 	font-size: 1.5em; // type scale?
-	/* padding-right: $global-padding; this was causing issues with hover looking strange but maybe I had done it or a reason?
-	padding-bottom: $global-padding;
+	/* padding-right: var(--global-padding); this was causing issues with hover looking strange but maybe I had done it or a reason?
+	padding-block-end: var(--global-padding);
 	*/ 
-	transition: $global-transition;
-	// padding: $global-padding/2; // front page on 0 doesnt work
-	padding: $global-padding/2 $global-padding; // front page on 0 doesnt work
+	transition: var(--global-transition);
+	// padding: var(--global-padding)/2; // front page on 0 doesnt work
+	padding: var(--global-padding)/2 var(--global-padding); // front page on 0 doesnt work
 
 	display: inline-block;
 
@@ -487,50 +488,43 @@ a.button { // I dont love links as button they should be seperate things but for
 
 button:hover,
 .button:hover { // [type="submit"] removed for material
-	// background: $primary-color !important; // why important?
-	background: $secondary-color;
-	color: $white !important; // why important?
+	// background: var(--cinnabar) !important; // why important?
+	background: var(--cardinal);
+	color: var(--white) !important; // why important?
 	@media (prefers-color-scheme: dark) {
-		background: lighten($primary-color, 10%);
+		background: hsl(var(--cinnabar__base), calc(var(--cinnibar) + 10%));
 	}
 
-	// padding: $global-padding; // this is on a transition so its interesting when just on the hover
+	// padding: var(--global-padding); // this is on a transition so its interesting when just on the hover
 }
 
 .wp-block-button__link {
 	border-radius: 0; // overwrite wp default
 }
 
-/*
-.navigation-top a {
-	// color: $black;
-	// text-decoration: underline;
-}
-*/
-
 .navigation-top a:hover {
 	text-decoration: line-through;
 }
 
 .site-title {
-	color: $white;
+	color: var(--white);
 }
 
 .page-title a {
-	// color: $primary-color;
-	color: $white;
+	// color: var(--cinnabar);
+	color: var(--white);
 }
 
 .sticky .page-title a {
 	text-decoration: none; // why removing the indication and then replacing it with a border-bottom
-	border-bottom: 3px solid $primary-color; // global
-	box-shadow: inset 0 -4px 0 $primary-color;
+	border-bottom: 3px solid var(--cinnabar); // global
+	box-shadow: inset 0 -4px 0 var(--cinnabar);
 }
 
 .sticky .page-title a:hover {
 	border-bottom: none;
 	box-shadow: none;
-	background-color: rgba($secondary-color, 0.3); // why am I using a warning color here?
+	background-color: rgba(var(--cardinal), 0.3); // why am I using a warning color here?
 }
 
 // this must be able to be done better
@@ -547,14 +541,14 @@ button:hover,
 .quote-content h4 a,
 .quote-content h5 a,
 .quote-content h6 a {
-	color: $black; 
+	color: var(--black); 
 } */
 
 .article-footer a,
 .quote-content p a,
 .quote-footer a {
 	text-decoration: none; //why removing the indication of a link?
-	color: $primary-color;
+	color: var(--cinnabar);
 }
 
 .article-footer a:hover,
@@ -567,21 +561,21 @@ button:hover,
 .quote-content .button {
 	text-decoration: none;
 	box-shadow: none;
-	color: $primary-color;
-	background: $white;
-	border-right: 0.1em solid $primary-color; // global?
-	border-bottom: 0.1em solid $primary-color;
+	color: var(--cinnabar);
+	background: var(--white);
+	border-right: 0.1em solid var(--cinnabar); // global?
+	border-bottom: 0.1em solid var(--cinnabar);
 	border-radius: 3px;
-	padding: $global-padding;
+	padding: var(--global-padding);
 } */
 
 /* .article-content .button:hover,
 .quote-content .button:hover {
-	border-bottom: 0.1em solid $primary-color; // global?
+	border-bottom: 0.1em solid var(--cinnabar); // global?
 } */
 
 .breacdcrumbs {
-	color: $dark-gray;
+	color: var(--nickel);
 }
 
 .breadcrumbs a {
@@ -589,24 +583,24 @@ button:hover,
 	text-decoration: line-through;
 
 	@media (prefers-color-scheme: dark) {
-		color: $light-gray;
+		color: var(--mercury);
 	}
 }
 
 .breadcrumbs a:hover {
-	color: $primary-color;
+	color: var(--cinnabar);
 	text-decoration: underline;
 }
 
 .pagination a {
-	color: $primary-color;
+	color: var(--cinnabar);
 	text-decoration: underline;
 }
 
 .pagination a:hover,
 .pagination .current {
 	text-decoration: line-through;
-	color: $primary-color;
+	color: var(--cinnabar);
 	background: none;
 }
 
@@ -614,9 +608,9 @@ button:hover,
 .pagination .nav-links .prev {
 	border-bottom: none;
 	box-shadow: none; // would this have a box shadow?
-	color: $black;
+	color: var(--black);
 	@media (prefers-color-scheme: dark) {
-		color: $white;
+		color: var(--white);
 	}
 }
 
@@ -634,8 +628,8 @@ button:hover,
 .footer_nav a,
 .footer_contact a {
 	/* text-decoration: none;
-	color: $black;
-	box-shadow: inset 0 -4px 0 $primary-color; // this is alternative underline that rises up on hover
+	color: var(--black);
+	box-shadow: inset 0 -4px 0 var(--cinnabar); // this is alternative underline that rises up on hover
 	transition: 300ms; */
 	font-weight: bold;
 }
@@ -644,39 +638,39 @@ button:hover,
 .footer_nav a:hover,
 .footer_contact a:hover {
 	border-bottom: none;
-	box-shadow: inset 0 -8px 0 $primary-color;
+	box-shadow: inset 0 -8px 0 var(--cinnabar);
 } */
 
 /* .article-category a,
 .featured-category a{
-	color: $dark-gray;
+	color: var(--nickel);
 } */
 
 /* removing this to try and get everything back to a basic style guide
 .post-navigation a {
-	color: $black;
+	color: var(--black);
 }
 
 .article-tags a {
-	color: $dark-gray;
+	color: var(--nickel);
 }
 
 .single .article-comments a {
-	color: $black;
+	color: var(--black);
 	text-decoration: none; // can 2019 css do this better?
-	border-bottom: 3px solid $primary-color;
-	box-shadow: inset 0 -4px 0 $primary-color;
+	border-bottom: 3px solid var(--cinnabar);
+	box-shadow: inset 0 -4px 0 var(--cinnabar);
 }
 
 .single .article-comments a:hover { // this seems like it would be nicer with a transition time?
 	border-bottom: none;
 	box-shadow: none;
-	background-color: $primary-color;
+	background-color: var(--cinnabar);
 } */
 
 .article-tags a {
 	@extend button;
-	margin-bottom: 0;
+	margin-block-end: 0;
 
 	@media (min-width: map-get($breakpoints, medium)) {
 		text-align: right;
@@ -696,16 +690,16 @@ button:hover,
 	padding-left: 0;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		padding-left: $global-padding;
+		padding-left: var(--global-padding);
 	}
 }
 
 .navigation-top ul li {
 	font-size: 1.5rem; // type scale?
 	font-weight: bold;
-	// margin-top: $global-margin;
-	// padding-top: $global-padding; // this has to be a padding otherwise you loose the hr on scroll between
-	margin-bottom: 0;
+	// margin-block-start: var(--global-margin);
+	// padding-block-start: var(--global-padding); // this has to be a padding otherwise you loose the hr on scroll between
+	margin-block-end: 0;
 	@media (min-width: map-get($breakpoints, medium)) {
 		font-size: 2.25rem; // type scale?
 		line-height: 4.5rem;
@@ -722,19 +716,19 @@ button:hover,
 
 // .footer_menu li,
 .category-sub li {
-	// border: .25em solid $primary-color; // global?
+	// border: .25em solid var(--cinnabar); // global?
 	
 	a {
 		font-weight: bold;
-		background: $primary-color;
-		color: $white;
-		padding: $global-padding;
+		background: var(--cinnabar);
+		color: var(--white);
+		padding: var(--global-padding);
 		display: block;
 		text-decoration: none;
 	}
 
 	a:hover {
-		background: $secondary-color;
+		background: var(--cardinal);
 		text-decoration: line-through;
 	}
 }
@@ -742,20 +736,20 @@ button:hover,
 .footer_menu li {
 	
 	a {
-		background: $primary-color;
-		color: $white;
-		padding: $global-padding;
+		background: var(--cinnabar);
+		color: var(--white);
+		padding: var(--global-padding);
 		text-decoration: none;
 		display: block; // fill the box
-		transition: $global-transition;
+		transition: var(--global-transition);
 		font-weight: bold;
 	}
 
 	a:hover {
 		text-decoration: line-through;
-		background: $secondary-color;
+		background: var(--cardinal);
 		@media (prefers-color-scheme: dark) {
-			background: lighten($primary-color, 10%);
+			background: hsl(var(--cinnabar__base), calc(var(--cinnibar) + 10%));
 		}
 	}
 }
@@ -788,27 +782,27 @@ img, video, figure {
 --------------------------------------------------------------*/
 
 .header-logo {
-	fill: $primary-color;
+	fill: var(--cinnabar);
 }
 
 .header-logo:hover {
-	fill: $secondary-color;
+	fill: var(--cardinal);
 }
 
 .subheader {
 	font-size: 2em; // type scale?
-	color: $dark-gray;
+	color: var(--nickel);
 	margin: 0.1em 0; // why so slender? or just be a zero
 }
 
 .site-branding-text {
     writing-mode: vertical-rl;
     justify-self: center;
-    background: black; // adding this incase we dont have images the text is still visible // true black not $black for the screen blend to not show anything
+    background: black; // adding this incase we dont have images the text is still visible // true black not var(--black) for the screen blend to not show anything
 
     a {
-        color: $white;
-        padding: $global-padding;
+        color: var(--white);
+        padding: var(--global-padding);
         display: inline-block; // am I sure this is neccessary
     }
 }
@@ -818,9 +812,9 @@ img, video, figure {
 
     a {
 		padding: initial;
-		color: $black;
+		color: var(--black);
 		@media (prefers-color-scheme: dark) {
-			color: $white;
+			color: var(--white);
 		}
 	}
 }
@@ -845,18 +839,18 @@ img, video, figure {
 
 .front-page-titles {
 
-	// background: $white;
+	// background: var(--white);
 	text-align: center;
 	font-weight: bold;
 }
 
 .fp-box { // front page box these are the red areas behind clicks code and camera on the split levels
-	background: $primary-color;
-	color: $white;
+	background: var(--cinnabar);
+	color: var(--white);
 /* 	padding: 0.5em;
 
 	@media (min-width: map-get($breakpoints, medium)) {
-		padding: $global-padding;
+		padding: var(--global-padding);
 	} */
 }
 /*--------------------------------------------------------------
@@ -864,7 +858,7 @@ img, video, figure {
 --------------------------------------------------------------*/
 
 .single .site-title {
-	color: $black;
+	color: var(--black);
 }
 
 #comments {
@@ -872,7 +866,7 @@ img, video, figure {
 }
 
 .cat-title { // wrong place
-	margin-top: $global-margin*2;
+	margin-block-start: calc(var(--global-transition) * 2);
 	font-size: 2em; // type scale?
 
 	@media (min-width: map-get($breakpoints, medium)) {
@@ -885,13 +879,13 @@ img, video, figure {
 --------------------------------------------------------------*/
 
 .featured-subheader a {
-	color: $dark-gray;
+	color: var(--nickel);
 }
 
 .featured-category-title {
 	margin: 0.5em auto; // why is this and padding compressed?
 	font-size: 2em; // type scale?
-	border: 0.2em solid $primary-color; // global?
+	border: 0.2em solid var(--cinnabar); // global?
 	padding: 0.5em;
 	word-wrap: break-word;
 	text-align: center;
@@ -906,7 +900,7 @@ img, video, figure {
 }
 
 .category-titles a {
-	color: $primary-color;
+	color: var(--cinnabar);
 }
 
 .category-titles a:hover {
@@ -934,7 +928,7 @@ img, video, figure {
 .comments-title {
 	font-size: 20px; // type scale?
 	font-size: 1.25rem; // why twice?
-	margin-bottom: 1.5em;
+	margin-block-end: 1.5em;
 }
 
 .comment-list,
@@ -955,7 +949,7 @@ img, video, figure {
 .comment-author {
 	font-size: 16px; // type scale?
 	font-size: 1rem;
-	margin-bottom: 0.4em;
+	margin-block-end: 0.4em;
 	position: relative;
 	z-index: 2;
 }
@@ -972,7 +966,7 @@ img, video, figure {
 }
 
 .comment-meta {
-	margin-bottom: 1.5em;
+	margin-block-end: 1.5em;
 }
 
 .comment-metadata {
@@ -997,7 +991,7 @@ img, video, figure {
 	// color: #333;
 	font-size: 14px; // this should get fixed
 	font-size: 0.875rem;
-	margin-bottom: 4em;
+	margin-block-end: 4em;
 }
  */
 .comment-reply-link {
@@ -1072,9 +1066,9 @@ svg {
 
 .wp-caption,
 .gallery-caption {
-	color: $dark-gray;
+	color: var(--nickel);
 	font-style: italic;
-	margin-bottom: 1.5em;
+	margin-block-end: 1.5em;
 }
 
 .wp-caption img[class*="wp-image-"] { // clarify this selector?
@@ -1084,7 +1078,7 @@ svg {
 }
 
 .wp-caption .wp-caption-text {
-	margin: $global-margin 0;
+	margin: var(--global-margin) 0;
 }
 
 .cfimg {
@@ -1211,8 +1205,8 @@ css slidesshow in Rileys google drive can do all the math
 .gallery-caption {
 	display: block;
 	text-align: left;
-	padding: 0 $global-padding 0 0;
-	margin-bottom: 0;
+	padding: 0 var(--global-padding) 0 0;
+	margin-block-end: 0;
 }
 
 .gallery-columns-1 .gallery-item {
@@ -1240,7 +1234,7 @@ css slidesshow in Rileys google drive can do all the math
 	}
 
 .gallery-caption {
-	color: $dark-gray;
+	color: var(--nickel);
 }
 
 /*--------------------------------------------------------------
