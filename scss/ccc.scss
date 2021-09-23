@@ -1,6 +1,6 @@
 .ccc-west {
 	display: none;
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		display: inline;
 		grid-column: 1;
 		grid-row: 1/4;
@@ -18,14 +18,14 @@
 	grid-gap: 0.5em;
 	// margin-block-end: var(--global-margin);
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		grid-gap: 1em;
 	}
 }
 
 .ccc-east {
 	display: none;
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		display: initial;
 		grid-column: 3;
 		grid-row: 1/4;
@@ -59,7 +59,7 @@
 	padding-block-start: var(--global-padding);
 	padding-block-end: var(--global-padding);
 
-	@media (min-width: map-get($breakpoints, medium)) { // red text on brackets isnt a good sign does it need a prefix
+	@media (min-width: $medium) { // red text on brackets isnt a good sign does it need a prefix
 		width: 3em;
 	}
 }

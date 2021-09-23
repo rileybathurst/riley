@@ -6,6 +6,12 @@
 @import 'layout';
 @import 'pages';
 @import 'typography';
+@import 'comments';
+@import 'media';
+@import 'visibility';
+@import 'code-category';
+@import 'lists';
+@import 'hr';
 @import 'ccc';
 
 @import 'menu'; // fancy menu coming from webpackbuild so it wont be needed long term
@@ -14,4 +20,5 @@
 
 @import 'bundle'; // riley-webpack manually updated
 
-@import 'tryptych'; // this might end up overwriting some webpack so its after
+@import 'tryptych';
+// this might end up overwriting some webpack so its after

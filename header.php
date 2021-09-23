@@ -30,7 +30,7 @@
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c22127">
 	<meta name="msapplication-TileColor" content="#c22127">
-	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#c32522">
 
 	<meta
 		http-equiv="Content-Security-Policy"

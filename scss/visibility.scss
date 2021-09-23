@@ -1,0 +1,30 @@
+/*------------------------------------*/
+//  #VISIBILITY
+/*------------------------------------*/
+
+.show-for-medium {
+  display: none;
+
+  @media (min-width: $medium) {
+    display: inherit;
+  }
+}
+
+.show-for-large {
+  display: none;
+
+  @media (min-width: $large) {
+    display: inherit;
+  }
+}
+
+.hide-for-medium {
+  @media (min-width: $medium) {
+    display: none;
+  }
+}
+.hide-for-large {
+  @media (min-width: $large) {
+    display: none;
+  }
+}

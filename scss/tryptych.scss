@@ -1,7 +1,7 @@
 // started here https://codepen.io/rileybathurst-the-encoder/pen/YmEGGG
 
 // dont kick in on small as the whole layout is soo different
-@media (min-width: map-get($breakpoints, medium)) {
+@media (min-width: $medium) {
 
 
     #snap-scroll-container-coordinates {

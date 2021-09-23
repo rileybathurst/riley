@@ -8,11 +8,9 @@
 // Category
 // page
 
-.home #top-menu,
-.category #top-menu,
-.page #top-menu {
-    min-height: 9rem; // pulling the hr up means we need to specify this
-    @media (min-width: map-get($breakpoints, medium)) {
+:is(.home, .category, .page) #top-menu {
+    min-height: 3rem; // pulling the hr up means we need to specify this
+    @media (min-width: $medium) {
         min-height: 10rem;
     }
 
@@ -33,7 +31,7 @@
     li:first-child:hover ~ hr {
       margin-block-start: -6rem; // weird backwards math
       opacity: 1;
-      @media (min-width: map-get($breakpoints, medium)) {
+      @media (min-width: $medium) {
         margin-block-start: -10rem; // guess and check but from where?
       }
     }
@@ -42,7 +40,7 @@
       margin-block-start: -3rem;
       opacity: 1;
 
-      @media (min-width: map-get($breakpoints, medium)) {
+      @media (min-width: $medium) {
         margin-block-start: -5.5rem; // 1rem from padding-top 3rem from camera
       }
     }
@@ -50,7 +48,7 @@
     li:nth-child(3):hover ~ hr {
       margin-block-start: 0;
       opacity: 1;
-      @media (min-width: map-get($breakpoints, medium)) {
+      @media (min-width: $medium) {
         margin-block-start: -1rem; // guess and check but from where?
       }
     }
@@ -69,7 +67,7 @@
       opacity: 0;
       height: 0.5rem;
 
-      @media (min-width: map-get($breakpoints, medium)) {
+      @media (min-width: $medium) {
         // width: 22%; // guess and check
         // max-width: 22rem; // guess and check
         height: 1rem;
@@ -82,12 +80,6 @@
 // single
 
 .single #top-menu {
-
-/*   // currently horizontal isnt working run this so vertical can be live
-  hr {
-    display: none;
-  } */
-
   display: inline;
 
   a:hover {
@@ -96,71 +88,32 @@
 
   li {
     display: block;
-    @media (min-width: map-get($breakpoints, medium)) {
+    @media (min-width: $medium) {
       display: inline-block;
     }
   }
 
+  // 📣 this seems weird and wet
   li:first-child:hover ~ hr {
     margin-left: 0;
     opacity: 1;
   }
 
   li:nth-child(2):hover ~ hr {
-    // margin-left: 33%;
     opacity: 1;
   }
 
   li:nth-child(3):hover ~ hr {
-    // margin-left: 66%;
     opacity: 1;
   }
 
     hr {
       height: 1rem;
-      // width: 33%;
       margin: 0;
       margin-block-end: -1rem; // sit in the grid gap
-      // margin-left: -33%; // hide when its not in use
       opacity: 0;
       background: var(--cardinal);
       border: none;
       transition: .3s ease-in-out;
     }
-
 }
-
-/* nav#horizontal {
-    font-size: 2rem;
-  
-    ul {
-      width: 100%;
-    }
-  
-    li {
-      display: inline-block;
-      width: 33%; // this and the rest might be able to be done with js but for now its fine
-    }
-  
-    li:first-child a:hover ~ hr {
-      margin-left: 0;
-    }
-  
-    li:nth-child(2) a:hover ~ hr {
-      margin-left: 33%;
-    }
-  
-    li:nth-child(3) a:hover ~ hr {
-      margin-left: 66%;
-    }
-  
-    hr {
-      height: .25rem;
-      width: 25%;
-      margin: 0;
-      margin-left: -33%; // hide when its not in use
-      background: tomato;
-      border: none;
-      transition: .3s ease-in-out;
-    }
-  } */

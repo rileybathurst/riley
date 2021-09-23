@@ -95,7 +95,7 @@ img.alignright, .alignright img {
 5.0 Typography
 --------------------------------------------------------------*/
 p {
-	@media (min-width: map-get($breakpoints, large)) {
+	@media (min-width: $large) {
 		text-align: justify;
 	}
 }
@@ -124,7 +124,7 @@ blockquote {
 	}
 
 	font-size: 1em;
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		font-size: 1.563em; // same as an h4
 	}
 	font-weight: bold;
@@ -150,7 +150,7 @@ cite {
 	margin-block-end: calc(var(--global-margin) * 1.5); // 📣
 	word-break: break-all; // I was having problems on small screens citing urls
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		word-break: normal; // revert back when the small problem doesnt exsist
 	}
 }
@@ -196,7 +196,7 @@ cite {
 
 
 	font-weight: bold;
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		writing-mode: vertical-rl;
 		margin-block-start: var(--global-margin);
 	}
@@ -212,7 +212,7 @@ cite {
 	word-wrap: break-word;
 	// text-align: center;
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		font-size: 3rem;
 		line-height: 4rem;
 	}
@@ -223,7 +223,7 @@ cite {
 --------------------------------------------------------------
 
 .article-form label {
-	@media (min-width: map-get($breakpoints, medium)) { /* screen reader text
+	@media (min-width: $medium) { /* screen reader text
 		clip: rect(1px, 1px, 1px, 1px);
 		height: 1px;
 		overflow: hidden;
@@ -334,11 +334,11 @@ cite {
 body { // I think I can do this better just having everything sit inside a little
 	border: 0.25em solid var(--white);
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		border: 0.5em solid var(--white);
 	}
 
-	@media (min-width: map-get($breakpoints, large)) {
+	@media (min-width: $large) {
 		border: 1em solid var(--white);
 	}
 
@@ -395,7 +395,7 @@ table { // do I have any tables?
 	grid-column: 11 / span 3; // this could be better
 	grid-row: 1 / span 4;
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		grid-column: 11 / span 3;
 		grid-row: 1 / span 4;
 	}
@@ -404,7 +404,7 @@ table { // do I have any tables?
 .page-title-2 { // naming needs work
 	display: none;
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		display: block;
 		color: var(--white);
 		writing-mode: vertical-rl;
@@ -477,7 +477,7 @@ button,
 
 	-webkit-appearance: none; // browser reset
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		font-size: 2em; // type scale?
 	}
 }
@@ -672,7 +672,7 @@ button:hover,
 	@extend button;
 	margin-block-end: 0;
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		text-align: right;
 	}
 }
@@ -689,7 +689,7 @@ button:hover,
 	// flex-direction: column;
 	padding-left: 0;
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		padding-left: var(--global-padding);
 	}
 }
@@ -700,7 +700,7 @@ button:hover,
 	// margin-block-start: var(--global-margin);
 	// padding-block-start: var(--global-padding); // this has to be a padding otherwise you loose the hr on scroll between
 	margin-block-end: 0;
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		font-size: 2.25rem; // type scale?
 		line-height: 4.5rem;
 	}
@@ -849,7 +849,7 @@ img, video, figure {
 	color: var(--white);
 /* 	padding: 0.5em;
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		padding: var(--global-padding);
 	} */
 }
@@ -869,7 +869,7 @@ img, video, figure {
 	margin-block-start: calc(var(--global-transition) * 2);
 	font-size: 2em; // type scale?
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		font-size: 3em; // type scale?
 	}
 }
@@ -890,7 +890,7 @@ img, video, figure {
 	word-wrap: break-word;
 	text-align: center;
 
-	 @media (min-width: map-get($breakpoints, medium)) {
+	 @media (min-width: $medium) {
 		 font-size: 6em; // this is really large?
 	}
 }
@@ -1160,7 +1160,7 @@ css slidesshow in Rileys google drive can do all the math
 	padding: 0 1em 0 0;
 	width: 50%;
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 			max-width: 25%;
 	}
 }
@@ -1210,25 +1210,25 @@ css slidesshow in Rileys google drive can do all the math
 }
 
 .gallery-columns-1 .gallery-item {
-		@media (min-width: map-get($breakpoints, medium)) {
+		@media (min-width: $medium) {
 			max-width: 100%;
 		}
 	}
 
 	.gallery-columns-2 .gallery-item {
-		@media (min-width: map-get($breakpoints, medium)) {
+		@media (min-width: $medium) {
 			max-width: 50%;
 		}
 	}
 
 	.gallery-columns-3 .gallery-item {
-		@media (min-width: map-get($breakpoints, medium)) {
+		@media (min-width: $medium) {
 			max-width: 33.33%;
 		}
 	}
 
 	.gallery-columns-4 .gallery-item {
-		@media (min-width: map-get($breakpoints, medium)) {
+		@media (min-width: $medium) {
 			max-width: 25%;
 		}
 	}

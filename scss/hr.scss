@@ -1,0 +1,45 @@
+/*------------------------------------*/
+//  #HR
+/*------------------------------------*/
+
+hr {
+  margin: 1.25rem auto;
+  border-top: 0;
+  border-bottom: 1px solid var(--nickel);
+}
+
+.mega a {
+  text-decoration: none;
+  padding: var(--global-padding);
+  border-right: 0.1em solid var(--cinnabar);
+  border-bottom: 0.1em solid var(--cinnabar);
+}
+.mega a:hover {
+  text-decoration: none;
+  background: var(--cinnabar);
+  color: var(--white);
+}
+
+.is-style-mega-hr,
+.mega-hr {
+  // this might be able to become a gutenberg style in for most places
+  border-bottom-width: 0.5em;
+  border-color: var(--white);
+
+  border-style: solid;
+
+  @media (min-width: $medium) {
+    border-bottom-width: 1em;
+  }
+}
+
+.is-style-mega-hr-primary,
+.mega-hr-primary {
+  @extend .mega-hr;
+  border-color: var(--cinnabar);
+}
+
+.mega-hr-dirty {
+  @extend .mega-hr;
+  border-color: var(--mercury);
+}

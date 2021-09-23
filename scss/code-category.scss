@@ -1,0 +1,38 @@
+/*
+	theres a whole very specific way of dealing with the dev category which goes back on a bunch of the regular work done by the category design page 
+*/
+
+body.category-code {
+  // needs to be on the body tag or a single article can be different to the page
+
+  .category-overlaying-image {
+    filter: none;
+    mix-blend-mode: initial;
+  }
+
+  .category-color-blocking {
+    display: none;
+  }
+
+  .category-color-blocking:hover {
+    display: initial;
+    opacity: 0.5;
+  }
+
+  .article-thumbnail {
+    margin-block-start: calc(var(--global-transition) * 3);
+  }
+
+  .page-title a {
+    color: var(--cinnabar);
+  }
+
+  .fp-header {
+    padding: 0;
+    grid-row: initial;
+
+    hr {
+      display: none;
+    }
+  }
+}

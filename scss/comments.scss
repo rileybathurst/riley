@@ -1,0 +1,24 @@
+.comment-form input,
+.comment-form textarea {
+  border: 0.1em solid var(--nickel);
+  font-weight: bold;
+  padding: var(--global-padding);
+  border-radius: 2px;
+  width: calc(
+    100% - 3em
+  ); // feels like this should be 2.2em and is throwing errors on the post comment on a single page with a smaller width so should be more specific
+}
+
+.comment-form input {
+  width: initial; // the text boxes can get smaller but the button hides the text if it gets smaller
+}
+
+.comment-form [type="checkbox"] {
+  width: auto;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  outline: 0.1em solid var(--cinnabar);
+  border-radius: 2px;
+}

@@ -33,294 +33,9 @@
 /*------------------------------------*\
   #BODY
 \*------------------------------------*/
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: var(--body-font-family);
-}
-
-p {
-  margin-block-start: 0;
-  line-height: 1.25rem;
-  margin-block-end: 1.25em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 2.75rem 0 1rem;
-  line-height: 1.15;
-}
-
-h1 {
-  margin-block-start: 0;
-  margin-block-end: 2rem;
-  font-size: 3rem;
-  line-height: 4rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-small,
-.text_small {
-  font-size: 0.75rem;
-}
-
-li {
-  margin-block-end: var(--baseline);
-}
-
-img {
-  vertical-align: middle;
-}
-
-address {
-  font-style: unset;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.menu {
-  list-style-type: none;
-}
-
-.mega a {
-  text-decoration: none;
-  padding: var(--global-padding);
-  border-right: 0.1em solid var(--cinnabar);
-  border-bottom: 0.1em solid var(--cinnabar);
-}
-
-.mega a:hover {
-  text-decoration: none;
-  background: var(--cinnabar);
-  color: var(--white);
-}
-
-hr {
-  margin: 1.25rem auto;
-  border-top: 0;
-  border-bottom: 1px solid var(--nickel);
-}
-
-.is-style-mega-hr,
-.mega-hr,
-.mega-hr-dirty,
-.is-style-mega-hr-primary,
-.mega-hr-primary {
-  border-bottom-width: 0.5em;
-  border-color: var(--white);
-  border-style: solid;
-}
-@media (min-width: 640px) {
-  .is-style-mega-hr,
-.mega-hr,
-.mega-hr-dirty,
-.is-style-mega-hr-primary,
-.mega-hr-primary {
-    border-bottom-width: 1em;
-  }
-}
-
-.is-style-mega-hr-primary,
-.mega-hr-primary {
-  border-color: var(--cinnabar);
-}
-
-.mega-hr-dirty {
-  border-color: var(--mercury);
-}
-
 .mw-18em {
   max-width: 18rem;
   justify-self: center;
-}
-
-figcaption,
-.caption {
-  color: var(--nickel);
-  font-size: 1.5625rem;
-  font-weight: bold;
-}
-
-/* doesnt come up in search
-.footer_menu a {
-	text-decoration: none;
-}
-*/
-/* doesnt come up in search
-.post-categories li {
-	margin-block-end: 0;
-}
-*/
-.comment-form input,
-.comment-form textarea {
-  border: 0.1em solid var(--nickel);
-  font-weight: bold;
-  padding: var(--global-padding);
-  border-radius: 2px;
-  width: calc( 100% - 3em );
-}
-
-.comment-form input {
-  width: initial;
-}
-
-.comment-form [type=checkbox] {
-  width: auto;
-}
-
-.comment-form input:focus,
-.comment-form textarea:focus {
-  outline: 0.1em solid var(--cinnabar);
-  border-radius: 2px;
-}
-
-/*
-.category-thumbnail { // this would be cool but it doesnt work with png
-	// background: var(--black);
-	// background: linear-gradient(53deg, rgba(2,0,36,1) 0%, rgba(194,33,39,1) 37%, rgba(0,212,255,1) #8a0000);
-}
-*/
-/*
-.category-thumbnail img { 
-	// height: 100%;
-}
-*/
-.category-thumbnail img:hover {
-  opacity: 0.8;
-}
-
-.wp-block-code {
-  background: var(--white);
-  padding: var(--global-padding);
-  line-height: 1.5em;
-}
-
-.flatten {
-  transform: rotateX(90deg);
-}
-
-.flatten img {
-  transform-origin: bottom;
-  transition: 3s ease;
-}
-
-.base {
-  filter: drop-shadow(16px 16px 10px var(--nickel));
-}
-@media (prefers-color-scheme: dark) {
-  .base {
-    filter: drop-shadow(16px 16px 10px black);
-  }
-}
-
-.show-for-medium {
-  display: none;
-}
-@media (min-width: 640px) {
-  .show-for-medium {
-    display: inherit;
-  }
-}
-
-@media (min-width: 640px) {
-  .hide-for-medium {
-    display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hide-for-large {
-    display: none;
-  }
-}
-
-iframe {
-  background: linen;
-}
-
-.category-overlaying-image {
-  filter: grayscale(100%);
-  mix-blend-mode: multiply;
-  z-index: 14;
-  grid-row: 1;
-  grid-column: 1/4;
-}
-@media (prefers-color-scheme: dark) {
-  .category-overlaying-image {
-    mix-blend-mode: screen;
-  }
-}
-
-.category-color-blocking {
-  background: var(--cinnabar);
-  mix-blend-mode: multiply;
-  z-index: 15;
-  grid-row: 1;
-  grid-column: 1/4;
-  transition: 300ms ease;
-}
-@media (min-width: 640px) {
-  .category-color-blocking {
-    grid-column: 2/5;
-  }
-}
-
-.category-color-blocking:hover {
-  background: var(--cardinal);
-}
-
-/*
-	theres a whole very specific way of dealing with the dev category which goes back on a bunch of the regular work done by the category design page 
-*/
-body.category-code .category-overlaying-image {
-  filter: none;
-  mix-blend-mode: initial;
-}
-body.category-code .category-color-blocking {
-  display: none;
-}
-body.category-code .category-color-blocking:hover {
-  display: initial;
-  opacity: 0.5;
-}
-body.category-code .article-thumbnail {
-  margin-block-start: calc(var(--global-transition) * 3);
-}
-body.category-code .page-title a {
-  color: var(--cinnabar);
-}
-body.category-code .fp-header {
-  padding: 0;
-  grid-row: initial;
-}
-body.category-code .fp-header hr {
-  display: none;
 }
 
 .spine-border {
@@ -345,14 +60,14 @@ body.category-code .fp-header hr {
   grid-template-columns: 2em 1fr 2em;
   grid-gap: var(--global-margin);
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .site-header {
     grid-template-rows: 2em 1fr 2em;
     grid-template-columns: 2em 1fr 1fr 1fr 2em;
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .single .site-header {
     grid-template-rows: initial;
     grid-template-columns: 2em 1fr 2em;
@@ -370,7 +85,7 @@ body.category-code .fp-header hr {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .single-header-top-line {
     flex-direction: row;
   }
@@ -384,7 +99,7 @@ body.category-code .fp-header hr {
   grid-column: 2;
   z-index: 20;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .site-branding-text {
     writing-mode: vertical-rl;
     grid-row: 1/4;
@@ -398,7 +113,7 @@ body.category-code .fp-header hr {
   mix-blend-mode: initial;
   align-self: flex-start;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .single .site-branding-text {
     writing-mode: initial;
   }
@@ -416,7 +131,7 @@ body.category-code .fp-header hr {
   grid-row: 2;
   grid-column: 2;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-date {
     grid-column: 2/6;
   }
@@ -425,7 +140,7 @@ body.category-code .fp-header hr {
 .article-content {
   grid-column: 2;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-content {
     grid-column: 2/6;
   }
@@ -439,7 +154,7 @@ body.category-code .fp-header hr {
   grid-column: 2;
   margin-block-end: var(--global-margin);
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-content-specific {
     grid-column: 2/6;
     margin-block-end: calc(var(--global-transition) * 3);
@@ -449,7 +164,7 @@ body.category-code .fp-header hr {
   max-width: 100%;
   height: 100%;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-content-specific iframe {
     min-height: 100%;
   }
@@ -474,19 +189,18 @@ body.category-code .fp-header hr {
 /*--------------------------------------------------------------
 1.0 Base
 --------------------------------------------------------------*/
-/*
-.page-width { doesnt turn up in search
-	max-width: var(--page-width); // I think this should be from the wordpress setting // twenty nineteen is doing %20 + 60px above a certain size
-	margin: 0 auto;
+.page-width {
+  max-width: 71rem;
+  margin-inline: auto;
 }
-*/
+
 .spine-border {
   grid-row: 1/3;
   grid-column: 1;
   z-index: 15;
   justify-self: end;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .spine-border {
     grid-row: 1/3;
     justify-self: start;
@@ -499,7 +213,7 @@ body.category-code .fp-header hr {
   grid-column: 1;
   justify-self: start;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .single .spine-border,
 .category .spine-border {
     grid-row: 1/4;
@@ -518,7 +232,7 @@ body.category-code .fp-header hr {
   grid-gap: var(--global-margin);
   grid-template-columns: 2em 1fr 2em;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .site-header {
     grid-template-columns: 2em 1fr 1fr 1fr 2em;
     grid-template-rows: 2em 1fr 2em;
@@ -536,7 +250,7 @@ body.category-code .fp-header hr {
   grid-row: 1/3;
   align-self: end;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .single .breadcrumbs {
     grid-row: 2;
   }
@@ -547,7 +261,7 @@ body.category-code .fp-header hr {
   grid-column: 3;
   justify-self: center;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .header-logo {
     align-self: end;
     grid-column: 5;
@@ -558,7 +272,7 @@ body.category-code .fp-header hr {
   justify-self: center;
   align-self: start;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .home .header-logo {
     grid-column: 5;
   }
@@ -587,7 +301,7 @@ body.category-code .fp-header hr {
   grid-row: 2;
   grid-column: 2;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .header-color-blocking {
     grid-row: 1/4;
     grid-column: 3;
@@ -602,7 +316,7 @@ body.category-code .fp-header hr {
   grid-column: 2;
   z-index: 20;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .site-branding-text {
     writing-mode: vertical-rl;
     grid-row: 1/4;
@@ -616,7 +330,7 @@ body.category-code .fp-header hr {
   justify-self: start;
   padding-block-end: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .single .site-branding-text {
     writing-mode: horizontal-tb;
     padding: 0;
@@ -626,7 +340,7 @@ body.category-code .fp-header hr {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .home .site-branding-text {
     grid-row: 1/3;
     margin-block-start: calc(var(--global-margin) * 3);
@@ -646,7 +360,7 @@ body.category-code .fp-header hr {
   writing-mode: vertical-rl;
   justify-self: center;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .spine {
     grid-row: 2;
     grid-column: 5;
@@ -658,7 +372,7 @@ body.category-code .fp-header hr {
   grid-row: 1/3;
   align-self: end;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .single .spine {
     grid-column: 3;
   }
@@ -671,7 +385,7 @@ body.category-code .fp-header hr {
   grid-row: 1/3;
   grid-column: 2;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .custom-header-media,
 .custom-header-photo,
 .custom-header-featured-video {
@@ -693,7 +407,7 @@ body.category-code .fp-header hr {
   padding-block-end: 56.25%;
   height: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .custom-header-featured-video {
     grid-column: 2/4;
   }
@@ -710,7 +424,7 @@ body.category-code .fp-header hr {
 .single #top-menu {
   margin: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .single #top-menu {
     display: flex;
     flex-direction: row;
@@ -724,14 +438,14 @@ body.category-code .fp-header hr {
   grid-column: 2;
   grid-row: 3;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .navigation-top {
     grid-column: 4;
     grid-row: 2/4;
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .single .navigation-top ul {
     display: flex;
     margin-block-start: 0;
@@ -751,7 +465,7 @@ body.category-code .fp-header hr {
 	align-self: start;
 	margin-block-end: var(--global-margin);
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		grid-row: 1;
 		grid-column: 4;
 		margin-block-end: calc(var(--global-transition) * 3);
@@ -778,7 +492,7 @@ body.category-code .fp-header hr {
     background: var(--black);
   }
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .front-page-titles {
     grid-gap: var(--global-margin);
     width: calc(100% - 6rem);
@@ -805,7 +519,7 @@ body.category-code .fp-header hr {
   grid-column: 2/5;
   grid-row: 1/2;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .category-thumbnail {
     grid-row: 1;
   }
@@ -815,7 +529,7 @@ body.category-code .fp-header hr {
 .article-search {
 	grid-column: 2 / 12; // really?
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		grid-column: 4 / span 1;
 	}
 }
@@ -826,12 +540,12 @@ body.category-code .fp-header hr {
 	grid-row: 4 / span 2;
 	align-self: center;
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		grid-column: 4 / span 6; // really?
 		grid-row: 3;
 		align-self: start;
 	}
-	@media (min-width: map-get($breakpoints, large)) {
+	@media (min-width: $large) {
 		grid-column: 4 / span 9; // really?
 		grid-row: 3;
 		// this cant span multiple rows but it needs to be the largest so the next row sits tight against it,
@@ -844,11 +558,11 @@ body.category-code .fp-header hr {
 	grid-column: 2 / span 10; // really?
 	grid-row: 9; // really?
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		grid-column: 4 / span 3;
 		grid-row: 6;
 	}
-	@media (min-width: map-get($breakpoints, large)) {
+	@media (min-width: $large) {
 		grid-column: 4 / span 3;
 		grid-row: 4;
 	}
@@ -862,7 +576,7 @@ body.category-code .fp-header hr {
 	z-index: 99; // why?
 	mix-blend-mode: multiply;
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		grid-column: 3;
 		grid-row: 3;
 		justify-self: center;
@@ -879,7 +593,7 @@ body.category-code .fp-header hr {
 .category-sub ul {
   padding-left: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .category-sub ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -913,7 +627,7 @@ body.category-code .fp-header hr {
 .featured-excerpt {
 	grid-column: 2 / 5;
 	grid-row: 3;
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		grid-column: 3;
 		grid-row: 2;
 	}
@@ -926,27 +640,12 @@ body.category-code .fp-header hr {
   /* running wordpress post class prevents using a straight class */
   max-width: 77rem;
   margin: 0 auto;
-  /* 
-  	display: grid;
-  	grid-gap: var(--global-margin);
-  */
   padding: calc(var(--global-padding) * 2) 0;
-  /*
-  // grid-template-columns: 4px 1fr 4fr 4fr 1fr 4px; // why 4px?
-  grid-template-columns: 1rem 1fr 1rem; // why 4px?
-  // maybe this should be to match the header and footer grid atleast at large sizes 2em 1fr 2fr 2fr 1fr 2em
-
-  @media (min-width: map-get($breakpoints, medium)) {
-  	width: calc(100% - 2rem); // slightly different so the side bar fits
-  	// grid-template-columns: 2em 1fr 4fr 4fr 1fr 2em;
-  	// grid-template-columns: repeat(6, 1fr); // slightly more complex to fit with the rest of the page grid
-  	grid-template-columns: 2em 1fr 1fr 1fr 2em;
-  } */
   display: grid;
-  grid-template-columns: 2em 1fr 2em;
+  grid-template-columns: 0 1fr 0;
   grid-gap: var(--global-margin);
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .site-main article {
     grid-template-columns: 2em 1fr 1fr 1fr 2em;
   }
@@ -960,7 +659,7 @@ body.category-code .fp-header hr {
   grid-row: 1;
   grid-column: 1/4;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-thumbnail {
     grid-column: 2/5;
   }
@@ -990,9 +689,14 @@ body.category-code .fp-header hr {
 }
 
 .featured-header {
+  margin-inline: 1rem;
   max-width: calc(77rem - 6rem);
-  margin: var(--global-margin) auto;
   padding-block-start: var(--global-padding);
+}
+@media (min-width: 40rem) {
+  .featured-header {
+    margin-inline: auto;
+  }
 }
 
 .article-header {
@@ -1000,7 +704,7 @@ body.category-code .fp-header hr {
   grid-column: 2;
   grid-row: 2;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-header {
     grid-column: 2/6;
     grid-row: 2;
@@ -1010,7 +714,7 @@ body.category-code .fp-header hr {
 .article-speechbubble {
   grid-column: 2;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-speechbubble {
     grid-row: 1;
     grid-column: 5;
@@ -1026,13 +730,16 @@ body.category-code .fp-header hr {
 .article-content {
   grid-column: 2;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-content {
     grid-column: 2/5;
   }
 }
+.article-content p {
+  max-width: 47rem;
+}
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-content-specific {
     grid-column: 1/6;
   }
@@ -1042,7 +749,7 @@ body.category-code .fp-header hr {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-content-specific hr {
     margin-inline: calc(var(--global-margin) * 3);
   }
@@ -1058,7 +765,7 @@ body.category-code .fp-header hr {
         color: var(--nickel); // purposly not as strong as a regular link
     } */
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-category {
     text-align: right;
     grid-row: 1/3;
@@ -1090,7 +797,7 @@ body.category-code .fp-header hr {
   display: inline;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .single .article-category {
     grid-row: 1/4;
     align-self: start;
@@ -1109,7 +816,7 @@ body.category-code .fp-header hr {
   margin-right: auto;
   margin-block-end: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-base {
     display: grid;
     grid-template-columns: 2em 1fr 1fr 1fr 2em;
@@ -1117,7 +824,7 @@ body.category-code .fp-header hr {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .base-explore {
     grid-column: 1;
     writing-mode: vertical-rl;
@@ -1129,20 +836,20 @@ body.category-code .fp-header hr {
   grid-row: 3;
   writing-mode: vertical-rl;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .base-tags {
     grid-column: 5;
     grid-row: 1;
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-category .subheading {
     margin-block-end: 0;
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .category-container {
     display: flex;
     flex-flow: row nowrap;
@@ -1152,6 +859,7 @@ body.category-code .fp-header hr {
   }
   .category-container ul {
     display: flex;
+    display: inline;
     flex-flow: row nowrap;
   }
   .category-container li {
@@ -1168,7 +876,7 @@ body.category-code .fp-header hr {
   margin-left: 0;
   padding: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-category h3 ul,
 .featured-category h3 ul {
     margin-block-end: 0;
@@ -1179,7 +887,7 @@ body.category-code .fp-header hr {
   grid-column: 2;
   margin-block-end: var(--global-margin);
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-explore {
     grid-column: 2/5;
   }
@@ -1202,7 +910,7 @@ body.category-code .fp-header hr {
 		grid-column: 2 / span 12; // really?
 		grid-row: 9;
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		grid-column: 13 / span 2; // this isnt written very well
 		grid-row: 4;
 		margin: 0;
@@ -1220,7 +928,7 @@ body.category-code .fp-header hr {
 	grid-row: 1 / span 2;
 	z-index: 5;
 
-	@media (min-width: map-get($breakpoints, medium)) {
+	@media (min-width: $medium) {
 		grid-column: 5 / span 8;
 		grid-row: 1 / span 2; // start with full height
 	}
@@ -1233,7 +941,7 @@ body.category-code .fp-header hr {
 .post-navigation {
   grid-column: 2/5;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .post-navigation {
     grid-column: 2;
   }
@@ -1243,7 +951,7 @@ body.category-code .fp-header hr {
   grid-column: 2/5;
   padding: var(--global-padding);
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-comments {
     grid-column: 3;
   }
@@ -1252,12 +960,12 @@ body.category-code .fp-header hr {
 .article-tags {
   grid-column: 2/5;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-tags {
     grid-column: 4;
   }
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-tags h3 {
     writing-mode: vertical-rl;
   }
@@ -1269,7 +977,7 @@ body.category-code .fp-header hr {
   z-index: 20;
   align-self: end;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .fp-header {
     grid-column: 2/5;
     padding: var(--global-padding);
@@ -1280,7 +988,7 @@ body.category-code .fp-header hr {
   grid-row: 1;
   grid-column: 2;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .category-post--header {
     grid-column: 2/5;
   }
@@ -1309,9 +1017,12 @@ body.category-code .fp-header hr {
 .featured--excerpt {
   grid-column: 2;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .featured--excerpt {
     grid-column: 2/5;
+  }
+  .featured--excerpt p {
+    max-width: 47rem;
   }
 }
 
@@ -1330,7 +1041,7 @@ body.category-code .fp-header hr {
   /* as wordpress controls this we are using elements for the grid */
   grid-column: 1/3;
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .pagination h2 {
     grid-column: 3/span 4;
   }
@@ -1343,7 +1054,7 @@ body.category-code .fp-header hr {
   justify-items: flex-start;
   align-items: flex-start;
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .pagination .nav-links {
     grid-column: 3;
   }
@@ -1371,7 +1082,7 @@ body.category-code .fp-header hr {
   grid-row: 2;
   align-self: end;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .single .custom-header-media,
 .single .custom-header-photo,
 .single .custom-header-featured-video {
@@ -1395,7 +1106,7 @@ body.category-code .fp-header hr {
   margin: 0;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .post-categories > li {
     margin-block-end: 0;
   }
@@ -1405,7 +1116,7 @@ body.category-code .fp-header hr {
   display: none;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .post-navigation {
     grid-column: 2;
   }
@@ -1415,20 +1126,20 @@ body.category-code .fp-header hr {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .specific-grid {
     display: grid;
     grid-template-columns: 2rem 1fr 1fr 1fr 2rem;
     grid-gap: var(--global-margin);
   }
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .specific-grid h3 {
     grid-column: 2/5;
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .subtitle {
     grid-column: 1;
     grid-row: 1;
@@ -1442,7 +1153,7 @@ body.category-code .fp-header hr {
   grid-column: 2/5;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .continental {
     grid-column: 2/5;
   }
@@ -1460,31 +1171,31 @@ body.category-code .fp-header hr {
   grid-column: 4;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .west-medium {
     grid-column: 2;
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .east-medium {
     grid-column: 3;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .west-large {
     grid-column: 2;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .east-large {
     grid-column: 3;
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .gr-1-m {
     grid-row: 1;
   }
@@ -1498,7 +1209,7 @@ body.category-code .fp-header hr {
   margin: 0 auto 2rem auto;
   padding-block-end: var(--global-padding);
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .site-footer {
     margin-block-start: calc(var(--global-margin) * 5);
   }
@@ -1521,13 +1232,13 @@ body.category-code .fp-header hr {
   padding-left: 0;
   max-width: var(--page-width);
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .footer_menu {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 3rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .footer_menu {
     max-width: calc(77rem - 6rem);
     margin: 0 auto;
@@ -1541,7 +1252,7 @@ body.category-code .fp-header hr {
   max-width: var(--page-width);
   margin: var(--global-margin) auto;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .footer_info {
     grid-template-columns: 2rem 1fr 1fr 1fr 2rem;
     margin: var(--global-margin) auto;
@@ -1581,7 +1292,7 @@ body.category-code .fp-header hr {
 .footer_contact {
   padding: var(--global-padding);
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .footer_copyright,
 .footer_nav,
 .footer_contact {
@@ -1590,13 +1301,13 @@ body.category-code .fp-header hr {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .footer_copyright {
     grid-column: 2;
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .footer_nav {
     grid-column: 3;
   }
@@ -1611,7 +1322,7 @@ body.category-code .fp-header hr {
   display: inline-block;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .footer_contact {
     grid-column: 4;
     text-align: right;
@@ -1622,7 +1333,7 @@ body.category-code .fp-header hr {
 .footer_5 {
   display: none;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .footer_1,
 .footer_5 {
     display: initial;
@@ -1630,14 +1341,14 @@ body.category-code .fp-header hr {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .footer_1 {
     grid-row: 1;
     grid-column: 1/3;
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .footer_5 {
     grid-row: 1;
     grid-column: 4/6;
@@ -1769,7 +1480,7 @@ body.category-code .fp-header hr {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .titleSpinner {
     flex-direction: row;
   }
@@ -1779,7 +1490,7 @@ body.category-code .fp-header hr {
   height: 2.5rem;
   overflow-y: hidden;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   #changeText {
     height: 4rem;
     margin-block-end: var(--global-margin);
@@ -1822,7 +1533,7 @@ body.category-code .fp-header hr {
   border-bottom-left-radius: 2px;
   width: 100%;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .searchform [type=text] {
     width: auto;
   }
@@ -1876,17 +1587,325 @@ reducing some parts to get back to a style guide before building up again
   margin-block-start: 3rem;
   margin-inline: auto;
   justify-content: space-around;
+  padding-inline-start: 0;
+}
+.logos li {
+  list-style: none;
+  flex: 0 1 3rem;
+  max-width: 10vw;
+  height: max-content;
+  align-self: center;
+}
+@media (min-width: 40rem) {
+  .logos li {
+    flex: 0 1 9rem;
+  }
 }
 .logos img {
-  flex: 0 1 2rem;
-  max-width: 10vw;
   filter: saturate(0);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--body-font-family);
+}
+
+p {
+  margin-block-start: 0;
+  line-height: 1.25rem;
+  margin-block-end: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1rem;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 2rem;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-block-end: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-block-end: 1.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-block-end: 1.25rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-block-end: 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-block-end: 1.25rem;
+}
+
+small {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-block-end: 0.5rem;
+}
+
+address {
+  font-style: unset;
+}
+
+.text-center {
+  text-align: center;
+}
+
+figcaption,
+.caption {
+  color: var(--nickel);
+  font-size: 1.5625rem;
+  font-weight: bold;
+}
+
+.wp-block-code {
+  background: var(--white);
+  padding: var(--global-padding);
+  line-height: 1.5em;
+}
+
+.comment-form input,
+.comment-form textarea {
+  border: 0.1em solid var(--nickel);
+  font-weight: bold;
+  padding: var(--global-padding);
+  border-radius: 2px;
+  width: calc( 100% - 3em );
+}
+
+.comment-form input {
+  width: initial;
+}
+
+.comment-form [type=checkbox] {
+  width: auto;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  outline: 0.1em solid var(--cinnabar);
+  border-radius: 2px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+iframe {
+  background: linen;
+}
+
+.category-thumbnail img:hover {
+  opacity: 0.8;
+}
+
+.category-overlaying-image {
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+  z-index: 14;
+  grid-row: 1;
+  grid-column: 1/4;
+}
+@media (prefers-color-scheme: dark) {
+  .category-overlaying-image {
+    mix-blend-mode: screen;
+  }
+}
+@media (min-width: 40rem) {
+  .category-overlaying-image {
+    grid-column: 2/5;
+  }
+}
+
+.category-color-blocking {
+  background: var(--cinnabar);
+  mix-blend-mode: multiply;
+  z-index: 15;
+  grid-row: 1;
+  grid-column: 1/4;
+  transition: 300ms ease;
+}
+@media (min-width: 40rem) {
+  .category-color-blocking {
+    grid-column: 2/5;
+  }
+}
+
+.category-color-blocking:hover {
+  background: var(--cardinal);
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+.flatten {
+  transform: rotateX(90deg);
+}
+
+.flatten img {
+  transform-origin: bottom;
+  transition: 3s ease;
+}
+
+.base {
+  filter: drop-shadow(16px 16px 10px var(--nickel));
+}
+@media (prefers-color-scheme: dark) {
+  .base {
+    filter: drop-shadow(16px 16px 10px black);
+  }
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+.show-for-medium {
+  display: none;
+}
+@media (min-width: 40rem) {
+  .show-for-medium {
+    display: inherit;
+  }
+}
+
+.show-for-large {
+  display: none;
+}
+@media (min-width: 64rem) {
+  .show-for-large {
+    display: inherit;
+  }
+}
+
+@media (min-width: 40rem) {
+  .hide-for-medium {
+    display: none;
+  }
+}
+
+@media (min-width: 64rem) {
+  .hide-for-large {
+    display: none;
+  }
+}
+
+/*
+	theres a whole very specific way of dealing with the dev category which goes back on a bunch of the regular work done by the category design page 
+*/
+body.category-code .category-overlaying-image {
+  filter: none;
+  mix-blend-mode: initial;
+}
+body.category-code .category-color-blocking {
+  display: none;
+}
+body.category-code .category-color-blocking:hover {
+  display: initial;
+  opacity: 0.5;
+}
+body.category-code .article-thumbnail {
+  margin-block-start: calc(var(--global-transition) * 3);
+}
+body.category-code .page-title a {
+  color: var(--cinnabar);
+}
+body.category-code .fp-header {
+  padding: 0;
+  grid-row: initial;
+}
+body.category-code .fp-header hr {
+  display: none;
+}
+
+li {
+  margin-block-end: var(--baseline);
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+.menu {
+  list-style-type: none;
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+hr {
+  margin: 1.25rem auto;
+  border-top: 0;
+  border-bottom: 1px solid var(--nickel);
+}
+
+.mega a {
+  text-decoration: none;
+  padding: var(--global-padding);
+  border-right: 0.1em solid var(--cinnabar);
+  border-bottom: 0.1em solid var(--cinnabar);
+}
+
+.mega a:hover {
+  text-decoration: none;
+  background: var(--cinnabar);
+  color: var(--white);
+}
+
+.is-style-mega-hr,
+.mega-hr,
+.mega-hr-dirty,
+.is-style-mega-hr-primary,
+.mega-hr-primary {
+  border-bottom-width: 0.5em;
+  border-color: var(--white);
+  border-style: solid;
+}
+@media (min-width: 40rem) {
+  .is-style-mega-hr,
+.mega-hr,
+.mega-hr-dirty,
+.is-style-mega-hr-primary,
+.mega-hr-primary {
+    border-bottom-width: 1em;
+  }
+}
+
+.is-style-mega-hr-primary,
+.mega-hr-primary {
+  border-color: var(--cinnabar);
+}
+
+.mega-hr-dirty {
+  border-color: var(--mercury);
 }
 
 .ccc-west {
   display: none;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .ccc-west {
     display: inline;
     grid-column: 1;
@@ -1902,7 +1921,7 @@ reducing some parts to get back to a style guide before building up again
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.5em;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .clicks,
 .code,
 .camera {
@@ -1913,7 +1932,7 @@ reducing some parts to get back to a style guide before building up again
 .ccc-east {
   display: none;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .ccc-east {
     display: initial;
     grid-column: 3;
@@ -1946,7 +1965,7 @@ reducing some parts to get back to a style guide before building up again
   padding-block-start: var(--global-padding);
   padding-block-end: var(--global-padding);
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .social-icons svg {
     width: 3em;
   }
@@ -1964,77 +1983,53 @@ reducing some parts to get back to a style guide before building up again
 	Additional Fancy mani menu sliders
   // https://codepen.io/rm/pen/ldhon
 --------------------------------------------------------------*/
-.home #top-menu,
-.category #top-menu,
-.page #top-menu {
-  min-height: 9rem;
+:is(.home, .category, .page) #top-menu {
+  min-height: 3rem;
 }
-@media (min-width: 640px) {
-  .home #top-menu,
-.category #top-menu,
-.page #top-menu {
+@media (min-width: 40rem) {
+  :is(.home, .category, .page) #top-menu {
     min-height: 10rem;
   }
 }
-.home #top-menu a,
-.category #top-menu a,
-.page #top-menu a {
+:is(.home, .category, .page) #top-menu a {
   width: 100%;
   display: block;
 }
-.home #top-menu a:hover,
-.category #top-menu a:hover,
-.page #top-menu a:hover {
+:is(.home, .category, .page) #top-menu a:hover {
   text-decoration: none;
   display: block;
 }
-.home #top-menu li,
-.category #top-menu li,
-.page #top-menu li {
+:is(.home, .category, .page) #top-menu li {
   list-style: none;
 }
-.home #top-menu li:first-child:hover ~ hr,
-.category #top-menu li:first-child:hover ~ hr,
-.page #top-menu li:first-child:hover ~ hr {
+:is(.home, .category, .page) #top-menu li:first-child:hover ~ hr {
   margin-block-start: -6rem;
   opacity: 1;
 }
-@media (min-width: 640px) {
-  .home #top-menu li:first-child:hover ~ hr,
-.category #top-menu li:first-child:hover ~ hr,
-.page #top-menu li:first-child:hover ~ hr {
+@media (min-width: 40rem) {
+  :is(.home, .category, .page) #top-menu li:first-child:hover ~ hr {
     margin-block-start: -10rem;
   }
 }
-.home #top-menu li:nth-child(2):hover ~ hr,
-.category #top-menu li:nth-child(2):hover ~ hr,
-.page #top-menu li:nth-child(2):hover ~ hr {
+:is(.home, .category, .page) #top-menu li:nth-child(2):hover ~ hr {
   margin-block-start: -3rem;
   opacity: 1;
 }
-@media (min-width: 640px) {
-  .home #top-menu li:nth-child(2):hover ~ hr,
-.category #top-menu li:nth-child(2):hover ~ hr,
-.page #top-menu li:nth-child(2):hover ~ hr {
+@media (min-width: 40rem) {
+  :is(.home, .category, .page) #top-menu li:nth-child(2):hover ~ hr {
     margin-block-start: -5.5rem;
   }
 }
-.home #top-menu li:nth-child(3):hover ~ hr,
-.category #top-menu li:nth-child(3):hover ~ hr,
-.page #top-menu li:nth-child(3):hover ~ hr {
+:is(.home, .category, .page) #top-menu li:nth-child(3):hover ~ hr {
   margin-block-start: 0;
   opacity: 1;
 }
-@media (min-width: 640px) {
-  .home #top-menu li:nth-child(3):hover ~ hr,
-.category #top-menu li:nth-child(3):hover ~ hr,
-.page #top-menu li:nth-child(3):hover ~ hr {
+@media (min-width: 40rem) {
+  :is(.home, .category, .page) #top-menu li:nth-child(3):hover ~ hr {
     margin-block-start: -1rem;
   }
 }
-.home #top-menu hr,
-.category #top-menu hr,
-.page #top-menu hr {
+:is(.home, .category, .page) #top-menu hr {
   position: sticky;
   background: var(--cardinal);
   border: none;
@@ -2044,20 +2039,14 @@ reducing some parts to get back to a style guide before building up again
   opacity: 0;
   height: 0.5rem;
 }
-@media (min-width: 640px) {
-  .home #top-menu hr,
-.category #top-menu hr,
-.page #top-menu hr {
+@media (min-width: 40rem) {
+  :is(.home, .category, .page) #top-menu hr {
     height: 1rem;
     margin-block-start: -10rem;
   }
 }
 
 .single #top-menu {
-  /*   // currently horizontal isnt working run this so vertical can be live
-    hr {
-      display: none;
-    } */
   display: inline;
 }
 .single #top-menu a:hover {
@@ -2066,7 +2055,7 @@ reducing some parts to get back to a style guide before building up again
 .single #top-menu li {
   display: block;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .single #top-menu li {
     display: inline-block;
   }
@@ -2091,40 +2080,6 @@ reducing some parts to get back to a style guide before building up again
   transition: 0.3s ease-in-out;
 }
 
-/* nav#horizontal {
-    font-size: 2rem;
-
-    ul {
-      width: 100%;
-    }
-
-    li {
-      display: inline-block;
-      width: 33%; // this and the rest might be able to be done with js but for now its fine
-    }
-
-    li:first-child a:hover ~ hr {
-      margin-left: 0;
-    }
-
-    li:nth-child(2) a:hover ~ hr {
-      margin-left: 33%;
-    }
-
-    li:nth-child(3) a:hover ~ hr {
-      margin-left: 66%;
-    }
-
-    hr {
-      height: .25rem;
-      width: 25%;
-      margin: 0;
-      margin-left: -33%; // hide when its not in use
-      background: tomato;
-      border: none;
-      transition: .3s ease-in-out;
-    }
-  } */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -2216,7 +2171,7 @@ img.alignright, .alignright img {
 /*--------------------------------------------------------------
 5.0 Typography
 --------------------------------------------------------------*/
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   p {
     text-align: justify;
   }
@@ -2250,7 +2205,7 @@ blockquote {
     color: var(--white);
   }
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   blockquote {
     font-size: 1.563em;
   }
@@ -2274,7 +2229,7 @@ cite {
   margin-block-end: calc(var(--global-margin) * 1.5);
   word-break: break-all;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   cite {
     word-break: normal;
   }
@@ -2320,7 +2275,7 @@ cite {
   border-bottom-right-radius: 3px; */
   font-weight: bold;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .speechbubble {
     writing-mode: vertical-rl;
     margin-block-start: var(--global-margin);
@@ -2332,7 +2287,7 @@ cite {
   justify-self: start;
   word-wrap: break-word;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .page-title {
     font-size: 3rem;
     line-height: 4rem;
@@ -2344,7 +2299,7 @@ cite {
 --------------------------------------------------------------
 
 .article-form label {
-	@media (min-width: map-get($breakpoints, medium)) { /* screen reader text
+	@media (min-width: $medium) { /* screen reader text
 		clip: rect(1px, 1px, 1px, 1px);
 		height: 1px;
 		overflow: hidden;
@@ -2453,12 +2408,12 @@ cite {
 body {
   border: 0.25em solid var(--white);
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   body {
     border: 0.5em solid var(--white);
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   body {
     border: 1em solid var(--white);
   }
@@ -2518,7 +2473,7 @@ table {
   grid-column: 11/span 3;
   grid-row: 1/span 4;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .overlay {
     grid-column: 11/span 3;
     grid-row: 1/span 4;
@@ -2528,7 +2483,7 @@ table {
 .page-title-2 {
   display: none;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .page-title-2 {
     display: block;
     color: var(--white);
@@ -2593,7 +2548,7 @@ button, .article-tags a, .searchform [type=submit],
   display: inline-block;
   -webkit-appearance: none;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   button, .article-tags a, .searchform [type=submit],
 #commentform [type=submit],
 .button {
@@ -2788,7 +2743,7 @@ button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
 .article-tags a {
   margin-block-end: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .article-tags a {
     text-align: right;
   }
@@ -2803,7 +2758,7 @@ button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
 .navigation-top ul {
   padding-left: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .navigation-top ul {
     padding-left: var(--global-padding);
   }
@@ -2814,7 +2769,7 @@ button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
   font-weight: bold;
   margin-block-end: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .navigation-top ul li {
     font-size: 2.25rem;
     line-height: 4.5rem;
@@ -2953,7 +2908,7 @@ img, video, figure {
   color: var(--white);
   /* 	padding: 0.5em;
 
-  	@media (min-width: map-get($breakpoints, medium)) {
+  	@media (min-width: $medium) {
   		padding: var(--global-padding);
   	} */
 }
@@ -2973,7 +2928,7 @@ img, video, figure {
   margin-block-start: calc(var(--global-transition) * 2);
   font-size: 2em;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .cat-title {
     font-size: 3em;
   }
@@ -2994,7 +2949,7 @@ img, video, figure {
   word-wrap: break-word;
   text-align: center;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .featured-category-title {
     font-size: 6em;
   }
@@ -3262,7 +3217,7 @@ css slidesshow in Rileys google drive can do all the math
   padding: 0 1em 0 0;
   width: 50%;
 }
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .gallery-item {
     max-width: 25%;
   }
@@ -3312,25 +3267,25 @@ css slidesshow in Rileys google drive can do all the math
   margin-block-end: 0;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .gallery-columns-1 .gallery-item {
     max-width: 100%;
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .gallery-columns-2 .gallery-item {
     max-width: 50%;
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .gallery-columns-3 .gallery-item {
     max-width: 33.33%;
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .gallery-columns-4 .gallery-item {
     max-width: 25%;
   }
@@ -5612,7 +5567,7 @@ pre[class*=language-] {
   cursor: help;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   #snap-scroll-container-coordinates {
     width: 100%;
     overflow-x: auto;

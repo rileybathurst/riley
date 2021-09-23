@@ -28,6 +28,13 @@ $breakpoints: (
 
 // $global-transition: 0.5s ease;
 
+// sass variables
+$small: 0;
+$medium: 40rem;
+$large: 64rem;
+$xlarge: 75rem;
+$xxlarge: 90rem;
+
 :root {
   --cinnabar: hsl(1, 70%, 45%);
   --cardinal: hsl(1, 100%, 27%); // this doesnt have enough contrast with cinnabar

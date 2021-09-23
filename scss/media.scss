@@ -1,0 +1,68 @@
+// I was hoving a problem with a small bottom margin on images
+img {
+  // https://stackoverflow.com/questions/10844205/html-5-strange-img-always-adds-3px-margin-at-bottom
+  vertical-align: middle;
+}
+
+iframe {
+  background: linen; // just a little fallback color incase an embed doesnt load
+}
+
+.category-thumbnail img:hover {
+  opacity: 0.8; // indication of a link
+}
+
+.category-overlaying-image {
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+  @media (prefers-color-scheme: dark) {
+    mix-blend-mode: screen;
+  }
+  z-index: 14;
+  grid-row: 1;
+  grid-column: 1/4;
+
+  @media (min-width: $medium) {
+    grid-column: 2/5;
+  }
+}
+
+.category-color-blocking {
+  background: var(--cinnabar);
+  mix-blend-mode: multiply;
+  z-index: 15;
+  grid-row: 1;
+  grid-column: 1/4;
+  transition: 300ms ease;
+
+  @media (min-width: $medium) {
+    grid-column: 2/5;
+  }
+}
+
+.category-color-blocking:hover {
+  background: var(--cardinal);
+}
+
+/*------------------------------------*/
+//  #LAPTOP ANIMATION
+/*------------------------------------*/
+
+.flatten
+// .flatten img
+{
+  transform: rotateX(90deg);
+}
+
+.flatten img {
+  transform-origin: bottom;
+  transition: 3s ease;
+}
+
+
+.base { // 📣
+  filter: drop-shadow(16px 16px 10px var(--nickel));
+  @media (prefers-color-scheme: dark) {
+    filter: drop-shadow(16px 16px 10px black);
+  }
+}

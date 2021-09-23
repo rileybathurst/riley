@@ -138,7 +138,7 @@ Template Name: Front Page
 		</div>
 
 		<div class="article-speechbubble"><!-- old use for the naming scheme is messy -->
-			<p><span class="speechbubble">Nov 2016 – Continuing</span></p>
+			<p><span class="speechbubble">Nov 2016 – May 2021</span></p>
 		</div>
 
 		<div class="featured--excerpt">
