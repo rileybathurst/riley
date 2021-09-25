@@ -101,6 +101,8 @@ button:hover,
 	a:hover {
 		text-decoration: line-through;
 		background: var(--cardinal);
+		box-shadow: var(--shade_hover);
+		
 		@media (prefers-color-scheme: dark) {
 			background: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) - 10%));
       box-shadow: var(--shade_hover--dark);

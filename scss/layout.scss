@@ -350,6 +350,7 @@
   // grid-template-columns: 2em 1fr 8fr 1fr 2em;
   grid-template-columns: 2em 1fr 1fr 1fr 2em;
   grid-gap: var(--global-margin);
+  padding-block-start: 2rem;
 }
 
 .cat-head {
@@ -1164,7 +1165,7 @@
 .footer_info address {
   background: var(--mercury); // step back with the grid gap fill
   @media (prefers-color-scheme: dark) {
-    background: #2c2c2c; // this should be made a variable
+    background: var(--tungsten); // this should be made a variable
   }
 }
 
