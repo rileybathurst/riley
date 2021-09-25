@@ -1,12 +1,6 @@
-// Contents
-// Tryptych
-// menu border slider
-// folding laptops
-// Spine Border io
-// inline labels on the searchform
-// Ghosts - The letters of CCC fade after a little while
-
-// Tryptych
+/*------------------------------------*\
+  #TRYPTYCH
+\*------------------------------------*/
 
 var first = document.getElementById('first');
 if (first != null) {
@@ -71,7 +65,10 @@ if (first != null) {
   }
 } // tryptych
 
-// menu border slider
+/*------------------------------------*\
+  #MENU BORDER SLIDER
+\*------------------------------------*/
+
 // Wordpress doesnt let you add an hr to a menu so I'll do it with JS
 
 var menu = document.getElementById('top-menu');
@@ -142,8 +139,10 @@ if (menu != null) {
 
 } // menu
 
+/*------------------------------------*\
+  #FOLDING LAPTOPS
+\*------------------------------------*/
 
-// folding laptops
 // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 // console.log(document.title); // this seemed less reliable
 if (document.getElementById('specific-title')) { // if a single page first
@@ -227,7 +226,10 @@ if (document.getElementById('specific-title')) { // if a single page first
   } // if title === priest
 }
 
-// Spine Border io
+/*------------------------------------*\
+  #SPINE BORDER IO
+\*------------------------------------*/
+
   // some variables have been used above in the laptop screen flipper so this should get updated
   var numSteps2 = 20.0;
 
@@ -278,8 +280,6 @@ if (document.getElementById('specific-title')) { // if a single page first
       prevRatio2 = entry.intersectionRatio;
     });
   }
-// end of spine border
-
 
 /*------------------------------------*\
   // inline labels on the searchform

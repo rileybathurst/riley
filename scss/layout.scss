@@ -615,6 +615,10 @@
     // grid-column: 1 / 4;
     grid-column: 1/6; // full width
   }
+
+  p {
+    max-width: 47rem;
+  }
 }
 
 .article-content-specific img {
