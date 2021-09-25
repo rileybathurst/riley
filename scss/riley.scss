@@ -1,378 +1,15 @@
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.0 Normalize
-2.0 Accessibility
-3.0 Alignments
-4.0 Clearings
-5.0 Typography
-6.0 Forms
-7.0 Formatting
-8.0 Lists
-9.0 Tables
-10.0 Links
-11.0 Featured Image Hover
-12.0 Navigation
-13.0 Layout
-   13.1 Header
-   13.2 Front Page
-   13.3 Regular Content
-   13.4 Posts
-   13.5 Pages
-   13.5.1 Photography Template
-   13.6 Footer
-14.0 Comments
-15.0 Widgets
-16.0 Media
-   16.1 Galleries
-17.0 Customizer
-18.0 SVGs Fallbacks
-19.0 Media Queries
-20.0 Print
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-1.0 Normalize
-Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
---------------------------------------------------------------*/
-
 svg:not(:root) { // thats a pretty strange selector is it right?
 	overflow: hidden;
 }
 
 /*--------------------------------------------------------------
-2.0 Accessibility
+	Accessibility
 --------------------------------------------------------------*/
 
-/* Text meant only for screen readers. These are the wordpress twentyseventeen option for the default places its needed */
 .screen-reader-text {
 	width: 0;
 	height: 0;
 	overflow: hidden;
-}
-
-/*--------------------------------------------------------------
-3.0 Alignments
---------------------------------------------------------------*/
-
-.alignleft {
-	text-align: left;
-	margin-right: var(--global-margin);
-}
-
-.alignright {
-	text-align: right;
-	margin-left: var(--global-margin);
-}
-
-.aligncenter {
-	text-align: center;
-}
-
-.alignleft {
-	float: left;
-}
-
-img.alignleft, .alignleft img {
-	margin-right: var(--global-margin) !important; // what is the !important over writting?
-	margin-left: 0 !important; // what is the !important over writting?
-}
-
-.alignright {
-	float: right;
-}
-
-img.alignright, .alignright img {
-	margin-left: var(--global-margin);
-	margin-right: 0 !important; // what is the !important over writting?
-}
-
-/*--------------------------------------------------------------
-4.0 Clearings
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-5.0 Typography
---------------------------------------------------------------*/
-p {
-	@media (min-width: $large) {
-		text-align: justify;
-	}
-}
-
-/*
-.post > .article-content p {
-	display: block;
-	float: left; // Ive got problems with this so it needs documentation
-	clear: both; // Ive got problems with this
-}
-*/
-
-::selection {
-  background: var(--cinnabar); /* WebKit/Blink Browsers */
-}
-
-a::selection {
-	color: var(--white);
-}
-
-blockquote {
-	margin: 0;
-	color: var(--black);
-	@media (prefers-color-scheme: dark) {
-		color: var(--white);
-	}
-
-	font-size: 1em;
-	@media (min-width: $medium) {
-		font-size: 1.563em; // same as an h4
-	}
-	font-weight: bold;
-	border-left: none; // I think this is a browser override?
-}
-
-blockquote:before {
-	content: "\201C "; // quotation mark?
-	font-family: var(--header-font-family);
-	font-weight: bold;
-	font-size: 32px; // hack this should be an em on the type scale
-	margin-right: calc(var(--global-margin) * 0.5); // why so small?
-}
-
-blockquote p {
-	// display: inline; this was to have the quotes inline but it looses the margins so for now it's removed
-	font-size: 1.125em; // type scale?
-}
-
-cite {
-	color: var(--nickel);
-	margin-left: var(--global-margin);
-	margin-block-end: calc(var(--global-margin) * 1.5); // 📣
-	word-break: break-all; // I was having problems on small screens citing urls
-
-	@media (min-width: $medium) {
-		word-break: normal; // revert back when the small problem doesnt exsist
-	}
-}
-
-.article-content .wp-block-code {
-	white-space: break-spaces; // stay at 100%
-}
-
-.spine {
-	color: #575757; // darker than dark gray to pass contrast checks seems like something I should think about doing this everywhere
-}
-
-.is-style-box-title,
-.box-title, .box-title a {
-	border: .25em solid var(--black);
-	padding: var(--global-padding);
-}
-
-.box-title a:hover {
-	text-decoration: line-through; // is this different to a regular hover?
-}
-
-.pagination .prev, .pagination .next {
-	font-weight: bold;
-}
-
-.nav-previous, .nav-next {
-	font-weight: bold;
-}
-
-.post-navigation h2 {
-	text-transform: capitalize;
-}
-
- .speechbubble {
-	/* display: block; // needed for the padding to be effective on a grid
-	color: var(--cinnabar);
-	padding: var(--global-padding);
-	margin-block-start: -var(--global-margin);
-	border-bottom: 2px solid var(--cinnabar); // why not an em like other places? quite probably use a $global-border-weight
-	border-right: 2px solid var(--cinnabar);
-	border-bottom-right-radius: 3px; */
-
-
-	font-weight: bold;
-	@media (min-width: $medium) {
-		writing-mode: vertical-rl;
-		margin-block-start: var(--global-margin);
-	}
-} 
-
-.page-title {
-	// margin: 0;
-	font-size: 2em; // type scale?
-	// border: .2em solid var(--cinnabar);
-	justify-self: start;
-	// padding: 0.5em; // why half size?
-	// color: var(--cinnabar);
-	word-wrap: break-word;
-	// text-align: center;
-
-	@media (min-width: $medium) {
-		font-size: 3rem;
-		line-height: 4rem;
-	}
-}
-
-/*--------------------------------------------------------------
-6.0 Forms - this is for foundation not material? removing everything to see what breaks first
---------------------------------------------------------------
-
-.article-form label {
-	@media (min-width: $medium) { /* screen reader text
-		clip: rect(1px, 1px, 1px, 1px);
-		height: 1px;
-		overflow: hidden;
-		position: absolute !important;
-		width: 1px;
-		word-wrap: normal !important;
-	}
-}
-
-.article-form input, .article-form textarea {
-	width: 100%;
-	padding: var(--global-padding);
-}
-
-/* removed with material
-[type='submit'] {
-	width: auto !important;
-}
-
-.article-form textarea {
-	height: 10em; // can I do this better?
-}
-
-.article-form button {
-	padding: var(--global-padding);
-	margin: var(--global-margin) 0;
-}
-
-.article-form textarea {
-	border-color: var(--nickel);
-}
-
-.g-recaptcha {
-	margin-block-end: var(--global-margin);
-}
-
-.post-password-form label {
-	display: inline;
-}
-
-.post-password-form [type='password'] {
-	width: 50%;
-	display: inline;
-
-}
-
-/* removed with material
-.post-password-form [type='submit'] {
-	display: inline;
-}
-
-.searchform [type="text"], .post-password-form [type="password"] {
-	border: 1px solid var(--nickel);
-	line-height: 1.15;
-	padding: 1em;
-	border-top-left-radius: 2px;
-	border-bottom-left-radius: 2px;
-}
-
-.post-password-form [type="password"] {
-	padding: 1.5em;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-}
-
-.searchform [type="text"]:active, .post-password-form [type="password"]:active {
-	border-color: var(--cinnabar);
-	outline-color: var(--cinnabar);
-}
-
-[type="submit"] {
-	background: var(--nickel);
-	border: .1em solid var(--nickel);
-	margin-left: -.25em; /* hack to sit the search beside the field
-	padding: 1em;
-	border-top-right-radius: 2px;
-	border-bottom-right-radius: 2px;
-}
-
-.post-password-form [type="submit"] {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-}
-
-.searchform [type="submit"]:hover, .post-password-form [type="submit"]:hover {
-	background-color: var(--cinnabar);
-	border-color: var(--cinnabar);
-	color: var(--white);
-}
-
-.hollow:hover,  {
-	background: var(--cinnabar) !important;
-	border-color: var(--cinnabar) !important;
-	color: var(--cinnabar) !important;
-}
-
-/* removed with material
-[type='submit']:hover {
-	background: var(--cinnabar) !important;
-	border-color: var(--cinnabar) !important;
-	color: var(--cinnabar) !important;
-} */
-
-/*--------------------------------------------------------------
-7.0 Formatting
---------------------------------------------------------------*/
-
-body { // I think I can do this better just having everything sit inside a little
-	border: 0.25em solid var(--white);
-
-	@media (min-width: $medium) {
-		border: 0.5em solid var(--white);
-	}
-
-	@media (min-width: $large) {
-		border: 1em solid var(--white);
-	}
-
-	@media (prefers-color-scheme: dark) {
-		background: var(--black);
-		color: var(--white);
-		border-color: var(--black);
-		margin: 0;
-	}
-}
-
-.background-clean {
-	background: var(--white);
-	@media (prefers-color-scheme: dark) {
-		background: var(--black);
-	}
-}
-
-.background-primary {
-	background: var(--cinnabar);
-}
-
-.background-dirty {
-	background: var(--mercury);
-
-	@media (prefers-color-scheme: dark) {
-		background: #2C2C2C;
-	}
-}
-
-.background-double--dark {
-	background: #4A4A4A;
-	border-bottom: 2px solid var(--black);
-	color: var(--white);
 }
 
 .single-code {
@@ -380,12 +17,8 @@ body { // I think I can do this better just having everything sit inside a littl
 	padding: var(--global-padding);
 }
 
-/* .site, .site-footer {
-	// background: var(--mercury); // why not variables?
-	// color: black; // why not variables?
-} */
-
-table { // do I have any tables?
+// I'm using these in captchas
+table {
 	width: 100%;
 }
 
@@ -426,86 +59,6 @@ table { // do I have any tables?
 	margin-right: 0;
 }
 
-/*--------------------------------------------------------------
-9.0 Tables
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-10.0 Links
---------------------------------------------------------------*/
-
-a {
-	color: var(--cinnabar);
-}
-
-a:hover {
-	text-decoration: line-through;
-	color: var(--cardinal);
-
-	@media (prefers-color-scheme: dark) {
-		// color: lighten (var(--cinnabar), 10%);
-		color: hsl(var(--cinnabar__base), calc(var(--cinnibar) + 10%));
-	}
-}
-
-.form-submit {
-	text-align: left !important; // why important?
-}
-
-button,
-.button { // [type="submit"] removed for material
-	// margin: 0; /* bring the element back inline */
-	margin-block-end: var(--global-margin);
-	// background: none !important; // why important?
-	background: var(--cinnabar);
-/* 	border-top: none !important;
-	border-left: none !important; */
-	border: none;
-	// color: var(--cinnabar);
-	color: var(--white);
-	// border-color: var(--cinnabar) !important;
-	font-weight: bold;
-	font-size: 1.5em; // type scale?
-	/* padding-right: var(--global-padding); this was causing issues with hover looking strange but maybe I had done it or a reason?
-	padding-block-end: var(--global-padding);
-	*/ 
-	transition: var(--global-transition);
-	// padding: var(--global-padding)/2; // front page on 0 doesnt work
-	padding: var(--global-padding)/2 var(--global-padding); // front page on 0 doesnt work
-
-	display: inline-block;
-
-	-webkit-appearance: none; // browser reset
-
-	@media (min-width: $medium) {
-		font-size: 2em; // type scale?
-	}
-}
-
-a.button { // I dont love links as button they should be seperate things but for now
-	text-decoration: none;
-}
-
-button:hover,
-.button:hover { // [type="submit"] removed for material
-	// background: var(--cinnabar) !important; // why important?
-	background: var(--cardinal);
-	color: var(--white) !important; // why important?
-	@media (prefers-color-scheme: dark) {
-		background: hsl(var(--cinnabar__base), calc(var(--cinnibar) + 10%));
-	}
-
-	// padding: var(--global-padding); // this is on a transition so its interesting when just on the hover
-}
-
-.wp-block-button__link {
-	border-radius: 0; // overwrite wp default
-}
-
-.navigation-top a:hover {
-	text-decoration: line-through;
-}
-
 .site-title {
 	color: var(--white);
 }
@@ -527,23 +80,6 @@ button:hover,
 	background-color: rgba(var(--cardinal), 0.3); // why am I using a warning color here?
 }
 
-// this must be able to be done better
-// back to the simple styles
-/* .article-content h1 a,
-.article-content h2 a,
-.article-content h3 a,
-.article-content h4 a,
-.article-content h5 a,
-.article-content h6 a,
-.quote-content h1 a,
-.quote-content h2 a,
-.quote-content h3 a,
-.quote-content h4 a,
-.quote-content h5 a,
-.quote-content h6 a {
-	color: var(--black); 
-} */
-
 .article-footer a,
 .quote-content p a,
 .quote-footer a {
@@ -557,29 +93,12 @@ button:hover,
 	text-decoration: line-through;
 }
 
-/* .article-content .button,
-.quote-content .button {
-	text-decoration: none;
-	box-shadow: none;
-	color: var(--cinnabar);
-	background: var(--white);
-	border-right: 0.1em solid var(--cinnabar); // global?
-	border-bottom: 0.1em solid var(--cinnabar);
-	border-radius: 3px;
-	padding: var(--global-padding);
-} */
-
-/* .article-content .button:hover,
-.quote-content .button:hover {
-	border-bottom: 0.1em solid var(--cinnabar); // global?
-} */
-
 .breacdcrumbs {
 	color: var(--nickel);
 }
 
 .breadcrumbs a {
-	color: #575757; // dark-gray doesn't pass contrast checks but I didn't want to go all the way to black
+	color: var(--iron); // dark-gray doesn't pass contrast checks but I didn't want to go all the way to black
 	text-decoration: line-through;
 
 	@media (prefers-color-scheme: dark) {
@@ -627,46 +146,8 @@ button:hover,
 .footer_copyright a,
 .footer_nav a,
 .footer_contact a {
-	/* text-decoration: none;
-	color: var(--black);
-	box-shadow: inset 0 -4px 0 var(--cinnabar); // this is alternative underline that rises up on hover
-	transition: 300ms; */
 	font-weight: bold;
 }
-/* 
-.footer_copyright a:hover,
-.footer_nav a:hover,
-.footer_contact a:hover {
-	border-bottom: none;
-	box-shadow: inset 0 -8px 0 var(--cinnabar);
-} */
-
-/* .article-category a,
-.featured-category a{
-	color: var(--nickel);
-} */
-
-/* removing this to try and get everything back to a basic style guide
-.post-navigation a {
-	color: var(--black);
-}
-
-.article-tags a {
-	color: var(--nickel);
-}
-
-.single .article-comments a {
-	color: var(--black);
-	text-decoration: none; // can 2019 css do this better?
-	border-bottom: 3px solid var(--cinnabar);
-	box-shadow: inset 0 -4px 0 var(--cinnabar);
-}
-
-.single .article-comments a:hover { // this seems like it would be nicer with a transition time?
-	border-bottom: none;
-	box-shadow: none;
-	background-color: var(--cinnabar);
-} */
 
 .article-tags a {
 	@extend button;
@@ -725,34 +206,26 @@ button:hover,
 		padding: var(--global-padding);
 		display: block;
 		text-decoration: none;
-	}
-
-	a:hover {
-		background: var(--cardinal);
-		text-decoration: line-through;
-	}
-}
-
-.footer_menu li {
-	
-	a {
-		background: var(--cinnabar);
-		color: var(--white);
-		padding: var(--global-padding);
-		text-decoration: none;
-		display: block; // fill the box
+		box-shadow: var(--shade);
 		transition: var(--global-transition);
-		font-weight: bold;
+
+		@media (prefers-color-scheme: dark) {
+			box-shadow: var(--shade--dark);
+		}
 	}
 
 	a:hover {
-		text-decoration: line-through;
 		background: var(--cardinal);
+		text-decoration: line-through;
+		box-shadow: var(--shade_hover);
+
 		@media (prefers-color-scheme: dark) {
-			background: hsl(var(--cinnabar__base), calc(var(--cinnibar) + 10%));
+			box-shadow: var(--shade_hover--dark);
 		}
 	}
 }
+
+
 
 /*--------------------------------------------------------------
 13.0 Layout

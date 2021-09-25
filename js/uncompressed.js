@@ -280,7 +280,11 @@ if (document.getElementById('specific-title')) { // if a single page first
   }
 // end of spine border
 
-// inline labels on the searchform
+
+/*------------------------------------*\
+  // inline labels on the searchform
+\*------------------------------------*/
+
 if (document.getElementById('searchform')) {
   // console.log(document.getElementById('searchform'));
 
@@ -319,7 +323,10 @@ if (document.getElementById('searchform')) {
   }); // event listner
 } // searchform
 
-// ghosts
+/*------------------------------------*\
+  #GHOSTS
+\*------------------------------------*/
+
 // The letters of CCC fade after a little while
 function code() {
 	var ghosts = document.getElementsByClassName('ghostly');

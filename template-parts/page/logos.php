@@ -26,7 +26,7 @@ if ( $the_query->have_posts() ) {
     <!-- wine enthusiast skinny logo is kinda terrible maybe I should skip it small -->
     <li class="show-for-large">
     <picture>
-    <img src="<?php echo content_url(); ?>/uploads/2021/08/wine-enthusiast-logo.png" alt="wine enthusiast" />
+    <img src="<?php echo content_url(); ?>/uploads/2021/08/wine-enthusiast-logo.png" alt="wine enthusiast" class="dark-verted" />
     </picture>
     </li>
 
@@ -40,14 +40,14 @@ if ( $the_query->have_posts() ) {
     <li>
         <picture>
             <source srcset="<?php echo content_url(); ?>/uploads/2021/08/macpac.png" media="(min-width: 64rem)" />
-            <img src="<?php echo content_url(); ?>/uploads/2021/09/macpac-square.png" alt="macpac" />
+            <img src="<?php echo content_url(); ?>/uploads/2021/09/macpac-square.png" alt="macpac" class="dark-verted" />
         </picture>
     </li>
 
     <li>
         <picture>
             <source srcset="<?php echo content_url(); ?>/uploads/2021/08/msp_logo.png" media="(min-width: 64rem)" />
-            <img src="<?php echo content_url(); ?>/uploads/2021/09/msp_logo-square.png" alt="matchstick productions" />
+            <img src="<?php echo content_url(); ?>/uploads/2021/09/msp_logo-square.png" alt="matchstick productions" class="dark-verted" />
         </picture>
     </li>
 

@@ -1,0 +1,126 @@
+/*--------------------------------------------------------------
+10.0 Links
+--------------------------------------------------------------*/
+
+a {
+	color: var(--cinnabar);
+}
+
+a:hover {
+	text-decoration: line-through;
+	color: var(--cardinal);
+
+	@media (prefers-color-scheme: dark) {
+		color: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) - 10%));
+	}
+}
+
+button,
+.button {
+	margin-block-end: var(--global-margin);
+	background: var(--cinnabar);
+	border: none;
+	color: var(--white);
+	font-weight: bold;
+	font-size: 1.5em; // h4
+	transition: var(--global-transition);
+	padding: var(--global-padding)/2 var(--global-padding);
+	display: inline-block;
+	-webkit-appearance: none; // browser reset
+  box-shadow: 0.25rem 0.25rem var(--magnesium);
+
+	@media (min-width: $medium) {
+		font-size: 2em; // h3
+	}
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: var(--shade--dark);
+  }
+}
+
+a.button { // I dont love links as button they should be seperate things but for now
+	text-decoration: none;
+}
+
+button:hover,
+.button:hover { // [type="submit"] removed for material
+	// background: var(--cinnabar) !important; // why important?
+	background: var(--cardinal);
+	color: var(--white) !important; // why important?
+  box-shadow: 0.5rem 0.5rem var(--aluminium);
+
+  @media (prefers-color-scheme: dark) {
+		background: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) - 10%));
+	}
+
+  @media (prefers-color-scheme: dark) {
+		box-shadow: var(--shade_hover--dark);
+	}
+}
+
+.wp-block-button__link {
+	border-radius: 0; // overwrite wp default
+	transition: var(----global-transition);
+  box-shadow: var(--shade);
+  transition: var(--global-transition);
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: var(--shade--dark);
+  }
+}
+
+.wp-block-button__link:hover {
+  box-shadow: var(--shade_hover);
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: var(--shade_hover--dark);
+  }
+}
+
+.navigation-top a:hover {
+	text-decoration: line-through;
+}
+
+.form-submit {
+	text-align: left !important; // why important?
+}
+
+.footer_menu li {
+	
+	a {
+		background: var(--cinnabar);
+		color: var(--white);
+		padding: var(--global-padding);
+		text-decoration: none;
+		display: block; // fill the box
+		transition: var(--global-transition);
+		font-weight: bold;
+    box-shadow: 0.25rem 0.25rem var(--magnesium);
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow: var(--shade--dark);
+    }
+	}
+
+	a:hover {
+		text-decoration: line-through;
+		background: var(--cardinal);
+		@media (prefers-color-scheme: dark) {
+			background: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) - 10%));
+      box-shadow: var(--shade_hover--dark);
+		}
+	}
+}
+
+// tungsten
+.background-dirty :is(.wp-block-button__link, .button) {
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0.5rem 0.5rem var(--lead);
+  }
+}
+
+.background-dirty :is(.wp-block-button__link, .button ):hover {
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0.5rem 0.5rem var(--black);
+  }
+}

@@ -148,8 +148,8 @@ Template Name: Front Page
 		</div>
 
 		<div class="article-explore">
-			<hr class="mega-hr-primary">
-			<a href="https://rileybathurst.com/2018/04/snowledge/">Explore Snowledge</a>
+			<hr class="mega-hr-primary" />
+			<a href="https://rileybathurst.com/2018/04/snowledge/" class="button" >Explore Snowledge</a>
 		</div>
 	</article>
 

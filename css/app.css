@@ -28,6 +28,200 @@
   --body-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   --header-font-family: var(--body-font-family);
   --global-transition: 0.5s ease;
+  --shade: 0.25rem 0.25rem var(--magnesium);
+  --shade_hover: 0.5rem 0.5rem var(--aluminium);
+  --shade--dark: 0.25rem 0.25rem var(--iron);
+  --shade_hover--dark: 0.5rem 0.5rem var(--tungsten);
+}
+
+body {
+  margin: 0;
+  border: 0.25em solid var(--white);
+}
+@media (min-width: 40rem) {
+  body {
+    border: 0.5em solid var(--white);
+  }
+}
+@media (min-width: 64rem) {
+  body {
+    border: 1em solid var(--white);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--black);
+  }
+}
+
+.background-clean {
+  background: var(--white);
+}
+@media (prefers-color-scheme: dark) {
+  .background-clean {
+    background: var(--black);
+  }
+}
+
+.background-primary {
+  background: var(--cinnabar);
+}
+
+.background-dirty, .article-comments {
+  background: var(--mercury);
+}
+@media (prefers-color-scheme: dark) {
+  .background-dirty, .article-comments {
+    background: var(--tungsten);
+  }
+}
+
+.background-double--dark, .single-code {
+  background: var(--iron);
+  border-bottom: 2px solid var(--black);
+  color: var(--white);
+}
+
+/*--------------------------------------------------------------
+10.0 Links
+--------------------------------------------------------------*/
+a {
+  color: var(--cinnabar);
+}
+
+a:hover {
+  text-decoration: line-through;
+  color: var(--cardinal);
+}
+@media (prefers-color-scheme: dark) {
+  a:hover {
+    color: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) - 10%));
+  }
+}
+
+button, .article-tags a, .searchform [type=submit],
+#commentform [type=submit],
+.button {
+  margin-block-end: var(--global-margin);
+  background: var(--cinnabar);
+  border: none;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: var(--global-transition);
+  padding: var(--global-padding)/2 var(--global-padding);
+  display: inline-block;
+  -webkit-appearance: none;
+  box-shadow: 0.25rem 0.25rem var(--magnesium);
+}
+@media (min-width: 40rem) {
+  button, .article-tags a, .searchform [type=submit],
+#commentform [type=submit],
+.button {
+    font-size: 2em;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  button, .article-tags a, .searchform [type=submit],
+#commentform [type=submit],
+.button {
+    box-shadow: var(--shade--dark);
+  }
+}
+
+a.button {
+  text-decoration: none;
+}
+
+button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
+#commentform [type=submit]:hover,
+.button:hover {
+  background: var(--cardinal);
+  color: var(--white) !important;
+  box-shadow: 0.5rem 0.5rem var(--aluminium);
+}
+@media (prefers-color-scheme: dark) {
+  button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
+#commentform [type=submit]:hover,
+.button:hover {
+    background: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) - 10%));
+  }
+}
+@media (prefers-color-scheme: dark) {
+  button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
+#commentform [type=submit]:hover,
+.button:hover {
+    box-shadow: var(--shade_hover--dark);
+  }
+}
+
+.wp-block-button__link {
+  border-radius: 0;
+  transition: var(----global-transition);
+  box-shadow: var(--shade);
+  transition: var(--global-transition);
+}
+@media (prefers-color-scheme: dark) {
+  .wp-block-button__link {
+    box-shadow: var(--shade--dark);
+  }
+}
+
+.wp-block-button__link:hover {
+  box-shadow: var(--shade_hover);
+}
+@media (prefers-color-scheme: dark) {
+  .wp-block-button__link:hover {
+    box-shadow: var(--shade_hover--dark);
+  }
+}
+
+.navigation-top a:hover {
+  text-decoration: line-through;
+}
+
+.form-submit {
+  text-align: left !important;
+}
+
+.footer_menu li a {
+  background: var(--cinnabar);
+  color: var(--white);
+  padding: var(--global-padding);
+  text-decoration: none;
+  display: block;
+  transition: var(--global-transition);
+  font-weight: bold;
+  box-shadow: 0.25rem 0.25rem var(--magnesium);
+}
+@media (prefers-color-scheme: dark) {
+  .footer_menu li a {
+    box-shadow: var(--shade--dark);
+  }
+}
+.footer_menu li a:hover {
+  text-decoration: line-through;
+  background: var(--cardinal);
+}
+@media (prefers-color-scheme: dark) {
+  .footer_menu li a:hover {
+    background: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) - 10%));
+    box-shadow: var(--shade_hover--dark);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .background-dirty :is(.wp-block-button__link, .button), .article-comments :is(.wp-block-button__link, .button) {
+    box-shadow: 0.5rem 0.5rem var(--lead);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .background-dirty :is(.wp-block-button__link, .button):hover, .article-comments :is(.wp-block-button__link, .button):hover {
+    box-shadow: 0.5rem 0.5rem var(--black);
+  }
 }
 
 /*------------------------------------*\
@@ -300,12 +494,18 @@
 .header-color-blocking {
   grid-row: 2;
   grid-column: 2;
+  display: flex;
 }
 @media (min-width: 40rem) {
   .header-color-blocking {
     grid-row: 1/4;
     grid-column: 3;
   }
+}
+.header-color-blocking svg {
+  width: 100%;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
 }
 
 /*--------------------------------------------------------------
@@ -694,6 +894,11 @@
   padding-block-start: var(--global-padding);
 }
 @media (min-width: 40rem) {
+  .featured-header {
+    margin-inline: 3rem;
+  }
+}
+@media (min-width: 64rem) {
   .featured-header {
     margin-inline: auto;
   }
@@ -1444,6 +1649,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   background: var(--white);
+  margin-block-end: 3rem;
 }
 .searchBox [type=text] {
   grid-row: 1;
@@ -1452,6 +1658,11 @@
   background: none;
   padding: var(--global-padding);
   max-width: calc(100% - 2rem);
+}
+@media (prefers-color-scheme: dark) {
+  .searchBox [type=text] {
+    background: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) + 50%));
+  }
 }
 .searchBox [type=submit] {
   grid-row: 1;
@@ -1479,22 +1690,28 @@
 .titleSpinner {
   display: flex;
   flex-direction: column;
+  padding-block-end: 0;
+  padding-inline-start: 0;
 }
 @media (min-width: 40rem) {
   .titleSpinner {
     flex-direction: row;
   }
 }
+.titleSpinner > * {
+  margin-block-end: 0;
+}
 
 #changeText {
   height: 2.5rem;
+  line-height: 3rem;
   overflow-y: hidden;
 }
 @media (min-width: 40rem) {
   #changeText {
     height: 4rem;
     margin-block-end: var(--global-margin);
-    margin-block-start: 2.75rem;
+    margin-block-start: 2.5rem;
   }
 }
 #changeText h2 {
@@ -1524,6 +1741,16 @@
     transform: translateY(0);
   }
 }
+.speechbubble {
+  font-weight: bold;
+}
+@media (min-width: 40rem) {
+  .speechbubble {
+    writing-mode: vertical-rl;
+    margin-block-start: var(--global-margin);
+  }
+}
+
 .searchform [type=text] {
   border: 0.1em solid var(--nickel);
   border-right: none;
@@ -1536,6 +1763,11 @@
 @media (min-width: 40rem) {
   .searchform [type=text] {
     width: auto;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .searchform [type=text] {
+    border-color: var(--iron);
   }
 }
 
@@ -1604,6 +1836,15 @@ reducing some parts to get back to a style guide before building up again
 .logos img {
   filter: saturate(0);
 }
+@media (prefers-color-scheme: dark) {
+  .logos .dark-verted {
+    filter: saturate(0) invert(1) brightness(1.5);
+  }
+}
+
+.article-content .wp-block-code {
+  white-space: break-spaces;
+}
 
 html {
   font-size: 16px;
@@ -1618,14 +1859,10 @@ p {
   line-height: 1.25rem;
   margin-block-end: 1.25em;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 2.75rem 0 1rem;
-  line-height: 1.15;
+@media (min-width: 64rem) {
+  p {
+    text-align: justify;
+  }
 }
 
 h1 {
@@ -1690,6 +1927,94 @@ figcaption,
   background: var(--white);
   padding: var(--global-padding);
   line-height: 1.5em;
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+::selection {
+  background: var(--cinnabar);
+}
+
+a::selection {
+  color: var(--white);
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+blockquote {
+  margin: 0;
+  color: var(--black);
+  font-size: 1em;
+  font-weight: bold;
+  border-left: none;
+}
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    color: var(--white);
+  }
+}
+@media (min-width: 40rem) {
+  blockquote {
+    font-size: 1.563em;
+  }
+}
+
+blockquote:before {
+  content: "“";
+  font-family: var(--header-font-family);
+  font-weight: bold;
+  font-size: 32px;
+  margin-right: calc(var(--global-margin) * 0.5);
+}
+
+blockquote p {
+  font-size: 1.125em;
+}
+
+cite {
+  color: var(--nickel);
+  margin-left: var(--global-margin);
+  margin-block-end: calc(var(--global-margin) * 1.5);
+  word-break: break-all;
+}
+@media (min-width: 40rem) {
+  cite {
+    word-break: normal;
+  }
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+.is-style-box-title,
+.box-title, .box-title a {
+  border: 0.25em solid var(--black);
+  padding: var(--global-padding);
+}
+
+.box-title a:hover {
+  text-decoration: line-through;
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+.pagination .prev, .pagination .next {
+  font-weight: bold;
+}
+
+/* I dont think this is right
+.nav-previous, .nav-next {
+	font-weight: bold;
+} */
+.page-title {
+  font-size: 2em;
+  justify-self: start;
+  word-wrap: break-word;
+}
+@media (min-width: 40rem) {
+  .page-title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
 }
 
 .comment-form input,
@@ -1853,6 +2178,10 @@ li {
   list-style-type: none;
 }
 
+.spine {
+  color: var(--iron);
+}
+
 /*------------------------------------*/
 /*------------------------------------*/
 hr {
@@ -1900,6 +2229,11 @@ hr {
 
 .mega-hr-dirty {
   border-color: var(--mercury);
+}
+@media (prefers-color-scheme: dark) {
+  .mega-hr-dirty {
+    border-color: var(--lead);
+  }
 }
 
 .ccc-west {
@@ -1954,10 +2288,23 @@ hr {
 
 .social-icons > .fp-box > a {
   display: block;
+  box-shadow: var(--shade);
+  transition: var(--global-transition);
+}
+@media (prefers-color-scheme: dark) {
+  .social-icons > .fp-box > a {
+    box-shadow: var(--shade--dark);
+  }
 }
 
 .social-icons > .fp-box > a:hover {
   background: var(--cardinal);
+  box-shadow: var(--shade_hover);
+}
+@media (prefers-color-scheme: dark) {
+  .social-icons > .fp-box > a:hover {
+    box-shadow: var(--shade_hover--dark);
+  }
 }
 
 .social-icons svg {
@@ -2080,389 +2427,23 @@ hr {
   transition: 0.3s ease-in-out;
 }
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.0 Normalize
-2.0 Accessibility
-3.0 Alignments
-4.0 Clearings
-5.0 Typography
-6.0 Forms
-7.0 Formatting
-8.0 Lists
-9.0 Tables
-10.0 Links
-11.0 Featured Image Hover
-12.0 Navigation
-13.0 Layout
-   13.1 Header
-   13.2 Front Page
-   13.3 Regular Content
-   13.4 Posts
-   13.5 Pages
-   13.5.1 Photography Template
-   13.6 Footer
-14.0 Comments
-15.0 Widgets
-16.0 Media
-   16.1 Galleries
-17.0 Customizer
-18.0 SVGs Fallbacks
-19.0 Media Queries
-20.0 Print
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-1.0 Normalize
-Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
---------------------------------------------------------------*/
 svg:not(:root) {
   overflow: hidden;
 }
 
 /*--------------------------------------------------------------
-2.0 Accessibility
+	Accessibility
 --------------------------------------------------------------*/
-/* Text meant only for screen readers. These are the wordpress twentyseventeen option for the default places its needed */
 .screen-reader-text {
   width: 0;
   height: 0;
   overflow: hidden;
 }
 
-/*--------------------------------------------------------------
-3.0 Alignments
---------------------------------------------------------------*/
-.alignleft {
-  text-align: left;
-  margin-right: var(--global-margin);
-}
-
-.alignright {
-  text-align: right;
-  margin-left: var(--global-margin);
-}
-
-.aligncenter {
-  text-align: center;
-}
-
-.alignleft {
-  float: left;
-}
-
-img.alignleft, .alignleft img {
-  margin-right: var(--global-margin) !important;
-  margin-left: 0 !important;
-}
-
-.alignright {
-  float: right;
-}
-
-img.alignright, .alignright img {
-  margin-left: var(--global-margin);
-  margin-right: 0 !important;
-}
-
-/*--------------------------------------------------------------
-4.0 Clearings
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-5.0 Typography
---------------------------------------------------------------*/
-@media (min-width: 64rem) {
-  p {
-    text-align: justify;
-  }
-}
-
-/*
-.post > .article-content p {
-	display: block;
-	float: left; // Ive got problems with this so it needs documentation
-	clear: both; // Ive got problems with this
-}
-*/
-::selection {
-  background: var(--cinnabar);
-  /* WebKit/Blink Browsers */
-}
-
-a::selection {
-  color: var(--white);
-}
-
-blockquote {
-  margin: 0;
-  color: var(--black);
-  font-size: 1em;
-  font-weight: bold;
-  border-left: none;
-}
-@media (prefers-color-scheme: dark) {
-  blockquote {
-    color: var(--white);
-  }
-}
-@media (min-width: 40rem) {
-  blockquote {
-    font-size: 1.563em;
-  }
-}
-
-blockquote:before {
-  content: "“";
-  font-family: var(--header-font-family);
-  font-weight: bold;
-  font-size: 32px;
-  margin-right: calc(var(--global-margin) * 0.5);
-}
-
-blockquote p {
-  font-size: 1.125em;
-}
-
-cite {
-  color: var(--nickel);
-  margin-left: var(--global-margin);
-  margin-block-end: calc(var(--global-margin) * 1.5);
-  word-break: break-all;
-}
-@media (min-width: 40rem) {
-  cite {
-    word-break: normal;
-  }
-}
-
-.article-content .wp-block-code {
-  white-space: break-spaces;
-}
-
-.spine {
-  color: #575757;
-}
-
-.is-style-box-title,
-.box-title, .box-title a {
-  border: 0.25em solid var(--black);
-  padding: var(--global-padding);
-}
-
-.box-title a:hover {
-  text-decoration: line-through;
-}
-
-.pagination .prev, .pagination .next {
-  font-weight: bold;
-}
-
-.nav-previous, .nav-next {
-  font-weight: bold;
-}
-
-.post-navigation h2 {
-  text-transform: capitalize;
-}
-
-.speechbubble {
-  /* display: block; // needed for the padding to be effective on a grid
-  color: var(--cinnabar);
-  padding: var(--global-padding);
-  margin-block-start: -var(--global-margin);
-  border-bottom: 2px solid var(--cinnabar); // why not an em like other places? quite probably use a $global-border-weight
-  border-right: 2px solid var(--cinnabar);
-  border-bottom-right-radius: 3px; */
-  font-weight: bold;
-}
-@media (min-width: 40rem) {
-  .speechbubble {
-    writing-mode: vertical-rl;
-    margin-block-start: var(--global-margin);
-  }
-}
-
-.page-title {
-  font-size: 2em;
-  justify-self: start;
-  word-wrap: break-word;
-}
-@media (min-width: 40rem) {
-  .page-title {
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-}
-
-/*--------------------------------------------------------------
-6.0 Forms - this is for foundation not material? removing everything to see what breaks first
---------------------------------------------------------------
-
-.article-form label {
-	@media (min-width: $medium) { /* screen reader text
-		clip: rect(1px, 1px, 1px, 1px);
-		height: 1px;
-		overflow: hidden;
-		position: absolute !important;
-		width: 1px;
-		word-wrap: normal !important;
-	}
-}
-
-.article-form input, .article-form textarea {
-	width: 100%;
-	padding: var(--global-padding);
-}
-
-/* removed with material
-[type='submit'] {
-	width: auto !important;
-}
-
-.article-form textarea {
-	height: 10em; // can I do this better?
-}
-
-.article-form button {
-	padding: var(--global-padding);
-	margin: var(--global-margin) 0;
-}
-
-.article-form textarea {
-	border-color: var(--nickel);
-}
-
-.g-recaptcha {
-	margin-block-end: var(--global-margin);
-}
-
-.post-password-form label {
-	display: inline;
-}
-
-.post-password-form [type='password'] {
-	width: 50%;
-	display: inline;
-
-}
-
-/* removed with material
-.post-password-form [type='submit'] {
-	display: inline;
-}
-
-.searchform [type="text"], .post-password-form [type="password"] {
-	border: 1px solid var(--nickel);
-	line-height: 1.15;
-	padding: 1em;
-	border-top-left-radius: 2px;
-	border-bottom-left-radius: 2px;
-}
-
-.post-password-form [type="password"] {
-	padding: 1.5em;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-}
-
-.searchform [type="text"]:active, .post-password-form [type="password"]:active {
-	border-color: var(--cinnabar);
-	outline-color: var(--cinnabar);
-}
-
-[type="submit"] {
-	background: var(--nickel);
-	border: .1em solid var(--nickel);
-	margin-left: -.25em; /* hack to sit the search beside the field
-	padding: 1em;
-	border-top-right-radius: 2px;
-	border-bottom-right-radius: 2px;
-}
-
-.post-password-form [type="submit"] {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-}
-
-.searchform [type="submit"]:hover, .post-password-form [type="submit"]:hover {
-	background-color: var(--cinnabar);
-	border-color: var(--cinnabar);
-	color: var(--white);
-}
-
-.hollow:hover,  {
-	background: var(--cinnabar) !important;
-	border-color: var(--cinnabar) !important;
-	color: var(--cinnabar) !important;
-}
-
-/* removed with material
-[type='submit']:hover {
-	background: var(--cinnabar) !important;
-	border-color: var(--cinnabar) !important;
-	color: var(--cinnabar) !important;
-} */
-/*--------------------------------------------------------------
-7.0 Formatting
---------------------------------------------------------------*/
-body {
-  border: 0.25em solid var(--white);
-}
-@media (min-width: 40rem) {
-  body {
-    border: 0.5em solid var(--white);
-  }
-}
-@media (min-width: 64rem) {
-  body {
-    border: 1em solid var(--white);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    background: var(--black);
-    color: var(--white);
-    border-color: var(--black);
-    margin: 0;
-  }
-}
-
-.background-clean {
-  background: var(--white);
-}
-@media (prefers-color-scheme: dark) {
-  .background-clean {
-    background: var(--black);
-  }
-}
-
-.background-primary {
-  background: var(--cinnabar);
-}
-
-.background-dirty, .article-comments {
-  background: var(--mercury);
-}
-@media (prefers-color-scheme: dark) {
-  .background-dirty, .article-comments {
-    background: #2C2C2C;
-  }
-}
-
-.background-double--dark, .single-code {
-  background: #4A4A4A;
-  border-bottom: 2px solid var(--black);
-  color: var(--white);
-}
-
 .single-code {
   padding: var(--global-padding);
 }
 
-/* .site, .site-footer {
-	// background: var(--mercury); // why not variables?
-	// color: black; // why not variables?
-} */
 table {
   width: 100%;
 }
@@ -2505,83 +2486,6 @@ table {
   margin-right: 0;
 }
 
-/*--------------------------------------------------------------
-9.0 Tables
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-10.0 Links
---------------------------------------------------------------*/
-a {
-  color: var(--cinnabar);
-}
-
-a:hover {
-  text-decoration: line-through;
-  color: var(--cardinal);
-}
-@media (prefers-color-scheme: dark) {
-  a:hover {
-    color: hsl(var(--cinnabar__base), calc(var(--cinnibar) + 10%));
-  }
-}
-
-.form-submit {
-  text-align: left !important;
-}
-
-button, .article-tags a, .searchform [type=submit],
-#commentform [type=submit],
-.button {
-  margin-block-end: var(--global-margin);
-  background: var(--cinnabar);
-  /* 	border-top: none !important;
-  	border-left: none !important; */
-  border: none;
-  color: var(--white);
-  font-weight: bold;
-  font-size: 1.5em;
-  /* padding-right: var(--global-padding); this was causing issues with hover looking strange but maybe I had done it or a reason?
-  padding-block-end: var(--global-padding);
-  */
-  transition: var(--global-transition);
-  padding: var(--global-padding)/2 var(--global-padding);
-  display: inline-block;
-  -webkit-appearance: none;
-}
-@media (min-width: 40rem) {
-  button, .article-tags a, .searchform [type=submit],
-#commentform [type=submit],
-.button {
-    font-size: 2em;
-  }
-}
-
-a.button {
-  text-decoration: none;
-}
-
-button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
-#commentform [type=submit]:hover,
-.button:hover {
-  background: var(--cardinal);
-  color: var(--white) !important;
-}
-@media (prefers-color-scheme: dark) {
-  button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
-#commentform [type=submit]:hover,
-.button:hover {
-    background: hsl(var(--cinnabar__base), calc(var(--cinnibar) + 10%));
-  }
-}
-
-.wp-block-button__link {
-  border-radius: 0;
-}
-
-.navigation-top a:hover {
-  text-decoration: line-through;
-}
-
 .site-title {
   color: var(--white);
 }
@@ -2602,20 +2506,6 @@ button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
   background-color: rgba(var(--cardinal), 0.3);
 }
 
-/* .article-content h1 a,
-.article-content h2 a,
-.article-content h3 a,
-.article-content h4 a,
-.article-content h5 a,
-.article-content h6 a,
-.quote-content h1 a,
-.quote-content h2 a,
-.quote-content h3 a,
-.quote-content h4 a,
-.quote-content h5 a,
-.quote-content h6 a {
-	color: var(--black); 
-} */
 .article-footer a,
 .quote-content p a,
 .quote-footer a {
@@ -2629,27 +2519,12 @@ button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
   text-decoration: line-through;
 }
 
-/* .article-content .button,
-.quote-content .button {
-	text-decoration: none;
-	box-shadow: none;
-	color: var(--cinnabar);
-	background: var(--white);
-	border-right: 0.1em solid var(--cinnabar); // global?
-	border-bottom: 0.1em solid var(--cinnabar);
-	border-radius: 3px;
-	padding: var(--global-padding);
-} */
-/* .article-content .button:hover,
-.quote-content .button:hover {
-	border-bottom: 0.1em solid var(--cinnabar); // global?
-} */
 .breacdcrumbs {
   color: var(--nickel);
 }
 
 .breadcrumbs a {
-  color: #575757;
+  color: var(--iron);
   text-decoration: line-through;
 }
 @media (prefers-color-scheme: dark) {
@@ -2701,45 +2576,9 @@ button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
 .footer_copyright a,
 .footer_nav a,
 .footer_contact a {
-  /* text-decoration: none;
-  color: var(--black);
-  box-shadow: inset 0 -4px 0 var(--cinnabar); // this is alternative underline that rises up on hover
-  transition: 300ms; */
   font-weight: bold;
 }
 
-/* 
-.footer_copyright a:hover,
-.footer_nav a:hover,
-.footer_contact a:hover {
-	border-bottom: none;
-	box-shadow: inset 0 -8px 0 var(--cinnabar);
-} */
-/* .article-category a,
-.featured-category a{
-	color: var(--nickel);
-} */
-/* removing this to try and get everything back to a basic style guide
-.post-navigation a {
-	color: var(--black);
-}
-
-.article-tags a {
-	color: var(--nickel);
-}
-
-.single .article-comments a {
-	color: var(--black);
-	text-decoration: none; // can 2019 css do this better?
-	border-bottom: 3px solid var(--cinnabar);
-	box-shadow: inset 0 -4px 0 var(--cinnabar);
-}
-
-.single .article-comments a:hover { // this seems like it would be nicer with a transition time?
-	border-bottom: none;
-	box-shadow: none;
-	background-color: var(--cinnabar);
-} */
 .article-tags a {
   margin-block-end: 0;
 }
@@ -2791,28 +2630,22 @@ button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
   padding: var(--global-padding);
   display: block;
   text-decoration: none;
+  box-shadow: var(--shade);
+  transition: var(--global-transition);
+}
+@media (prefers-color-scheme: dark) {
+  .category-sub li a {
+    box-shadow: var(--shade--dark);
+  }
 }
 .category-sub li a:hover {
   background: var(--cardinal);
   text-decoration: line-through;
-}
-
-.footer_menu li a {
-  background: var(--cinnabar);
-  color: var(--white);
-  padding: var(--global-padding);
-  text-decoration: none;
-  display: block;
-  transition: var(--global-transition);
-  font-weight: bold;
-}
-.footer_menu li a:hover {
-  text-decoration: line-through;
-  background: var(--cardinal);
+  box-shadow: var(--shade_hover);
 }
 @media (prefers-color-scheme: dark) {
-  .footer_menu li a:hover {
-    background: hsl(var(--cinnabar__base), calc(var(--cinnibar) + 10%));
+  .category-sub li a:hover {
+    box-shadow: var(--shade_hover--dark);
   }
 }
 

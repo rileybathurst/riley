@@ -13,6 +13,10 @@
 	@media (min-width: $medium) {
 		width: auto;
 	}
+
+	@media (prefers-color-scheme: dark) {
+		border-color: var(--iron);
+	}
 }
 
 .searchform [type="text"]:focus {
@@ -95,4 +99,17 @@ reducing some parts to get back to a style guide before building up again
 	img {
 		filter: saturate(0);
 	}
+
+	.dark-verted {
+		@media (prefers-color-scheme: dark) {
+			filter: 
+			saturate(0)
+			invert(1)
+			brightness(1.5);
+		}
+	}
+}
+
+.article-content .wp-block-code {
+	white-space: break-spaces; // stay at 100%
 }

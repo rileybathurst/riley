@@ -29,19 +29,6 @@ if (have_posts()) {
 				<p>I have been working with Priest to develop the website for the past few years, slowly up the site and continuing to do so.</p>
 
 				<p>Written in JS with a <a href="https://strapi.io/" target="_blank" rel="noopener">strapi CMS</a> and a <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener">Gatsby</a> static site build allowing for a responive design adapting from phones to desktop screens.</p>
-					
-				<!-- prism test <pre><code class="language-css">p { color: red }</code></pre> -->
-					<!-- <div class="single-code">
-						<pre><code>font-size: 2em;
-
-@include breakpoint(medium) {
-	font-size: 1.8em;
-}
-
-@include breakpoint(large) {
-	font-size: 1.5em;
-}</code></pre>
-				</div> !-- .single-code -- -->
 			</div><!-- .specific-grid__main-width -->
 
 			<div class="specific-grid__main-width specific-overlaying__image-grid">

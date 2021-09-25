@@ -48,10 +48,21 @@
 .social-icons > .fp-box > a {
 	// display: inline-block;
 	display: block; // fill the social areas for a hover
+	box-shadow: var(--shade);
+	transition: var(--global-transition);
+
+	@media (prefers-color-scheme: dark) {
+		box-shadow: var(--shade--dark);
+	}
 }
 
 .social-icons > .fp-box > a:hover {
 	background: var(--cardinal);
+	box-shadow: var(--shade_hover);
+
+	@media (prefers-color-scheme: dark) {
+		box-shadow: var(--shade_hover--dark);
+	}
 }
 
 .social-icons svg {

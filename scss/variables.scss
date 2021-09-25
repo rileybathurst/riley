@@ -78,5 +78,12 @@ $xxlarge: 90rem;
   --header-font-family: var(--body-font-family);
 
   --global-transition: 0.5s ease;
+
+  // box-shadow: var(--shade);
+  --shade: 0.25rem 0.25rem var(--magnesium);
+  --shade_hover: 0.5rem 0.5rem var(--aluminium);
+
+  --shade--dark: 0.25rem 0.25rem var(--iron);
+  --shade_hover--dark: 0.5rem 0.5rem var(--tungsten);
 }
 

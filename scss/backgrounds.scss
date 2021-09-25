@@ -1,0 +1,24 @@
+.background-clean {
+	background: var(--white);
+	@media (prefers-color-scheme: dark) {
+		background: var(--black);
+	}
+}
+
+.background-primary {
+	background: var(--cinnabar);
+}
+
+.background-dirty {
+	background: var(--mercury);
+
+	@media (prefers-color-scheme: dark) {
+		background: var(--tungsten);
+	}
+}
+
+.background-double--dark {
+	background: var(--iron);
+	border-bottom: 2px solid var(--black);
+	color: var(--white);
+}

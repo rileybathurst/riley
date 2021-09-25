@@ -11,16 +11,10 @@ p {
   margin-block-start: 0; // browser reset
   line-height: 1.25rem; // 20px
   margin-block-end: 1.25em;
-}
 
-// 📣 overwrite all of these and then delete them
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 2.75rem 0 1rem; // 📣 never use 3
-  line-height: 1.15;
+	@media (min-width: $large) {
+		text-align: justify;
+	}
 }
 
 h1 {
@@ -87,4 +81,100 @@ figcaption,
   background: var(--white);
   padding: var(--global-padding);
   line-height: 1.5em;
+}
+
+/*------------------------------------*/
+//  #SELECTION
+/*------------------------------------*/
+
+::selection {
+  background: var(--cinnabar);
+}
+
+a::selection {
+	color: var(--white);
+}
+
+/*------------------------------------*/
+//  #QUOTES
+/*------------------------------------*/
+
+blockquote {
+	margin: 0;
+	color: var(--black);
+	@media (prefers-color-scheme: dark) {
+		color: var(--white);
+	}
+
+	font-size: 1em;
+	@media (min-width: $medium) {
+		font-size: 1.563em; // same as an h4
+	}
+	font-weight: bold;
+	border-left: none; // I think this is a browser override?
+}
+
+blockquote:before {
+	content: "\201C "; // quotation mark?
+	font-family: var(--header-font-family);
+	font-weight: bold;
+	font-size: 32px; // hack this should be an em on the type scale
+	margin-right: calc(var(--global-margin) * 0.5); // why so small?
+}
+
+blockquote p {
+	// display: inline; this was to have the quotes inline but it looses the margins so for now it's removed
+	font-size: 1.125em; // type scale?
+}
+
+cite {
+	color: var(--nickel);
+	margin-left: var(--global-margin);
+	margin-block-end: calc(var(--global-margin) * 1.5); // 📣
+	word-break: break-all; // I was having problems on small screens citing urls
+
+	@media (min-width: $medium) {
+		word-break: normal; // revert back when the small problem doesnt exsist
+	}
+}
+
+/*------------------------------------*/
+//  #HEADINGS
+/*------------------------------------*/
+
+.is-style-box-title,
+.box-title, .box-title a {
+	border: .25em solid var(--black);
+	padding: var(--global-padding);
+}
+
+.box-title a:hover {
+	text-decoration: line-through; // is this different to a regular hover?
+}
+
+/*------------------------------------*/
+//  #PAGINATION
+/*------------------------------------*/
+
+.pagination .prev, .pagination .next {
+	font-weight: bold;
+}
+
+/* I dont think this is right
+.nav-previous, .nav-next {
+	font-weight: bold;
+} */
+
+
+// this starts as an h2
+//  might need to be clamped
+.page-title {
+	font-size: 2em;
+	justify-self: start;
+	word-wrap: break-word;
+
+	@media (min-width: $medium) {
+		font-size: 3rem;
+		line-height: 4rem;
+	}
 }

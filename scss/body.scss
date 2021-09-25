@@ -1,0 +1,18 @@
+body { // I think I can do this better just having everything sit inside a little
+	margin: 0;
+	border: 0.25em solid var(--white);
+
+	@media (min-width: $medium) {
+		border: 0.5em solid var(--white);
+	}
+
+	@media (min-width: $large) {
+		border: 1em solid var(--white);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		background: var(--black);
+		color: var(--white);
+		border-color: var(--black);
+	}
+}

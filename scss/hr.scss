@@ -42,4 +42,8 @@ hr {
 .mega-hr-dirty {
   @extend .mega-hr;
   border-color: var(--mercury);
+
+  @media (prefers-color-scheme: dark) {
+    border-color: var(--lead);
+  }
 }

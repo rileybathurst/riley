@@ -55,7 +55,18 @@ elseif ( is_single()) {
 endwhile;
 	}
 } else { ?>
-<div class="header-color-blocking"></div>
+<div class="header-color-blocking">
+<svg viewBox='0 0 2000 2000' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'>
+  <filter id='noiseFilter'>
+    <feTurbulence 
+      type='fractalNoise' 
+      baseFrequency='0.5' 
+      numOctaves='1' 
+      stitchTiles='stitch'/>
+  </filter>
+  <rect width='100%' height='100%' filter='url(#noiseFilter)'/>
+</svg>
+</div>
 <div class="custom-header-media overlaying-image">
 	<div class="hero gp-top">
 		<!-- no script Cross fading images aka slider aka carousel http://css3.bradshawenterprises.com/cfimg/ -->
