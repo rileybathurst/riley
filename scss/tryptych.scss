@@ -35,38 +35,42 @@
   #gallery {
     display: grid;
 
-    #snap-scroll-container-coordinates,
-    #left,
-    #right {
+    > * {
       grid-row: 1;
       grid-column: 1;
     }
-  }
 
-  #left,
-  #right {
-    z-index: 1;
-    align-self: center;
-    font-size: 6rem;
-  }
+    #left,
+    #right {
+      z-index: 1;
+      align-self: center;
+      font-size: 6rem;
+    }
 
-  #left {
-    justify-self: left; // make these as small as possible as if your over the the scroll behind doesnt work
-    padding-left: 1rem;
-  }
+    #left {
+      justify-self: left; // make these as small as possible as if your over the the scroll behind doesnt work
+      padding-inline-start: 1rem;
+    }
 
-  #right {
-    justify-self: right;
-    padding-right: 1rem;
-  }
+    #right {
+      justify-self: right;
+      padding-inline-end: 1rem;
+    }
 
-  #left a,
-  #right a {
-    text-decoration: none;
-    color: var(--cinnabar);
-    opacity: 0.8;
-    mix-blend-mode: multiply;
-  }
+    .tryptych-button {
+      box-shadow: none;
+      // a lot of resets from what I have done
+      padding: 0;
+      background: none;
+      color: var(--cinnabar);
+      opacity: 0.8;
+    }
+
+    .tryptych-button:hover {
+      background: none;
+      color: var(--cardinal);
+    }
+  } // #gallery
 
   html {
     scroll-behavior: smooth; // im not 100% sure this is doing what I want with the sideways but its helping for the vertical
@@ -74,19 +78,5 @@
 
   .tryptych-caption {
     text-align: center;
-  }
-
-  // button { // needs to be specific this is adjusting all buttons
-  .tryptych-button {
-    // a lot of resets from what I have done
-    padding: 0;
-    background: none;
-    color: var(--cinnabar);
-    opacity: 0.8;
-  }
-
-  .tryptych-button:hover {
-    background: none;
-    color: var(--cardinal);
   }
 } // medium up only // everything should be inside this

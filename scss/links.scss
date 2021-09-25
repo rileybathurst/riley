@@ -43,17 +43,13 @@ a.button { // I dont love links as button they should be seperate things but for
 }
 
 button:hover,
-.button:hover { // [type="submit"] removed for material
-	// background: var(--cinnabar) !important; // why important?
+.button:hover {
 	background: var(--cardinal);
-	color: var(--white) !important; // why important?
-  box-shadow: 0.5rem 0.5rem var(--aluminium);
+	color: var(--white);
+  box-shadow: var(--shade_hover);
 
   @media (prefers-color-scheme: dark) {
 		background: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) - 10%));
-	}
-
-  @media (prefers-color-scheme: dark) {
 		box-shadow: var(--shade_hover--dark);
 	}
 }

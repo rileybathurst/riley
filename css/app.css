@@ -139,20 +139,14 @@ button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
 #commentform [type=submit]:hover,
 .button:hover {
   background: var(--cardinal);
-  color: var(--white) !important;
-  box-shadow: 0.5rem 0.5rem var(--aluminium);
+  color: var(--white);
+  box-shadow: var(--shade_hover);
 }
 @media (prefers-color-scheme: dark) {
   button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
 #commentform [type=submit]:hover,
 .button:hover {
     background: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) - 10%));
-  }
-}
-@media (prefers-color-scheme: dark) {
-  button:hover, .article-tags a:hover, .searchform [type=submit]:hover,
-#commentform [type=submit]:hover,
-.button:hover {
     box-shadow: var(--shade_hover--dark);
   }
 }
@@ -5432,36 +5426,34 @@ pre[class*=language-] {
   #gallery {
     display: grid;
   }
-  #gallery #snap-scroll-container-coordinates,
-#gallery #left,
-#gallery #right {
+  #gallery > * {
     grid-row: 1;
     grid-column: 1;
   }
-
-  #left,
-#right {
+  #gallery #left,
+#gallery #right {
     z-index: 1;
     align-self: center;
     font-size: 6rem;
   }
-
-  #left {
+  #gallery #left {
     justify-self: left;
-    padding-left: 1rem;
+    padding-inline-start: 1rem;
   }
-
-  #right {
+  #gallery #right {
     justify-self: right;
-    padding-right: 1rem;
+    padding-inline-end: 1rem;
   }
-
-  #left a,
-#right a {
-    text-decoration: none;
+  #gallery .tryptych-button {
+    box-shadow: none;
+    padding: 0;
+    background: none;
     color: var(--cinnabar);
     opacity: 0.8;
-    mix-blend-mode: multiply;
+  }
+  #gallery .tryptych-button:hover {
+    background: none;
+    color: var(--cardinal);
   }
 
   html {
@@ -5470,18 +5462,6 @@ pre[class*=language-] {
 
   .tryptych-caption {
     text-align: center;
-  }
-
-  .tryptych-button {
-    padding: 0;
-    background: none;
-    color: var(--cinnabar);
-    opacity: 0.8;
-  }
-
-  .tryptych-button:hover {
-    background: none;
-    color: var(--cardinal);
   }
 }
 
