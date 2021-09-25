@@ -37,4 +37,4 @@ Template Name: Search
 	</div>
 </div>
 
-<?php get_footer(); ?>
+<?php get_template_part( 'footer__no-search' ); ?>

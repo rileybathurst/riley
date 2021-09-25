@@ -82,14 +82,13 @@ Template Name: Social
 				</div>
 
 				<div class="article-content">
-					<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
-					<?php get_search_form(); ?>
+					<p>It seems we can&rsquo;t find what you&rsquo;re looking for.</p>
 				</div>
 
 			</div>
 		<?php } ?>
 
-	</main> <!-- .site-main -->
-</div> <!-- .background-dirty -->
+	</main>
+</div>
 
 <?php get_footer(); ?>

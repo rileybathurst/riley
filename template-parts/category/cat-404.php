@@ -8,8 +8,7 @@
 				</div>
 
 				<div class="article-content">
-					<p>Oh no we don&#39;t have any posts for you. Perhaps searching can help.</p>
-					<?php get_search_form(); ?>
+					<p>Oh no we don&#39;t have any posts for you.</p>
 				</div>
 			</article>
 		</main>

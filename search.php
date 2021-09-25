@@ -46,4 +46,4 @@
 	</div>
 <?php }
 
-get_footer(); ?>
+get_template_part( 'footer__no-search' ); ?>

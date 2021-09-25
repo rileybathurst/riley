@@ -80,8 +80,7 @@ Template Name: Front Page
 				</div>
 
 				<div class="article-content">
-					<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
-					<?php get_search_form(); ?>
+					<p>It seems we can&rsquo;t find what you&rsquo;re looking for.</p>
 				</div>
 
 			</div>
