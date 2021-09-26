@@ -56,7 +56,7 @@ endwhile;
 	}
 } else { ?>
 <div class="header-color-blocking">
-<svg viewBox='0 0 2000 2000' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'>
+<svg viewBox='0 0 2000 2000' xmlns='https://www.w3.org/2000/svg' preserveAspectRatio='none'>
   <filter id='noiseFilter'>
     <feTurbulence 
       type='fractalNoise' 

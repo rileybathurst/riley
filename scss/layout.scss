@@ -93,7 +93,6 @@
   justify-self: center; // macth the spine
 
   @media (min-width: $medium) {
-    align-self: end; // this is for when the menu is horizontal on single pages
     grid-column: 5; //category
   }
 }
@@ -111,13 +110,8 @@
   grid-column: 3;
 }
 
-.home .header-logo svg {
-  padding: var(--global-padding)/2; // guess and check to fit into the grid
-  transition: var(--global-transition);
-}
-.home .header-logo svg:hover {
-  background: var(--mercury);
-}
+
+
 
 .color-blocking {
   mix-blend-mode: multiply;
@@ -370,70 +364,7 @@
   }
 }
 
-/* this doesnt appear to be anywhere
-.article-search {
-	grid-column: 2 / 12; // really?
-
-	@media (min-width: $medium) {
-		grid-column: 4 / span 1;
-	}
-}
-*/
-
-/* doesnt show in search 
-.content_area {
-	grid-column: 2 / span 10; // really?
-	grid-row: 4 / span 2;
-	align-self: center;
-
-	@media (min-width: $medium) {
-		grid-column: 4 / span 6; // really?
-		grid-row: 3;
-		align-self: start;
-	}
-	@media (min-width: $large) {
-		grid-column: 4 / span 9; // really?
-		grid-row: 3;
-		// this cant span multiple rows but it needs to be the largest so the next row sits tight against it,
-		seems kinda a bad design decision incase something else gets bigger than it
-	}
-}
-*/
-
-/* doesnt show in search
-.more { // which more is this?
-	grid-column: 2 / span 10; // really?
-	grid-row: 9; // really?
-
-	@media (min-width: $medium) {
-		grid-column: 4 / span 3;
-		grid-row: 6;
-	}
-	@media (min-width: $large) {
-		grid-column: 4 / span 3;
-		grid-row: 4;
-	}
-}
-*/
-
-/* doesnt show in search
-.category-titles {
-	grid-column: 2 / 5;
-	grid-row: 2;
-	position: relative; // why?
-	z-index: 99; // why?
-	mix-blend-mode: multiply;
-
-	@media (min-width: $medium) {
-		grid-column: 3;
-		grid-row: 3;
-		justify-self: center;
-	}
-}
-*/
-
 .category-sub {
-  // width: calc(100% - 6rem);
   width: 100%;
   max-width: 72rem; // always stay inside the widest columns on the category pages
   margin: 0 auto;
@@ -493,6 +424,10 @@
 /*--------------------------------------------------------------
 3.4 Article
 --------------------------------------------------------------*/
+.site-main {
+  margin-block-end: 3rem
+}
+
 .site-main article {
   /* running wordpress post class prevents using a straight class */
   // @extend .site-header; // Im not sure this is currently working
@@ -928,11 +863,10 @@
 --------------------------------------------------------------*/
 
 .pagination {
-  margin: 3rem auto;
-  max-width: var(--page-width);
-  display: grid;
+  margin-block: 3rem;
+  margin-inline: auto;
+  max-width: 71rem;
   grid-gap: var(--global-margin);
-  grid-template-columns: 2em 1fr 4fr 1fr 2em; // fix
 }
 
 .pagination h2 {
@@ -1410,7 +1344,6 @@
   @media (min-width: $medium) {
     height: 4rem; // same as the line height
     margin-block-end: var(--global-margin);
-    margin-block-start: 2.5rem; // match the text beside
   }
 
   h2 {

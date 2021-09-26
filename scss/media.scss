@@ -8,6 +8,11 @@ iframe {
   background: linen; // just a little fallback color incase an embed doesnt load
 }
 
+.vimeo {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
 .category-thumbnail img:hover {
   opacity: 0.8; // indication of a link
 }
@@ -65,4 +70,34 @@ iframe {
   @media (prefers-color-scheme: dark) {
     filter: drop-shadow(16px 16px 10px black);
   }
+}
+
+/*------------------------------------*/
+//  #HEADER
+/*------------------------------------*/
+
+.header-logo {
+	fill: var(--cinnabar);
+  margin-block-start: 0.5rem;
+  transition: var(--global-transition);
+
+	a {
+		padding: 0.25rem;
+    padding-block-start: 0.5rem; // visual fix
+    border-radius: 0.25rem;
+	}
+
+	a:hover {
+		fill: var(--cardinal);
+    background: var(--mercury);
+	}
+
+  svg {
+    padding-block-start: 0.25rem;
+  }
+}
+
+
+#thumbnails {
+
 }

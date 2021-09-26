@@ -1,3 +1,6 @@
+<!-- Featured Video // keep this here so the nonce can be searched for
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FKeepSquawTrue%2Fvideos%2F1730244910375093%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" nonce="zHjrGE0dBGv4"></iframe> -->
+
 <!--
 	picture elements look broken on purpose 
 	https://apoorv.pro/lozad.js/#example-with-picture-tag
@@ -21,7 +24,13 @@ if (have_posts()) {
 			</div>
 
 			<div class="continental">
-				<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/300523913" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script><!-- what on earth is going on with these inline styles??? -->
+				<iframe
+					src="https://player.vimeo.com/video/300523913"
+					frameborder="0"
+					allow="autoplay; fullscreen"
+					allowfullscreen
+					class="vimeo">
+				</iframe>
 			</div>
 		</div>
 
@@ -33,7 +42,8 @@ if (have_posts()) {
 			</div>
 
 			<div class="continental">
-				<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/327133013" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+				<iframe src="https://player.vimeo.com/video/327133013" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo"></iframe>
+					<script src="https://player.vimeo.com/api/player.js"></script>
 			</div>
 
 		</div>

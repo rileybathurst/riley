@@ -36,17 +36,17 @@ if (have_posts()) {
 				<div class="overlaying-image"><!-- stay gold --></div>
 
 				<picture class="specific-full-picture lozad-picture" data-index="1" data-alt="priest site on an iphone">
-				<source srcset="https://rileybathurst.com/wp-content/uploads/2020/05/priest-iphone_mockup-1080x1620.jpg" media="(min-width: 1080px)" />
-					<source srcset="https://rileybathurst.com/wp-content/uploads/2020/05/priest-iphone_mockup-1080x1620.webp" media="(min-width: 1080px)" type="image/webp" />
-					<source srcset="https://rileybathurst.com/wp-content/uploads/2020/05/priest-iphone_mockup-960x1440.jpg" media="(min-width: 960px)" />
-					<source srcset="https://rileybathurst.com/wp-content/uploads/2020/05/priest-iphone_mockup-960x1440.webp" media="(min-width: 960px)" type="image/webp" />
-					<source srcset="https://rileybathurst.com/wp-content/uploads/2020/05/priest-iphone_mockup-720x1080.jpg" media="(min-width: 720px)" />
-					<source srcset="https://rileybathurst.com/wp-content/uploads/2020/05/priest-iphone_mockup-720x1080.webp" media="(min-width: 720px)" type="image/webp" />
-					<source srcset="https://rileybathurst.com/wp-content/uploads/2020/05/priest-iphone_mockup-640x960.jpg" media="(min-width: 640px)" />
-					<source srcset="https://rileybathurst.com/wp-content/uploads/2020/05/priest-iphone_mockup-640x960.webp" media="(min-width: 640px)" type="image/webp" />
-					<source srcset="https://rileybathurst.com/wp-content/uploads/2020/05/priest-iphone_mockup-360x540.jpg" />
-					<source srcset="https://rileybathurst.com/wp-content/uploads/2020/05/priest-iphone_mockup-360x540.webp" type="image/webp" /><!-- double img -->
-					<!-- <img src="https://rileybathurst.com/wp-content/uploads/2020/05/priest-iphone_mockup-1080x1620-1.jpg" alt="priest site on an iphone" />double img -->
+				<source srcset="<?php echo content_url(); ?>/wp-content/uploads/2020/05/priest-iphone_mockup-1080x1620.jpg" media="(min-width: 1080px)" />
+					<source srcset="<?php echo content_url(); ?>/wp-content/uploads/2020/05/priest-iphone_mockup-1080x1620.webp" media="(min-width: 1080px)" type="image/webp" />
+					<source srcset="<?php echo content_url(); ?>/wp-content/uploads/2020/05/priest-iphone_mockup-960x1440.jpg" media="(min-width: 960px)" />
+					<source srcset="<?php echo content_url(); ?>/wp-content/uploads/2020/05/priest-iphone_mockup-960x1440.webp" media="(min-width: 960px)" type="image/webp" />
+					<source srcset="<?php echo content_url(); ?>/wp-content/uploads/2020/05/priest-iphone_mockup-720x1080.jpg" media="(min-width: 720px)" />
+					<source srcset="<?php echo content_url(); ?>/wp-content/uploads/2020/05/priest-iphone_mockup-720x1080.webp" media="(min-width: 720px)" type="image/webp" />
+					<source srcset="<?php echo content_url(); ?>/wp-content/uploads/2020/05/priest-iphone_mockup-640x960.jpg" media="(min-width: 640px)" />
+					<source srcset="<?php echo content_url(); ?>/wp-content/uploads/2020/05/priest-iphone_mockup-640x960.webp" media="(min-width: 640px)" type="image/webp" />
+					<source srcset="<?php echo content_url(); ?>/wp-content/uploads/2020/05/priest-iphone_mockup-360x540.jpg" />
+					<source srcset="<?php echo content_url(); ?>/wp-content/uploads/2020/05/priest-iphone_mockup-360x540.webp" type="image/webp" /><!-- double img -->
+					<!-- <img src="<?php echo content_url(); ?>/wp-content/uploads/2020/05/priest-iphone_mockup-1080x1620-1.jpg" alt="priest site on an iphone" />double img -->
 				</picture>
 				<h4 class="caption">Priest sheetmetal site on an iphone.</h4>
 			</div><!-- .specific-grid__main-width specific-overlaying__image-grid -->

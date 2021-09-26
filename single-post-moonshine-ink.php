@@ -14,7 +14,7 @@ if (have_posts()) {
 		<div class="specific-grid">
 
 			<section class="continental">
-				<a href="https://rileybathurst.com/moonshine_ink_tahoe_winter_times_1812-20-1080x1358/">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>moonshine_ink_tahoe_winter_times_1812-20-1080x1358/">
 					<picture class="lozad-picture">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-1080x1358.webp" media="(min-width: 960px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-1080x1358.jpg" media="(min-width: 960px)">
@@ -28,11 +28,11 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-20-360x452.jpg" alt="skiing  photo">
 					</picture>
 				</a>
-				<h4 class="caption"><a href="https://rileybathurst.com/moonshine_ink_tahoe_winter_times_1812-20-1080x1358/">Lifestyle skiing</a></h4>
+				<h4 class="caption"><a href="<?php echo esc_url( home_url( '/' ) ); ?>moonshine_ink_tahoe_winter_times_1812-20-1080x1358/">Lifestyle skiing</a></h4>
 			</section>
 
 			<section class="continental ">
-				<a href="https://rileybathurst.com/moonshine_ink_tahoe_winter_times_1812-39-1080x1358/">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>moonshine_ink_tahoe_winter_times_1812-39-1080x1358/">
 					<picture class="lozad-picture">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-1080x1358.webp" media="(min-width: 960px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-1080x1358.jpg" media="(min-width: 960px)">
@@ -46,7 +46,7 @@ if (have_posts()) {
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Moonshine_Ink_Tahoe_Winter_Times_1812-39-360x452.jpg" alt="skiing  photo">
 					</picture>
 				</a>
-				<h4 class="caption"><a href="https://rileybathurst.com/moonshine_ink_tahoe_winter_times_1812-39-1080x1358/">skiing Action</a></h4>
+				<h4 class="caption"><a href="<?php echo esc_url( home_url( '/' ) ); ?>moonshine_ink_tahoe_winter_times_1812-39-1080x1358/">skiing Action</a></h4>
 			</section>
 
 		</div>

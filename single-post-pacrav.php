@@ -38,7 +38,7 @@ if (have_posts()) {
 
 		<div class="specific-grid">
 			<h3 class="subtitle">Business Cards</h3>
-			<a href="http://rileybathurst.com/pacrav-business-card-mockup-medium/">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>pacrav-business-card-mockup-medium/">
 				<picture class="lozad-picture continental west-medium gr-1-m">
 					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/pacrav-business-card-mockup-medium.jpg" media="(min-width: 40em)">
 					<img src="<?php echo content_url(); ?>/uploads/2018/05/pacrav-business-card-mockup-small.jpg" alt="pacrav business cards front and back">

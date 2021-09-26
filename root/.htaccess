@@ -1,4 +1,5 @@
 # Im currently running this file without the . so it can never do anything
+
 # scp .htaccess rilbat2@sumter.dreamhost.com:rileybathurst.com
 
 RewriteEngine On
@@ -6,9 +7,13 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # BEGIN WordPress
+
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+
 # dynamically generated, and should only be modified via WordPress filters.
+
 # Any changes to the directives between these markers will be overwritten.
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
@@ -31,10 +36,11 @@ RewriteRule . /index.php [L]
 
 Header set Content-Security-Policy-Report-Only: "default-src 'self'; \
 style-src 'self' 'unsafe-inline'; \
-script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com https://cdn.jsdelivr.net 'nonce-35$
+script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com https://cdn.jsdelivr.net https://player.vimeo.com 'nonce-351731468999'; \
 img-src 'self' secure.gravatar.com; \
 font-src 'self' data:; \
-child-src https://www.youtube.com https://player.vimeo.com; \
+child-src https://www.youtube.com https://player.vimeo.com 'nonce-zHjrGE0dBGv4'; \
+frame-src https://www.youtube.com https://player.vimeo.com 'nonce-zHjrGE0dBGv4'; \
 frame-ancestors 'none'; \
 report-uri /csp-violation-report-endpoint.php
 "

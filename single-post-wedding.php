@@ -14,46 +14,46 @@ if (have_posts()) {
 		<div class="specific-grid">
 
 		<section class="continental ">
-			<a href="https://rileybathurst.com/jess_josho_wedding_2/">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>jess_josho_wedding_2/">
 				<img src="<?php echo content_url(); ?>/uploads/2021/09/DSC0142-3840-scaled.jpg" alt="flower girl wedding photo">
 			</a>
-			<h4><a href="https://rileybathurst.com/jess_josho_wedding_2/">Flower Girl</a></h4>
-			<a href="https://rileybathurst.com/jess_josho_wedding_2/">
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>jess_josho_wedding_2/">Flower Girl</a></h4>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>jess_josho_wedding_2/">
 				<img src="<?php echo content_url(); ?>/uploads/2021/09/DSC0209-3840-scaled.jpg" alt="flower girl wedding photo">
 			</a>
-			<h4><a href="https://rileybathurst.com/jess_josho_wedding_2/">Flower Girl</a></h4>
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>jess_josho_wedding_2/">Flower Girl</a></h4>
 		</section>
 
 		<section class="continental ">
-			<a href="https://rileybathurst.com/jess_josho_wedding_2/">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>jess_josho_wedding_2/">
 				<img src="<?php echo content_url(); ?>/uploads/2019/06/jess_josho_wedding_2.jpg" alt="flower girl wedding photo">
 			</a>
-			<h4><a href="https://rileybathurst.com/jess_josho_wedding_2/">Flower Girl</a></h4>
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>jess_josho_wedding_2/">Flower Girl</a></h4>
 		</section>
 
 		<section class="continental ">
-			<a href="https://rileybathurst.com/sophie_jo__0345/">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>sophie_jo__0345/">
 				<img src="<?php echo content_url(); ?>/uploads/2019/06/Sophie_Jo__0345.jpg" alt="Wedding party">
 			</a>
-			<h4><a href="https://rileybathurst.com/sophie_jo__0345/">Wedding Party</a></h4>
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>sophie_jo__0345/">Wedding Party</a></h4>
 		</section>
 
 		<section class="continental  ">
-			<a href="https://rileybathurst.com/Sophie_Jo__0362/">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>Sophie_Jo__0362/">
 				<img src="<?php echo content_url(); ?>/uploads/2019/06/Sophie_Jo__0362.jpg" alt="Bridesmaid wedding photo">
 			</a>
-			<h4><a href="https://rileybathurst.com/Sophie_Jo__0362/">Brides maid</a></h4>
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>Sophie_Jo__0362/">Brides maid</a></h4>
 		</section>
 
 		<section class="continental  ">
-			<a href="https://rileybathurst.com/processed-with-vsco-with-a6-preset-3/">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>processed-with-vsco-with-a6-preset-3/">
 				<img src="<?php echo content_url(); ?>/uploads/2019/06/moonshine-band-photo-2.jpg" alt="flower girl wedding photo">
 			</a>
-			<h4><a href="https://rileybathurst.com/processed-with-vsco-with-a6-preset-3/">Wedding Band</a></h4>
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>processed-with-vsco-with-a6-preset-3/">Wedding Band</a></h4>
 		</section>
 
 		<section class="continental ">
-			<a href="https://rileybathurst.com/Joanna_John_Engagement_Chimney20190605_0019-1080x721/">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>Joanna_John_Engagement_Chimney20190605_0019-1080x721/">
 				<picture class="lozad-picture">
 					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-1080x721.webp" media="(min-width: 960px)" type="image/webp">
 					<source srcset="<?php echo content_url(); ?>/uploads/2019/06/Joanna_John_Engagement_Chimney20190605_0019-1080x721.jpg" media="(min-width: 960px)">

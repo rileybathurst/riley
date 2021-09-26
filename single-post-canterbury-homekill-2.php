@@ -40,7 +40,7 @@ if (have_posts()) {
 
 	<div class="specific-grid">
 
-			<a href="https://rileybathurst.com/order-form/" class="specific-grid__main-width">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>order-form/" class="specific-grid__main-width">
 				<picture class="lozad-picture" data-index="1" data-alt="canterburyhomekill order page">
 					<source srcset="<?php echo content_url(); ?>/uploads/2020/05/order_page_ipad_size-1080x1440.webp" media="(min-width: 960px)" type="image/webp" />
 					<source srcset="<?php echo content_url(); ?>/uploads/2020/05/order_page_ipad_size-1080x1440.jpeg" media="(min-width: 960px)" />
@@ -55,7 +55,7 @@ if (have_posts()) {
 				</picture>
 			</a>
 			<section class="specific-grid__main-width ">
-				<h4><a href="https://rileybathurst.com/order-form/">Order Page</a></h4>
+				<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>order-form/">Order Page</a></h4>
 				<p>The order page for Canterbury Homekill lets customers pick many options around how an animal is to be butchered. A select cut can either be chosen or not with a checkbox then dropdowns let them pick how the cut is handled if there are muliple ways that can be done.</p>
 			</section>
 		</div>
@@ -63,7 +63,7 @@ if (have_posts()) {
 		<hr class="mega-hr">
 
 		<div class="specific-grid">
-			<a href="https://rileybathurst.com/order-check-large/" class="specific-grid__main-width ">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>order-check-large/" class="specific-grid__main-width ">
 			<picture class="lozad-picture" data-index="3" data-alt="canterburyhomekill view order page">
 					<source srcset="<?php echo content_url(); ?>/uploads/2020/05/order_page_ipad_size-1080x1440.webp" media="(min-width: 960px)" type="image/webp" />
 					<source srcset="<?php echo content_url(); ?>/uploads/2020/05/order_page_ipad_size-1080x1440.jpeg" media="(min-width: 960px)" />
@@ -82,7 +82,7 @@ if (have_posts()) {
 				</picture>
 			</a>
 			<section class="specific-grid__main-width ">
-				<h4><a href="https://rileybathurst.com/order-check-large/">View Order Page</a></h4>
+				<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>order-check-large/">View Order Page</a></h4>
 				<p>With a profile system, customers are able to look back on previous orders this often helps with reordering something they have been really happy with in the past.</p>
 			</section>
 		</div>
@@ -90,7 +90,7 @@ if (have_posts()) {
 		<hr class="mega-hr">
 
 		<div class="specific-grid">
-			<a href="https://rileybathurst.com/order-email-large/" class="specific-grid__main-width ">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>order-email-large/" class="specific-grid__main-width ">
 			<picture class="lozad-picture" data-index="4" data-alt="canterburyhomekill order email">
 					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-email-large.jpg" alt="order email from canterbury homekill" media="(min-width: 64em)">
 					<source srcset="<?php echo content_url(); ?>/uploads/2018/05/order-email-medium.jpg" alt="order email from canterbury homekill" media="(min-width: 40em)">
@@ -98,7 +98,7 @@ if (have_posts()) {
 				</picture>
 			</a>
 			<section class="specific-grid__main-width  gr-1-m">
-				<h4><a href="https://rileybathurst.com/order-email-large/">Order Email</a></h4>
+				<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>order-email-large/">Order Email</a></h4>
 				<p>The confirmation emails sent out after a sucessful order lets customers know we have got the message and this is also another way of looking back on orders for reordering or confirmation of what they have in the freezer while not home.</p>
 			</section>
 		</div>

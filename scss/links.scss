@@ -11,7 +11,7 @@ a:hover {
 	color: var(--cardinal);
 
 	@media (prefers-color-scheme: dark) {
-		color: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) - 10%));
+		color: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) + 10%));
 	}
 }
 
@@ -24,7 +24,7 @@ button,
 	font-weight: bold;
 	font-size: 1.5em; // h4
 	transition: var(--global-transition);
-	padding: var(--global-padding)/2 var(--global-padding);
+	padding: calc(var(--global-padding) / 2) var(--global-padding);
 	display: inline-block;
 	-webkit-appearance: none; // browser reset
   box-shadow: 0.25rem 0.25rem var(--magnesium);

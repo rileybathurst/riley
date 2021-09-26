@@ -97,7 +97,7 @@ Template Name: Front Page
 		<h2 class="featured-header">Featured Project</h2>
 		<article class="">
 			<figure class="article-thumbnail category-thumbnail category-overlaying-image">
-				<a href="https://rileybathurst.com/2018/04/snowledge/">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>2018/04/snowledge/">
 					<picture class=""><!-- lozad-picture this needs to be loaded the proper way -->
 					<!-- <source srcset=" php echo content_url(); ?>/uploads/2018/05/IMG_0126.jpg" media="(min-width: 64em)">
 					<source srcset=" php echo content_url(); ?>/uploads/2018/05/IMG_0126.jpg" media="(min-width: 40em)"> -->
@@ -108,14 +108,14 @@ Template Name: Front Page
 			</a>
 		</figure>
 		
-		<a href="https://rileybathurst.com/2018/04/snowledge/" class="category-color-blocking">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>2018/04/snowledge/" class="category-color-blocking">
 			<div ><!-- stay gold --></div>
 		</a>
 
 		<div class="fp-header">
 			<hr class="mega-hr" />
 			<h2 class="page-title">
-				<a href="https://rileybathurst.com/2018/04/snowledge/">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>2018/04/snowledge/">
 				<!-- the trailing slash is included in the permalink this helps to shorten breadcrumbs on single pages --> 
 					Snowledge
 					<!-- php echo get_post_meta(  'myguten_meta_block_field', true ); ?> -->
@@ -148,7 +148,7 @@ Template Name: Front Page
 
 		<div class="article-explore">
 			<hr class="mega-hr-primary" />
-			<a href="https://rileybathurst.com/2018/04/snowledge/" class="button" >Explore Snowledge</a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>2018/04/snowledge/" class="button" >Explore Snowledge</a>
 		</div>
 	</article>
 

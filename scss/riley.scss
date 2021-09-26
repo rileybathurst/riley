@@ -22,31 +22,6 @@ table {
 	width: 100%;
 }
 
-.overlay { // hack where is this?
-	background: var(--cinnabar);
-	z-index: 1;
-	grid-column: 11 / span 3; // this could be better
-	grid-row: 1 / span 4;
-
-	@media (min-width: $medium) {
-		grid-column: 11 / span 3;
-		grid-row: 1 / span 4;
-	}
-}
-
-.page-title-2 { // naming needs work
-	display: none;
-
-	@media (min-width: $medium) {
-		display: block;
-		color: var(--white);
-		writing-mode: vertical-rl;
-		grid-column: 11 / span 2;
-		grid-row: 1 / span 4;
-		z-index: 99 !important; // what is this?
-	}
-}
-
 /*--------------------------------------------------------------
 8.0 Lists
 --------------------------------------------------------------*/
@@ -195,7 +170,6 @@ table {
 	text-align: center;
 }
 
-// .footer_menu li,
 .category-sub li {
 	// border: .25em solid var(--cinnabar); // global?
 	
@@ -225,8 +199,6 @@ table {
 	}
 }
 
-
-
 /*--------------------------------------------------------------
 13.0 Layout
 --------------------------------------------------------------*/
@@ -253,14 +225,6 @@ img, video, figure {
 /*--------------------------------------------------------------
 13.1 Header
 --------------------------------------------------------------*/
-
-.header-logo {
-	fill: var(--cinnabar);
-}
-
-.header-logo:hover {
-	fill: var(--cardinal);
-}
 
 .subheader {
 	font-size: 2em; // type scale?
@@ -334,10 +298,6 @@ img, video, figure {
 	color: var(--black);
 }
 
-#comments {
-	padding: 0 !important; // why important?
-}
-
 .cat-title { // wrong place
 	margin-block-start: calc(var(--global-transition) * 2);
 	font-size: 2em; // type scale?
@@ -378,129 +338,6 @@ img, video, figure {
 
 .category-titles a:hover {
 	text-decoration: line-through;
-}
-
-.comment-body {
-	display: block !important; // this was getting stuck on a grid display from what?
-	grid-auto-columns: auto !important; // its a display these shouldnt work now?
-	grid-template-columns: auto; // its a display these shouldnt work now?
-	grid-auto-rows: auto !important; // its a display these shouldnt work now?
-}
-
-/*--------------------------------------------------------------
-14.0 Comments
---------------------------------------------------------------*/
-
-/* currently taken from twentyseventeen as comments take time and are boring if i dont use them alot but should look at this */
-
-#comments {
-	clear: both;
-	padding: 2em 0 0.5em; // I need to do this in the way I work
-}
-
-.comments-title {
-	font-size: 20px; // type scale?
-	font-size: 1.25rem; // why twice?
-	margin-block-end: 1.5em;
-}
-
-.comment-list,
-.comment-list .children {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.comment-list li:before {
-	display: none;
-}
-
-.comment-body {
-	margin-left: 65px; // deal with this?
-}
-
-.comment-author {
-	font-size: 16px; // type scale?
-	font-size: 1rem;
-	margin-block-end: 0.4em;
-	position: relative;
-	z-index: 2;
-}
-
-.comment-author .avatar {
-	height: 50px;
-	left: -65px;
-	position: absolute;
-	width: 50px;
-}
-
-.comment-author .says {
-	display: none;
-}
-
-.comment-meta {
-	margin-block-end: 1.5em;
-}
-
-.comment-metadata {
-	color: #767676;
-	font-size: 10px;
-	font-size: 0.625rem;
-	font-weight: 800;
-	letter-spacing: 0.1818em;
-	text-transform: uppercase;
-}
-
-.comment-metadata a {
-	color: #767676;
-}
-
-.comment-metadata a.comment-edit-link {
-	color: #222;
-	margin-left: 1em;
-}
-
-/* .comment-body {
-	// color: #333;
-	font-size: 14px; // this should get fixed
-	font-size: 0.875rem;
-	margin-block-end: 4em;
-}
- */
-.comment-reply-link {
-	font-weight: 800;
-	position: relative;
-}
-
-.comment-reply-link .icon {
-	color: #222;
-	left: -2em;
-	height: 1em;
-	position: absolute;
-	top: 0;
-	width: 1em;
-}
-
-.children .comment-author .avatar {
-	height: 30px;
-	left: -45px;
-	width: 30px;
-}
-
-.bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
-	border: 1px solid #333; // why not a $variable
-	padding: 2px;
-}
-
-.no-comments,
-.comment-awaiting-moderation {
-	color: #767676;
-	font-size: 14px; // this is wrong
-	font-style: italic; // this is wrong
-}
-
-.comments-pagination {
-	margin: 2em 0 3em;
 }
 
 .form-submit {

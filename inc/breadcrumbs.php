@@ -25,6 +25,8 @@ function get_breadcrumb() {
 		echo "Attachment";
 	} elseif (is_404()) {
 		echo "missing?";
+	} else {
+		echo "test";
 	}
 }
 

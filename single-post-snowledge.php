@@ -132,7 +132,7 @@ if (have_posts()) {
 			<p class="subtitle show-for-medium" style="grid-row: 1; grid-column: 5; justify-self: center;">A selection of images shot for Snowledge.</p>
 
 			<section class="continental continental-2">
-					<a href="https://rileybathurst.com/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-1080x1618/">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-1080x1618/">
 						<picture class="lozad-picture" data-index="15">
 							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-1080x1618.webp" media="(min-width: 960px)" type="image/webp">
 							<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboard-photo-chris_cloyd-tahoe_california-shot_for_snowledge-1080x1618.jpg" media="(min-width: 960px)">
@@ -151,7 +151,7 @@ if (have_posts()) {
 			</section>
 			
 			<section class="continental continental-3">
-					<a href="https://rileybathurst.com/img_0126/">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>img_0126/">
 						<picture class="lozad-picture" data-index="16">
 							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/IMG_0126.jpg" media="(min-width: 64em)">
 							<source srcset="<?php echo content_url(); ?>/uploads/2018/05/IMG_0126.jpg" media="(min-width: 40em)">
@@ -165,7 +165,7 @@ if (have_posts()) {
 			<!-- <div class="east-medium"></div>  white spacing -->
 
 			<section class="continental continental-4">
-				<a href="https://rileybathurst.com/img_3238-large/">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>img_3238-large/">
 					<!-- needs to become a picture lozad element -->
 					<img src="<?php echo content_url(); ?>/uploads/2018/05/IMG_3238-large.jpg" alt="eric lee obrien skiing shot from the chair">
 				</a>
@@ -183,7 +183,7 @@ if (have_posts()) {
 			<p class="subtitle show-for-medium" style="grid-row: 3; grid-column: 5; justify-self: center;">A selection of those involved.</p>
 
 			<section class="continental continental-2">
-				<a href="https://rileybathurst.com/dsc01909-2/">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>dsc01909-2/">
 					<picture class="lozad-picture" data-index="17">
 						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboarder_portrait-photo-garrett_cygan-tahoe_california-shot_for_snowledge-1080x721.webp" media="(min-width: 960px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-snowboarder_portrait-photo-garrett_cygan-tahoe_california-shot_for_snowledge-1080x721.jpg" media="(min-width: 960px)">
@@ -202,7 +202,7 @@ if (have_posts()) {
 			</section>
 			
 			<section class="continental continental-3">
-				<a href="https://rileybathurst.com/dsc07671-3/">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>dsc07671-3/">
 					<picture class="lozad-picture" data-index="18">
 						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-kenzie_morris-yosemite_california-shot_for_snowledge-1080x721.webp" media="(min-width: 960px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-kenzie_morris-yosemite_california-shot_for_snowledge-1080x721.jpg" media="(min-width: 960px)">
@@ -221,7 +221,7 @@ if (have_posts()) {
 			</section>
 
 			<section class="continental continental-4">
-				<a href="https://rileybathurst.com/img_0126/">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>img_0126/">
 					<picture class="lozad-picture" data-index="19">
 						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-1080x720.webp" media="(min-width: 960px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-skier_portrait-photo-brandon_craddock-tahoe_california-shot_for_snowledge-1080x720.jpg" media="(min-width: 960px)">
@@ -254,7 +254,7 @@ if (have_posts()) {
 					<iframe width="560" height="315" data-src="https://www.youtube.com/embed/O-WHcykonMg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="lozad" data-index="20"></iframe>
 				</section>
 			
-				<h3><a href="https://rileybathurst.com/2020/04/passage/">Passage - An Eaglecrest Experience</a></h3>
+				<h3><a href="<?php echo esc_url( home_url( '/' ) ); ?>2020/04/passage/">Passage - An Eaglecrest Experience</a></h3>
 				<p>The Snowledge team set off on a journey to Juneau, Alaska to explore the big mountain terrain and world-class backcountry at Eaglecrest Ski Area. With 54 straight days of snowfall prior to our trip, the skies parted and our crew of skiers and snowboarders spent five days chasing fresh powder, big lines, and unreal ocean views.</p>
 			
 			</div>
@@ -265,7 +265,7 @@ if (have_posts()) {
 				<section class="responsive-embed widescreen frame continental east-medium" style="--aspect-ratio: 16/9;">
 					<iframe width="560" height="315" data-src="https://www.youtube.com/embed/YaRpBbbJ6Ow" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="lozad" data-index="1" data-index="21"></iframe>
 				</section>
-				<h3><a href="https://rileybathurst.com/2017/09/hunt-for-the-powder-people/">Hunt For The Powder People</a></h3>
+				<h3><a href="<?php echo esc_url( home_url( '/' ) ); ?>2017/09/hunt-for-the-powder-people/">Hunt For The Powder People</a></h3>
 			</div>
 
 			
@@ -274,7 +274,7 @@ if (have_posts()) {
 					<iframe width="560" height="315" data-src="https://www.youtube.com/embed/YJhfVQYQb4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="lozad" data-index="22"></iframe>
 				</section>
 
-				<h3><a href="https://rileybathurst.com/2019/12/snowledge-team-edit-18-19">Team Edit 18 // 19</a></h3>
+				<h3><a href="<?php echo esc_url( home_url( '/' ) ); ?>2019/12/snowledge-team-edit-18-19">Team Edit 18 // 19</a></h3>
 			</div>
 <!-- 			<div class="continental continental-3">
 				<section class="responsive-embed widescreen frame continental west-medium" style="--aspect-ratio: 16/9;">
@@ -289,7 +289,7 @@ if (have_posts()) {
 					<iframe width="560" height="315" data-src="https://www.youtube.com/embed/vZ-UgL-xY20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="lozad" data-index="23"></iframe>
 				</section>
 				
-				<h3><A href="https://rileybathurst.com/2018/11/how-to-gopro/">How To GoPro</a></h3>
+				<h3><A href="<?php echo esc_url( home_url( '/' ) ); ?>2018/11/how-to-gopro/">How To GoPro</a></h3>
 			</div>
 
 <!-- 			<div class="continental continental-4">
@@ -311,7 +311,7 @@ if (have_posts()) {
 
 			<!-- Sweepstakes Poster -->
 			<section class="continental">
-					<a href="https://rileybathurst.com/snowledge_sweepstakes_poster-1080x1485/">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>snowledge_sweepstakes_poster-1080x1485/">
 						<picture class="lozad-picture" data-index="4">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-1080x1485.webp" alt="snowledge sweepstakes poster design" media="(min-width: 960px)" type="image/webp">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-1080x1485.jpg" alt="snowledge sweepstakes poster design" media="(min-width: 960px)">
@@ -326,13 +326,13 @@ if (have_posts()) {
 							<!-- <img src=" php echo content_url(); ?>/uploads/2019/05/snowledge_sweepstakes_poster-360x495.jpg" alt="snowledge sweepstakes poster design"> -->
 						</picture>
 					</a>
-				<h4><a href="https://rileybathurst.com/snowledge_sweepstakes_poster-1080x1485/">Sweepstakes Poster</a></h4>
+				<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>snowledge_sweepstakes_poster-1080x1485/">Sweepstakes Poster</a></h4>
 				<p>Working with Snowledge has been an oppourtunity to work on the design as well as the media for those late nights, down days and long summer months. I have worked on a couple of giveaway designs to be shown off across social media in a number of itterations, including this one sponsored by Revelstoke, 4Frnt and Trew.</p>
 			</section>
 
 			<!-- Download Card -->
 			<section class="continental continental-2">
-					<a href="https://rileybathurst.com/snowledge_download_card_mockup-1457x971/">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>snowledge_download_card_mockup-1457x971/">
 						<picture class="lozad-picture" data-index="5">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-1457x971.webp" alt="snowledge download card front and back" media="(min-width: 1080px)" type="image/webp">
 							<source srcset="<?php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-1457x971.jpg" alt="snowledge download card front and back" media="(min-width: 1080px)">
@@ -349,21 +349,21 @@ if (have_posts()) {
 							<!-- <img src=" php echo content_url(); ?>/uploads/2019/05/snowledge_download_card_Mockup-360x240.jpg" alt="snowledge download card front and back"> -->
 						</picture>
 					</a>
-				<h5><a href="https://rileybathurst.com/snowledge_download_card_mockup-1457x971/">Download Card</a></h5>
+				<h5><a href="<?php echo esc_url( home_url( '/' ) ); ?>snowledge_download_card_mockup-1457x971/">Download Card</a></h5>
 				<!-- <p>Even app companies need physical presence so we have been working on pieces like these App Download cards, we have updated them a couple of times over the years including specific to mountains.</p> -->
 			</section>
 
 			<!-- 4FRNT in app -->
 			<section class="continental continental-3">
-					<a href="https://rileybathurst.com/4frnt_snowledge_app_30_liquify-5-1080x720/">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>4frnt_snowledge_app_30_liquify-5-1080x720/">
 						<img class="lozad" data-index="6" data-src="<?php echo content_url(); ?>/uploads/2020/05/4frnt_snowledge_app_30_liquify-5-1080x720-1.jpg">
 					</a>
-				<h5><a href="https://rileybathurst.com/4frnt_snowledge_app_30_liquify-5-1080x720/">4FRNT in app promotion</a></h5>
+				<h5><a href="<?php echo esc_url( home_url( '/' ) ); ?>4frnt_snowledge_app_30_liquify-5-1080x720/">4FRNT in app promotion</a></h5>
 			</section>
 
 			<!-- Trew in app -->
 			<section class="continental continental-4">
-				<a href="https://rileybathurst.com/riley_bathurst-design-trew_in_app_snowledge_promotion-1080x720/">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>riley_bathurst-design-trew_in_app_snowledge_promotion-1080x720/">
 					<picture class="lozad-picture" data-index="7">
 						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-design-trew_in_app_snowledge_promotion-1080x720.webp" alt="snowledge development screenshots" media="(min-width: 960px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-design-trew_in_app_snowledge_promotion-1080x720.jpg" alt="snowledge development screenshots" media="(min-width: 960px)">
@@ -378,7 +378,7 @@ if (have_posts()) {
 						<!-- <img src=" ?php echo content_url(); ?>/uploads/2020/05/riley_bathurst-design-trew_in_app_snowledge_promotion-360x240.jpg" alt="snowledge download card front and back"> -->
 					</picture>
 				</a>
-				<h5><a href="https://rileybathurst.com/riley_bathurst-design-trew_in_app_snowledge_promotion-1080x720/">Trew in app promotion</a></h5>
+				<h5><a href="<?php echo esc_url( home_url( '/' ) ); ?>riley_bathurst-design-trew_in_app_snowledge_promotion-1080x720/">Trew in app promotion</a></h5>
 			</section>
 		</div>
 
@@ -391,7 +391,7 @@ if (have_posts()) {
 			<p class="subtitle show-for-medium" style="grid-row: 3; grid-column: 5; justify-self: center;">Zeros and Ones.</p>
 
 			<section class="continental">
-				<a href="https://rileybathurst.com/snowledge_dev_screenshot-1080x607/">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>snowledge_dev_screenshot-1080x607/">
 					<picture class="lozad-picture" data-index="8">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-1080x607.webp" alt="snowledge development screenshots" media="(min-width: 960px)" type="image/webp">
 						<source srcset="<?php echo content_url(); ?>/uploads/2019/06/snowledge_dev_screenshot-1080x607.jpg" alt="snowledge development screenshots" media="(min-width: 960px)">
