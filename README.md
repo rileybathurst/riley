@@ -25,38 +25,8 @@ I'll try it out quick on firefox.
 - the top right svg should also open a menu
 - meta block updates are not working
 - page 2 of reordered categories doesn't work it kinda shouldn't ever have to come up but it should work
-
-- breadcrumbs if is attachment isnt working?
-- connect references and posts
-- add social networks to the footers
-- snow page needs love to fix broken links
-- Tag titles without images are not attached to the permalink
-- this image could be sharper https://rileybathurst.com/2015/05/new-zealand-snowboarder-2015/clubbies_trip_14_0164/
-- this should be renamed https://rileybathurst.com/2015/05/new-zealand-snowboarder-2015/annabel_226/
-- captcha, checkbox, form page? probably other ones
-- I need a custom form to remove the material contact its messy
-- front page needs more vertical pieces
-- a:selection color needs to not be primary
-- social icons need work to have a full hover state
-- explore more the underline and strike is in the wrong color
 - check for data-index="9" on lozad
 - double check on data-alt=" for lozad images
-- image should lazy load by defaultt on chrome
-- I wonder if I should split the templates for vertical and horizontal menus
-- theres defintley a problem with running webpack compressed js I keep getting errors of 'undefined' in the console even on basic get Element by Id queries so for now I am running an uncompressed version and using webpack for npm modules.
-- picture elements have a couple pixels of clear space at the bottom this is a bigger problem with the folding laptop header
-- mani menu slider colors need dark mode adjustments
-main menu slider colors need dark mode adjustments
-- chk order page needs ipad chrome cut off
-- On small screens stop the page from jumping with the change in text maybe this is a grid not a full replace?
-- .spine is using a darker than dark gray to pass contrast checks I need to work on what I am doing with all of those
-- I removed prism from having it in the webpack do I care enough to bring it back or do it a new way
-
-### Maybes
-
-#### Break these notes up they are getting unruly
-
-### Dev Notes
 
 ### Design Notes
 
@@ -89,29 +59,9 @@ I need to bring these together in a smart way, I think markdown notes probably h
 
 Having an idea of color contrast could be really useful as I'm breaking somethings up
 
-
-
 ### Projects to add
 
 - After Effects / dimension of wedding invite
 - show reel of video titles - needs updating as well
 - Rip N Grip animation
 - Homewood homepage in snowledge 
-
-
-
-### Type Scale
-
-Base 16px
-
-h1 - 3.052em - 48px
-
-h2 -2.441em - 39px
-
-h3 - 1.953em - 31.2px
-
-h4 - 1.563em - 25px
-
-h5 - 1.25em - 20px
-
-small - 0.8em - 12.8px

@@ -1388,3 +1388,17 @@
 		margin-block-start: var(--global-margin);
 	}
 } 
+
+.page-width {
+  max-width: 71rem; // 📣
+  margin-inline: auto;
+  padding-inline: 1rem
+}
+
+.tag-title {
+  max-width: 71rem; // 📣
+  margin-inline: auto;
+  padding-block-start: 3rem;
+  padding-inline: 3rem;
+}
+

@@ -92,7 +92,7 @@ figcaption,
 /*------------------------------------*/
 
 ::selection {
-  background: var(--cinnabar);
+  background: hsl(var(--cinnabar__base), calc(var(--cinnabar__lightness) + 15%));
 }
 
 a::selection {

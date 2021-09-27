@@ -8,7 +8,7 @@
 // Category
 // page
 
-:is(.home, .category, .page) #top-menu {
+:is(.home, .category, .page, .tag, .error404) #top-menu {
     min-height: 3rem; // pulling the hr up means we need to specify this
     @media (min-width: $medium) {
         min-height: 10rem;
