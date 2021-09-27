@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<h1>meow</h1>
+<!-- <h1>meow</h1> -->
 
 <div class="background-dirty">
 	<div class="site-main" role="main">
