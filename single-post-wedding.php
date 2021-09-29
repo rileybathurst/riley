@@ -13,17 +13,60 @@ if (have_posts()) {
 	<div class="article-content-specific">
 		<div class="specific-grid">
 
-		<section class="continental ">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>jess_josho_wedding_2/">
-				<img src="<?php echo content_url(); ?>/uploads/2021/09/DSC0142-3840-scaled.jpg" alt="flower girl wedding photo">
+		<section class="continental continental-2">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>_dsc1145-2/">
+				<img src="<?php echo content_url(); ?>/uploads/2021/09/DSC1145-scaled.jpg" alt="first look wedding photo">
 			</a>
-			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>jess_josho_wedding_2/">Flower Girl</a></h4>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>jess_josho_wedding_2/">
-				<img src="<?php echo content_url(); ?>/uploads/2021/09/DSC0209-3840-scaled.jpg" alt="flower girl wedding photo">
-			</a>
-			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>jess_josho_wedding_2/">Flower Girl</a></h4>
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>_dsc1145-2/">First Look</a></h4>
 		</section>
 
+		<section class="continental continental-3">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>_DSC2284/">
+				<img src="<?php echo content_url(); ?>/uploads/2021/09/DSC2284-scaled.jpg" alt="together wedding photo">
+			</a>
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>_DSC2284/">Together</a></h4>
+	</section>
+		<section class="continental continental-4">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>_DSC2271/">
+				<img src="<?php echo content_url(); ?>/uploads/2021/09/DSC2271-scaled.jpg" alt="outlook wedding photo">
+			</a>
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>_DSC2271/">Outlook</a></h4>
+		</section>
+</div>
+
+<div class="specific-grid">
+		<section class="continental continental-2">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>dsc0142-3840/">
+				<img src="<?php echo content_url(); ?>/uploads/2021/09/DSC0209-3840-scaled.jpg" alt="shoulder wedding photo">
+			</a>
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>dsc0142-3840/">Over the shoulder</a></h4>
+</section>
+<section class="continental continental-3">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>dsc0142-3840/">
+				<img src="<?php echo content_url(); ?>/uploads/2021/09/DSC0142-3840-scaled.jpg" alt="step wedding photo">
+			</a>
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>dsc0142-3840/">Step</a></h4>
+		</section>
+<section class="continental continental-4">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>dsc0111-3840/">
+				<img src="<?php echo content_url(); ?>/uploads/2021/09/DSC0111-3840-scaled.jpg" alt="away wedding photo">
+			</a>
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>dsc0111-3840/">Away</a></h4>
+		</section>
+</div>
+
+
+
+
+
+<div class="specific-grid">
+		<section class="continental ">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>2013/02/wedding/weddingbeach9401/">
+				<img src="<?php echo content_url(); ?>/uploads/2013/02/weddingbeach9401-1.jpg" alt="flower girl wedding photo">
+			</a>
+			<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>2013/02/wedding/weddingbeach9401/">Beach Wedding</a></h4>
+		</section>
+		
 		<section class="continental ">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>jess_josho_wedding_2/">
 				<img src="<?php echo content_url(); ?>/uploads/2019/06/jess_josho_wedding_2.jpg" alt="flower girl wedding photo">

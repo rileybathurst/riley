@@ -127,6 +127,7 @@ blockquote p {
 	// display: inline; this was to have the quotes inline but it looses the margins so for now it's removed
 	font-size: 1.125rem; // type scale?
 	line-height: 2rem;
+	text-align: left;
 }
 
 cite {
