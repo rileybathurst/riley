@@ -1,12 +1,15 @@
 <?php
 
+// scp csp-violation-report-endpoint.php rilbat2@sumter.dreamhost.com:rileybathurst.com
+// scp rilbat2@sumter.dreamhost.com:rileybathurst.com/csp-violations.log Developer/csp-logs
+
 // this might be better it sent one email and made the log file lets start with this for now
 
 // Start configure
-$log_file = dirname(__FILE__) . '/csp-violations.log';
+$log_file = dirname(__FILE__) . '/rileybathurst-csp-violations.log';
 $log_file_size_limit = 1000000; // bytes - once exceeded no further entries are added
 $email_address = 'riley@rileybathurst.com';
-$email_subject = 'Content-Security-Policy violation';
+$email_subject = 'Riley Bathurst Content-Security-Policy violation';
 // End configuration
 
 $current_domain = preg_replace('/www\./i', '', $_SERVER['SERVER_NAME']);
