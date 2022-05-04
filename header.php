@@ -15,7 +15,7 @@
 	<meta name="familyName" content="Bathurst" itemprop="familyName">
 	<meta name="givenName" content="Riley" itemprop="givenName">
 	<meta name="gender" content="male" itemprop="gender">
-	<meta name="hasOccupation" content="Designer" itemprop="hasOccupation">
+	<!-- <meta name="hasOccupation" content="Designer" itemprop="hasOccupation"> google structured data doesnt like this -->
 	<meta name="jobTitle" content="Designer" itemprop="jobTitle">
 	<meta name="nationality" content="New Zealand" itemprop="nationality">
 	<meta name="worksFor" content="Tahoe Web Shop" itemprop="worksFor">

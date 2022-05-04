@@ -57,7 +57,7 @@ Template Name: Contact
 				'theme_location' => 'primary',
 				'menu_id'        => 'top-menu',
 			) ); ?>
-		 </nav>
+		</nav>
 
 		<div class="spine"><?php echo get_bloginfo( 'description' ); ?></div>
 	</header>

@@ -93,7 +93,7 @@ Template Name: Front Page
 
 <!-- I'm doing this all manually for the moment to keep the front page loading as fast as possible and allowing me to use a responsive picture element for the featured image -->
 <div class="background-dirty">
-	<section class="site-main">
+	<section class="site-main" itemscope itemtype="https://schema.org/CreativeWork">
 		<h2 class="featured-header">Featured Project</h2>
 		<article class="">
 			<figure class="article-thumbnail category-thumbnail category-overlaying-image">
@@ -102,7 +102,7 @@ Template Name: Front Page
 					<!-- <source srcset=" php echo content_url(); ?>/uploads/2018/05/IMG_0126.jpg" media="(min-width: 64em)">
 					<source srcset=" php echo content_url(); ?>/uploads/2018/05/IMG_0126.jpg" media="(min-width: 40em)"> -->
 					<!-- <source srcset=" php echo content_url(); ?>/uploads/2020/05/4frnt_snowledge_app_30_liquify-5-360x240.jpg" alt="skier as part of a design piece"> -->
-					<img src="<?php echo content_url(); ?>/uploads/2020/05/4frnt_snowledge_app_30_liquify-5-1080x720-1.jpg" alt="skier as part of a design piece">
+					<img src="<?php echo content_url(); ?>/uploads/2020/05/4frnt_snowledge_app_30_liquify-5-1080x720-1.jpg" alt="skier as part of a design piece" itemprop="image">
 					<!-- <img src=" php echo content_url(); ?>/uploads/2020/05/4frnt_snowledge_app_30_liquify-5-360x240.jpg" alt="skier as part of a design piece"> -->
 				</picture>
 			</a>
@@ -115,7 +115,7 @@ Template Name: Front Page
 		<div class="fp-header">
 			<hr class="mega-hr" />
 			<h2 class="page-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>2018/04/snowledge/">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>2018/04/snowledge/" itemprop="name">
 				<!-- the trailing slash is included in the permalink this helps to shorten breadcrumbs on single pages --> 
 					Snowledge
 					<!-- php echo get_post_meta(  'myguten_meta_block_field', true ); ?> -->
