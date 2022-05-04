@@ -1,24 +1,24 @@
 <!DOCTYPE html> <!-- HTML5 -->
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> itemscope itemtype="https://schema.org/Person">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<!-- SEO optimization -->
-	<meta name="description" content="<?php the_title(); ?>"> <!-- this isnt in yoast? April 2020 so it's here for now -->
+	<meta name="description" content="<?php the_title(); ?>" itemprop="description"> <!-- this isnt in yoast? April 2020 so it's here for now -->
 	<!-- I would like to control this rather than relying on Yoast but until I get the I'm just adding both -->
-	<meta name="birthdate" content="1987-10-30">
-	<meta name="birthPlace" content="Christchurch, New Zealand">
-	<meta name="email" content="mailto:riley@rileybathurst.com">
-	<meta name="telephone" content="tel: (530) 386-6296">
-	<meta name="familyName" content="Bathurst">
-	<meta name="givenName" content="Riley">
-	<meta name="gender" content="male">
-	<meta name="hasOccupation" content="Designer">
-	<meta name="jobTitle" content="Designer">
-	<meta name="nationality" content="New Zealand">
-	<meta name="worksFor" content="Tahoe Web Shop">
+	<meta name="birthdate" content="1987-10-30" itemprop="birthdate">
+	<meta name="birthPlace" content="Christchurch, New Zealand" itemprop="birthplace">
+	<meta name="email" content="mailto:riley@rileybathurst.com" itemprop="email">
+	<meta name="telephone" content="tel: (530) 386-6296" itemprop="telephone">
+	<meta name="familyName" content="Bathurst" itemprop="familyName">
+	<meta name="givenName" content="Riley" itemprop="givenName">
+	<meta name="gender" content="male" itemprop="gender">
+	<meta name="hasOccupation" content="Designer" itemprop="hasOccupation">
+	<meta name="jobTitle" content="Designer" itemprop="jobTitle">
+	<meta name="nationality" content="New Zealand" itemprop="nationality">
+	<meta name="worksFor" content="Tahoe Web Shop" itemprop="worksFor">
 
 	<!-- recaptcha -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
